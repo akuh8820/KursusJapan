@@ -1,0 +1,215 @@
+{
+  "id": "n5-u004",
+  "level": "N5",
+  "unit_no": 4,
+  "theme": "Transportasi & arah",
+  "title_id": "Naik Kereta Pertama Kali",
+  "objectives_id": [
+    "Menanyakan lokasi dengan pola 〜はどこですか",
+    "Mengenal huruf hiragana baris た (たちつてと)",
+    "Membedakan kata tunjuk tempat: ここ, そこ, あそこ"
+  ],
+  "dialog": {
+    "title_id": "Rian mencari toilet dan peron di stasiun",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "すみません、トイレはどこですか。",
+        "kana": "すみません、といれはどこですか。",
+        "romaji": "Sumimasen, toire wa doko desu ka.",
+        "id": "Permisi, di mana toiletnya?"
+      },
+      {
+        "speaker": "Ekiin",
+        "jp": "あそこです。エスカレーターのしたです。",
+        "kana": "あそこです。えすかれーたーのしたです。",
+        "romaji": "Asoko desu. Esukareetaa no shita desu.",
+        "id": "Di sana. Di bawah eskalator."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "ありがとうございます。えきへのきっぷはどこで買いますか。",
+        "kana": "ありがとうございます。えきへのきっぷはどこでかいますか。",
+        "romaji": "Arigatou gozaimasu. Eki e no kippu wa doko de kaimasu ka.",
+        "id": "Terima kasih. Beli tiket ke stasiun di mana?"
+      },
+      {
+        "speaker": "Ekiin",
+        "jp": "あの自販機です。ここからまっすぐ行ってください。",
+        "kana": "あのじはんきです。ここからまっすぐいってください。",
+        "romaji": "Ano jihanki desu. Koko kara massugu itte kudasai.",
+        "id": "Di mesin penjual otomatis itu. Dari sini jalan lurus saja."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "ここですか。",
+        "kana": "ここですか。",
+        "romaji": "Koko desu ka.",
+        "id": "Di sini ya?"
+      },
+      {
+        "speaker": "Ekiin",
+        "jp": "いいえ、そこではありません。もっとあそこです。",
+        "kana": "いいえ、そこではありません。もっとあそこです。",
+        "romaji": "Iie, soko de wa arimasen. Motto asoko desu.",
+        "id": "Bukan di situ. Lebih jauh ke sana."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "わかりました。どうもありがとう。",
+        "kana": "わかりました。どうもありがとう。",
+        "romaji": "Wakarimashita. Doumo arigatou.",
+        "id": "Saya paham. Terima kasih banyak."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜はどこですか",
+    "meaning_id": "... di mana? — pola untuk menanyakan letak atau lokasi sesuatu.",
+    "formation": "[Kata benda] + は + どこ + ですか",
+    "examples": [
+      {
+        "jp": "トイレはどこですか。",
+        "romaji": "Toire wa doko desu ka.",
+        "id": "Di mana toiletnya?"
+      },
+      {
+        "jp": "あなたのかばんはどこですか。",
+        "romaji": "Anata no kaban wa doko desu ka.",
+        "id": "Tas kamu di mana?"
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "トイレ",
+      "kana": "といれ",
+      "romaji": "toire",
+      "meaning_id": "toilet",
+      "example_jp": "トイレはあちらです。",
+      "example_romaji": "Toire wa achira desu.",
+      "example_id": "Toiletnya di sana."
+    },
+    {
+      "term": "どこ",
+      "kana": "どこ",
+      "romaji": "doko",
+      "meaning_id": "di mana",
+      "example_jp": "コンビニはどこですか。",
+      "example_romaji": "Konbini wa doko desu ka.",
+      "example_id": "Konbini ada di mana?"
+    },
+    {
+      "term": "ここ",
+      "kana": "ここ",
+      "romaji": "koko",
+      "meaning_id": "sini (dekat pembicara)",
+      "example_jp": "ここにすわってください。",
+      "example_romaji": "Koko ni suwatte kudasai.",
+      "example_id": "Silakan duduk di sini."
+    },
+    {
+      "term": "そこ",
+      "kana": "そこ",
+      "romaji": "soko",
+      "meaning_id": "situ (dekat lawan bicara)",
+      "example_jp": "つくえの上にありますよ。ほら、そこです。",
+      "example_romaji": "Tsukue no ue ni arimasu yo. Hora, soko desu.",
+      "example_id": "Ada di atas meja. Lihat, di situ."
+    },
+    {
+      "term": "あそこ",
+      "kana": "あそこ",
+      "romaji": "asoko",
+      "meaning_id": "sana (jauh dari keduanya)",
+      "example_jp": "えきはあそこです。",
+      "example_romaji": "Eki wa asoko desu.",
+      "example_id": "Stasiunnya di sana."
+    },
+    {
+      "term": "駅",
+      "kana": "えき",
+      "romaji": "eki",
+      "meaning_id": "stasiun",
+      "example_jp": "えきまであるいていきます。",
+      "example_romaji": "Eki made aruite ikimasu.",
+      "example_id": "Saya jalan kaki sampai stasiun."
+    },
+    {
+      "term": "切符",
+      "kana": "きっぷ",
+      "romaji": "kippu",
+      "meaning_id": "tiket",
+      "example_jp": "きっぷを二枚ください。",
+      "example_romaji": "Kippu o nimai kudasai.",
+      "example_id": "Tolong dua tiket."
+    },
+    {
+      "term": "自販機",
+      "kana": "じはんき",
+      "romaji": "jihanki",
+      "meaning_id": "mesin penjual otomatis",
+      "example_jp": "じはんきでジュースを買いました。",
+      "example_romaji": "Jihanki de juusu o kaimashita.",
+      "example_id": "Saya beli jus di mesin otomatis."
+    },
+    {
+      "term": "分かる",
+      "kana": "わかる",
+      "romaji": "wakaru",
+      "meaning_id": "mengerti, paham",
+      "example_jp": "はい、よくわかりました。",
+      "example_romaji": "Hai, yoku wakarimashita.",
+      "example_id": "Ya, saya paham sekali."
+    }
+  ],
+  "writing": [
+    { "char": "た", "type": "hiragana", "romaji": "ta" },
+    { "char": "ち", "type": "hiragana", "romaji": "chi" },
+    { "char": "つ", "type": "hiragana", "romaji": "tsu" },
+    { "char": "て", "type": "hiragana", "romaji": "te" },
+    { "char": "と", "type": "hiragana", "romaji": "to" }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 0,
+      "prompt_id": "Dengarkan pertanyaan Rian. Apa yang dicarinya?",
+      "options": [
+        "Peron keretanya.",
+        "Mesin tiketnya.",
+        "Toiletnya.",
+        "Pintu keluarnya."
+      ],
+      "answer": 2
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 5,
+      "prompt_id": "Apakah mesin tiket berada di tempat yang ditunjuk Rian?",
+      "options": [
+        "Ya, tepat di situ.",
+        "Bukan, lebih jauh ke sana.",
+        "Ya, tapi harus naik eskalator.",
+        "Tiket dibeli di dalam kereta."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": ["とけい", "は", "どこ", "です", "か"],
+      "answer_jp": "とけいはどこですか。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'ta'",
+      "target_kana": "た"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'te'",
+      "target_kana": "て"
+    }
+  ],
+  "audio_status": "pending"
+}

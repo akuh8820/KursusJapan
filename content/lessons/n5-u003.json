@@ -1,0 +1,215 @@
+{
+  "id": "n5-u003",
+  "level": "N5",
+  "unit_no": 3,
+  "theme": "Belanja harian",
+  "title_id": "Belanja Malam di Konbini",
+  "objectives_id": [
+    "Menanyakan harga dan memesan barang dengan 〜をください",
+    "Mengenal huruf hiragana baris さ (さしすせそ)",
+    "Menghitung uang dalam yen untuk belanja sehari-hari"
+  ],
+  "dialog": {
+    "title_id": "Rian membeli onigiri di konbini dekat kos",
+    "lines": [
+      {
+        "speaker": "Ten'in",
+        "jp": "いらっしゃいませ。",
+        "kana": "いらっしゃいませ。",
+        "romaji": "Irasshaimase.",
+        "id": "Selamat datang."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "すみません、これはいくらですか。",
+        "kana": "すみません、これはいくらですか。",
+        "romaji": "Sumimasen, kore wa ikura desu ka.",
+        "id": "Permisi, ini harganya berapa?"
+      },
+      {
+        "speaker": "Ten'in",
+        "jp": "それですか。百三十円です。",
+        "kana": "それですか。ひゃくさんじゅうえんです。",
+        "romaji": "Sore desu ka. Hyaku-sanjuu en desu.",
+        "id": "Yang itu ya. Seratus tiga puluh yen."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "じゃあ、これをください。",
+        "kana": "じゃあ、これをください。",
+        "romaji": "Jaa, kore o kudasai.",
+        "id": "Kalau begitu, tolong yang ini."
+      },
+      {
+        "speaker": "Ten'in",
+        "jp": "はい。おふろくでよろしいですか。",
+        "kana": "はい。おふろくでよろしいですか。",
+        "romaji": "Hai. Ofuroku de yoroshii desu ka.",
+        "id": "Baik. Dipanaskan boleh?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい、おねがいします。",
+        "kana": "はい、おねがいします。",
+        "romaji": "Hai, onegaishimasu.",
+        "id": "Ya, tolong."
+      },
+      {
+        "speaker": "Ten'in",
+        "jp": "百四十円のおあずかりです。まいどありがとうございます。",
+        "kana": "ひゃくよんじゅうえんのおあずかりです。まいどありがとうございます。",
+        "romaji": "Hyaku-yonjuu en no oazukari desu. Maido arigatou gozaimasu.",
+        "id": "Menerima seratus empat puluh yen. Terima kasih atas kunjungannya."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜をください",
+    "meaning_id": "Tolong berikan saya ... — cara sopan dan mudah untuk memesan atau membeli sesuatu.",
+    "formation": "[Kata benda] + を + ください",
+    "examples": [
+      {
+        "jp": "おにぎりをください。",
+        "romaji": "Onigiri o kudasai.",
+        "id": "Tolong berikan onigiri."
+      },
+      {
+        "jp": "あの水をください。",
+        "romaji": "Ano mizu o kudasai.",
+        "id": "Tolong berikan air yang itu."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "いらっしゃいませ",
+      "kana": "いらっしゃいませ",
+      "romaji": "irasshaimase",
+      "meaning_id": "selamat datang (di toko)",
+      "example_jp": "ドアがひらいて、てんいんが「いらっしゃいませ」といった。",
+      "example_romaji": "Doa ga hiraite, tenin ga irasshaimase to itta.",
+      "example_id": "Pintu terbuka, pramuniaga berkata selamat datang."
+    },
+    {
+      "term": "すみません",
+      "kana": "すみません",
+      "romaji": "sumimasen",
+      "meaning_id": "permisi, maaf",
+      "example_jp": "すみません、えきはどこですか。",
+      "example_romaji": "Sumimasen, eki wa doko desu ka.",
+      "example_id": "Permisi, di mana stasiunnya?"
+    },
+    {
+      "term": "いくら",
+      "kana": "いくら",
+      "romaji": "ikura",
+      "meaning_id": "berapa (harga)",
+      "example_jp": "このりんごはいくらですか。",
+      "example_romaji": "Kono ringo wa ikura desu ka.",
+      "example_id": "Apel ini harganya berapa?"
+    },
+    {
+      "term": "円",
+      "kana": "えん",
+      "romaji": "en",
+      "meaning_id": "yen (mata uang Jepang)",
+      "example_jp": "これは百円です。",
+      "example_romaji": "Kore wa hyaku en desu.",
+      "example_id": "Ini seratus yen."
+    },
+    {
+      "term": "お願いします",
+      "kana": "おねがいします",
+      "romaji": "onegaishimasu",
+      "meaning_id": "tolong, mohon",
+      "example_jp": "コーヒーをおねがいします。",
+      "example_romaji": "Koohii o onegaishimasu.",
+      "example_id": "Tolong kopi."
+    },
+    {
+      "term": "水",
+      "kana": "みず",
+      "romaji": "mizu",
+      "meaning_id": "air",
+      "example_jp": "水をのみたいです。",
+      "example_romaji": "Mizu o nomitai desu.",
+      "example_id": "Saya ingin minum air."
+    },
+    {
+      "term": "おにぎり",
+      "kana": "おにぎり",
+      "romaji": "onigiri",
+      "meaning_id": "nasi bulat isi (bekal khas Jepang)",
+      "example_jp": "おにぎりはひゃくごじゅうえんです。",
+      "example_romaji": "Onigiri wa hyaku-gojuu en desu.",
+      "example_id": "Onigiri harganya seratus lima puluh yen."
+    },
+    {
+      "term": "これ",
+      "kana": "これ",
+      "romaji": "kore",
+      "meaning_id": "ini",
+      "example_jp": "これとそれをください。",
+      "example_romaji": "Kore to sore o kudasai.",
+      "example_id": "Tolong yang ini dan yang itu."
+    },
+    {
+      "term": "ありがとう",
+      "kana": "ありがとう",
+      "romaji": "arigatou",
+      "meaning_id": "terima kasih",
+      "example_jp": "どうもありがとう。",
+      "example_romaji": "Doumo arigatou.",
+      "example_id": "Terima kasih banyak."
+    }
+  ],
+  "writing": [
+    { "char": "さ", "type": "hiragana", "romaji": "sa" },
+    { "char": "し", "type": "hiragana", "romaji": "shi" },
+    { "char": "す", "type": "hiragana", "romaji": "su" },
+    { "char": "せ", "type": "hiragana", "romaji": "se" },
+    { "char": "そ", "type": "hiragana", "romaji": "so" }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Dengarkan pertanyaan Rian ke pramuniaga. Apa yang dia tanyakan?",
+      "options": [
+        "Waktu buka tokonya.",
+        "Lokasi onigiri.",
+        "Harga barang itu.",
+        "Cara pemanasan makanan."
+      ],
+      "answer": 2
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 6,
+      "prompt_id": "Berapa uang yang diterima pramuniaga dari Rian?",
+      "options": [
+        "130 yen.",
+        "140 yen.",
+        "100 yen.",
+        "150 yen."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": ["すみません", "これ", "を", "ください"],
+      "answer_jp": "すみません、これをください。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'sa'",
+      "target_kana": "さ"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'su'",
+      "target_kana": "す"
+    }
+  ],
+  "audio_status": "pending"
+}

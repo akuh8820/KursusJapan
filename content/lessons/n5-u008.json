@@ -1,0 +1,214 @@
+{
+  "id": "n5-u008",
+  "level": "N5",
+  "unit_no": 8,
+  "theme": "Keluarga",
+  "title_id": "Cerita Tentang Keluarga",
+  "objectives_id": [
+    "Menyatakan jumlah dan anggota keluarga dengan 〜人います",
+    "Mengenal huruf hiragana や・ゆ・よ dan ん",
+    "Menyebutkan anggota keluarga dengan sebutan sopan"
+  ],
+  "dialog": {
+    "title_id": "Rian bercerita tentang keluarganya kepada Mina lewat telepon",
+    "lines": [
+      {
+        "speaker": "Mina",
+        "jp": "リアンさんは、ごかぞくは何人ですか。",
+        "kana": "りあんさんは、ごかぞくはなんにんですか。",
+        "romaji": "Rian-san wa, gokazoku wa nannin desu ka.",
+        "id": "Rian, keluargamu berapa orang?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "四人います。父と母と妹とわたしです。",
+        "kana": "よにんいます。ちちとははといもうととわたしです。",
+        "romaji": "Yonin imasu. Chichi to haha to imouto to watashi desu.",
+        "id": "Ada empat orang. Ayah, ibu, adik perempuan, dan saya."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "おとうさんもおかあさんもインドネシアにいますか。",
+        "kana": "おとうさんもおかあさんもインドネシアにいますか。",
+        "romaji": "Otousan mo okaasan mo Indoneshia ni imasu ka.",
+        "id": "Ayah dan ibu juga ada di Indonesia?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい、そうです。今、母と電話で話しています。",
+        "kana": "はい、そうです。いま、ははとでんわではなしています。",
+        "romaji": "Hai, sou desu. Ima, haha to denwa de hanashite imasu.",
+        "id": "Ya, benar. Sekarang sedang bicara telepon dengan ibu."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "いいですね。妹さんはいくつですか。",
+        "kana": "いいですね。いもうとはいくつですか。",
+        "romaji": "Ii desu ne. Imouto-san wa ikutsu desu ka.",
+        "id": "Bagus ya. Adik perempuanmu umurnya berapa?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "十六歳です。高校生です。",
+        "kana": "じゅうろくさいです。こうこうせいです。",
+        "romaji": "Juuroku-sai desu. Koukousei desu.",
+        "id": "Umur 16 tahun. Dia siswa SMA."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "若くていいですね。今度、写真を見せてくださいね。",
+        "kana": "わかくていいですね。こんど、しゃしんをみせてくださいね。",
+        "romaji": "Wakakute ii desu ne. Kondo, shashin o misete kudasai ne.",
+        "id": "Masih muda bagus ya. Nanti tunjukkan fotonya ya."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜が〜人います",
+    "meaning_id": "Ada ... orang ... — menyatakan jumlah orang atau makhluk hidup yang ada. Untuk benda mati memakai あります.",
+    "formation": "[Siapa] + が + [angka] + 人 + います",
+    "examples": [
+      {
+        "jp": "かぞくは四人います。",
+        "romaji": "Kazoku wa yonin imasu.",
+        "id": "Keluarga saya ada empat orang."
+      },
+      {
+        "jp": "へやには誰もいません。",
+        "romaji": "Heya ni wa dare mo imasen.",
+        "id": "Di dalam kamar tidak ada siapa-siapa."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "家族",
+      "kana": "かぞく",
+      "romaji": "kazoku",
+      "meaning_id": "keluarga",
+      "example_jp": "かぞくに手紙を書きました。",
+      "example_romaji": "Kazoku ni tegami o kakimashita.",
+      "example_id": "Saya menulis surat untuk keluarga."
+    },
+    {
+      "term": "何人",
+      "kana": "なんにん",
+      "romaji": "nannin",
+      "meaning_id": "berapa orang",
+      "example_jp": "クラスに学生がなんにんいますか。",
+      "example_romaji": "Kurasu ni gakusei ga nannin imasu ka.",
+      "example_id": "Ada berapa murid di kelas?"
+    },
+    {
+      "term": "四",
+      "kana": "よん",
+      "romaji": "yon",
+      "meaning_id": "empat",
+      "example_jp": "よにんできました。",
+      "example_romaji": "Yonin dekimashita.",
+      "example_id": "Selesai oleh empat orang."
+    },
+    {
+      "term": "父",
+      "kana": "ちち",
+      "romaji": "chichi",
+      "meaning_id": "ayah (milik sendiri)",
+      "example_jp": "父は会社員です。",
+      "example_romaji": "Chichi wa kaishain desu.",
+      "example_id": "Ayah saya pegawai swasta."
+    },
+    {
+      "term": "母",
+      "kana": "はは",
+      "romaji": "haha",
+      "meaning_id": "ibu (milik sendiri)",
+      "example_jp": "母はやさしいです。",
+      "example_romaji": "Haha wa yasashii desu.",
+      "example_id": "Ibu saya penyabar/baik hati."
+    },
+    {
+      "term": "妹",
+      "kana": "いもうと",
+      "romaji": "imouto",
+      "meaning_id": "adik perempuan",
+      "example_jp": "妹はまだ学生です。",
+      "example_romaji": "Imouto wa mada gakusei desu.",
+      "example_id": "Adik perempuan saya masih sekolah."
+    },
+    {
+      "term": "電話",
+      "kana": "でんわ",
+      "romaji": "denwa",
+      "meaning_id": "telepon",
+      "example_jp": "あとででんわします。",
+      "example_romaji": "Ato de denwa shimasu.",
+      "example_id": "Nanti saya telepon lagi."
+    },
+    {
+      "term": "十六歳",
+      "kana": "じゅうろくさい",
+      "romaji": "juuroku-sai",
+      "meaning_id": "umur 16 tahun",
+      "example_jp": "妹はじゅうろくさいです。",
+      "example_romaji": "Imouto wa juurokusai desu.",
+      "example_id": "Adik perempuan saya berumur 16 tahun."
+    },
+    {
+      "term": "写真",
+      "kana": "しゃしん",
+      "romaji": "shashin",
+      "meaning_id": "foto, gambar",
+      "example_jp": "きれいなしゃしんですね。",
+      "example_romaji": "Kirei na shashin desu ne.",
+      "example_id": "Fotonya bagus ya."
+    }
+  ],
+  "writing": [
+    { "char": "や", "type": "hiragana", "romaji": "ya" },
+    { "char": "ゆ", "type": "hiragana", "romaji": "yu" },
+    { "char": "よ", "type": "hiragana", "romaji": "yo" },
+    { "char": "ん", "type": "hiragana", "romaji": "n" }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Ada berapa anggota keluarga Rian?",
+      "options": [
+        "Tiga orang.",
+        "Empat orang.",
+        "Lima orang.",
+        "Enam orang."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 5,
+      "prompt_id": "Apa pekerjaan atau status adik Rian?",
+      "options": [
+        "Mahasiswa.",
+        "Pegawai kantor.",
+        "Siswa SMA.",
+        "Belum bersekolah."
+      ],
+      "answer": 2
+    },
+    {
+      "type": "arrange",
+      "tokens": ["かぞくは", "四人", "います"],
+      "answer_jp": "かぞくは四人います。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'ya'",
+      "target_kana": "や"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'n'",
+      "target_kana": "ん"
+    }
+  ],
+  "audio_status": "pending"
+}

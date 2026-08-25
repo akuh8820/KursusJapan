@@ -1,0 +1,215 @@
+{
+  "id": "n5-u001",
+  "level": "N5",
+  "unit_no": 1,
+  "theme": "Hari pertama di Jepang",
+  "title_id": "Salam & Perkenalan Diri",
+  "objectives_id": [
+    "Menyapa dan memperkenalkan diri dengan pola A は B です",
+    "Mengenal 5 huruf hiragana pertama (あ行) beserta urutan goresannya",
+    "Memakai saluan sesuai waktu: pagi, siang, dan malam"
+  ],
+  "dialog": {
+    "title_id": "Rian tiba di kos dan bertemu pemilik kos",
+    "lines": [
+      {
+        "speaker": "Yamada",
+        "jp": "こんにちは。",
+        "kana": "こんにちは。",
+        "romaji": "Konnichiwa.",
+        "id": "Selamat siang."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "こんにちは。はじめまして。リアンです。",
+        "kana": "こんにちは。はじめまして。りあんです。",
+        "romaji": "Konnichiwa. Hajimemashite. Rian desu.",
+        "id": "Selamat siang. Senang berjumpa dengan Anda. Saya Rian."
+      },
+      {
+        "speaker": "Yamada",
+        "jp": "やまだです。どうぞよろしく。",
+        "kana": "やまだです。どうぞよろしく。",
+        "romaji": "Yamada desu. Douzo yoroshiku.",
+        "id": "Saya Yamada. Mohon bantuannya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "インドネシアからきました。",
+        "kana": "インドネシアからきました。",
+        "romaji": "Indoneshia kara kimashita.",
+        "id": "Saya datang dari Indonesia."
+      },
+      {
+        "speaker": "Yamada",
+        "jp": "そうですか。日本での生活、がんばってくださいね。",
+        "kana": "そうですか。にほんでのせいかつ、がんばってくださいね。",
+        "romaji": "Sou desu ka. Nihon de no seikatsu, ganbatte kudasai ne.",
+        "id": "Begitu ya. Semangat terus ya menjalani hidup di Jepang."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい。ありがとうございます。",
+        "kana": "はい。ありがとうございます。",
+        "romaji": "Hai. Arigatou gozaimasu.",
+        "id": "Ya. Terima kasih banyak."
+      },
+      {
+        "speaker": "Yamada",
+        "jp": "おやすみなさい。",
+        "kana": "おやすみなさい。",
+        "romaji": "Oyasuminasai.",
+        "id": "Selamat istirahat."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "A は B です",
+    "meaning_id": "A adalah B — pola paling dasar untuk memperkenalkan diri atau menyatakan identitas sesuatu.",
+    "formation": "[Kata benda] + は + [Kata benda] + です",
+    "examples": [
+      {
+        "jp": "わたしはリアンです。",
+        "romaji": "Watashi wa Rian desu.",
+        "id": "Saya Rian."
+      },
+      {
+        "jp": "やまださんはせんせいです。",
+        "romaji": "Yamada-san wa sensei desu.",
+        "id": "Pak Yamada adalah guru."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "こんにちは",
+      "kana": "こんにちは",
+      "romaji": "konnichiwa",
+      "meaning_id": "selamat siang",
+      "example_jp": "こんにちは、みなさん。",
+      "example_romaji": "Konnichiwa, minasan.",
+      "example_id": "Selamat siang, semuanya."
+    },
+    {
+      "term": "はじめまして",
+      "kana": "はじめまして",
+      "romaji": "hajimemashite",
+      "meaning_id": "senang berjumpa (untuk perkenalan pertama)",
+      "example_jp": "はじめまして、リアンです。",
+      "example_romaji": "Hajimemashite, Rian desu.",
+      "example_id": "Senang berjumpa, saya Rian."
+    },
+    {
+      "term": "私",
+      "kana": "わたし",
+      "romaji": "watashi",
+      "meaning_id": "saya",
+      "example_jp": "わたしはインドネシア人です。",
+      "example_romaji": "Watashi wa Indoneshia-jin desu.",
+      "example_id": "Saya orang Indonesia."
+    },
+    {
+      "term": "はい",
+      "kana": "はい",
+      "romaji": "hai",
+      "meaning_id": "ya",
+      "example_jp": "はい、そうです。",
+      "example_romaji": "Hai, sou desu.",
+      "example_id": "Ya, benar."
+    },
+    {
+      "term": "ありがとうございます",
+      "kana": "ありがとうございます",
+      "romaji": "arigatou gozaimasu",
+      "meaning_id": "terima kasih banyak",
+      "example_jp": "どうもありがとうございます。",
+      "example_romaji": "Doumo arigatou gozaimasu.",
+      "example_id": "Terima kasih banyak."
+    },
+    {
+      "term": "おやすみなさい",
+      "kana": "おやすみなさい",
+      "romaji": "oyasuminasai",
+      "meaning_id": "selamat istirahat",
+      "example_jp": "おやすみなさい、またあした。",
+      "example_romaji": "Oyasuminasai, mata ashita.",
+      "example_id": "Selamat istirahat, sampai besok."
+    },
+    {
+      "term": "先生",
+      "kana": "せんせい",
+      "romaji": "sensei",
+      "meaning_id": "guru",
+      "example_jp": "やまださんはせんせいです。",
+      "example_romaji": "Yamada-san wa sensei desu.",
+      "example_id": "Pak Yamada adalah guru."
+    },
+    {
+      "term": "学生",
+      "kana": "がくせい",
+      "romaji": "gakusei",
+      "meaning_id": "murid, mahasiswa",
+      "example_jp": "わたしはがくせいです。",
+      "example_romaji": "Watashi wa gakusei desu.",
+      "example_id": "Saya seorang mahasiswa."
+    },
+    {
+      "term": "友達",
+      "kana": "ともだち",
+      "romaji": "tomodachi",
+      "meaning_id": "teman",
+      "example_jp": "リアンさんはともだちです。",
+      "example_romaji": "Rian-san wa tomodachi desu.",
+      "example_id": "Rian adalah teman."
+    }
+  ],
+  "writing": [
+    { "char": "あ", "type": "hiragana", "romaji": "a" },
+    { "char": "い", "type": "hiragana", "romaji": "i" },
+    { "char": "う", "type": "hiragana", "romaji": "u" },
+    { "char": "え", "type": "hiragana", "romaji": "e" },
+    { "char": "お", "type": "hiragana", "romaji": "o" }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Dengarkan dialog. Apa yang dikatakan Rian saat pertama kali bertemu?",
+      "options": [
+        "Senang berjumpa, saya Rian.",
+        "Selamat istirahat.",
+        "Terima kasih banyak.",
+        "Saya datang dari Indonesia."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 6,
+      "prompt_id": "Dengarkan kalimat penutup Yamada. Apa artinya?",
+      "options": [
+        "Sampai besok.",
+        "Selamat istirahat.",
+        "Mohon bantuannya.",
+        "Semangat ya."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": ["わたし", "は", "がくせい", "です"],
+      "answer_jp": "わたしはがくせいです。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'a'",
+      "target_kana": "あ"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'o'",
+      "target_kana": "お"
+    }
+  ],
+  "audio_status": "pending"
+}

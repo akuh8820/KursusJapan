@@ -1,0 +1,215 @@
+{
+  "id": "n5-u007",
+  "level": "N5",
+  "unit_no": 7,
+  "theme": "Waktu & jadwal",
+  "title_id": "Jam Berapa Mulai Kerja?",
+  "objectives_id": [
+    "Menanyakan dan menyebutkan jam dengan 〜時〜分",
+    "Mengenal huruf hiragana baris ま (まみむめも)",
+    "Menyatakan rentang waktu dengan 〜から〜まで"
+  ],
+  "dialog": {
+    "title_id": "Rian bertanya jadwal kerja pertamanya ke supervisor",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "すみません、あしたのしごとは何時からですか。",
+        "kana": "すみません、あしたのしごとはなんじからですか。",
+        "romaji": "Sumimasen, ashita no shigoto wa nanji kara desu ka.",
+        "id": "Permisi, besok jam berapa kerjanya mulai?"
+      },
+      {
+        "speaker": "Katou",
+        "jp": "九時からです。八時半にここへ来てください。",
+        "kana": "くじからです。はちじはんにここへきてください。",
+        "romaji": "Kuji kara desu. Hachiji-han ni koko e kite kudasai.",
+        "id": "Mulai jam 9. Tolong datang ke sini jam setengah 8."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "九時から五時までですね。",
+        "kana": "くじからごじまでですね。",
+        "romaji": "Kuji kara goji made desu ne.",
+        "id": "Dari jam 9 sampai jam 5 ya."
+      },
+      {
+        "speaker": "Katou",
+        "jp": "そうです。おひるやすみは十二時から一時までです。",
+        "kana": "そうです。おひるやすみはじゅうにじからいちじまでです。",
+        "romaji": "Sou desu. Ohiruyasumi wa juuniji kara ichiji made desu.",
+        "id": "Benar. Istirahat siang dari jam 12 sampai jam 1."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "今、何時ですか。",
+        "kana": "いま、なんじですか。",
+        "romaji": "Ima, nanji desu ka.",
+        "id": "Sekarang jam berapa?"
+      },
+      {
+        "speaker": "Katou",
+        "jp": "四時十五分です。……あ、もう帰ってもいいですよ。",
+        "kana": "よじじゅうごふんです。……あ、もうかえってもいいですよ。",
+        "romaji": "Yojuu-gofun desu. ...A, mou kaette mo ii desu yo.",
+        "id": "Jam 4 lewat 15 menit. ...Oh, kamu boleh pulang sekarang."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "おさきにかえります。おつかれさまでした。",
+        "kana": "おさきにかえります。おつかれさまでした。",
+        "romaji": "Osaki ni kaerimasu. Otsukaresama deshita.",
+        "id": "Saya pulang duluan. Terima kasih atas kerja hari ini."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜から〜まで",
+    "meaning_id": "dari ... sampai ... — menyatakan titik awal dan akhir suatu waktu atau tempat.",
+    "formation": "[Awal] + から + [Akhir] + まで",
+    "examples": [
+      {
+        "jp": "がっこうは九時から三時までです。",
+        "romaji": "Gakkou wa kuji kara sanji made desu.",
+        "id": "Sekolah dari jam 9 sampai jam 3."
+      },
+      {
+        "jp": "大阪から東京まで新幹線で行きます。",
+        "romaji": "Oosaka kara Toukyou made shinkansen de ikimasu.",
+        "id": "Dari Osaka ke Tokyo pergi naik shinkansen."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "今",
+      "kana": "いま",
+      "romaji": "ima",
+      "meaning_id": "sekarang",
+      "example_jp": "今、何時ですか。",
+      "example_romaji": "Ima, nanji desu ka.",
+      "example_id": "Sekarang jam berapa?"
+    },
+    {
+      "term": "何時",
+      "kana": "なんじ",
+      "romaji": "nanji",
+      "meaning_id": "jam berapa",
+      "example_jp": "会議はなんじですか。",
+      "example_romaji": "Kaigi wa nanji desu ka.",
+      "example_id": "Rapatnya jam berapa?"
+    },
+    {
+      "term": "明日",
+      "kana": "あした",
+      "romaji": "ashita",
+      "meaning_id": "besok",
+      "example_jp": "あしまた会いましょう。",
+      "example_romaji": "Ashita mata aimashou.",
+      "example_id": "Besok mari bertemu lagi."
+    },
+    {
+      "term": "仕事",
+      "kana": "しごと",
+      "romaji": "shigoto",
+      "meaning_id": "pekerjaan, kerja",
+      "example_jp": "しごとはたのしいです。",
+      "example_romaji": "Shigoto wa tanoshii desu.",
+      "example_id": "Kerjanya menyenangkan."
+    },
+    {
+      "term": "昼休み",
+      "kana": "おひるやすみ",
+      "romaji": "ohiruyasumi",
+      "meaning_id": "istirahat siang",
+      "example_jp": "おひるやすみになにをたべますか。",
+      "example_romaji": "Ohiruyasumi ni nani o tabemasu ka.",
+      "example_id": "Makan apa saat istirahat siang?"
+    },
+    {
+      "term": "半",
+      "kana": "はん",
+      "romaji": "han",
+      "meaning_id": "setengah (lewat 30 menit)",
+      "example_jp": "九時半に会いましょう。",
+      "example_romaji": "Kuji-han ni aimashou.",
+      "example_id": "Mari bertemu jam setengah 10."
+    },
+    {
+      "term": "帰る",
+      "kana": "かえる",
+      "romaji": "kaeru",
+      "meaning_id": "pulang, kembali",
+      "example_jp": "六時にうちへかえります。",
+      "example_romaji": "Rokuji ni uchi e kaerimasu.",
+      "example_id": "Jam 6 saya pulang ke rumah."
+    },
+    {
+      "term": "来る",
+      "kana": "くる",
+      "romaji": "kuru",
+      "meaning_id": "datang",
+      "example_jp": "ともだちがうちへきます。",
+      "example_romaji": "Tomodachi ga uchi e kimasu.",
+      "example_id": "Teman datang ke rumah."
+    },
+    {
+      "term": "お疲れさま",
+      "kana": "おつかれさま",
+      "romaji": "otsukaresama",
+      "meaning_id": "terima kasih atas kerja kerasnya (ungkapan sekerja)",
+      "example_jp": "今日もおつかれさまでした。",
+      "example_romaji": "Kyou mo otsukaresama deshita.",
+      "example_id": "Hari ini juga terima kasih kerja kerasnya."
+    }
+  ],
+  "writing": [
+    { "char": "ま", "type": "hiragana", "romaji": "ma" },
+    { "char": "み", "type": "hiragana", "romaji": "mi" },
+    { "char": "む", "type": "hiragana", "romaji": "mu" },
+    { "char": "め", "type": "hiragana", "romaji": "me" },
+    { "char": "も", "type": "hiragana", "romaji": "mo" }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Jam berapa Rian harus datang besok?",
+      "options": [
+        "Jam 8 tepat.",
+        "Jam setengah 9 pagi.",
+        "Jam 9 tepat.",
+        "Jam setengah 5 sore."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 3,
+      "prompt_id": "Istirahat siang dimulai dan berakhir pukul berapa?",
+      "options": [
+        "Jam 12 sampai jam 2.",
+        "Jam 11 sampai jam 12.",
+        "Jam 12 sampai jam 1.",
+        "Jam 1 sampai jam 2."
+      ],
+      "answer": 2
+    },
+    {
+      "type": "arrange",
+      "tokens": ["いま", "なんじ", "です", "か"],
+      "answer_jp": "いまなんじですか。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'ma'",
+      "target_kana": "ま"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'mo'",
+      "target_kana": "も"
+    }
+  ],
+  "audio_status": "pending"
+}

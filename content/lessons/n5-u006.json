@@ -1,0 +1,215 @@
+{
+  "id": "n5-u006",
+  "level": "N5",
+  "unit_no": 6,
+  "theme": "Mencari kos",
+  "title_id": "Melihat Kos di Osaka",
+  "objectives_id": [
+    "Menyatakan ada atau tidaknya benda dengan あります / ありません",
+    "Mengenal huruf hiragana baris は (はひふへほ)",
+    "Menanyakan fasilitas kamar saat melihat kos"
+  ],
+  "dialog": {
+    "title_id": "Agen kos memperlihatkan kamar kepada Rian",
+    "lines": [
+      {
+        "speaker": "Fudousan",
+        "jp": "どうぞ、こちらのへやです。",
+        "kana": "どうぞ、こちらのへやです。",
+        "romaji": "Douzo, kochira no heya desu.",
+        "id": "Silakan, ini kamarnya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "わあ、ひろいですね。エアコンはありますか。",
+        "kana": "わあ、ひろいですね。えあこんはありますか。",
+        "romaji": "Waa, hiroi desu ne. Eakon wa arimasu ka.",
+        "id": "Wah, luas ya. Ada AC tidak?"
+      },
+      {
+        "speaker": "Fudousan",
+        "jp": "はい、あります。新しいエアコンですよ。",
+        "kana": "はい、あります。あたらしいえあこんですよ。",
+        "romaji": "Hai, arimasu. Atarashii eakon desu yo.",
+        "id": "Ada. AC-nya baru."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "れいぞうこは？",
+        "kana": "れいぞうこは？",
+        "romaji": "Reizouko wa?",
+        "id": "Kalau kulkas?"
+      },
+      {
+        "speaker": "Fudousan",
+        "jp": "すみません、れいぞうこはありません。",
+        "kana": "すみません、れいぞうこはありません。",
+        "romaji": "Sumimasen, reizouko wa arimasen.",
+        "id": "Maaf, kulkasnya tidak ada."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "だいじょうぶです。でも、インターネットはありますか。",
+        "kana": "だいじょうぶです。でも、いんたーねっとはありますか。",
+        "romaji": "Daijoubu desu. Demo, intaanetto wa arimasu ka.",
+        "id": "Tidak masalah. Tapi, ada internet tidak?"
+      },
+      {
+        "speaker": "Fudousan",
+        "jp": "はい、無料で使えます。いいへやでしょう？",
+        "kana": "はい、むりょうでつかえます。いいへやでしょう？",
+        "romaji": "Hai, muryou de tsukaemasu. Ii heya deshou?",
+        "id": "Ada, bisa dipakai gratis. Kamar yang bagus kan?"
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜に〜があります／ありません",
+    "meaning_id": "Di ... ada / tidak ada ... — menyatakan keberadaan benda mati (barang). Untuk makhluk hidup memakai います.",
+    "formation": "[Tempat] + に + [Benda] + が + あります／ありません",
+    "examples": [
+      {
+        "jp": "へやにエアコンがあります。",
+        "romaji": "Heya ni eakon ga arimasu.",
+        "id": "Di kamar ada AC."
+      },
+      {
+        "jp": "へやにテレビがありません。",
+        "romaji": "Heya ni terebi ga arimasen.",
+        "id": "Di kamar tidak ada TV."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "部屋",
+      "kana": "へや",
+      "romaji": "heya",
+      "meaning_id": "kamar",
+      "example_jp": "このへやは六畳です。",
+      "example_romaji": "Kono heya wa rokujou desu.",
+      "example_id": "Kamar ini ukurannya enam tatami."
+    },
+    {
+      "term": "エアコン",
+      "kana": "えあこん",
+      "romaji": "eakon",
+      "meaning_id": "AC (pendingin ruangan)",
+      "example_jp": "なつはエアコンをつけます。",
+      "example_romaji": "Natsu wa eakon o tsukemasu.",
+      "example_id": "Musim panas AC dinyalakan."
+    },
+    {
+      "term": "ある",
+      "kana": "ある",
+      "romaji": "aru",
+      "meaning_id": "ada (benda mati)",
+      "example_jp": "えきのまえにスーパーがあります。",
+      "example_romaji": "Eki no mae ni suupaa ga arimasu.",
+      "example_id": "Di depan stasiun ada supermarket."
+    },
+    {
+      "term": "冷蔵庫",
+      "kana": "れいぞうこ",
+      "romaji": "reizouko",
+      "meaning_id": "kulkas",
+      "example_jp": "れいぞうこになにもないです。",
+      "example_romaji": "Reizouko ni nani mo nai desu.",
+      "example_id": "Tidak ada apa-apa di kulkas."
+    },
+    {
+      "term": "広い",
+      "kana": "ひろい",
+      "romaji": "hiroi",
+      "meaning_id": "luas",
+      "example_jp": "おおさかのへやはせまいですが、このへやはひろいです。",
+      "example_romaji": "Oosaka no heya wa semai desu ga, kono heya wa hiroi desu.",
+      "example_id": "Kamar di Osaka sempit, tapi kamar ini luas."
+    },
+    {
+      "term": "新しい",
+      "kana": "あたらしい",
+      "romaji": "atarashii",
+      "meaning_id": "baru",
+      "example_jp": "あたらしいたてものです。",
+      "example_romaji": "Atarashii tatemono desu.",
+      "example_id": "Ini gedung baru."
+    },
+    {
+      "term": "大丈夫",
+      "kana": "だいじょうぶ",
+      "romaji": "daijoubu",
+      "meaning_id": "tidak apa-apa, aman",
+      "example_jp": "お金はまだだいじょうぶです。",
+      "example_romaji": "Okane wa mada daijoubu desu.",
+      "example_id": "Uangnya masih cukup."
+    },
+    {
+      "term": "インターネット",
+      "kana": "いんたーねっと",
+      "romaji": "intaanetto",
+      "meaning_id": "internet",
+      "example_jp": "インターネットがつかえますか。",
+      "example_romaji": "Intaanetto ga tsukaemasu ka.",
+      "example_id": "Apakah internetnya bisa dipakai?"
+    },
+    {
+      "term": "無料",
+      "kana": "むりょう",
+      "romaji": "muryou",
+      "meaning_id": "gratis",
+      "example_jp": "むりょうのみずがあります。",
+      "example_romaji": "Muryou no mizu ga arimasu.",
+      "example_id": "Ada air gratis."
+    }
+  ],
+  "writing": [
+    { "char": "は", "type": "hiragana", "romaji": "ha" },
+    { "char": "ひ", "type": "hiragana", "romaji": "hi" },
+    { "char": "ふ", "type": "hiragana", "romaji": "fu" },
+    { "char": "へ", "type": "hiragana", "romaji": "he" },
+    { "char": "ほ", "type": "hiragana", "romaji": "ho" }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Dengarkan pertanyaan Rian tentang kamar itu. Apa yang ditanyakannya?",
+      "options": [
+        "Harga sewa bulanan.",
+        "Keberadaan AC.",
+        "Jarak ke stasiun.",
+        "Ukuran tempat tidur."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 4,
+      "prompt_id": "Bagaimana jawaban agen soal kulkas?",
+      "options": [
+        "Ada, tapi rusak.",
+        "Ada di dapur bersama.",
+        "Tidak ada di kamar itu.",
+        "Bisa dibeli tambahan."
+      ],
+      "answer": 2
+    },
+    {
+      "type": "arrange",
+      "tokens": ["へやに", "エアコン", "が", "あります"],
+      "answer_jp": "へやにエアコンがあります。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'fu'",
+      "target_kana": "ふ"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'ho'",
+      "target_kana": "ほ"
+    }
+  ],
+  "audio_status": "pending"
+}

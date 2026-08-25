@@ -1,0 +1,215 @@
+{
+  "id": "n5-u009",
+  "level": "N5",
+  "unit_no": 9,
+  "theme": "Sekolah bahasa & kerja",
+  "title_id": "Menuju Sekolah Bahasa",
+  "objectives_id": [
+    "Menyatakan tujuan pergi dengan partikel へ dan kata kerja 行きます",
+    "Mengenal huruf hiragana baris ら (らりるれろ)",
+    "Menyebutkan alat transportasi dengan 〜で行きます"
+  ],
+  "dialog": {
+    "title_id": "Pagi pertama Rian berangkat ke sekolah bahasa",
+    "lines": [
+      {
+        "speaker": "Mina",
+        "jp": "おはようございます。今日から学校ですね。",
+        "kana": "おはようございます。きょうからがっこうですね。",
+        "romaji": "Ohayou gozaimasu. Kyou kara gakkou desu ne.",
+        "id": "Selamat pagi. Mulai hari ini sekolah ya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい、これから学校へ行きます。ちょっと緊張しますね。",
+        "kana": "はい、これからがっこうへいきます。ちょっときんちょうしますね。",
+        "romaji": "Hai, kore kara gakkou e ikimasu. Chotto kinchou shimasu ne.",
+        "id": "Ya, sebentar lagi saya pergi ke sekolah. Agak grogi ya."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "大丈夫ですよ。何で行きますか。",
+        "kana": "だいじょうぶですよ。なんでいきますか。",
+        "romaji": "Daijoubu desu yo. Nan de ikimasu ka.",
+        "id": "Tidak apa-apa kok. Perginya naik apa?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "電車で行きます。駅まで自転車で行って、それから電車です。",
+        "kana": "でんしゃでいきます。えきまでじてんしゃでいって、それからでんしゃです。",
+        "romaji": "Densha de ikimasu. Eki made jitensha de itte, sore kara densha desu.",
+        "id": "Naik kereta. Ke stasiun naik sepeda, lalu kereta."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "便利ですね。学校は九時から始まりますか。",
+        "kana": "べんりですね。がっこうはくじからはじまりますか。",
+        "romaji": "Benri desu ne. Gakkou wa kuji kara hajimarimasu ka.",
+        "id": "Praktis ya. Sekolahnya mulai jam 9?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "いいえ、八時半からです。じゃあ、行ってきます。",
+        "kana": "いいえ、はちじはんからです。じゃあ、いってきます。",
+        "romaji": "Iie, hachiji-han kara desu. Jaa, ittekimasu.",
+        "id": "Bukan, dari jam setengah 8. Kalau begitu, saya berangkat."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "いってらっしゃい。頑張ってください！",
+        "kana": "いってらっしゃい。がんばってください！",
+        "romaji": "Itterasshai. Ganbatte kudasai!",
+        "id": "Hatihati di jalan. Semangat!"
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜へ 行きます",
+    "meaning_id": "Pergi ke ... — partikel へ menandai arah atau tujuan perpindahan.",
+    "formation": "[Tempat tujuan] + へ + 行きます／来ます／帰ります",
+    "examples": [
+      {
+        "jp": "わたしは毎日、学校へ行きます。",
+        "romaji": "Watashi wa mainichi, gakkou e ikimasu.",
+        "id": "Saya pergi ke sekolah setiap hari."
+      },
+      {
+        "jp": "週末に大阪へ帰ります。",
+        "romaji": "Shuumatsu ni Oosaka e kaerimasu.",
+        "id": "Akhir pekan saya pulang ke Osaka."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "学校",
+      "kana": "がっこう",
+      "romaji": "gakkou",
+      "meaning_id": "sekolah",
+      "example_jp": "子どもたちは学校へ行きました。",
+      "example_romaji": "Kodomo-tachi wa gakkou e ikimashita.",
+      "example_id": "Anak-anak pergi ke sekolah."
+    },
+    {
+      "term": "今日",
+      "kana": "きょう",
+      "romaji": "kyou",
+      "meaning_id": "hari ini",
+      "example_jp": "今日はとてもあついです。",
+      "example_romaji": "Kyou wa totemo atsui desu.",
+      "example_id": "Hari ini sangat panas."
+    },
+    {
+      "term": "緊張する",
+      "kana": "きんちょうする",
+      "romaji": "kinchou suru",
+      "meaning_id": "gugup, tegang",
+      "example_jp": "しけんのまえにきんちょうします。",
+      "example_romaji": "Shiken no mae ni kinchou shimasu.",
+      "example_id": "Saya grogi sebelum ujian."
+    },
+    {
+      "term": "電車",
+      "kana": "でんしゃ",
+      "romaji": "densha",
+      "meaning_id": "kereta listrik",
+      "example_jp": "でんしゃは八時に来ます。",
+      "example_romaji": "Densha wa hachiji ni kimasu.",
+      "example_id": "Keretanya datang jam 8."
+    },
+    {
+      "term": "自転車",
+      "kana": "じてんしゃ",
+      "romaji": "jitensha",
+      "meaning_id": "sepeda",
+      "example_jp": "じてんしゃでえきへ行きます。",
+      "example_romaji": "Jitensha de eki e ikimasu.",
+      "example_id": "Ke stasiun naik sepeda."
+    },
+    {
+      "term": "便利",
+      "kana": "べんり",
+      "romaji": "benri",
+      "meaning_id": "praktis, nyaman (fasilitas)",
+      "example_jp": "このえきはとても便利です。",
+      "example_romaji": "Kono eki wa totemo benri desu.",
+      "example_id": "Stasiun ini sangat strategis/praktis."
+    },
+    {
+      "term": "始まる",
+      "kana": "はじまる",
+      "romaji": "hajimaru",
+      "meaning_id": "dimulai",
+      "example_jp": "授業は九時に始まります。",
+      "example_romaji": "Jugyou wa kuji ni hajimarimasu.",
+      "example_id": "Pelajaran dimulai jam 9."
+    },
+    {
+      "term": "行ってきます",
+      "kana": "いってきます",
+      "romaji": "ittekimasu",
+      "meaning_id": "saya berangkat dulu (ucapan saat keluar rumah)",
+      "example_jp": "じゃあ、行ってきます！",
+      "example_romaji": "Jaa, ittekimasu!",
+      "example_id": "Baiklah, saya berangkat dulu!"
+    },
+    {
+      "term": "頑張る",
+      "kana": "がんばる",
+      "romaji": "ganbaru",
+      "meaning_id": "bersemangat, berusaha keras",
+      "example_jp": "明日も頑張ります。",
+      "example_romaji": "Ashita mo ganbarimasu.",
+      "example_id": "Besok juga akan saya semangati."
+    }
+  ],
+  "writing": [
+    { "char": "ら", "type": "hiragana", "romaji": "ra" },
+    { "char": "り", "type": "hiragana", "romaji": "ri" },
+    { "char": "る", "type": "hiragana", "romaji": "ru" },
+    { "char": "れ", "type": "hiragana", "romaji": "re" },
+    { "char": "ろ", "type": "hiragana", "romaji": "ro" }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 2,
+      "prompt_id": "Apa yang ditanyakan Mina kepada Rian?",
+      "options": [
+        "Jam berapa dia berangkat.",
+        "Naik apa dia berangkat.",
+        "Di mana sekolahnya.",
+        "Siapa teman sekolahnya."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 4,
+      "prompt_id": "Jam berapa sekolah Rian dimulai?",
+      "options": [
+        "Jam 8 tepat.",
+        "Jam setengah 8 pagi.",
+        "Jam 9 tepat.",
+        "Jam setengah 9 pagi."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": ["わたしは", "学校", "へ", "行きます"],
+      "answer_jp": "わたしは学校へ行きます。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'ru'",
+      "target_kana": "る"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'ro'",
+      "target_kana": "ろ"
+    }
+  ],
+  "audio_status": "pending"
+}

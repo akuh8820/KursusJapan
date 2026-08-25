@@ -1,0 +1,215 @@
+{
+  "id": "n5-u010",
+  "level": "N5",
+  "unit_no": 10,
+  "theme": "Hobi & akhir pekan",
+  "title_id": "Akhir Pekan & Hobi",
+  "objectives_id": [
+    "Menyatakan kesukaan dengan pola 〜が好きです",
+    "Mengenal huruf hiragana わ・を dan mengulang semua huruf yang sudah dipelajari",
+    "Mengajak dan menanggapi ajakan santai pada akhir pekan"
+  ],
+  "dialog": {
+    "title_id": "Rian dan Mina mengobrol di taman kota pada hari Minggu",
+    "lines": [
+      {
+        "speaker": "Mina",
+        "jp": "今日はいい天気ですね。週末は何をしますか。",
+        "kana": "きょうはいいてんきですね。しゅうまつはなにをしますか。",
+        "romaji": "Kyou wa ii tenki desu ne. Shuumatsu wa nani o shimasu ka.",
+        "id": "Cuacanya bagus ya hari ini. Akhir pekan biasanya ngapain?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "日本語の勉強をします。あと、アニメが大好きです。",
+        "kana": "にほんごのべんきょうをします。あと、アニメがだいすきです。",
+        "romaji": "Nihongo no benkyou o shimasu. Ato, anime ga daisuki desu.",
+        "id": "Belajar bahasa Jepang. Terus, saya suka banget anime."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "そうですか。どんなアニメが好きですか。",
+        "kana": "そうですか。どんなアニメがすきですか。",
+        "romaji": "Sou desu ka. Donna anime ga suki desu ka.",
+        "id": "Begitu ya. Suka anime yang seperti apa?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "スポーツのアニメです。でも、音楽も好きです。",
+        "kana": "スポーツのアニメです。でも、おんがくもすきです。",
+        "romaji": "Supootsu no anime desu. Demo, ongaku mo suki desu.",
+        "id": "Anime olahraga. Tapi, saya juga suka musik."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "じゃあ、今度一緒にカラオケへ行きませんか。",
+        "kana": "じゃあ、こんどいっしょにからおけへいきませんか。",
+        "romaji": "Jaa, kondo issho ni karaoke e ikimasen ka.",
+        "id": "Kalau begitu, lain kali pergi karaoke bareng yuk?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "ぜひ！でも歌はちょっと下手です。",
+        "kana": "ぜひ！でもうたはちょっとへたです。",
+        "romaji": "Zehi! Demo uta wa chotto heta desu.",
+        "id": "Mau banget! Tapi nyanyi agak jelek sih."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "大丈夫ですよ。わたしも下手です。楽しみですね。",
+        "kana": "だいじょうぶですよ。わたしもへたです。たのしみですね。",
+        "romaji": "Daijoubu desu yo. Watashi mo heta desu. Tanoshimi desu ne.",
+        "id": "Tidak apa-apa. Saya juga jelek. Jadi tidak sabar ya."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜が 好きです",
+    "meaning_id": "Suka ... — partikel が dipakai bersama kata sifat emosi/kesukaan seperti 好き (suka) dan 上手 (pandai).",
+    "formation": "[Yang disukai] + が + 好きです／大好きです",
+    "examples": [
+      {
+        "jp": "わたしは日本語が好きです。",
+        "romaji": "Watashi wa nihongo ga suki desu.",
+        "id": "Saya suka bahasa Jepang."
+      },
+      {
+        "jp": "妹は音楽が大好きです。",
+        "romaji": "Imouto wa ongaku ga daisuki desu.",
+        "id": "Adik perempuan saya suka sekali musik."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "天気",
+      "kana": "てんき",
+      "romaji": "tenki",
+      "meaning_id": "cuaca",
+      "example_jp": "明日はいい天気でしょう。",
+      "example_romaji": "Ashita wa ii tenki deshou.",
+      "example_id": "Besok cuacanya pasti bagus."
+    },
+    {
+      "term": "週末",
+      "kana": "しゅうまつ",
+      "romaji": "shuumatsu",
+      "meaning_id": "akhir pekan",
+      "example_jp": "週末はうちでのんびりしました。",
+      "example_romaji": "Shuumatsu wa uchi de nonbiri shimashita.",
+      "example_id": "Akhir pekan santai saja di rumah."
+    },
+    {
+      "term": "勉強",
+      "kana": "べんきょう",
+      "romaji": "benkyou",
+      "meaning_id": "belajar, pelajaran",
+      "example_jp": "毎日一時間勉強します。",
+      "example_romaji": "Mainichi ichijikan benkyou shimasu.",
+      "example_id": "Setiap hari belajar satu jam."
+    },
+    {
+      "term": "好き",
+      "kana": "すき",
+      "romaji": "suki",
+      "meaning_id": "suka",
+      "example_jp": "犬が好きです。",
+      "example_romaji": "Inu ga suki desu.",
+      "example_id": "Saya suka anjing."
+    },
+    {
+      "term": "大好き",
+      "kana": "だいすき",
+      "romaji": "daisuki",
+      "meaning_id": "suka sekali",
+      "example_jp": "ラーメンが大好きです。",
+      "example_romaji": "Raamen ga daisuki desu.",
+      "example_id": "Saya suka sekali ramen."
+    },
+    {
+      "term": "音楽",
+      "kana": "おんがく",
+      "romaji": "ongaku",
+      "meaning_id": "musik",
+      "example_jp": "勉強しながら音楽を聞きます。",
+      "example_romaji": "Benkyou shinagara ongaku o kikimasu.",
+      "example_id": "Sambil belajar mendengarkan musik."
+    },
+    {
+      "term": "下手",
+      "kana": "へた",
+      "romaji": "heta",
+      "meaning_id": "jelek, tidak terampil",
+      "example_jp": "料理はあまりへたではありません。",
+      "example_romaji": "Ryouri wa amari heta de wa arimasen.",
+      "example_id": "Memasaknya lumayan kok, tidak terlalu jelek."
+    },
+    {
+      "term": "楽しみ",
+      "kana": "たのしみ",
+      "romaji": "tanoshimi",
+      "meaning_id": "dinanti-nanti, menyenangkan",
+      "example_jp": "夏休みが楽しみです。",
+      "example_romaji": "Natsuyasumi ga tanoshimi desu.",
+      "example_id": "Tidak sabar menanti liburan musim panas."
+    },
+    {
+      "term": "一緒に",
+      "kana": "いっしょに",
+      "romaji": "issho ni",
+      "meaning_id": "bersama-sama",
+      "example_jp": "一緒におひるごはんを食べましょう。",
+      "example_romaji": "Issho ni ohirugohan o tabemashou.",
+      "example_id": "Mari makan siang bersama."
+    }
+  ],
+  "writing": [
+    { "char": "わ", "type": "hiragana", "romaji": "wa" },
+    { "char": "を", "type": "hiragana", "romaji": "wo" },
+    { "char": "あ", "type": "hiragana", "romaji": "a" },
+    { "char": "か", "type": "hiragana", "romaji": "ka" },
+    { "char": "さ", "type": "hiragana", "romaji": "sa" }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Apa hobi Rian yang dia sebut paling dia sukai?",
+      "options": [
+        "Memasak.",
+        "Menonton anime.",
+        "Bermain sepak bola.",
+        "Bernyanyi karaoke."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 4,
+      "prompt_id": "Apa ajakan Mina kepada Rian?",
+      "options": [
+        "Pergi ke taman.",
+        "Menonton film bersama.",
+        "Pergi karaoke bersama.",
+        "Belajar bahasa bersama."
+      ],
+      "answer": 2
+    },
+    {
+      "type": "arrange",
+      "tokens": ["わたしは", "日本語", "が", "好き", "です"],
+      "answer_jp": "わたしは日本語が好きです。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'wa'",
+      "target_kana": "わ"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis partikel hiragana untuk bunyi 'wo'",
+      "target_kana": "を"
+    }
+  ],
+  "audio_status": "pending"
+}

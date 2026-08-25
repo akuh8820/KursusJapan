@@ -1,0 +1,215 @@
+{
+  "id": "n5-u002",
+  "level": "N5",
+  "unit_no": 2,
+  "theme": "Hidup di kos",
+  "title_id": "Berkenalan dengan Tetangga Kos",
+  "objectives_id": [
+    "Menyatakan milik siapa sesuatu dengan partikel の",
+    "Mengenal huruf hiragana baris か (かきくけこ)",
+    "Menanyakan dan menyebutkan nama seseorang"
+  ],
+  "dialog": {
+    "title_id": "Rian bertemu Mina, tetangga kos sebelah kamar",
+    "lines": [
+      {
+        "speaker": "Mina",
+        "jp": "はじめまして。ミナです。",
+        "kana": "はじめまして。みなです。",
+        "romaji": "Hajimemashite. Mina desu.",
+        "id": "Senang berjumpa. Saya Mina."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "リアンです。よろしくおねがいします。",
+        "kana": "りあんです。よろしくおねがいします。",
+        "romaji": "Rian desu. Yoroshiku onegaishimasu.",
+        "id": "Saya Rian. Mohon bantuannya."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "リアンさんのおなまえは、いいなまえですね。",
+        "kana": "りあんさんのおなまえは、いいなまえですね。",
+        "romaji": "Rian-san no onamae wa, ii namae desu ne.",
+        "id": "Nama Rian itu, namanya bagus ya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "ありがとうございます。ミナさんもがくせいですか。",
+        "kana": "ありがとうございます。みなさんもがくせいですか。",
+        "romaji": "Arigatou gozaimasu. Mina-san mo gakusei desu ka.",
+        "id": "Terima kasih. Mina juga mahasiswa?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "はい、そうです。こちらはわたしのともだちのゆきです。",
+        "kana": "はい、そうです。こちらはわたしのともだちのゆきです。",
+        "romaji": "Hai, sou desu. Kochira wa watashi no tomodachi no Yuki desu.",
+        "id": "Ya, benar. Ini Yuki, teman saya."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "ゆきです。どうぞよろしく。",
+        "kana": "ゆきです。どうぞよろしく。",
+        "romaji": "Yuki desu. Douzo yoroshiku.",
+        "id": "Saya Yuki. Senang berkenalan."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "リアンです。みなさん、よろしくおねがいします。",
+        "kana": "りあんです。みなさん、よろしくおねがいします。",
+        "romaji": "Rian desu. Minasan, yoroshiku onegaishimasu.",
+        "id": "Saya Rian. Kepada semuanya, mohon bantuannya."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "A の B",
+    "meaning_id": "B milik A — partikel の menghubungkan dua kata benda untuk menunjukkan kepemilikan atau hubungan.",
+    "formation": "[Kata benda A] + の + [Kata benda B]",
+    "examples": [
+      {
+        "jp": "これはわたしのかばんです。",
+        "romaji": "Kore wa watashi no kaban desu.",
+        "id": "Ini adalah tas saya."
+      },
+      {
+        "jp": "ミナさんはリアンのともだちです。",
+        "romaji": "Mina-san wa Rian no tomodachi desu.",
+        "id": "Mina adalah teman Rian."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "名前",
+      "kana": "なまえ",
+      "romaji": "namae",
+      "meaning_id": "nama",
+      "example_jp": "おなまえはなんですか。",
+      "example_romaji": "Onamae wa nan desu ka.",
+      "example_id": "Siapa nama Anda?"
+    },
+    {
+      "term": "よろしくお願いします",
+      "kana": "よろしくおねがいします",
+      "romaji": "yoroshiku onegaishimasu",
+      "meaning_id": "mohon bantuannya (sopan)",
+      "example_jp": "どうぞよろしくおねがいします。",
+      "example_romaji": "Douzo yoroshiku onegaishimasu.",
+      "example_id": "Mohon bantuannya."
+    },
+    {
+      "term": "これ",
+      "kana": "これ",
+      "romaji": "kore",
+      "meaning_id": "ini (dekat pembicara)",
+      "example_jp": "これはわたしのです。",
+      "example_romaji": "Kore wa watashi no desu.",
+      "example_id": "Ini punya saya."
+    },
+    {
+      "term": "鞄",
+      "kana": "かばん",
+      "romaji": "kaban",
+      "meaning_id": "tas",
+      "example_jp": "それはゆきさんのかばんです。",
+      "example_romaji": "Sore wa Yuki-san no kaban desu.",
+      "example_id": "Itu tasnya Yuki."
+    },
+    {
+      "term": "人",
+      "kana": "ひと",
+      "romaji": "hito",
+      "meaning_id": "orang",
+      "example_jp": "あのひとはだれですか。",
+      "example_romaji": "Ano hito wa dare desu ka.",
+      "example_id": "Orang itu siapa?"
+    },
+    {
+      "term": "誰",
+      "kana": "だれ",
+      "romaji": "dare",
+      "meaning_id": "siapa",
+      "example_jp": "あれはだれのほんですか。",
+      "example_romaji": "Are wa dare no hon desu ka.",
+      "example_id": "Itu buku siapa?"
+    },
+    {
+      "term": "本",
+      "kana": "ほん",
+      "romaji": "hon",
+      "meaning_id": "buku",
+      "example_jp": "これはにほんごのほんです。",
+      "example_romaji": "Kore wa nihongo no hon desu.",
+      "example_id": "Ini buku bahasa Jepang."
+    },
+    {
+      "term": "そう",
+      "kana": "そう",
+      "romaji": "sou",
+      "meaning_id": "begitu (menyetujui informasi)",
+      "example_jp": "そうですか。わかりました。",
+      "example_romaji": "Sou desu ka. Wakarimashita.",
+      "example_id": "Begitu ya. Saya paham."
+    },
+    {
+      "term": "また",
+      "kana": "また",
+      "romaji": "mata",
+      "meaning_id": "lagi, besok lagi",
+      "example_jp": "またあした。",
+      "example_romaji": "Mata ashita.",
+      "example_id": "Sampai besok."
+    }
+  ],
+  "writing": [
+    { "char": "か", "type": "hiragana", "romaji": "ka" },
+    { "char": "き", "type": "hiragana", "romaji": "ki" },
+    { "char": "く", "type": "hiragana", "romaji": "ku" },
+    { "char": "け", "type": "hiragana", "romaji": "ke" },
+    { "char": "こ", "type": "hiragana", "romaji": "ko" }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 2,
+      "prompt_id": "Dengarkan ucapan Mina tentang nama Rian. Apa maksudnya?",
+      "options": [
+        "Namanya sulit diingat.",
+        "Namanya bagus.",
+        "Namanya panjang sekali.",
+        "Dia lupa nama Rian."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 4,
+      "prompt_id": "Yuki adalah siapa bagi Mina?",
+      "options": [
+        "Adiknya.",
+        "Gurunya.",
+        "Teman kosnya.",
+        "Teman Mina."
+      ],
+      "answer": 3
+    },
+    {
+      "type": "arrange",
+      "tokens": ["これ", "は", "わたしの", "かばん", "です"],
+      "answer_jp": "これはわたしのかばんです。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'ka'",
+      "target_kana": "か"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'ko'",
+      "target_kana": "こ"
+    }
+  ],
+  "audio_status": "pending"
+}

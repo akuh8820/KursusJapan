@@ -1,0 +1,215 @@
+{
+  "id": "n5-u005",
+  "level": "N5",
+  "unit_no": 5,
+  "theme": "Makan di luar",
+  "title_id": "Makan Siang di Shokudou",
+  "objectives_id": [
+    "Menanyakan nama sesuatu dengan pola これは何ですか",
+    "Mengenal huruf hiragana baris な (なにぬねの)",
+    "Memahami ungkapan sebelum dan sesudah makan"
+  ],
+  "dialog": {
+    "title_id": "Rian dan Mina makan siang di kedai dekat sekolah bahasa",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "ミナさん、あのめんるいは何ですか。",
+        "kana": "みなさん、あのめんるいはなんですか。",
+        "romaji": "Mina-san, ano menrui wa nan desu ka.",
+        "id": "Mina, makanan berkuah mi yang itu apa ya?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "あれはラーメンです。とてもおいしいですよ。",
+        "kana": "あれはらーめんです。とてもおいしいですよ。",
+        "romaji": "Are wa raamen desu. Totemo oishii desu yo.",
+        "id": "Itu ramen. Enak banget lho."
+      },
+      {
+        "speaker": "Ten'in",
+        "jp": "ごちゅうもんはおきまりですか。",
+        "kana": "ごちゅうもんはおきまりですか。",
+        "romaji": "Gochuumon wa okimari desu ka.",
+        "id": "Sudah menentukan pesanan?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい。ラーメンをください。",
+        "kana": "はい。らーめんをください。",
+        "romaji": "Hai. Raamen o kudasai.",
+        "id": "Ya. Tolong ramen."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "わたしもうどんをおねがいします。",
+        "kana": "わたしもうどんをおねがいします。",
+        "romaji": "Watashi mo udon o onegaishimasu.",
+        "id": "Saya juga tolong udon."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "いただきます。……うわあ、おいしい！",
+        "kana": "いただきます。……うわあ、おいしい！",
+        "romaji": "Itadakimasu. ...Uwaa, oishii!",
+        "id": "Aku mulai makan. ...Wow, enak!"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "よかった。ごちそうさまでした。じゃあ、行きましょうか。",
+        "kana": "よかった。ごちそうさまでした。じゃあ、いきましょうか。",
+        "romaji": "Yokatta. Gochisousama deshita. Jaa, ikimashou ka.",
+        "id": "Syukurlah. Terima kasih atas makanannya. Ayo kita pergi."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "これ/それ/あれ は 何ですか",
+    "meaning_id": "Ini/Itu apa? — pola untuk menanyakan nama atau jenis benda yang belum dikenal.",
+    "formation": "[これ・それ・あれ] + は + 何 + ですか",
+    "examples": [
+      {
+        "jp": "すみません、これは何ですか。",
+        "romaji": "Sumimasen, kore wa nan desu ka.",
+        "id": "Permisi, ini apa?"
+      },
+      {
+        "jp": "あれはだれのかさですか。",
+        "romaji": "Are wa dare no kasa desu ka.",
+        "id": "Payung itu milik siapa?"
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "何",
+      "kana": "なに",
+      "romaji": "nani",
+      "meaning_id": "apa",
+      "example_jp": "それはなんですか。",
+      "example_romaji": "Sore wa nan desu ka.",
+      "example_id": "Itu apa?"
+    },
+    {
+      "term": "ラーメン",
+      "kana": "らーめん",
+      "romaji": "raamen",
+      "meaning_id": "ramen (mi kuah khas Jepang)",
+      "example_jp": "このラーメンはちょっとからいです。",
+      "example_romaji": "Kono raamen wa chotto karai desu.",
+      "example_id": "Ramen ini agak pedas/asin."
+    },
+    {
+      "term": "うどん",
+      "kana": "うどん",
+      "romaji": "udon",
+      "meaning_id": "udon (mi tebal kuah bening)",
+      "example_jp": "あついうどんがたべたいです。",
+      "example_romaji": "Atsui udon ga tabetai desu.",
+      "example_id": "Saya ingin makan udon panas."
+    },
+    {
+      "term": "おいしい",
+      "kana": "おいしい",
+      "romaji": "oishii",
+      "meaning_id": "enak",
+      "example_jp": "このみせのぎゅうどんはおいしいです。",
+      "example_romaji": "Kono mise no gyuudon wa oishii desu.",
+      "example_id": "Gyudon di warung ini enak."
+    },
+    {
+      "term": "いただきます",
+      "kana": "いただきます",
+      "romaji": "itadakimasu",
+      "meaning_id": "ucapan sebelum makan",
+      "example_jp": "じゃ、いただきます。",
+      "example_romaji": "Ja, itadakimasu.",
+      "example_id": "Baiklah, aku mulai makan."
+    },
+    {
+      "term": "ごちそうさま",
+      "kana": "ごちそうさま",
+      "romaji": "gochisousama",
+      "meaning_id": "ucapan setelah makan",
+      "example_jp": "ごちそうさまでした。おいしかったです。",
+      "example_romaji": "Gochisousama deshita. Oishikatta desu.",
+      "example_id": "Terima kasih makanannya. Enak sekali."
+    },
+    {
+      "term": "注文",
+      "kana": "ちゅうもん",
+      "romaji": "chuumon",
+      "meaning_id": "pesanan, memesan",
+      "example_jp": "ちゅうもんをききました。",
+      "example_romaji": "Chuumon o kiimashita.",
+      "example_id": "Pesanan saya dicatat."
+    },
+    {
+      "term": "とても",
+      "kana": "とても",
+      "romaji": "totemo",
+      "meaning_id": "sangat",
+      "example_jp": "とてもたのしかったです。",
+      "example_romaji": "Totemo tanoshikatta desu.",
+      "example_id": "Sangat menyenangkan."
+    },
+    {
+      "term": "行く",
+      "kana": "いく",
+      "romaji": "iku",
+      "meaning_id": "pergi",
+      "example_jp": "いっしょに行きましょう。",
+      "example_romaji": "Issho ni ikimashou.",
+      "example_id": "Mari pergi bersama."
+    }
+  ],
+  "writing": [
+    { "char": "な", "type": "hiragana", "romaji": "na" },
+    { "char": "に", "type": "hiragana", "romaji": "ni" },
+    { "char": "ぬ", "type": "hiragana", "romaji": "nu" },
+    { "char": "ね", "type": "hiragana", "romaji": "ne" },
+    { "char": "の", "type": "hiragana", "romaji": "no" }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 0,
+      "prompt_id": "Dengarkan pertanyaan Rian ke Mina. Apa yang dia tanyakan?",
+      "options": [
+        "Berapa harga ramen.",
+        "Nama makanan itu.",
+        "Apakah ramen pedas.",
+        "Di mana tempat duduknya."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 4,
+      "prompt_id": "Mina memesan apa?",
+      "options": [
+        "Ramen.",
+        "Udon.",
+        "Onigiri.",
+        "Minuman dingin."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": ["これ", "は", "なん", "です", "か"],
+      "answer_jp": "これはなんですか。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'na'",
+      "target_kana": "な"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'no'",
+      "target_kana": "の"
+    }
+  ],
+  "audio_status": "pending"
+}
