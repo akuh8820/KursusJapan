@@ -27,6 +27,13 @@ jobs:
 
       - run: npm ci
 
+      - name: Build static export
+        run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+
+      # setelah build agar tipe hasil generator (.next/types, next-env.d.ts)
+      # sudah ada saat tsc/eslint berjalan
       - name: Lint & typecheck
         run: |
           npm run lint
@@ -34,11 +41,6 @@ jobs:
 
       - name: Quality gate konten
         run: npm run content:validate
-
-      - name: Build static export
-        run: npm run build
-        env:
-          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
 
       - uses: actions/configure-pages@v5
         with:
