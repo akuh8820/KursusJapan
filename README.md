@@ -1,61 +1,110 @@
-# Fasih (nama kerja) — F0 Fondasi
+# Fasih 🇯🇵
 
-App kursus bahasa Jepang standar JLPT, gratis, multi-indra.
-PRD: `../docs/prd-app-kursus-bahasa-jepang.md` · Catatan sesi: `../docs/sesi-2026-08-25.md`
+> Aplikasi belajar bahasa Jepang standar JLPT — gratis, multi-indra, dengan ritme Pomodoro 20+5. Dibuat untuk orang Indonesia yang cita-citanya hidup di Jepang.
 
-## Isi F0 (fase ini)
+[![Deploy ke GitHub Pages](https://github.com/akuh8820/KursusJapan/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/akuh8820/KursusJapan/actions/workflows/deploy-pages.yml)
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![License](https://img.shields.io/badge/license-TBD-lightgrey)
 
-| Komponen | Lokasi |
+🌐 **Coba sekarang:** [akuh8820.github.io/KursusJapan](https://akuh8820.github.io/KursusJapan/) · 100% gratis, tanpa akun.
+
+---
+
+## Tentang
+
+Metode kursus online umum gagal di satu titik: **konsistensi**. Fasih membaliknya —
+
+1. **Ritme ditentukan aplikasi, bukan niat baik.** Satu hari = satu siklus Pomodoro **20 menit fokus + 5 menit rehat**, lengkap dengan mode fokus bebas gangguan dan aturan jeda maksimal 1×.
+2. **Multi-indra sejak hari pertama** — dengar (audio), lihat (teks & furigana), tulis (huruf Jepang), uji (latihan interaktif).
+3. **JLPT sebagai penggaris kemajuan** N5 → N1, tapi positioning-nya bukan sekadar ujian: bahasa sebagai alat untuk hidup mandiri di Jepang.
+
+## Fitur
+
+| Fitur | Keterangan |
 |---|---|
-| Skema DB awal (users, lessons, SRS queue, pomodoro, dll) | `supabase/migrations/0001_init.sql` |
-| Skema konten pelajaran (Zod, sumber tunggal) | `src/lib/content/schema.ts` |
-| Quality gate "Jelas, Berbobot, Efektif" | `src/lib/content/quality-gate.ts` |
-| Pipeline konten: validate & publish CLI | `scripts/` + `npm run content:*` |
-| Template prompt generator pelajaran AI | `prompts/generate-lesson.md` |
-| 10 pelajaran pilot N5 (u001–u010) | `content/lessons/` |
-| Kartu Kata/Fakta hari ini (seed 7 hari) | `content/daily-cards.json` |
-| Taksonomi event analytics (PostHog-ready) | `src/lib/analytics/` |
-| Dashboard + kartu harian (shell web v1) | `src/app/page.tsx` |
-| Sesi interaktif Pomodoro 20+5 (fokus, jeda 1×, rehat, streak lokal) | `src/app/sesi/` + `src/lib/session/streak.ts` |
+| ⏱️ Siklus Pomodoro 20+5 | Mode fokus tanpa iklan & notifikasi, rehat wajib penuh untuk streak |
+| 🔥 Streak harian | Bertambah hanya jika siklus penuh selesai; maksimal +1 per hari (JST) |
+| 📚 Pelajaran multi-indra | Dialog, kosakata + contoh, tata bahasa, huruf, latihan interaktif |
+| 🃏 Kartu Kata/Fakta hari ini | Konten segar tiap hari, berganti otomatis per tanggal JST |
+| ✅ Latihan interaktif | Susun kalimat & tulis kana; soal dengar menyusul setelah audio TTS |
+| 📊 Analytics | Taksonomi event siap PostHog — terpasang sejak hari pertama |
 
-## Menjalankan
+## Status Pengembangan
+
+| Fase | Cakupan | Status |
+|---|---|---|
+| **F0 — Fondasi** | Infra web, pipeline konten end-to-end, sesi Pomodoro, analytics | ✅ Selesai |
+| F1 — MVP Web | 60 pelajaran N5, audio TTS, SRS, trace goresan KanjiVG | 🚧 Berjalan |
+| F1.5 — Polish | Akun cloud, push notification, iterasi soft launch | ⏳ |
+| F2 — Android | Port Play Store + widget home screen | ⏳ |
+
+## Teknologi
+
+[Next.js 16](https://nextjs.org) (static export) · React 19 · TypeScript · Tailwind CSS 4 · [Zod](https://zod.dev) (skema konten) · Supabase (Postgres + RLS, menyusul) · PostHog (analytics) · GitHub Pages + Actions (CI/CD)
+
+## Struktur Proyek
+
+```
+├── src/
+│   ├── app/
+│   │   ├── page.tsx              # dashboard (kartu harian, streak, daftar unit)
+│   │   └── sesi/[unit]/          # sesi interaktif Pomodoro 20+5
+│   ├── components/               # komponen client (kartu harian, streak)
+│   └── lib/
+│       ├── content/              # skema Zod, quality gate, akses data
+│       ├── session/              # logika streak harian (JST)
+│       └── analytics/            # taksonomi event + provider PostHog
+├── content/
+│   ├── lessons/                  # pelajaran JSON (sumber kebenaran)
+│   └── daily-cards.json          # seed kartu Kata/Fakta hari ini
+├── supabase/migrations/          # skema DB awal + Row Level Security
+├── scripts/                      # CLI pipeline konten + smoke test render
+├── prompts/                      # template prompt generator pelajaran (AI)
+└── .github/workflows/            # CI/CD deploy GitHub Pages
+```
+
+## Menjalankan Lokal
 
 ```bash
 npm install
-npm run dev            # dashboard di http://localhost:3000
-                       # sesi Pomodoro di http://localhost:3000/sesi/n5-u001
-
-# Pipeline konten:
-npm run content:validate   # quality gate struktural semua pelajaran
-npm run content:publish    # dry-run tanpa env; upsert ke Supabase bila env terisi
+npm run dev        # http://localhost:3000
 ```
 
-## Deploy: GitHub Pages (static export)
+| Perintah | Fungsi |
+|---|---|
+| `npm run dev` | Server pengembangan |
+| `npm run build` | Build static export ke `out/` |
+| `npm run lint` / `typecheck` | Pemeriksaan kualitas kode |
+| `npm run content:validate` | Quality gate struktural semua pelajaran |
+| `npm run content:publish` | Publish konten ke Supabase (dry-run tanpa env) |
 
-App di-export statis (`output: "export"` di `next.config.ts`) dan dideploy
-otomatis oleh GitHub Actions ke `https://akuh8820.github.io/KursusJapan/`.
+## Pipeline Konten
 
-- Workflow: `.github/workflows/deploy-pages.yml` — jalan tiap push ke `main`
-  (lint → typecheck → quality gate → build → deploy).
-- `basePath` diambil otomatis dari nama repo (`github.event.repository.name`)
-  saat build CI, jadi aman kalau repo di-rename.
-- Konten pelajaran & kartu harian di-bake saat build; kartu hari ini tetap
-  berganti per tanggal JST karena dipilih client-side.
-- Konsekuensi static export: tidak ada server runtime. Bila nanti Supabase
-  aktif, app membaca lewat client-side + anon key + RLS; publish pipeline
-  tetap dijalankan lokal.
+Kualitas materi adalah janji utama produk, jadi produksinya lewat gerbang bertingkat:
 
-## Menghubungkan Supabase
+```
+Generate (AI)  →  Kurasi manusia  →  Quality gate  →  Publish
+(dialog, vocab      (akurasi grammar    ("Jelas, Berbobot,   (versi +
+ soal, TTS)         vs Genki/Minna,     Efektif")            changelog)
+                    naturalitas arti)
+```
 
-1. Buat project di supabase.com → Settings → API.
-2. `cp .env.example .env.local`, isi URL & key.
-3. Terapkan skema: tempel isi `supabase/migrations/0001_init.sql` ke
-   SQL Editor (atau pasang Supabase CLI → `supabase db push`).
-4. Publish konten pilot: `npm run content:publish`.
-5. Analytics: isi `NEXT_PUBLIC_POSTHOG_KEY` — event otomatis aktif.
+- Setiap pelajaran tervalidasi skema Zod (`src/lib/content/schema.ts`) — satu sumber kebenaran untuk generator, quality gate, publisher, dan tampilan app.
+- Pelajaran **wajib** lolos kurasi manusia sebelum berstatus published.
+- Goresan kanji memakai dataset standar [KanjiVG](https://kanjivg.tagaini.net).
 
-## Aturan main (jangan dilanggar)
+## Deployment
 
-- Publish pelajaran **wajib** lolos `content:validate` + kurasi manusia.
-- Iklan hanya boleh di: fase rehat, footer dashboard, bawah kartu harian (PRD §10).
-- Kanji untuk fitur trace memakai dataset KanjiVG (`kanjivg_id`), bukan goresan bebas.
+Deploy otomatis via GitHub Actions setiap push ke `main`:
+lint → typecheck → quality gate konten → static export → GitHub Pages.
+
+Konfigurasi build memakai `output: "export"` dengan `basePath` yang mengikuti nama repository secara dinamis, sehingga aman terhadap rename repo.
+
+---
+
+<div align="center">
+
+**Fasih** — 20 menit sehari, dengar–lihat–tulis, menuju hidupmu di Jepang. 🗾
+
+</div>
