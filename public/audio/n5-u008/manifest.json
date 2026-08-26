@@ -1,0 +1,157 @@
+{
+  "unit": "n5-u008",
+  "generated_at": "2026-08-26T04:16:58.542Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "リアンさんは、ごかぞくは何人ですか。",
+      "speaker_id": 2,
+      "hash": "1cb137d8b03ae0e0"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "四人います。父と母と妹とわたしです。",
+      "speaker_id": 12,
+      "hash": "f4bab16b00393db4"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "おとうさんもおかあさんもインドネシアにいますか。",
+      "speaker_id": 2,
+      "hash": "41d1c9735bd71451"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "はい、そうです。今、母と電話で話しています。",
+      "speaker_id": 12,
+      "hash": "4f04acbbb7a7dfc1"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "いいですね。妹さんはいくつですか。",
+      "speaker_id": 2,
+      "hash": "1fd3321f24ae7827"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "十六歳です。高校生です。",
+      "speaker_id": 12,
+      "hash": "962448f2ddb1b5c4"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "若くていいですね。今度、写真を見せてくださいね。",
+      "speaker_id": 2,
+      "hash": "b4892efeafe89771"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "家族",
+      "speaker_id": 2,
+      "hash": "fe213b53eb98d4fc"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "かぞくに手紙を書きました。",
+      "speaker_id": 2,
+      "hash": "9ffa9b9da7c83c5e"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "何人",
+      "speaker_id": 2,
+      "hash": "5015ac2f5b69a29b"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "クラスに学生がなんにんいますか。",
+      "speaker_id": 2,
+      "hash": "e0f8f207daceee5b"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "四",
+      "speaker_id": 2,
+      "hash": "771e88eb80ada370"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "よにんできました。",
+      "speaker_id": 2,
+      "hash": "8e835f05ec1d636b"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "父",
+      "speaker_id": 2,
+      "hash": "af4248d7141c3b9b"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "父は会社員です。",
+      "speaker_id": 2,
+      "hash": "0cd64d5054c3b4af"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "母",
+      "speaker_id": 2,
+      "hash": "13fa3e9cc937524e"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "母はやさしいです。",
+      "speaker_id": 2,
+      "hash": "cbc1d384d93c753f"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "妹",
+      "speaker_id": 2,
+      "hash": "6f42dda27e5391ef"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "妹はまだ学生です。",
+      "speaker_id": 2,
+      "hash": "017d1ad0417d565d"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "電話",
+      "speaker_id": 2,
+      "hash": "b66135c48d940b9c"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "あとででんわします。",
+      "speaker_id": 2,
+      "hash": "f9fbe821382960dd"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "十六歳",
+      "speaker_id": 2,
+      "hash": "f486e86ed5678271"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "妹はじゅうろくさいです。",
+      "speaker_id": 2,
+      "hash": "517a4c502254cfc9"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "写真",
+      "speaker_id": 2,
+      "hash": "8d676fa62f10cfb6"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "きれいなしゃしんですね。",
+      "speaker_id": 2,
+      "hash": "03aa8c71de9028d7"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "unit": "n5-u006",
+  "generated_at": "2026-08-26T04:16:58.487Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "どうぞ、こちらのへやです。",
+      "speaker_id": 2,
+      "hash": "0eede4d02a672219"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "わあ、ひろいですね。エアコンはありますか。",
+      "speaker_id": 12,
+      "hash": "4095839ac4f65a4d"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "はい、あります。新しいエアコンですよ。",
+      "speaker_id": 2,
+      "hash": "6aafdaf8233a96c7"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "れいぞうこは？",
+      "speaker_id": 12,
+      "hash": "3f2968b26271d060"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "すみません、れいぞうこはありません。",
+      "speaker_id": 2,
+      "hash": "17ac7b1c14730650"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "だいじょうぶです。でも、インターネットはありますか。",
+      "speaker_id": 12,
+      "hash": "302b2bf6c3ad60fe"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "はい、無料で使えます。いいへやでしょう？",
+      "speaker_id": 2,
+      "hash": "81a377d028dd1d15"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "部屋",
+      "speaker_id": 2,
+      "hash": "4d16145895ed94bb"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "このへやは六畳です。",
+      "speaker_id": 2,
+      "hash": "5e04e3ce5483ca32"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "エアコン",
+      "speaker_id": 2,
+      "hash": "fe8d3585c7482f26"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "なつはエアコンをつけます。",
+      "speaker_id": 2,
+      "hash": "739f45843d7dbdb1"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "ある",
+      "speaker_id": 2,
+      "hash": "5aed621baaa8347b"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "えきのまえにスーパーがあります。",
+      "speaker_id": 2,
+      "hash": "6cc23444a242efd6"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "冷蔵庫",
+      "speaker_id": 2,
+      "hash": "8de66cb877c6add2"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "れいぞうこになにもないです。",
+      "speaker_id": 2,
+      "hash": "ee7faa9bc765cb47"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "広い",
+      "speaker_id": 2,
+      "hash": "be86656e29df5586"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "おおさかのへやはせまいですが、このへやはひろいです。",
+      "speaker_id": 2,
+      "hash": "9e1352c713f8ba5c"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "新しい",
+      "speaker_id": 2,
+      "hash": "ae634cda53ef84d0"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "あたらしいたてものです。",
+      "speaker_id": 2,
+      "hash": "e6efb00e91d1807d"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "大丈夫",
+      "speaker_id": 2,
+      "hash": "3854b278a2434cd7"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "お金はまだだいじょうぶです。",
+      "speaker_id": 2,
+      "hash": "60dd8a84ed128b83"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "インターネット",
+      "speaker_id": 2,
+      "hash": "4b0c9919949d63df"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "インターネットがつかえますか。",
+      "speaker_id": 2,
+      "hash": "0dbc6c1a1262d096"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "無料",
+      "speaker_id": 2,
+      "hash": "f26207f8a6707c93"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "むりょうのみずがあります。",
+      "speaker_id": 2,
+      "hash": "72fc6a10ed9dcbdb"
+    }
+  ]
+}

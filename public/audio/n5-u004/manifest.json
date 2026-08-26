@@ -1,0 +1,157 @@
+{
+  "unit": "n5-u004",
+  "generated_at": "2026-08-26T04:16:58.425Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "すみません、トイレはどこですか。",
+      "speaker_id": 12,
+      "hash": "7f5dac01a9875d7d"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "あそこです。エスカレーターのしたです。",
+      "speaker_id": 2,
+      "hash": "71a8d2066b2abfaf"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "ありがとうございます。えきへのきっぷはどこで買いますか。",
+      "speaker_id": 12,
+      "hash": "6665bcc6c31417d5"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "あの自販機です。ここからまっすぐ行ってください。",
+      "speaker_id": 2,
+      "hash": "69a5fd4300e2e566"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "ここですか。",
+      "speaker_id": 12,
+      "hash": "20ea28c28c380ef0"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "いいえ、そこではありません。もっとあそこです。",
+      "speaker_id": 2,
+      "hash": "402ab18861982904"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "わかりました。どうもありがとう。",
+      "speaker_id": 12,
+      "hash": "cfad5dbf75fb1c49"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "トイレ",
+      "speaker_id": 2,
+      "hash": "621b3d8fa489eda9"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "トイレはあちらです。",
+      "speaker_id": 2,
+      "hash": "85b79a0b7607278e"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "どこ",
+      "speaker_id": 2,
+      "hash": "4c81eec8440d3fd5"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "コンビニはどこですか。",
+      "speaker_id": 2,
+      "hash": "eede2771ce78454a"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "ここ",
+      "speaker_id": 2,
+      "hash": "d06800eb869fd168"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "ここにすわってください。",
+      "speaker_id": 2,
+      "hash": "0d6a49e4f6af6bba"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "そこ",
+      "speaker_id": 2,
+      "hash": "14b89a5245049ecf"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "つくえの上にありますよ。ほら、そこです。",
+      "speaker_id": 2,
+      "hash": "0ba01c2ea3bfc2ad"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "あそこ",
+      "speaker_id": 2,
+      "hash": "46ec695ccbe70b46"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "えきはあそこです。",
+      "speaker_id": 2,
+      "hash": "107bde826e0fe61a"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "駅",
+      "speaker_id": 2,
+      "hash": "6e5f4205ddae30c1"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "えきまであるいていきます。",
+      "speaker_id": 2,
+      "hash": "8a725a2c32ef3352"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "切符",
+      "speaker_id": 2,
+      "hash": "5aa108f6318a8438"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "きっぷを二枚ください。",
+      "speaker_id": 2,
+      "hash": "f3efe6f23688bef5"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "自販機",
+      "speaker_id": 2,
+      "hash": "f2100feb31748e03"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "じはんきでジュースを買いました。",
+      "speaker_id": 2,
+      "hash": "13225138bd13d731"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "分かる",
+      "speaker_id": 2,
+      "hash": "2758a364ac868b4f"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "はい、よくわかりました。",
+      "speaker_id": 2,
+      "hash": "445fc81e45310c23"
+    }
+  ]
+}

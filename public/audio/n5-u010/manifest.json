@@ -1,0 +1,157 @@
+{
+  "unit": "n5-u010",
+  "generated_at": "2026-08-26T04:16:58.608Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "今日はいい天気ですね。週末は何をしますか。",
+      "speaker_id": 2,
+      "hash": "146890fc7f7587b9"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "日本語の勉強をします。あと、アニメが大好きです。",
+      "speaker_id": 12,
+      "hash": "677fddad5f384bb2"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "そうですか。どんなアニメが好きですか。",
+      "speaker_id": 2,
+      "hash": "8a33eb4b77024ca4"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "スポーツのアニメです。でも、音楽も好きです。",
+      "speaker_id": 12,
+      "hash": "9fdf5fd24e836f9c"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "じゃあ、今度一緒にカラオケへ行きませんか。",
+      "speaker_id": 2,
+      "hash": "c8f728633c064a93"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "ぜひ！でも歌はちょっと下手です。",
+      "speaker_id": 12,
+      "hash": "d4f4c5de7bd52103"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "大丈夫ですよ。わたしも下手です。楽しみですね。",
+      "speaker_id": 2,
+      "hash": "b8f4c0875f89dc27"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "天気",
+      "speaker_id": 2,
+      "hash": "b30dab04dca29123"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "明日はいい天気でしょう。",
+      "speaker_id": 2,
+      "hash": "31ff81409666bfb9"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "週末",
+      "speaker_id": 2,
+      "hash": "af833e4a09bc4c70"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "週末はうちでのんびりしました。",
+      "speaker_id": 2,
+      "hash": "91d2446fadf2c29c"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "勉強",
+      "speaker_id": 2,
+      "hash": "6e20473c26013332"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "毎日一時間勉強します。",
+      "speaker_id": 2,
+      "hash": "4a5ea98ddb3a5705"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "好き",
+      "speaker_id": 2,
+      "hash": "4b2b9c1d2b74f31f"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "犬が好きです。",
+      "speaker_id": 2,
+      "hash": "b86d3b51450f2a9f"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "大好き",
+      "speaker_id": 2,
+      "hash": "ca4fd6b2b25d1974"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "ラーメンが大好きです。",
+      "speaker_id": 2,
+      "hash": "6195df9a834215c9"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "音楽",
+      "speaker_id": 2,
+      "hash": "5b2199928207ad94"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "勉強しながら音楽を聞きます。",
+      "speaker_id": 2,
+      "hash": "8a23b7819866272e"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "下手",
+      "speaker_id": 2,
+      "hash": "9268bfd747526c93"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "料理はあまりへたではありません。",
+      "speaker_id": 2,
+      "hash": "4e4aa1ebb9085ee4"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "楽しみ",
+      "speaker_id": 2,
+      "hash": "879ce54fadf76137"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "夏休みが楽しみです。",
+      "speaker_id": 2,
+      "hash": "2913da962bfd06d4"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "一緒に",
+      "speaker_id": 2,
+      "hash": "69d4602cf8f30d72"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "一緒におひるごはんを食べましょう。",
+      "speaker_id": 2,
+      "hash": "001e4d5356725354"
+    }
+  ]
+}

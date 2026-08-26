@@ -1,0 +1,157 @@
+{
+  "unit": "n5-u009",
+  "generated_at": "2026-08-26T04:16:58.580Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "おはようございます。今日から学校ですね。",
+      "speaker_id": 2,
+      "hash": "74749291f3e897d0"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "はい、これから学校へ行きます。ちょっと緊張しますね。",
+      "speaker_id": 12,
+      "hash": "588e225417d2739f"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "大丈夫ですよ。何で行きますか。",
+      "speaker_id": 2,
+      "hash": "5f8a14ff615769d3"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "電車で行きます。駅まで自転車で行って、それから電車です。",
+      "speaker_id": 12,
+      "hash": "313ab768cb1858b4"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "便利ですね。学校は九時から始まりますか。",
+      "speaker_id": 2,
+      "hash": "71c772cc0b2a60d2"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "いいえ、八時半からです。じゃあ、行ってきます。",
+      "speaker_id": 12,
+      "hash": "44fef4b7e54fe1f2"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "いってらっしゃい。頑張ってください！",
+      "speaker_id": 2,
+      "hash": "ea00ed751709a836"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "学校",
+      "speaker_id": 2,
+      "hash": "15a5d981039ee0fd"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "子どもたちは学校へ行きました。",
+      "speaker_id": 2,
+      "hash": "e50add4ab7709f66"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "今日",
+      "speaker_id": 2,
+      "hash": "5bb466b0f1beb026"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "今日はとてもあついです。",
+      "speaker_id": 2,
+      "hash": "c0b6382d76d27d9a"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "緊張する",
+      "speaker_id": 2,
+      "hash": "234eaf3ab1a86e5b"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "しけんのまえにきんちょうします。",
+      "speaker_id": 2,
+      "hash": "7fb917b1ef39fbe6"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "電車",
+      "speaker_id": 2,
+      "hash": "c012455fac30c5cb"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "でんしゃは八時に来ます。",
+      "speaker_id": 2,
+      "hash": "484c429ded30f6f8"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "自転車",
+      "speaker_id": 2,
+      "hash": "ecf7b2cd9333999e"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "じてんしゃでえきへ行きます。",
+      "speaker_id": 2,
+      "hash": "76c48a3300e9eaae"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "便利",
+      "speaker_id": 2,
+      "hash": "8213723d43e07b22"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "このえきはとても便利です。",
+      "speaker_id": 2,
+      "hash": "043e3a1593acda5a"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "始まる",
+      "speaker_id": 2,
+      "hash": "27bac1c1d61f8bb7"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "授業は九時に始まります。",
+      "speaker_id": 2,
+      "hash": "e00a554cf6d4d38e"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "行ってきます",
+      "speaker_id": 2,
+      "hash": "7037b5e7c17752ba"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "じゃあ、行ってきます！",
+      "speaker_id": 2,
+      "hash": "b0229b5d3ba84542"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "頑張る",
+      "speaker_id": 2,
+      "hash": "d8497114fd345f8d"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "明日も頑張ります。",
+      "speaker_id": 2,
+      "hash": "7441496d635f9941"
+    }
+  ]
+}

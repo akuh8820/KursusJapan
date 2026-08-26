@@ -1,0 +1,157 @@
+{
+  "unit": "n5-u005",
+  "generated_at": "2026-08-26T04:16:58.461Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "ミナさん、あのめんるいは何ですか。",
+      "speaker_id": 12,
+      "hash": "8411aea76b175cfb"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "あれはラーメンです。とてもおいしいですよ。",
+      "speaker_id": 2,
+      "hash": "ff685a2bb34c1441"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "ごちゅうもんはおきまりですか。",
+      "speaker_id": 2,
+      "hash": "d25844a21c015943"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "はい。ラーメンをください。",
+      "speaker_id": 12,
+      "hash": "e8e879e084506450"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "わたしもうどんをおねがいします。",
+      "speaker_id": 2,
+      "hash": "9e9d6e7f132c0937"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "いただきます。……うわあ、おいしい！",
+      "speaker_id": 12,
+      "hash": "bb6e29001207ef00"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "よかった。ごちそうさまでした。じゃあ、行きましょうか。",
+      "speaker_id": 2,
+      "hash": "42acd76110222913"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "何",
+      "speaker_id": 2,
+      "hash": "2ed791fd8249d709"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "それはなんですか。",
+      "speaker_id": 2,
+      "hash": "00abd188f7a88df0"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "ラーメン",
+      "speaker_id": 2,
+      "hash": "665bd18568f06770"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "このラーメンはちょっとからいです。",
+      "speaker_id": 2,
+      "hash": "1b1625cae1cbcb20"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "うどん",
+      "speaker_id": 2,
+      "hash": "cca5ef494f195479"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "あついうどんがたべたいです。",
+      "speaker_id": 2,
+      "hash": "5c5e30d1bb8ee3ce"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "おいしい",
+      "speaker_id": 2,
+      "hash": "0e98ba52f10f7b6f"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "このみせのぎゅうどんはおいしいです。",
+      "speaker_id": 2,
+      "hash": "aaf54fc20298eadd"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "いただきます",
+      "speaker_id": 2,
+      "hash": "020dae308e4150cf"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "じゃ、いただきます。",
+      "speaker_id": 2,
+      "hash": "4e3050a40de65c99"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "ごちそうさま",
+      "speaker_id": 2,
+      "hash": "717a0d94b20f765b"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "ごちそうさまでした。おいしかったです。",
+      "speaker_id": 2,
+      "hash": "dcdeaff53856dccf"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "注文",
+      "speaker_id": 2,
+      "hash": "6a7faefd1b8a04c3"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "ちゅうもんをききました。",
+      "speaker_id": 2,
+      "hash": "bb33de736b44c734"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "とても",
+      "speaker_id": 2,
+      "hash": "555a583c362b6452"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "とてもたのしかったです。",
+      "speaker_id": 2,
+      "hash": "3faed0acfddbb79e"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "行く",
+      "speaker_id": 2,
+      "hash": "733873e60f153d19"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "いっしょに行きましょう。",
+      "speaker_id": 2,
+      "hash": "f736e53793e0d6d2"
+    }
+  ]
+}

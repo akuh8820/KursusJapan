@@ -1,0 +1,157 @@
+{
+  "unit": "n5-u002",
+  "generated_at": "2026-08-26T04:16:58.365Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "はじめまして。ミナです。",
+      "speaker_id": 2,
+      "hash": "bb9fe9f0079f4909"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "リアンです。よろしくおねがいします。",
+      "speaker_id": 12,
+      "hash": "03556bccdc3d46b5"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "リアンさんのおなまえは、いいなまえですね。",
+      "speaker_id": 2,
+      "hash": "3951e942df3b38ce"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "ありがとうございます。ミナさんもがくせいですか。",
+      "speaker_id": 12,
+      "hash": "fe9fb916e14dcc5f"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "はい、そうです。こちらはわたしのともだちのゆきです。",
+      "speaker_id": 2,
+      "hash": "4f7ba22bc874e9d7"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "ゆきです。どうぞよろしく。",
+      "speaker_id": 2,
+      "hash": "72969ced56d1243e"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "リアンです。みなさん、よろしくおねがいします。",
+      "speaker_id": 12,
+      "hash": "4adfdda69fe33566"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "名前",
+      "speaker_id": 2,
+      "hash": "aec6c58639dc2195"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "おなまえはなんですか。",
+      "speaker_id": 2,
+      "hash": "c800ce2a492fc407"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "よろしくお願いします",
+      "speaker_id": 2,
+      "hash": "154f4fa879fbc566"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "どうぞよろしくおねがいします。",
+      "speaker_id": 2,
+      "hash": "e2a8aed0db1b9cb1"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "これ",
+      "speaker_id": 2,
+      "hash": "a2b54c4dfae66fae"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "これはわたしのです。",
+      "speaker_id": 2,
+      "hash": "f94a4ac22091a35e"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "鞄",
+      "speaker_id": 2,
+      "hash": "9600e8fd93738040"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "それはゆきさんのかばんです。",
+      "speaker_id": 2,
+      "hash": "bddf2472ef719807"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "人",
+      "speaker_id": 2,
+      "hash": "00fd23f141ac8fc8"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "あのひとはだれですか。",
+      "speaker_id": 2,
+      "hash": "6c82272e7585fc61"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "誰",
+      "speaker_id": 2,
+      "hash": "73c56ed668fe61a5"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "あれはだれのほんですか。",
+      "speaker_id": 2,
+      "hash": "13e5e37471e01969"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "本",
+      "speaker_id": 2,
+      "hash": "7bf847e103d597d8"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "これはにほんごのほんです。",
+      "speaker_id": 2,
+      "hash": "3a82754cc213a345"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "そう",
+      "speaker_id": 2,
+      "hash": "0520e133ccdda3b8"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "そうですか。わかりました。",
+      "speaker_id": 2,
+      "hash": "c4b733ca643dccb3"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "また",
+      "speaker_id": 2,
+      "hash": "819c98a4b48f5431"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "またあした。",
+      "speaker_id": 2,
+      "hash": "e04f822148d7b564"
+    }
+  ]
+}

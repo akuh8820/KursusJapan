@@ -1,0 +1,157 @@
+{
+  "unit": "n5-u001",
+  "generated_at": "2026-08-26T04:16:58.335Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "こんにちは。",
+      "speaker_id": 11,
+      "hash": "b4519d3bcd0307bb"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "こんにちは。はじめまして。リアンです。",
+      "speaker_id": 12,
+      "hash": "d28077581f437b43"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "やまだです。どうぞよろしく。",
+      "speaker_id": 11,
+      "hash": "3c56257255ecfe15"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "インドネシアからきました。",
+      "speaker_id": 12,
+      "hash": "7d29a51e17155531"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "そうですか。日本での生活、がんばってくださいね。",
+      "speaker_id": 11,
+      "hash": "9a16ac3bdca5e7fe"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "はい。ありがとうございます。",
+      "speaker_id": 12,
+      "hash": "9d0af8ee41464057"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "おやすみなさい。",
+      "speaker_id": 11,
+      "hash": "e6cccb1511bff8d7"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "こんにちは",
+      "speaker_id": 2,
+      "hash": "a38988141d48d6da"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "こんにちは、みなさん。",
+      "speaker_id": 2,
+      "hash": "fbad22b7efedf35a"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "はじめまして",
+      "speaker_id": 2,
+      "hash": "f131c52be99d1420"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "はじめまして、リアンです。",
+      "speaker_id": 2,
+      "hash": "ce046211cd7de803"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "私",
+      "speaker_id": 2,
+      "hash": "c167a99417b91e53"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "わたしはインドネシア人です。",
+      "speaker_id": 2,
+      "hash": "f659c49999f8744f"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "はい",
+      "speaker_id": 2,
+      "hash": "bd42828f0c9799b0"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "はい、そうです。",
+      "speaker_id": 2,
+      "hash": "04a681f36e61adf3"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "ありがとうございます",
+      "speaker_id": 2,
+      "hash": "96352d08c7fcc51b"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "どうもありがとうございます。",
+      "speaker_id": 2,
+      "hash": "2d4dad50174e345e"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "おやすみなさい",
+      "speaker_id": 2,
+      "hash": "ea47dd3275fffa8c"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "おやすみなさい、またあした。",
+      "speaker_id": 2,
+      "hash": "2553e0d01f499bd3"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "先生",
+      "speaker_id": 2,
+      "hash": "ea4fdfcec7b2d36c"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "やまださんはせんせいです。",
+      "speaker_id": 2,
+      "hash": "50efb017e6e8e397"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "学生",
+      "speaker_id": 2,
+      "hash": "4e209ee4d125c608"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "わたしはがくせいです。",
+      "speaker_id": 2,
+      "hash": "9b1fbcbf52a209c0"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "友達",
+      "speaker_id": 2,
+      "hash": "c0bdd61a61a7fc9d"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "リアンさんはともだちです。",
+      "speaker_id": 2,
+      "hash": "0cccf4cc72ccb5b8"
+    }
+  ]
+}

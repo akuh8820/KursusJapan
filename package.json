@@ -9,7 +9,8 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "content:validate": "tsx scripts/validate-content.ts",
-    "content:publish": "tsx scripts/publish-content.ts"
+    "content:publish": "tsx scripts/publish-content.ts",
+    "audio:generate": "tsx scripts/generate-audio.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.4",

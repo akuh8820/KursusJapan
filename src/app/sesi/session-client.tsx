@@ -6,6 +6,12 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { Exercise, Lesson } from "@/lib/content/schema";
 import { EVENTS, track } from "@/lib/analytics/events";
 import { recordCycleComplete } from "@/lib/session/streak";
+import JpAudioButton from "@/components/jp-audio-button";
+import {
+  dialogFile,
+  unitAudioUrl,
+  vocabFile,
+} from "@/lib/content/audio-paths";
 
 const FOCUS_MS = 20 * 60_000;
 const BREAK_MS = 5 * 60_000;
@@ -51,6 +57,7 @@ export default function SessionClient({
   const [confirmCancel, setConfirmCancel] = useState(false);
   const [stepIdx, setStepIdx] = useState(0);
   const startedAtRef = useRef(0);
+  const audioReady = lesson.audio_status === "ready";
 
   const running = phase === "focus" || phase === "break";
 
@@ -344,8 +351,9 @@ export default function SessionClient({
               <div className="space-y-3">
                 <h2 className="font-semibold">{lesson.dialog.title_id}</h2>
                 <p className="text-xs text-muted">
-                  Audio menyusul setelah kurasi TTS — baca dulu dengan
-                  romaji.
+                  {audioReady
+                    ? "Ketuk 🔊 di setiap baris untuk mendengarkan pengucapan."
+                    : "Audio menyusul setelah kurasi TTS — baca dulu dengan romaji."}
                 </p>
                 <ol className="space-y-3">
                   {lesson.dialog.lines.map((line, i) => (
@@ -353,9 +361,18 @@ export default function SessionClient({
                       key={i}
                       className="rounded-xl border border-border bg-card p-4"
                     >
-                      <p className="text-[11px] font-bold uppercase tracking-wide text-muted">
-                        {line.speaker}
-                      </p>
+                      <div className="flex items-center justify-between gap-2">
+                        <p className="text-[11px] font-bold uppercase tracking-wide text-muted">
+                          {line.speaker}
+                        </p>
+                        {audioReady && (
+                          <JpAudioButton
+                            small
+                            src={unitAudioUrl(lesson.id, dialogFile(i))}
+                            label={line.jp}
+                          />
+                        )}
+                      </div>
                       <p lang="ja" className="mt-1 text-lg font-semibold">
                         {line.jp}
                       </p>
@@ -378,7 +395,7 @@ export default function SessionClient({
                   Kosakata ({lesson.vocab.length})
                 </h2>
                 <ul className="space-y-3">
-                  {lesson.vocab.map((v) => (
+                  {lesson.vocab.map((v, i) => (
                     <li
                       key={v.term}
                       className="rounded-xl border border-border bg-card p-4"
@@ -387,9 +404,18 @@ export default function SessionClient({
                         <p lang="ja" className="text-xl font-bold">
                           {v.term}
                         </p>
-                        <p className="text-xs italic text-muted">
-                          {v.romaji}
-                        </p>
+                        <div className="flex items-center gap-2">
+                          <p className="text-xs italic text-muted">
+                            {v.romaji}
+                          </p>
+                          {audioReady && (
+                            <JpAudioButton
+                              small
+                              src={unitAudioUrl(lesson.id, vocabFile(i, "t"))}
+                              label={v.term}
+                            />
+                          )}
+                        </div>
                       </div>
                       <p lang="ja" className="text-xs text-muted">
                         {v.kana}
@@ -398,7 +424,16 @@ export default function SessionClient({
                         {v.meaning_id}
                       </p>
                       <div className="mt-2 rounded-lg bg-background p-2 text-xs">
-                        <p lang="ja">{v.example_jp}</p>
+                        <div className="flex items-start justify-between gap-2">
+                          <p lang="ja">{v.example_jp}</p>
+                          {audioReady && (
+                            <JpAudioButton
+                              small
+                              src={unitAudioUrl(lesson.id, vocabFile(i, "x"))}
+                              label={v.example_jp}
+                            />
+                          )}
+                        </div>
                         <p className="italic text-muted">{v.example_romaji}</p>
                         <p className="mt-1">{v.example_id}</p>
                       </div>
@@ -448,6 +483,8 @@ export default function SessionClient({
                     key={i}
                     ex={ex}
                     writingChars={lesson.writing.map((w) => w.char)}
+                    audioReady={audioReady}
+                    unit={lesson.id}
                     onResult={(correct) =>
                       track(EVENTS.exerciseResult, {
                         exercise: ex.type,
@@ -595,31 +632,38 @@ function BreakReview({
 function ExerciseCard({
   ex,
   writingChars,
+  audioReady,
+  unit,
   onResult,
 }: {
   ex: Exercise;
   writingChars: string[];
+  audioReady: boolean;
+  unit: string;
   onResult: (correct: boolean) => void;
 }) {
   if (ex.type === "listen_choose") {
-    return (
-      <div className="rounded-xl border border-border bg-card p-4 opacity-80">
-        <p className="text-sm font-semibold">{ex.prompt_id}</p>
-        <p className="mt-1 text-xs text-muted">
-          ⏳ Menunggu audio TTS — bagian ini dilewati dulu.
-        </p>
-        <div className="mt-3 grid gap-2">
-          {ex.options.map((opt) => (
-            <div
-              key={opt}
-              className="rounded-lg border border-border px-3 py-2 text-sm text-muted"
-            >
-              {opt}
-            </div>
-          ))}
+    if (!audioReady) {
+      return (
+        <div className="rounded-xl border border-border bg-card p-4 opacity-80">
+          <p className="text-sm font-semibold">{ex.prompt_id}</p>
+          <p className="mt-1 text-xs text-muted">
+            ⏳ Menunggu audio TTS — bagian ini dilewati dulu.
+          </p>
+          <div className="mt-3 grid gap-2">
+            {ex.options.map((opt) => (
+              <div
+                key={opt}
+                className="rounded-lg border border-border px-3 py-2 text-sm text-muted"
+              >
+                {opt}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
+    return <ListenChooseExercise ex={ex} unit={unit} onResult={onResult} />;
   }
   if (ex.type === "arrange") {
     return <ArrangeExercise tokens={ex.tokens} answerJp={ex.answer_jp} onResult={onResult} />;
@@ -631,6 +675,83 @@ function ExerciseCard({
       choices={writingChars}
       onResult={onResult}
     />
+  );
+}
+
+function ListenChooseExercise({
+  ex,
+  unit,
+  onResult,
+}: {
+  ex: Extract<Exercise, { type: "listen_choose" }>;
+  unit: string;
+  onResult: (correct: boolean) => void;
+}) {
+  const [picked, setPicked] = useState<number | null>(null);
+  const correct = picked === ex.answer;
+
+  function pick(j: number) {
+    if (picked !== null) return;
+    setPicked(j);
+    onResult(j === ex.answer);
+  }
+
+  return (
+    <div className="rounded-xl border border-border bg-card p-4">
+      <p className="text-sm font-semibold">{ex.prompt_id}</p>
+      <div className="mt-3 flex justify-center">
+        <JpAudioButton
+          src={unitAudioUrl(unit, dialogFile(ex.line_index))}
+          label={`Baris dialog ${ex.line_index + 1}`}
+        />
+      </div>
+      <p className="mt-1.5 text-center text-[11px] text-muted">
+        Ketuk 🔊 untuk mendengarkan, lalu pilih artinya.
+      </p>
+      <div className="mt-3 grid gap-2" role="group" aria-label="Pilihan jawaban">
+        {ex.options.map((opt, j) => {
+          const state =
+            picked === null
+              ? "idle"
+              : j === ex.answer
+                ? "right"
+                : j === picked
+                  ? "wrong"
+                  : "dim";
+          return (
+            <button
+              key={opt}
+              type="button"
+              onClick={() => pick(j)}
+              disabled={picked !== null}
+              className={`rounded-lg border px-3 py-2 text-left text-sm transition ${
+                state === "right"
+                  ? "border-emerald-500/60 bg-emerald-500/10 font-semibold text-emerald-700 dark:text-emerald-400"
+                  : state === "wrong"
+                    ? "border-red-500/60 bg-red-500/10 text-red-600 dark:text-red-400"
+                    : state === "dim"
+                      ? "border-border text-muted opacity-50"
+                      : "border-border bg-background active:scale-[0.99]"
+              }`}
+            >
+              {String.fromCharCode(65 + j)}. {opt}
+            </button>
+          );
+        })}
+      </div>
+      {picked !== null && (
+        <p
+          aria-live="polite"
+          className={`mt-3 text-sm font-bold ${
+            correct ? "text-green-600 dark:text-green-400" : "text-primary"
+          }`}
+        >
+          {correct
+            ? "✓ Benar!"
+            : "✗ Belum tepat — dengarkan lagi dan perhatikan jawabannya."}
+        </p>
+      )}
+    </div>
   );
 }
 

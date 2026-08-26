@@ -1,0 +1,8 @@
+{
+  "$doc": "Pemetaan suara VOICEVOX untuk engine 'ttsquest' (api.tts.quest v3 — backend VOICEVOX, penomoran milik tts.quest). Hasil enumerasi manual 26 Agu 2026: 0=四国めたん(あまあま) 1=ずんだもん(あまあま) 2=四国めたん(ノーマル) 3=ずんだもん(ノーマル) 4=四国めたん(セクシー) 5=ずんだもん(セクシー) 6=四国めたん(ツンツン) 7=ずんだもん(ツンツン) 8=春日部つむぎ 9=波音リツ 10=雨晴はう 11=玄野武宏(pria dewasa) 12=白上虎太郎(cowok muda) 13=青山龍星 14=冥鳴ひまり 15-19=九州そら(varian) 20=もち子 21=剣崎雌雄 22=ずんだもん(ささやき)",
+  "default": 2,
+  "roles": {
+    "Rian": 12,
+    "Yamada": 11
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "unit": "n5-u003",
+  "generated_at": "2026-08-26T04:16:58.393Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "いらっしゃいませ。",
+      "speaker_id": 2,
+      "hash": "d06b898ee7360328"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "すみません、これはいくらですか。",
+      "speaker_id": 12,
+      "hash": "72be08bcd8bc5b61"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "それですか。百三十円です。",
+      "speaker_id": 2,
+      "hash": "8e061120ae51d43a"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "じゃあ、これをください。",
+      "speaker_id": 12,
+      "hash": "dcf75200ab4620e8"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "はい。おふろくでよろしいですか。",
+      "speaker_id": 2,
+      "hash": "8a7e0e3ad06a6994"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "はい、おねがいします。",
+      "speaker_id": 12,
+      "hash": "6f63124006b9e223"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "百四十円のおあずかりです。まいどありがとうございます。",
+      "speaker_id": 2,
+      "hash": "f299f2f0d5b11e2a"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "いらっしゃいませ",
+      "speaker_id": 2,
+      "hash": "17d9571eee910e3f"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "ドアがひらいて、てんいんが「いらっしゃいませ」といった。",
+      "speaker_id": 2,
+      "hash": "f999920bd52bde7d"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "すみません",
+      "speaker_id": 2,
+      "hash": "d85165f61e2ca195"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "すみません、えきはどこですか。",
+      "speaker_id": 2,
+      "hash": "c6e4d6a0f1a1add3"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "いくら",
+      "speaker_id": 2,
+      "hash": "62b5f6cfef8a7ea3"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "このりんごはいくらですか。",
+      "speaker_id": 2,
+      "hash": "f8e2368300d1d39b"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "円",
+      "speaker_id": 2,
+      "hash": "8dc451f8dc64bedc"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "これは百円です。",
+      "speaker_id": 2,
+      "hash": "990c0e020020d422"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "お願いします",
+      "speaker_id": 2,
+      "hash": "104f2e3dd8f02a5b"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "コーヒーをおねがいします。",
+      "speaker_id": 2,
+      "hash": "024e1404afca8130"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "水",
+      "speaker_id": 2,
+      "hash": "a8a54248fc6be1c6"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "水をのみたいです。",
+      "speaker_id": 2,
+      "hash": "ad85f89104c52850"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "おにぎり",
+      "speaker_id": 2,
+      "hash": "8eb73a43059c799d"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "おにぎりはひゃくごじゅうえんです。",
+      "speaker_id": 2,
+      "hash": "75c94de9af8a6f9b"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "これ",
+      "speaker_id": 2,
+      "hash": "a2b54c4dfae66fae"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "これとそれをください。",
+      "speaker_id": 2,
+      "hash": "ce15daebc081dc2c"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "ありがとう",
+      "speaker_id": 2,
+      "hash": "a894382e56e09825"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "どうもありがとう。",
+      "speaker_id": 2,
+      "hash": "c3e5f66d1332895e"
+    }
+  ]
+}

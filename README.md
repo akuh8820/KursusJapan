@@ -27,7 +27,7 @@ Metode kursus online umum gagal di satu titik: **konsistensi**. Fasih membalikny
 | 🔥 Streak harian | Bertambah hanya jika siklus penuh selesai; maksimal +1 per hari (JST) |
 | 📚 Pelajaran multi-indra | Dialog, kosakata + contoh, tata bahasa, huruf, latihan interaktif |
 | 🃏 Kartu Kata/Fakta hari ini | Konten segar tiap hari, berganti otomatis per tanggal JST |
-| ✅ Latihan interaktif | Susun kalimat & tulis kana; soal dengar menyusul setelah audio TTS |
+| ✅ Latihan interaktif | Dengar-pilih (audio VOICEVOX), susun kalimat & tulis kana |
 | 📊 Analytics | Taksonomi event siap PostHog — terpasang sejak hari pertama |
 
 ## Status Pengembangan
@@ -58,8 +58,9 @@ Metode kursus online umum gagal di satu titik: **konsistensi**. Fasih membalikny
 ├── content/
 │   ├── lessons/                  # pelajaran JSON (sumber kebenaran)
 │   └── daily-cards.json          # seed kartu Kata/Fakta hari ini
+├── public/audio/                 # audio VOICEVOX per unit + manifest (hasil generate)
 ├── supabase/migrations/          # skema DB awal + Row Level Security
-├── scripts/                      # CLI pipeline konten + smoke test render
+├── scripts/                      # CLI pipeline konten & audio + smoke test render
 ├── prompts/                      # template prompt generator pelajaran (AI)
 └── .github/workflows/            # CI/CD deploy GitHub Pages
 ```
@@ -78,6 +79,7 @@ npm run dev        # http://localhost:3000
 | `npm run lint` / `typecheck` | Pemeriksaan kualitas kode |
 | `npm run content:validate` | Quality gate struktural semua pelajaran |
 | `npm run content:publish` | Publish konten ke Supabase (dry-run tanpa env) |
+| `npm run audio:generate` | Generate audio pelajaran via VOICEVOX (idempoten, bisa di-rerun) |
 
 ## Pipeline Konten
 
@@ -95,6 +97,11 @@ Generate (AI)  →  Kurasi manusia  →  Quality gate  →  Publish
 - Kurasi manusia memakai halaman `/kurasi` (internal): verdict per bagian
   (dialog/grammar/kosakata/huruf/latihan) + catatan revisi, tersimpan di
   browser, bisa diekspor JSON untuk arsip keputusan.
+- **Audio** dihasilkan [VOICEVOX](https://voicevox.hiroshiba.jp) — dua tokoh
+  dialog punya suara berbeda. Generate via `npm run audio:generate`
+  (backend gratis api.tts.quest; idempoten). Status `ready` baru diset lewat
+  `npm run audio:generate -- --mark-ready <unit>` **setelah** kurasi telinga
+  manusia — barulah tombol 🔊 & soal dengar muncul di sesi belajar.
 - Goresan kanji memakai dataset standar [KanjiVG](https://kanjivg.tagaini.net).
 
 ## Deployment

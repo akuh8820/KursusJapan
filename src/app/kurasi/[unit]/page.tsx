@@ -1,7 +1,15 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { listLessonsLocal } from "@/lib/content/store";
+import {
+  dialogFile,
+  unitAudioUrl,
+  vocabFile,
+} from "@/lib/content/audio-paths";
+import JpAudioButton from "@/components/jp-audio-button";
 import ReviewPanel from "./review-panel";
 
 export const metadata: Metadata = {
@@ -24,6 +32,9 @@ export default async function KurasiUnitPage({
   const lesson = lessons[idx];
   const prev = idx > 0 ? lessons[idx - 1] : null;
   const next = idx < lessons.length - 1 ? lessons[idx + 1] : null;
+  const hasAudio = existsSync(
+    join(process.cwd(), "public", "audio", lesson.id, "manifest.json"),
+  );
 
   return (
     <main className="mx-auto w-full max-w-md flex-1 px-4 pb-16 pt-8">
@@ -68,9 +79,18 @@ export default async function KurasiUnitPage({
         <ol className="mt-3 space-y-3">
           {lesson.dialog.lines.map((line, i) => (
             <li key={i} className="rounded-xl bg-background p-3">
-              <p className="text-[11px] font-semibold text-muted">
-                {i + 1}. {line.speaker}
-              </p>
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-[11px] font-semibold text-muted">
+                  {i + 1}. {line.speaker}
+                </p>
+                {hasAudio && (
+                  <JpAudioButton
+                    small
+                    src={unitAudioUrl(lesson.id, dialogFile(i))}
+                    label={line.jp}
+                  />
+                )}
+              </div>
               <p lang="ja" className="mt-1 text-base font-semibold">
                 {line.jp}
               </p>
@@ -129,11 +149,27 @@ export default async function KurasiUnitPage({
                 <span className="ml-auto text-[11px] italic text-muted">
                   {v.romaji}
                 </span>
+                {hasAudio && (
+                  <JpAudioButton
+                    small
+                    src={unitAudioUrl(lesson.id, vocabFile(i, "t"))}
+                    label={v.term}
+                  />
+                )}
               </div>
               <p className="mt-0.5 text-sm font-medium">{v.meaning_id}</p>
-              <p lang="ja" className="mt-1 text-sm">
-                {v.example_jp}
-              </p>
+              <div className="flex items-start justify-between gap-2">
+                <p lang="ja" className="mt-1 text-sm">
+                  {v.example_jp}
+                </p>
+                {hasAudio && (
+                  <JpAudioButton
+                    small
+                    src={unitAudioUrl(lesson.id, vocabFile(i, "x"))}
+                    label={v.example_jp}
+                  />
+                )}
+              </div>
               <p className="text-xs italic text-muted">{v.example_romaji}</p>
               <p className="text-xs">{v.example_id}</p>
             </li>

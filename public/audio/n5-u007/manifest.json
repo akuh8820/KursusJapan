@@ -1,0 +1,157 @@
+{
+  "unit": "n5-u007",
+  "generated_at": "2026-08-26T04:16:58.513Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "すみません、あしたのしごとは何時からですか。",
+      "speaker_id": 12,
+      "hash": "750c7e5dceb51840"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "九時からです。八時半にここへ来てください。",
+      "speaker_id": 2,
+      "hash": "6ebe6e509ab88643"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "九時から五時までですね。",
+      "speaker_id": 12,
+      "hash": "40158a8a305691b0"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "そうです。おひるやすみは十二時から一時までです。",
+      "speaker_id": 2,
+      "hash": "c881f98c74d22614"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "今、何時ですか。",
+      "speaker_id": 12,
+      "hash": "7112546d412bdf98"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "四時十五分です。……あ、もう帰ってもいいですよ。",
+      "speaker_id": 2,
+      "hash": "7d8d148e764fc22c"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "おさきにかえります。おつかれさまでした。",
+      "speaker_id": 12,
+      "hash": "b41ff64e995ec4f3"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "今",
+      "speaker_id": 2,
+      "hash": "e6490a0ec8913db4"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "今、何時ですか。",
+      "speaker_id": 2,
+      "hash": "8a279f45afca5d11"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "何時",
+      "speaker_id": 2,
+      "hash": "3a8e17e970011210"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "会議はなんじですか。",
+      "speaker_id": 2,
+      "hash": "7fd54fc0f23b091c"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "明日",
+      "speaker_id": 2,
+      "hash": "227f44f81ae3f945"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "あしまた会いましょう。",
+      "speaker_id": 2,
+      "hash": "0780faa98dc4a9be"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "仕事",
+      "speaker_id": 2,
+      "hash": "7b7d969a493ac1f4"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "しごとはたのしいです。",
+      "speaker_id": 2,
+      "hash": "7760535d073e6e0d"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "昼休み",
+      "speaker_id": 2,
+      "hash": "555f801c6e696468"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "おひるやすみになにをたべますか。",
+      "speaker_id": 2,
+      "hash": "da29ed77c0dee222"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "半",
+      "speaker_id": 2,
+      "hash": "9f802088cb230ced"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "九時半に会いましょう。",
+      "speaker_id": 2,
+      "hash": "00427680b1b918df"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "帰る",
+      "speaker_id": 2,
+      "hash": "616969484c294716"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "六時にうちへかえります。",
+      "speaker_id": 2,
+      "hash": "bc982d9ac46be229"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "来る",
+      "speaker_id": 2,
+      "hash": "ac7aa861c2f272a1"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "ともだちがうちへきます。",
+      "speaker_id": 2,
+      "hash": "cba78253c01c3820"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "お疲れさま",
+      "speaker_id": 2,
+      "hash": "38e826aac564bf5c"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "今日もおつかれさまでした。",
+      "speaker_id": 2,
+      "hash": "3fefc3de1ef6b246"
+    }
+  ]
+}
