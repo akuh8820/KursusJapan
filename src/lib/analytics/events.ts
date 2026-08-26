@@ -16,6 +16,7 @@ export const EVENTS = {
   srsReview: "srs_review",
   dailyCardView: "daily_card_view",
   feedbackOpen: "feedback_open",
+  feedbackSubmit: "feedback_submit",
 } as const;
 
 export type EventName = (typeof EVENTS)[keyof typeof EVENTS];
