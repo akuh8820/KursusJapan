@@ -92,6 +92,9 @@ Generate (AI)  →  Kurasi manusia  →  Quality gate  →  Publish
 
 - Setiap pelajaran tervalidasi skema Zod (`src/lib/content/schema.ts`) — satu sumber kebenaran untuk generator, quality gate, publisher, dan tampilan app.
 - Pelajaran **wajib** lolos kurasi manusia sebelum berstatus published.
+- Kurasi manusia memakai halaman `/kurasi` (internal): verdict per bagian
+  (dialog/grammar/kosakata/huruf/latihan) + catatan revisi, tersimpan di
+  browser, bisa diekspor JSON untuk arsip keputusan.
 - Goresan kanji memakai dataset standar [KanjiVG](https://kanjivg.tagaini.net).
 
 ## Deployment
