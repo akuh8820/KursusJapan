@@ -164,11 +164,31 @@
     }
   ],
   "writing": [
-    { "char": "わ", "type": "hiragana", "romaji": "wa" },
-    { "char": "を", "type": "hiragana", "romaji": "wo" },
-    { "char": "あ", "type": "hiragana", "romaji": "a" },
-    { "char": "か", "type": "hiragana", "romaji": "ka" },
-    { "char": "さ", "type": "hiragana", "romaji": "sa" }
+    {
+      "char": "わ",
+      "type": "hiragana",
+      "romaji": "wa"
+    },
+    {
+      "char": "を",
+      "type": "hiragana",
+      "romaji": "wo"
+    },
+    {
+      "char": "あ",
+      "type": "hiragana",
+      "romaji": "a"
+    },
+    {
+      "char": "か",
+      "type": "hiragana",
+      "romaji": "ka"
+    },
+    {
+      "char": "さ",
+      "type": "hiragana",
+      "romaji": "sa"
+    }
   ],
   "exercises": [
     {
@@ -197,7 +217,13 @@
     },
     {
       "type": "arrange",
-      "tokens": ["わたしは", "日本語", "が", "好き", "です"],
+      "tokens": [
+        "わたしは",
+        "日本語",
+        "が",
+        "好き",
+        "です"
+      ],
       "answer_jp": "わたしは日本語が好きです。"
     },
     {
@@ -211,5 +237,5 @@
       "target_kana": "を"
     }
   ],
-  "audio_status": "pending"
+  "audio_status": "ready"
 }

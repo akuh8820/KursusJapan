@@ -164,11 +164,31 @@
     }
   ],
   "writing": [
-    { "char": "は", "type": "hiragana", "romaji": "ha" },
-    { "char": "ひ", "type": "hiragana", "romaji": "hi" },
-    { "char": "ふ", "type": "hiragana", "romaji": "fu" },
-    { "char": "へ", "type": "hiragana", "romaji": "he" },
-    { "char": "ほ", "type": "hiragana", "romaji": "ho" }
+    {
+      "char": "は",
+      "type": "hiragana",
+      "romaji": "ha"
+    },
+    {
+      "char": "ひ",
+      "type": "hiragana",
+      "romaji": "hi"
+    },
+    {
+      "char": "ふ",
+      "type": "hiragana",
+      "romaji": "fu"
+    },
+    {
+      "char": "へ",
+      "type": "hiragana",
+      "romaji": "he"
+    },
+    {
+      "char": "ほ",
+      "type": "hiragana",
+      "romaji": "ho"
+    }
   ],
   "exercises": [
     {
@@ -197,7 +217,12 @@
     },
     {
       "type": "arrange",
-      "tokens": ["へやに", "エアコン", "が", "あります"],
+      "tokens": [
+        "へやに",
+        "エアコン",
+        "が",
+        "あります"
+      ],
       "answer_jp": "へやにエアコンがあります。"
     },
     {
@@ -211,5 +236,5 @@
       "target_kana": "ほ"
     }
   ],
-  "audio_status": "pending"
+  "audio_status": "ready"
 }

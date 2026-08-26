@@ -164,11 +164,31 @@
     }
   ],
   "writing": [
-    { "char": "ら", "type": "hiragana", "romaji": "ra" },
-    { "char": "り", "type": "hiragana", "romaji": "ri" },
-    { "char": "る", "type": "hiragana", "romaji": "ru" },
-    { "char": "れ", "type": "hiragana", "romaji": "re" },
-    { "char": "ろ", "type": "hiragana", "romaji": "ro" }
+    {
+      "char": "ら",
+      "type": "hiragana",
+      "romaji": "ra"
+    },
+    {
+      "char": "り",
+      "type": "hiragana",
+      "romaji": "ri"
+    },
+    {
+      "char": "る",
+      "type": "hiragana",
+      "romaji": "ru"
+    },
+    {
+      "char": "れ",
+      "type": "hiragana",
+      "romaji": "re"
+    },
+    {
+      "char": "ろ",
+      "type": "hiragana",
+      "romaji": "ro"
+    }
   ],
   "exercises": [
     {
@@ -197,7 +217,12 @@
     },
     {
       "type": "arrange",
-      "tokens": ["わたしは", "学校", "へ", "行きます"],
+      "tokens": [
+        "わたしは",
+        "学校",
+        "へ",
+        "行きます"
+      ],
       "answer_jp": "わたしは学校へ行きます。"
     },
     {
@@ -211,5 +236,5 @@
       "target_kana": "ろ"
     }
   ],
-  "audio_status": "pending"
+  "audio_status": "ready"
 }

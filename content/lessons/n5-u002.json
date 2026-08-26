@@ -164,11 +164,31 @@
     }
   ],
   "writing": [
-    { "char": "か", "type": "hiragana", "romaji": "ka" },
-    { "char": "き", "type": "hiragana", "romaji": "ki" },
-    { "char": "く", "type": "hiragana", "romaji": "ku" },
-    { "char": "け", "type": "hiragana", "romaji": "ke" },
-    { "char": "こ", "type": "hiragana", "romaji": "ko" }
+    {
+      "char": "か",
+      "type": "hiragana",
+      "romaji": "ka"
+    },
+    {
+      "char": "き",
+      "type": "hiragana",
+      "romaji": "ki"
+    },
+    {
+      "char": "く",
+      "type": "hiragana",
+      "romaji": "ku"
+    },
+    {
+      "char": "け",
+      "type": "hiragana",
+      "romaji": "ke"
+    },
+    {
+      "char": "こ",
+      "type": "hiragana",
+      "romaji": "ko"
+    }
   ],
   "exercises": [
     {
@@ -197,7 +217,13 @@
     },
     {
       "type": "arrange",
-      "tokens": ["これ", "は", "わたしの", "かばん", "です"],
+      "tokens": [
+        "これ",
+        "は",
+        "わたしの",
+        "かばん",
+        "です"
+      ],
       "answer_jp": "これはわたしのかばんです。"
     },
     {
@@ -211,5 +237,5 @@
       "target_kana": "こ"
     }
   ],
-  "audio_status": "pending"
+  "audio_status": "ready"
 }

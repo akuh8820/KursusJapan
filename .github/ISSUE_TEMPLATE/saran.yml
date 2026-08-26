@@ -1,0 +1,19 @@
+name: "💡 Saran / Ide"
+description: "Punya ide fitur atau perbaikan? Kami ingin mendengarnya."
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: ide
+    attributes:
+      label: "Ide kamu"
+      description: "Apa yang kamu inginkan? Masalah apa yang ingin diselesaikan?"
+      placeholder: "Contoh: enaknya kalau kartu harian bisa dibagikan ke WhatsApp…"
+    validations:
+      required: true
+  - type: textarea
+    id: konteks
+    attributes:
+      label: "Konteks (opsional)"
+      description: "Kenapa fitur ini berguna untuk kamu atau teman belajar lain?"
+    validations:
+      required: false

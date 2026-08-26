@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import DailyCardToday from "@/components/daily-card-today";
+import FeedbackCard from "@/components/feedback-card";
 import StreakBadge from "@/components/streak-badge";
 import {
   listDailyCardsLocal,
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const levelLabel: Record<string, string> = {
-  draft: "Draft",
+  draft: "Beta",
   review: "Kurasi",
   published: "Tersedia",
 };
@@ -20,7 +21,6 @@ const levelLabel: Record<string, string> = {
 export default function DashboardPage() {
   const lessons = listLessonsLocal();
   const cards = listDailyCardsLocal();
-  const publishedCount = 0; // diisi dari DB setelah kurasi audio selesai (F1)
   const firstUnitHref = lessons[0] ? `/sesi/${lessons[0].id}` : "/sesi";
 
   return (
@@ -89,10 +89,13 @@ export default function DashboardPage() {
           ))}
         </ol>
         <p className="mt-3 text-[11px] text-muted">
-          {publishedCount} unit tersedia publik · sisanya menunggu kurasi audio &
-          quality gate manusia (PRD §9.2).
+          Semua unit terbuka selama masa beta — audio aktif, kurasi manusia
+          berjalan paralel (PRD §9.2).
         </p>
       </section>
+
+      {/* Jalur feedback tester beta */}
+      <FeedbackCard />
 
       {/* Slot iklan non-intrusif — hanya footer dashboard (PRD §10) */}
       <aside className="mt-8 rounded-xl border border-dashed border-border p-4 text-center text-[11px] text-muted">

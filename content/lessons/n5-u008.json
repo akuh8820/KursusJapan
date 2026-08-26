@@ -164,10 +164,26 @@
     }
   ],
   "writing": [
-    { "char": "や", "type": "hiragana", "romaji": "ya" },
-    { "char": "ゆ", "type": "hiragana", "romaji": "yu" },
-    { "char": "よ", "type": "hiragana", "romaji": "yo" },
-    { "char": "ん", "type": "hiragana", "romaji": "n" }
+    {
+      "char": "や",
+      "type": "hiragana",
+      "romaji": "ya"
+    },
+    {
+      "char": "ゆ",
+      "type": "hiragana",
+      "romaji": "yu"
+    },
+    {
+      "char": "よ",
+      "type": "hiragana",
+      "romaji": "yo"
+    },
+    {
+      "char": "ん",
+      "type": "hiragana",
+      "romaji": "n"
+    }
   ],
   "exercises": [
     {
@@ -196,7 +212,11 @@
     },
     {
       "type": "arrange",
-      "tokens": ["かぞくは", "四人", "います"],
+      "tokens": [
+        "かぞくは",
+        "四人",
+        "います"
+      ],
       "answer_jp": "かぞくは四人います。"
     },
     {
@@ -210,5 +230,5 @@
       "target_kana": "ん"
     }
   ],
-  "audio_status": "pending"
+  "audio_status": "ready"
 }

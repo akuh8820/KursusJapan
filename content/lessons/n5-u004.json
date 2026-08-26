@@ -164,11 +164,31 @@
     }
   ],
   "writing": [
-    { "char": "た", "type": "hiragana", "romaji": "ta" },
-    { "char": "ち", "type": "hiragana", "romaji": "chi" },
-    { "char": "つ", "type": "hiragana", "romaji": "tsu" },
-    { "char": "て", "type": "hiragana", "romaji": "te" },
-    { "char": "と", "type": "hiragana", "romaji": "to" }
+    {
+      "char": "た",
+      "type": "hiragana",
+      "romaji": "ta"
+    },
+    {
+      "char": "ち",
+      "type": "hiragana",
+      "romaji": "chi"
+    },
+    {
+      "char": "つ",
+      "type": "hiragana",
+      "romaji": "tsu"
+    },
+    {
+      "char": "て",
+      "type": "hiragana",
+      "romaji": "te"
+    },
+    {
+      "char": "と",
+      "type": "hiragana",
+      "romaji": "to"
+    }
   ],
   "exercises": [
     {
@@ -197,7 +217,13 @@
     },
     {
       "type": "arrange",
-      "tokens": ["とけい", "は", "どこ", "です", "か"],
+      "tokens": [
+        "とけい",
+        "は",
+        "どこ",
+        "です",
+        "か"
+      ],
       "answer_jp": "とけいはどこですか。"
     },
     {
@@ -211,5 +237,5 @@
       "target_kana": "て"
     }
   ],
-  "audio_status": "pending"
+  "audio_status": "ready"
 }

@@ -1,0 +1,54 @@
+name: "🐞 Lapor Bug"
+description: "Ada yang error, aneh, atau tidak berjalan? Laporkan di sini."
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih sudah meluangkan waktu! Isi singkat saja — tidak perlu sempurna.
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Di mana masalahnya?"
+      options:
+        - "Dashboard (halaman utama)"
+        - "Kartu hari ini"
+        - "Sesi belajar 20+5"
+        - "Audio / suara"
+        - "Latihan soal"
+        - "Halaman kurasi"
+        - "Lainnya"
+    validations:
+      required: true
+  - type: textarea
+    id: deskripsi
+    attributes:
+      label: "Apa yang terjadi?"
+      description: "Ceritakan masalahnya. Boleh sertakan langkah agar masalah muncul kembali."
+      placeholder: "Contoh: tombol suara di unit n5-u003 tidak berbunyi saat diklik…"
+    validations:
+      required: true
+  - type: dropdown
+    id: perangkat
+    attributes:
+      label: "Perangkat yang dipakai"
+      options:
+        - "HP Android"
+        - "iPhone / iPad"
+        - "Laptop / komputer"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: "Browser (kalau tahu)"
+      placeholder: "mis. Chrome, Safari, Firefox"
+    validations:
+      required: false
+  - type: textarea
+    id: bukti
+    attributes:
+      label: "Screenshot / rekaman layar (opsional)"
+      placeholder: "Tempel gambar di sini kalau ada"
+    validations:
+      required: false

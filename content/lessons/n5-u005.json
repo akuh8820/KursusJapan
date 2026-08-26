@@ -164,11 +164,31 @@
     }
   ],
   "writing": [
-    { "char": "な", "type": "hiragana", "romaji": "na" },
-    { "char": "に", "type": "hiragana", "romaji": "ni" },
-    { "char": "ぬ", "type": "hiragana", "romaji": "nu" },
-    { "char": "ね", "type": "hiragana", "romaji": "ne" },
-    { "char": "の", "type": "hiragana", "romaji": "no" }
+    {
+      "char": "な",
+      "type": "hiragana",
+      "romaji": "na"
+    },
+    {
+      "char": "に",
+      "type": "hiragana",
+      "romaji": "ni"
+    },
+    {
+      "char": "ぬ",
+      "type": "hiragana",
+      "romaji": "nu"
+    },
+    {
+      "char": "ね",
+      "type": "hiragana",
+      "romaji": "ne"
+    },
+    {
+      "char": "の",
+      "type": "hiragana",
+      "romaji": "no"
+    }
   ],
   "exercises": [
     {
@@ -197,7 +217,13 @@
     },
     {
       "type": "arrange",
-      "tokens": ["これ", "は", "なん", "です", "か"],
+      "tokens": [
+        "これ",
+        "は",
+        "なん",
+        "です",
+        "か"
+      ],
       "answer_jp": "これはなんですか。"
     },
     {
@@ -211,5 +237,5 @@
       "target_kana": "の"
     }
   ],
-  "audio_status": "pending"
+  "audio_status": "ready"
 }

@@ -164,11 +164,31 @@
     }
   ],
   "writing": [
-    { "char": "さ", "type": "hiragana", "romaji": "sa" },
-    { "char": "し", "type": "hiragana", "romaji": "shi" },
-    { "char": "す", "type": "hiragana", "romaji": "su" },
-    { "char": "せ", "type": "hiragana", "romaji": "se" },
-    { "char": "そ", "type": "hiragana", "romaji": "so" }
+    {
+      "char": "さ",
+      "type": "hiragana",
+      "romaji": "sa"
+    },
+    {
+      "char": "し",
+      "type": "hiragana",
+      "romaji": "shi"
+    },
+    {
+      "char": "す",
+      "type": "hiragana",
+      "romaji": "su"
+    },
+    {
+      "char": "せ",
+      "type": "hiragana",
+      "romaji": "se"
+    },
+    {
+      "char": "そ",
+      "type": "hiragana",
+      "romaji": "so"
+    }
   ],
   "exercises": [
     {
@@ -197,7 +217,12 @@
     },
     {
       "type": "arrange",
-      "tokens": ["すみません", "これ", "を", "ください"],
+      "tokens": [
+        "すみません",
+        "これ",
+        "を",
+        "ください"
+      ],
       "answer_jp": "すみません、これをください。"
     },
     {
@@ -211,5 +236,5 @@
       "target_kana": "す"
     }
   ],
-  "audio_status": "pending"
+  "audio_status": "ready"
 }

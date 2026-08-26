@@ -164,11 +164,31 @@
     }
   ],
   "writing": [
-    { "char": "あ", "type": "hiragana", "romaji": "a" },
-    { "char": "い", "type": "hiragana", "romaji": "i" },
-    { "char": "う", "type": "hiragana", "romaji": "u" },
-    { "char": "え", "type": "hiragana", "romaji": "e" },
-    { "char": "お", "type": "hiragana", "romaji": "o" }
+    {
+      "char": "あ",
+      "type": "hiragana",
+      "romaji": "a"
+    },
+    {
+      "char": "い",
+      "type": "hiragana",
+      "romaji": "i"
+    },
+    {
+      "char": "う",
+      "type": "hiragana",
+      "romaji": "u"
+    },
+    {
+      "char": "え",
+      "type": "hiragana",
+      "romaji": "e"
+    },
+    {
+      "char": "お",
+      "type": "hiragana",
+      "romaji": "o"
+    }
   ],
   "exercises": [
     {
@@ -197,7 +217,12 @@
     },
     {
       "type": "arrange",
-      "tokens": ["わたし", "は", "がくせい", "です"],
+      "tokens": [
+        "わたし",
+        "は",
+        "がくせい",
+        "です"
+      ],
       "answer_jp": "わたしはがくせいです。"
     },
     {
@@ -211,5 +236,5 @@
       "target_kana": "お"
     }
   ],
-  "audio_status": "pending"
+  "audio_status": "ready"
 }

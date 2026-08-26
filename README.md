@@ -9,6 +9,8 @@
 
 🌐 **Coba sekarang:** [akuh8820.github.io/KursusJapan](https://akuh8820.github.io/KursusJapan/) · 100% gratis, tanpa akun.
 
+🧪 **Masa beta terbuka** — 10 unit N5 pertama + audio aktif. Menemukan masalah atau punya ide? [Lapor di sini](https://github.com/akuh8820/KursusJapan/issues/new/choose).
+
 ---
 
 ## Tentang

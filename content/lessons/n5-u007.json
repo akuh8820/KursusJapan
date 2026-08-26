@@ -164,11 +164,31 @@
     }
   ],
   "writing": [
-    { "char": "ま", "type": "hiragana", "romaji": "ma" },
-    { "char": "み", "type": "hiragana", "romaji": "mi" },
-    { "char": "む", "type": "hiragana", "romaji": "mu" },
-    { "char": "め", "type": "hiragana", "romaji": "me" },
-    { "char": "も", "type": "hiragana", "romaji": "mo" }
+    {
+      "char": "ま",
+      "type": "hiragana",
+      "romaji": "ma"
+    },
+    {
+      "char": "み",
+      "type": "hiragana",
+      "romaji": "mi"
+    },
+    {
+      "char": "む",
+      "type": "hiragana",
+      "romaji": "mu"
+    },
+    {
+      "char": "め",
+      "type": "hiragana",
+      "romaji": "me"
+    },
+    {
+      "char": "も",
+      "type": "hiragana",
+      "romaji": "mo"
+    }
   ],
   "exercises": [
     {
@@ -197,7 +217,12 @@
     },
     {
       "type": "arrange",
-      "tokens": ["いま", "なんじ", "です", "か"],
+      "tokens": [
+        "いま",
+        "なんじ",
+        "です",
+        "か"
+      ],
       "answer_jp": "いまなんじですか。"
     },
     {
@@ -211,5 +236,5 @@
       "target_kana": "も"
     }
   ],
-  "audio_status": "pending"
+  "audio_status": "ready"
 }

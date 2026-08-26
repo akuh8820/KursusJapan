@@ -54,5 +54,493 @@
     "romaji": "ofuro",
     "meaning_id": "bak mandi / mandi air panas",
     "note_id": "Orang Jepang berendam lalu mencuci — urutannya penting di rumah kos!"
+  },
+  {
+    "card_date": "2026-09-01",
+    "kind": "kata",
+    "jp": "勉強",
+    "romaji": "benkyou",
+    "meaning_id": "belajar",
+    "note_id": "\"Benkyou ni narimasu\" secara harfiah \"jadi belajar\" — cara sopan bilang dapat ilmu baru."
+  },
+  {
+    "card_date": "2026-09-02",
+    "kind": "fakta",
+    "jp": "学校",
+    "romaji": "gakkou",
+    "meaning_id": "sekolah",
+    "note_id": "Di Jepang, siswa yang membersihkan kelas sendiri — tidak ada petugas kebersihan sekolah."
+  },
+  {
+    "card_date": "2026-09-03",
+    "kind": "kata",
+    "jp": "暑い",
+    "romaji": "atsui",
+    "meaning_id": "panas / gerah",
+    "note_id": "\"Atsui desu ne\" adalah basa-basi favorit selama musim panas yang lembap di Jepang."
+  },
+  {
+    "card_date": "2026-09-04",
+    "kind": "fakta",
+    "jp": "自動販売機",
+    "romaji": "jidouhanbaiki",
+    "meaning_id": "mesin penjual otomatis",
+    "note_id": "Ada sekitar 4 juta mesin vending di Jepang — jual minuman dingin sampai jagung kaleng hangat."
+  },
+  {
+    "card_date": "2026-09-05",
+    "kind": "kata",
+    "jp": "大丈夫",
+    "romaji": "daijoubu",
+    "meaning_id": "tidak apa-apa / aman",
+    "note_id": "Jawaban serbaguna: ditawari makan? \"Daijoubu desu\" artinya \"tidak perlu, terima kasih\"."
+  },
+  {
+    "card_date": "2026-09-06",
+    "kind": "fakta",
+    "jp": "名前",
+    "romaji": "namae",
+    "meaning_id": "nama",
+    "note_id": "Orang Jepang jarang dipanggil nama polos — tambahkan -san: \"Rian-san\", bukan \"Rian\" saja."
+  },
+  {
+    "card_date": "2026-09-07",
+    "kind": "kata",
+    "jp": "楽しい",
+    "romaji": "tanoshii",
+    "meaning_id": "menyenangkan",
+    "note_id": "Satu akar kata dengan 音楽 (ongaku, musik): sesuatu yang membuat hati senang."
+  },
+  {
+    "card_date": "2026-09-08",
+    "kind": "fakta",
+    "jp": "新幹線",
+    "romaji": "shinkansen",
+    "meaning_id": "kereta cepat",
+    "note_id": "Melaju 320 km/jam, tetapi rata-rata keterlambatannya kurang dari 1 menit per tahun."
+  },
+  {
+    "card_date": "2026-09-09",
+    "kind": "kata",
+    "jp": "元気",
+    "romaji": "genki",
+    "meaning_id": "sehat / semangat",
+    "note_id": "\"Genki?\" adalah sapaan santai seperti \"baik-baik saja?\" — jawabnya: \"Genki desu!\""
+  },
+  {
+    "card_date": "2026-09-10",
+    "kind": "fakta",
+    "jp": "お箸",
+    "romaji": "ohashi",
+    "meaning_id": "sumpit",
+    "note_id": "Menusuk makanan dengan sumpit dan berdirikan sumpit di atas nasi sama-sama dihindari."
+  },
+  {
+    "card_date": "2026-09-11",
+    "kind": "kata",
+    "jp": "高い",
+    "romaji": "takai",
+    "meaning_id": "mahal / tinggi",
+    "note_id": "Satu kata dua arti — lihat konteksnya: harga barang atau tinggi gedung?"
+  },
+  {
+    "card_date": "2026-09-12",
+    "kind": "fakta",
+    "jp": "お辞儀",
+    "romaji": "ojigi",
+    "meaning_id": "membungkuk",
+    "note_id": "Sudut bungkukan menentukan makna: 15 derajat untuk basa-basi, 45 derajat untuk maaf yang serius."
+  },
+  {
+    "card_date": "2026-09-13",
+    "kind": "kata",
+    "jp": "可愛い",
+    "romaji": "kawaii",
+    "meaning_id": "lucu / imut",
+    "note_id": "Budaya kawaii ada di mana-mana: maskot polisi, bandara, bahkan saluran drainase pun punya karakter."
+  },
+  {
+    "card_date": "2026-09-14",
+    "kind": "fakta",
+    "jp": "花見",
+    "romaji": "hanami",
+    "meaning_id": "melihat bunga sakura",
+    "note_id": "Piknik di bawah pohon sakura — perusahaan kadang mengirim karyawan pagi-pagi untuk merebut tempat."
+  },
+  {
+    "card_date": "2026-09-15",
+    "kind": "kata",
+    "jp": "忙しい",
+    "romaji": "isogashii",
+    "meaning_id": "sibuk",
+    "note_id": "Jawaban sopan kalau ditanya kabar tapi tidak mau cerita panjang: \"Isogashii desu\"."
+  },
+  {
+    "card_date": "2026-09-16",
+    "kind": "fakta",
+    "jp": "温泉",
+    "romaji": "onsen",
+    "meaning_id": "pemandian air panas",
+    "note_id": "Ada lebih dari 3.000 onsen di Jepang; pengunjung bercincin biasanya diminta menutupinya dulu."
+  },
+  {
+    "card_date": "2026-09-17",
+    "kind": "kata",
+    "jp": "頑張って",
+    "romaji": "ganbatte",
+    "meaning_id": "semangat!",
+    "note_id": "Bentuk penyemangatan dari 頑張る (ganbaru) — ucapkan sebelum ujian, kerja, atau lomba."
+  },
+  {
+    "card_date": "2026-09-18",
+    "kind": "fakta",
+    "jp": "神社",
+    "romaji": "jinja",
+    "meaning_id": "kuil Shinto",
+    "note_id": "Berdoa ala Jepang: dua kali membungkuk, dua kali bertepuk tangan, lalu satu bungkuk penutup."
+  },
+  {
+    "card_date": "2026-09-19",
+    "kind": "kata",
+    "jp": "ちょっと待って",
+    "romaji": "chotto matte",
+    "meaning_id": "tunggu sebentar",
+    "note_id": "Kalimat penyelamat saat kamu butuh waktu untuk berpikir di tengah percakapan."
+  },
+  {
+    "card_date": "2026-09-20",
+    "kind": "fakta",
+    "jp": "お弁当",
+    "romaji": "obentou",
+    "meaning_id": "bekal makan siang",
+    "note_id": "Bento buatan tangan di Jepang sering ditata seperti karya seni — ada bahkan kursus meracik bento."
+  },
+  {
+    "card_date": "2026-09-21",
+    "kind": "kata",
+    "jp": "上手",
+    "romaji": "jouzu",
+    "meaning_id": "pandai / mahir",
+    "note_id": "Pujian ajaib bagi pemula: \"Nihongo ga jouzu desu ne!\" (\"bahasa Japangmu bagus!\")"
+  },
+  {
+    "card_date": "2026-09-22",
+    "kind": "fakta",
+    "jp": "桜",
+    "romaji": "sakura",
+    "meaning_id": "bunga sakura",
+    "note_id": "Mekar hanya sekitar dua minggu setahun — ramalan waktu mekarnya tayang di TV seperti prakiraan cuaca."
+  },
+  {
+    "card_date": "2026-09-23",
+    "kind": "kata",
+    "jp": "雨",
+    "romaji": "ame",
+    "meaning_id": "hujan",
+    "note_id": "Payung murah bisa dibeli di konbini mana pun saat hujan datang mendadak."
+  },
+  {
+    "card_date": "2026-09-24",
+    "kind": "fakta",
+    "jp": "山",
+    "romaji": "yama",
+    "meaning_id": "gunung",
+    "note_id": "Gunung Fuji setinggi 3776 meter terakhir meletus tahun 1707 — sekarang jalur pendakiannya paling populer di Jepang."
+  },
+  {
+    "card_date": "2026-09-25",
+    "kind": "kata",
+    "jp": "早速",
+    "romaji": "sassoku",
+    "meaning_id": "langsung / tanpa basa-basi",
+    "note_id": "Kata favorit rekan kerja: \"Sassoku ikimashou\" = \"ayo kita langsung mulai\"."
+  },
+  {
+    "card_date": "2026-09-26",
+    "kind": "fakta",
+    "jp": "定食",
+    "romaji": "teishoku",
+    "meaning_id": "menu set makanan",
+    "note_id": "Nasi, sup miso, dan lauk dalam satu nampan — makan siang klasik pekerja kantoran, harganya bersahabat."
+  },
+  {
+    "card_date": "2026-09-27",
+    "kind": "kata",
+    "jp": "残念",
+    "romaji": "zannen",
+    "meaning_id": "sayang sekali",
+    "note_id": "Ungkapan nasional saat kehilangan sesuatu; versi santainya di acara TV: \"Zannen!\""
+  },
+  {
+    "card_date": "2026-09-28",
+    "kind": "fakta",
+    "jp": "郵便局",
+    "romaji": "yuubinkyoku",
+    "meaning_id": "kantor pos",
+    "note_id": "Tanda khasnya huruf 〒 — di sana tidak hanya kirim surat, tapi juga bayar tagihan listrik dan air."
+  },
+  {
+    "card_date": "2026-09-29",
+    "kind": "kata",
+    "jp": "迷子",
+    "romaji": "maigo",
+    "meaning_id": "tersesat",
+    "note_id": "Kalau nyasar, masuklah ke kouban (pos polisi) terdekat — petugasnya terkenal ramah menunjukkan jalan."
+  },
+  {
+    "card_date": "2026-09-30",
+    "kind": "fakta",
+    "jp": "紅葉",
+    "romaji": "kouyou",
+    "meaning_id": "daun merah musim gugur",
+    "note_id": "Versi musim gugur dari hanami: piknik menikmati daun momiji yang memerah di akhir musim gugur."
+  },
+  {
+    "card_date": "2026-10-01",
+    "kind": "kata",
+    "jp": "一緒に",
+    "romaji": "issho ni",
+    "meaning_id": "bersama-sama",
+    "note_id": "\"Issho ni ikimasen ka?\" = \"mau ikut pergi bareng?\" — pembuka ajakan yang sopan."
+  },
+  {
+    "card_date": "2026-10-02",
+    "kind": "fakta",
+    "jp": "カラオケ",
+    "romaji": "karaoke",
+    "meaning_id": "karaoke",
+    "note_id": "Di Jepang karaoke disewa per ruangan privat bersama teman — bukan bernyanyi di depan orang asing."
+  },
+  {
+    "card_date": "2026-10-03",
+    "kind": "kata",
+    "jp": "静か",
+    "romaji": "shizuka",
+    "meaning_id": "sepi / tenang",
+    "note_id": "Kereta komuter di jam malam nyaris sunyi — penghuninya menjaga ketenangan penumpang lain."
+  },
+  {
+    "card_date": "2026-10-04",
+    "kind": "fakta",
+    "jp": "猫",
+    "romaji": "neko",
+    "meaning_id": "kucing",
+    "note_id": "Pulau Aoshima dihuni ratusan kucing — jauh lebih banyak daripada manusianya, dijuluki pulau kucing."
+  },
+  {
+    "card_date": "2026-10-05",
+    "kind": "kata",
+    "jp": "面白い",
+    "romaji": "omoshiroi",
+    "meaning_id": "menarik / lucu",
+    "note_id": "Dipakai untuk film, buku, sampai lawakan — lawan katanya つまらない (tsumaranai) yang artinya membosankan."
+  },
+  {
+    "card_date": "2026-10-06",
+    "kind": "fakta",
+    "jp": "押し入れ",
+    "romaji": "oshiire",
+    "meaning_id": "lemari besar",
+    "note_id": "Tempat kasur futon disimpan pada siang hari — rumah Jepang terasa lapang karena perabotnya minim."
+  },
+  {
+    "card_date": "2026-10-07",
+    "kind": "kata",
+    "jp": "頭",
+    "romaji": "atama",
+    "meaning_id": "kepala",
+    "note_id": "\"Atama ga ii\" secara harfiah \"kepalanya bagus\" — pujian untuk orang yang pintar."
+  },
+  {
+    "card_date": "2026-10-08",
+    "kind": "fakta",
+    "jp": "靴",
+    "romaji": "kutsu",
+    "meaning_id": "sepatu",
+    "note_id": "Lepas sepatu sebelum masuk rumah — genkan, area depan rumah, adalah garis batasnya."
+  },
+  {
+    "card_date": "2026-10-09",
+    "kind": "kata",
+    "jp": "遠い",
+    "romaji": "tooi",
+    "meaning_id": "jauh",
+    "note_id": "\"Chotto tooi naa\" (agak jauh juga ya...) sering dipakai sebagai cara halus untuk menolak ajakan."
+  },
+  {
+    "card_date": "2026-10-10",
+    "kind": "fakta",
+    "jp": "体育館",
+    "romaji": "taiikukan",
+    "meaning_id": "gedung olahraga",
+    "note_id": "Saat gempa besar, taiikukan sekolah menjadi titik kumpul evakuasi warga sekitar."
+  },
+  {
+    "card_date": "2026-10-11",
+    "kind": "kata",
+    "jp": "手伝う",
+    "romaji": "tetsudau",
+    "meaning_id": "membantu",
+    "note_id": "\"Tetsudaimashou ka?\" = \"mau dibantu?\" — kalimat emas saat melihat orang kesulitan."
+  },
+  {
+    "card_date": "2026-10-12",
+    "kind": "fakta",
+    "jp": "秋",
+    "romaji": "aki",
+    "meaning_id": "musim gugur",
+    "note_id": "Orang Jepang menyebutnya \"musim selera makan\" (shokuyoku no aki) — musim paling enak untuk kuliner."
+  },
+  {
+    "card_date": "2026-10-13",
+    "kind": "kata",
+    "jp": "好き",
+    "romaji": "suki",
+    "meaning_id": "suka",
+    "note_id": "\"Suki desu\" adalah cara mengaku cinta versi orang Jepang — dipakai lebih sering daripada kata cinta."
+  },
+  {
+    "card_date": "2026-10-14",
+    "kind": "fakta",
+    "jp": "ハロウィン",
+    "romaji": "harowin",
+    "meaning_id": "Halloween",
+    "note_id": "Setiap 31 Oktober, distrik Shibuya berubah jadi panggung kosplay raksasa — bukan tradisi asli, tapi digilakan."
+  },
+  {
+    "card_date": "2026-10-15",
+    "kind": "kata",
+    "jp": "大変",
+    "romaji": "taihen",
+    "meaning_id": "luar biasa berat / sungguh-sungguh",
+    "note_id": "Bisa berarti \"berat sekali\" untuk pekerjaan atau \"hebat sekali\" — intonasinya yang menentukan."
+  },
+  {
+    "card_date": "2026-10-16",
+    "kind": "fakta",
+    "jp": "電子レンジ",
+    "romaji": "denshirenji",
+    "meaning_id": "microwave",
+    "note_id": "Dapur apartemen kecil di Jepang rata-rata hanya punya dua tungku — microwave jadi sahabat utama."
+  },
+  {
+    "card_date": "2026-10-17",
+    "kind": "kata",
+    "jp": "便利",
+    "romaji": "benri",
+    "meaning_id": "praktis / berguna",
+    "note_id": "Trik hidup di Jepang memang benri: konbini 24 jam, kartu transportasi sekali isi, internet cepat."
+  },
+  {
+    "card_date": "2026-10-18",
+    "kind": "fakta",
+    "jp": "富士山",
+    "romaji": "fujisan",
+    "meaning_id": "Gunung Fuji",
+    "note_id": "Puncaknya di atas 3.000 meter ternyata milik bersama — sebagian adalah tanah kuil Shinto Fujisan Hongu."
+  },
+  {
+    "card_date": "2026-10-19",
+    "kind": "kata",
+    "jp": "心配",
+    "romaji": "shinpai",
+    "meaning_id": "khawatir",
+    "note_id": "\"Shinpai shinai de\" = \"jangan khawatir\" — kalimat penghibur favorit orang Jepang."
+  },
+  {
+    "card_date": "2026-10-20",
+    "kind": "fakta",
+    "jp": "駅",
+    "romaji": "eki",
+    "meaning_id": "stasiun",
+    "note_id": "Stasiun Shinjuku di Tokyo dilalui sekitar 3,5 juta penumpang per hari — stasiun tersibuk di dunia."
+  },
+  {
+    "card_date": "2026-10-21",
+    "kind": "kata",
+    "jp": "すごい",
+    "romaji": "sugoi",
+    "meaning_id": "hebat / keren",
+    "note_id": "Kata serbaguna untuk kaget, kagum, atau sekadar berkomentar — ucapkan dengan mata melebar biar terasa."
+  },
+  {
+    "card_date": "2026-10-22",
+    "kind": "fakta",
+    "jp": "和菓子",
+    "romaji": "wagashi",
+    "meaning_id": "kue tradisional Jepang",
+    "note_id": "Wujud dan warna wagashi mengikuti musim — seperti bunga yang sedang mekar saat itu."
+  },
+  {
+    "card_date": "2026-10-23",
+    "kind": "kata",
+    "jp": "遅れる",
+    "romaji": "okureru",
+    "meaning_id": "terlambat",
+    "note_id": "\"Densha ga okuremashita\" (keretanya telat) adalah alasan klasik keterlambatan yang bisa dipercaya di sana."
+  },
+  {
+    "card_date": "2026-10-24",
+    "kind": "fakta",
+    "jp": "お土産",
+    "romaji": "omiyage",
+    "meaning_id": "oleh-oleh",
+    "note_id": "Budaya wajib: liburan ke mana pun harus pulang membawa oleh-oleh makanan untuk rekan kerja."
+  },
+  {
+    "card_date": "2026-10-25",
+    "kind": "kata",
+    "jp": "涼しい",
+    "romaji": "suzushii",
+    "meaning_id": "sejuk",
+    "note_id": "Awal Oktober adalah cuaca terbaik di Jepang: udara suzushii dan langit biru bersih."
+  },
+  {
+    "card_date": "2026-10-26",
+    "kind": "fakta",
+    "jp": "運動",
+    "romaji": "undou",
+    "meaning_id": "olahraga",
+    "note_id": "Undoukai, festival olahraga sekolah dan kantor, digelar tiap musim gugur — semua wajib ikut lomba."
+  },
+  {
+    "card_date": "2026-10-27",
+    "kind": "kata",
+    "jp": "楽しみ",
+    "romaji": "tanoshimi",
+    "meaning_id": "dinanti-nantikan",
+    "note_id": "\"Tanoshimi ni shite imasu\" = \"aku sudah tidak sabar\" — cocok untuk janji ketemuan berikutnya."
+  },
+  {
+    "card_date": "2026-10-28",
+    "kind": "fakta",
+    "jp": "お茶",
+    "romaji": "ocha",
+    "meaning_id": "teh hijau",
+    "note_id": "Di banyak restoran Jepang, teh hijau gratis dan bisa minta tambah terus — panas maupun dingin."
+  },
+  {
+    "card_date": "2026-10-29",
+    "kind": "kata",
+    "jp": "大好き",
+    "romaji": "daisuki",
+    "meaning_id": "sangat suka / favorit",
+    "note_id": "Tingkat di atas suki: \"Ramen daisuki!\" artinya kamu gila ramen."
+  },
+  {
+    "card_date": "2026-10-30",
+    "kind": "fakta",
+    "jp": "こたつ",
+    "romaji": "kotatsu",
+    "meaning_id": "meja penghangat",
+    "note_id": "Meja rendah berselimut tebal dengan penghangat di bawahnya — pusat berkumpul keluarga sepanjang musim dingin."
+  },
+  {
+    "card_date": "2026-10-31",
+    "kind": "kata",
+    "jp": "またね",
+    "romaji": "mata ne",
+    "meaning_id": "sampai jumpa",
+    "note_id": "Salam perpisahan santai — versi sopannya \"mata ashita\" yang berarti \"sampai besok\"."
   }
 ]
