@@ -9,10 +9,6 @@ import { listLessonsLocal } from "@/lib/content/store";
 import { listUnitProgress, getSrsDue } from "@/lib/progress/store";
 import type { Lesson } from "@/lib/content/schema";
 
-export const metadata = {
-  title: "Dashboard",
-};
-
 function levelOrder(level: string): number {
   const order: Record<string, number> = { N5: 0, N4: 1, N3: 2, N2: 3, N1: 4 };
   return order[level] ?? 99;

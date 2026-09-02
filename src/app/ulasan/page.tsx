@@ -6,10 +6,6 @@ import { getSrsDue, reviewSrsCard } from "@/lib/progress/store";
 import { EVENTS, track } from "@/lib/analytics/events";
 import type { SrsCard } from "@/lib/progress/store";
 
-export const metadata = {
-  title: "Ulasan",
-};
-
 export default function UlasanPage() {
   const [dueCards, setDueCards] = useState<SrsCard[]>([]);
   const [reviewing, setReviewing] = useState<string | null>(null);
