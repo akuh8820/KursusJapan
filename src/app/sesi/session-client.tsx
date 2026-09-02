@@ -12,8 +12,8 @@ import {
   vocabFile,
 } from "@/lib/content/audio-paths";
 import FlipCardExercise from "@/components/exercises/FlipCardExercise";
-import ListenTypeExercise from "@/components/exercises/ListenTypeExercise";
 import McVocabExercise from "@/components/exercises/McVocabExercise";
+import KanjiCanvas from "@/components/kanji-canvas";
 
 const STEPS = [
   { id: "dialog", label: "Dialog" },
@@ -102,6 +102,7 @@ export default function SessionClient({
   const [quizAnswers, setQuizAnswers] = useState<Record<number, number | null>>({});
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [quizPassed, setQuizPassed] = useState(false);
+  const [writingPracticeChar, setWritingPracticeChar] = useState<{ char: string; romaji: string; type: string } | null>(null);
   const audioReady = lesson.audio_status === "ready";
 
   // Initialize session: mark unit started, seed SRS, track event
@@ -362,30 +363,57 @@ export default function SessionClient({
 
         {phase === "writing" && (
           <div className="space-y-3">
-            <h2 className="font-semibold">Huruf ({lesson.writing.length})</h2>
-            <p className="text-xs text-muted">
-              Kenali bentuk dan bunyi setiap karakter.
-            </p>
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-              {lesson.writing.map((w) => (
-                <div
-                  key={`${w.type}-${w.char}`}
-                  className="rounded-xl border border-border bg-card p-4 text-center"
+            {writingPracticeChar ? (
+              <div className="space-y-3">
+                <button
+                  type="button"
+                  onClick={() => setWritingPracticeChar(null)}
+                  className="text-sm text-primary hover:underline"
                 >
-                  <p lang="ja" className="text-4xl font-bold">
-                    {w.char}
+                  ← Kembali ke daftar huruf
+                </button>
+                <div className="rounded-2xl border border-border bg-card p-4">
+                  <p className="text-sm font-semibold text-muted">
+                    Latihan menulis: {writingPracticeChar.romaji} · {writingPracticeChar.type}
                   </p>
-                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-muted">
-                    {w.romaji} · {w.type}
-                  </p>
-                  {w.meaning_id && (
-                    <p className="mt-1 text-xs text-muted">
-                      {w.meaning_id}
-                    </p>
-                  )}
+                  <KanjiCanvas
+                    char={writingPracticeChar.char}
+                    label={`${writingPracticeChar.romaji} (${writingPracticeChar.type})`}
+                    showShadow={true}
+                    height={280}
+                  />
                 </div>
-              ))}
-            </div>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                <h2 className="font-semibold">Huruf ({lesson.writing.length})</h2>
+                <p className="text-xs text-muted">
+                  Kenali bentuk dan bunyi setiap karakter. Ketuk untuk latihan menulis.
+                </p>
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                  {lesson.writing.map((w) => (
+                    <button
+                      key={`${w.type}-${w.char}`}
+                      type="button"
+                      onClick={() => setWritingPracticeChar({ char: w.char, romaji: w.romaji, type: w.type })}
+                      className="rounded-xl border border-border bg-card p-4 text-center hover:border-primary/50 hover:bg-primary/5 transition"
+                    >
+                      <p lang="ja" className="text-4xl font-bold">
+                        {w.char}
+                      </p>
+                      <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-muted">
+                        {w.romaji} · {w.type}
+                      </p>
+                      {w.meaning_id && (
+                        <p className="mt-1 text-xs text-muted">
+                          {w.meaning_id}
+                        </p>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         )}
 
@@ -402,7 +430,6 @@ export default function SessionClient({
                 audioReady={audioReady}
                 unit={lesson.id}
                 vocab={lesson.vocab}
-                writingChars={lesson.writing.map((w) => w.char)}
                 result={exerciseResults[i]}
                 onResult={(correct) => handleExerciseResult(i, correct)}
               />
@@ -518,7 +545,6 @@ function ExerciseCard({
   audioReady,
   unit,
   vocab,
-  writingChars,
   result,
   onResult,
 }: {
@@ -526,7 +552,6 @@ function ExerciseCard({
   audioReady: boolean;
   unit: string;
   vocab: Lesson["vocab"];
-  writingChars: string[];
   result: boolean | undefined;
   onResult: (correct: boolean) => void;
 }) {
@@ -568,7 +593,6 @@ function ExerciseCard({
       <WriteRecallExercise
         prompt={ex.prompt_id}
         targetKana={ex.target_kana}
-        choices={writingChars}
         showResult={showResult}
         result={result}
         onResult={onResult}
@@ -591,7 +615,7 @@ function ExerciseCard({
 
   if (ex.type === "listen_type") {
     return (
-      <ListenTypeExercise
+      <ListenTypeExerciseWithCanvas
         audioRef={ex.audio_ref}
         targetKana={ex.target_kana}
         unit={unit}
@@ -803,69 +827,26 @@ function ArrangeExercise({
 function WriteRecallExercise({
   prompt,
   targetKana,
-  choices,
   showResult,
   result,
   onResult,
 }: {
   prompt: string;
   targetKana: string;
-  choices: string[];
   showResult: boolean;
   result: boolean | undefined;
   onResult: (correct: boolean) => void;
 }) {
-  const [value, setValue] = useState("");
-  const [checked, setChecked] = useState(false);
-  const checkedResult = result ?? (checked ? value.trim().toLowerCase() === targetKana.trim().toLowerCase() : null);
+  const targetChar = targetKana.charAt(0);
 
-  function check() {
-    const ok = value.trim().toLowerCase() === targetKana.trim().toLowerCase();
-    setChecked(true);
-    onResult(ok);
-  }
-
-  return (
-    <div className="rounded-xl border border-border bg-card p-4">
-      <p className="text-sm font-semibold">{prompt}</p>
-      {!checkedResult ? (
-        <>
-          <input
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            lang="ja"
-            aria-label="Jawaban huruf Jepang"
-            className="mt-3 w-full rounded-lg border border-border bg-background px-3 py-2 text-lg text-center"
-            placeholder="あ"
-            disabled={showResult}
-          />
-          <div className="mt-2 flex flex-wrap gap-1.5 justify-center" lang="ja">
-            {choices.map((c) => (
-              <button
-                key={c}
-                type="button"
-                onClick={() => setValue((v) => v + c)}
-                disabled={showResult}
-                className="rounded-lg border border-border px-2.5 py-1 text-base font-semibold disabled:opacity-50"
-              >
-                {c}
-              </button>
-            ))}
-          </div>
-          <button
-            type="button"
-            onClick={check}
-            disabled={value.trim().length === 0 || showResult}
-            className="mt-3 w-full rounded-lg bg-primary px-3 py-1.5 text-xs font-bold text-primary-foreground disabled:opacity-40"
-          >
-            Periksa
-          </button>
-        </>
-      ) : (
+  if (showResult && result !== undefined) {
+    return (
+      <div className="rounded-xl border border-border bg-card p-4">
+        <p className="text-sm font-semibold">{prompt}</p>
         <p className="mt-3 text-sm font-bold text-center">
-          {checkedResult ? (
+          {result ? (
             <span className="text-green-600 dark:text-green-400">
-              ✓ Benar — {targetKana}
+              ✓ Benar — <span lang="ja">{targetKana}</span>
             </span>
           ) : (
             <span className="text-primary">
@@ -873,7 +854,103 @@ function WriteRecallExercise({
             </span>
           )}
         </p>
-      )}
+      </div>
+    );
+  }
+
+  return (
+    <div className="rounded-xl border border-border bg-card p-4">
+      <p className="text-sm font-semibold">{prompt}</p>
+      <KanjiCanvas
+        char={targetChar}
+        label={prompt}
+        showShadow={true}
+        onResult={(correct) => {
+          if (correct) onResult(true);
+        }}
+      />
+    </div>
+  );
+}
+
+function ListenTypeExerciseWithCanvas({
+  audioRef,
+  targetKana,
+  unit,
+  onResult,
+}: {
+  audioRef: string;
+  targetKana: string;
+  unit: string;
+  onResult: (correct: boolean) => void;
+}) {
+  const [result, setResult] = useState<boolean | null>(null);
+  const targetChar = targetKana.charAt(0);
+
+  function parseAudioRef(ref: string): { type: "dialog" | "vocab"; index: number; kind?: "t" | "x" } {
+    if (ref.startsWith("d")) {
+      return { type: "dialog", index: parseInt(ref.slice(1), 10) };
+    }
+    if (ref.startsWith("v")) {
+      const index = parseInt(ref.slice(1, 3), 10);
+      const kind = ref[3] as "t" | "x";
+      return { type: "vocab", index, kind };
+    }
+    return { type: "dialog", index: 0 };
+  }
+
+  function getAudioSrc() {
+    const parsed = parseAudioRef(audioRef);
+    if (parsed.type === "dialog") {
+      return unitAudioUrl(unit, dialogFile(parsed.index));
+    }
+    return unitAudioUrl(unit, vocabFile(parsed.index, parsed.kind!));
+  }
+
+  if (result !== null) {
+    return (
+      <div className="rounded-xl border border-border bg-card p-4">
+        <p className="text-sm font-semibold">Dengar lalu tulis kana</p>
+        <div className="mt-3 flex justify-center">
+          <JpAudioButton src={getAudioSrc()} label={`Audio ${audioRef}`} />
+        </div>
+        <p className="mt-1.5 text-center text-[11px] text-muted">
+          Ketuk 🔊 untuk mendengarkan ulang.
+        </p>
+        <p className="mt-3 text-sm font-bold text-center">
+          {result ? (
+            <span className="text-green-600 dark:text-green-400">
+              ✓ Benar — <span lang="ja">{targetKana}</span>
+            </span>
+          ) : (
+            <span className="text-primary">
+              ✗ Jawaban benarnya: <span lang="ja">{targetKana}</span>
+            </span>
+          )}
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="rounded-xl border border-border bg-card p-4">
+      <p className="text-sm font-semibold">Dengar lalu tulis kana</p>
+      <div className="mt-3 flex justify-center">
+        <JpAudioButton src={getAudioSrc()} label={`Audio ${audioRef}`} />
+      </div>
+      <p className="mt-1.5 text-center text-[11px] text-muted">
+        Ketuk 🔊 untuk mendengarkan, lalu tulis kana yang didengar.
+      </p>
+      <KanjiCanvas
+        char={targetChar}
+        label="Tulis kana yang didengar"
+        showShadow={true}
+        onResult={(correct) => {
+          setResult(correct);
+          if (correct) onResult(true);
+          else onResult(false);
+        }}
+      />
     </div>
   );
 }

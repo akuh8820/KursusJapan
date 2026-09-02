@@ -1,0 +1,772 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "term": "行く",
+      "type": "verb",
+      "forms": {
+        "dictionary": "行く",
+        "masu": "行きます",
+        "te": "行って",
+        "nai": "行かない",
+        "ta": "行った",
+        "ba": "行けば",
+        "volitional": "行こう"
+      }
+    },
+    {
+      "term": "分かる",
+      "type": "verb",
+      "forms": {
+        "dictionary": "分かる",
+        "masu": "分かります",
+        "te": "分かって",
+        "nai": "分からない",
+        "ta": "分かった",
+        "ba": "分かれば",
+        "volitional": "分かろう"
+      }
+    },
+    {
+      "term": "いただく",
+      "type": "verb",
+      "forms": {
+        "dictionary": "いただく",
+        "masu": "いただきます",
+        "te": "いただいて",
+        "nai": "いただかない",
+        "ta": "いただいた",
+        "ba": "いただけば",
+        "volitional": "いただこう"
+      }
+    },
+    {
+      "term": "ある",
+      "type": "verb",
+      "forms": {
+        "dictionary": "ある",
+        "masu": "あります",
+        "te": "あって",
+        "nai": "ない",
+        "ta": "あった",
+        "ba": "あれば",
+        "volitional": "あろう"
+      }
+    },
+    {
+      "term": "帰る",
+      "type": "verb",
+      "forms": {
+        "dictionary": "帰る",
+        "masu": "帰ります",
+        "te": "帰って",
+        "nai": "帰らない",
+        "ta": "帰った",
+        "ba": "帰れば",
+        "volitional": "帰ろう"
+      }
+    },
+    {
+      "term": "来る",
+      "type": "verb",
+      "forms": {
+        "dictionary": "来る",
+        "masu": "来ます",
+        "te": "来て",
+        "nai": "来ない",
+        "ta": "来た",
+        "ba": "来れば",
+        "volitional": "来よう"
+      }
+    },
+    {
+      "term": "緊張する",
+      "type": "verb",
+      "forms": {
+        "dictionary": "緊張する",
+        "masu": "緊張します",
+        "te": "緊張して",
+        "nai": "緊張しない",
+        "ta": "緊張した",
+        "ba": "緊張すれば",
+        "volitional": "緊張しよう"
+      }
+    },
+    {
+      "term": "始まる",
+      "type": "verb",
+      "forms": {
+        "dictionary": "始まる",
+        "masu": "始まります",
+        "te": "始まって",
+        "nai": "始まらない",
+        "ta": "始まった",
+        "ba": "始まれば",
+        "volitional": "始まろう"
+      }
+    },
+    {
+      "term": "頑張る",
+      "type": "verb",
+      "forms": {
+        "dictionary": "頑張る",
+        "masu": "頑張ります",
+        "te": "頑張って",
+        "nai": "頑張らない",
+        "ta": "頑張った",
+        "ba": "頑張れば",
+        "volitional": "頑張ろう"
+      }
+    },
+    {
+      "term": "乗る",
+      "type": "verb",
+      "forms": {
+        "dictionary": "乗る",
+        "masu": "乗ります",
+        "te": "乗って",
+        "nai": "乗らない",
+        "ta": "乗った",
+        "ba": "乗れば",
+        "volitional": "乗ろう"
+      }
+    },
+    {
+      "term": "飲む",
+      "type": "verb",
+      "forms": {
+        "dictionary": "飲む",
+        "masu": "飲みます",
+        "te": "飲んで",
+        "nai": "飲まない",
+        "ta": "飲んだ",
+        "ba": "飲めば",
+        "volitional": "飲もう"
+      }
+    },
+    {
+      "term": "休む",
+      "type": "verb",
+      "forms": {
+        "dictionary": "休む",
+        "masu": "休みます",
+        "te": "休んで",
+        "nai": "休まない",
+        "ta": "休んだ",
+        "ba": "休めば",
+        "volitional": "休もう"
+      }
+    },
+    {
+      "term": "勉強する",
+      "type": "verb",
+      "forms": {
+        "dictionary": "勉強する",
+        "masu": "勉強します",
+        "te": "勉強して",
+        "nai": "勉強しない",
+        "ta": "勉強した",
+        "ba": "勉強すれば",
+        "volitional": "勉強しよう"
+      }
+    },
+    {
+      "term": "始める",
+      "type": "verb",
+      "forms": {
+        "dictionary": "始める",
+        "masu": "始めます",
+        "te": "始めて",
+        "nai": "始めない",
+        "ta": "始めた",
+        "ba": "始めれば",
+        "volitional": "始めよう"
+      }
+    },
+    {
+      "term": "教える",
+      "type": "verb",
+      "forms": {
+        "dictionary": "教える",
+        "masu": "教えます",
+        "te": "教えて",
+        "nai": "教えない",
+        "ta": "教えた",
+        "ba": "教えれば",
+        "volitional": "教えよう"
+      }
+    },
+    {
+      "term": "かける",
+      "type": "verb",
+      "forms": {
+        "dictionary": "かける",
+        "masu": "かけます",
+        "te": "かけて",
+        "nai": "かけない",
+        "ta": "かけた",
+        "ba": "かければ",
+        "volitional": "かけよう"
+      }
+    },
+    {
+      "term": "使う",
+      "type": "verb",
+      "forms": {
+        "dictionary": "使う",
+        "masu": "使います",
+        "te": "使って",
+        "nai": "使わない",
+        "ta": "使った",
+        "ba": "使えば",
+        "volitional": "使おう"
+      }
+    },
+    {
+      "term": "入れる",
+      "type": "verb",
+      "forms": {
+        "dictionary": "入れる",
+        "masu": "入れます",
+        "te": "入れて",
+        "nai": "入れない",
+        "ta": "入れた",
+        "ba": "入れれば",
+        "volitional": "入れよう"
+      }
+    },
+    {
+      "term": "連絡する",
+      "type": "verb",
+      "forms": {
+        "dictionary": "連絡する",
+        "masu": "連絡します",
+        "te": "連絡して",
+        "nai": "連絡しない",
+        "ta": "連絡した",
+        "ba": "連絡すれば",
+        "volitional": "連絡しよう"
+      }
+    },
+    {
+      "term": "預ける",
+      "type": "verb",
+      "forms": {
+        "dictionary": "預ける",
+        "masu": "預けます",
+        "te": "預けて",
+        "nai": "預けない",
+        "ta": "預けた",
+        "ba": "預ければ",
+        "volitional": "預けよう"
+      }
+    },
+    {
+      "term": "送る",
+      "type": "verb",
+      "forms": {
+        "dictionary": "送る",
+        "masu": "送ります",
+        "te": "送って",
+        "nai": "送らない",
+        "ta": "送った",
+        "ba": "送れば",
+        "volitional": "送ろう"
+      }
+    },
+    {
+      "term": "作る",
+      "type": "verb",
+      "forms": {
+        "dictionary": "作る",
+        "masu": "作ります",
+        "te": "作って",
+        "nai": "作らない",
+        "ta": "作った",
+        "ba": "作れば",
+        "volitional": "作ろう"
+      }
+    },
+    {
+      "term": "困る",
+      "type": "verb",
+      "forms": {
+        "dictionary": "困る",
+        "masu": "困ります",
+        "te": "困って",
+        "nai": "困らない",
+        "ta": "困った",
+        "ba": "困れば",
+        "volitional": "困ろう"
+      }
+    },
+    {
+      "term": "漏れる",
+      "type": "verb",
+      "forms": {
+        "dictionary": "漏れる",
+        "masu": "漏れます",
+        "te": "漏れて",
+        "nai": "漏れない",
+        "ta": "漏れた",
+        "ba": "漏れれば",
+        "volitional": "漏れよう"
+      }
+    },
+    {
+      "term": "落ちる",
+      "type": "verb",
+      "forms": {
+        "dictionary": "落ちる",
+        "masu": "落ちます",
+        "te": "落ちて",
+        "nai": "落ちない",
+        "ta": "落ちた",
+        "ba": "落ちれば",
+        "volitional": "落ちよう"
+      }
+    },
+    {
+      "term": "直す",
+      "type": "verb",
+      "forms": {
+        "dictionary": "直す",
+        "masu": "直します",
+        "te": "直して",
+        "nai": "直さない",
+        "ta": "直した",
+        "ba": "直せば",
+        "volitional": "直そう"
+      }
+    },
+    {
+      "term": "待つ",
+      "type": "verb",
+      "forms": {
+        "dictionary": "待つ",
+        "masu": "待ちます",
+        "te": "待って",
+        "nai": "待たない",
+        "ta": "待った",
+        "ba": "待てば",
+        "volitional": "待とう"
+      }
+    },
+    {
+      "term": "調べる",
+      "type": "verb",
+      "forms": {
+        "dictionary": "調べる",
+        "masu": "調べます",
+        "te": "調べて",
+        "nai": "調べない",
+        "ta": "調べた",
+        "ba": "調べれば",
+        "volitional": "調べよう"
+      }
+    },
+    {
+      "term": "走る",
+      "type": "verb",
+      "forms": {
+        "dictionary": "走る",
+        "masu": "走ります",
+        "te": "走って",
+        "nai": "走らない",
+        "ta": "走った",
+        "ba": "走れば",
+        "volitional": "走ろう"
+      }
+    },
+    {
+      "term": "勝つ",
+      "type": "verb",
+      "forms": {
+        "dictionary": "勝つ",
+        "masu": "勝ちます",
+        "te": "勝って",
+        "nai": "勝たない",
+        "ta": "勝った",
+        "ba": "勝てば",
+        "volitional": "勝とう"
+      }
+    },
+    {
+      "term": "受かる",
+      "type": "verb",
+      "forms": {
+        "dictionary": "受かる",
+        "masu": "受かります",
+        "te": "受かって",
+        "nai": "受からない",
+        "ta": "受かった",
+        "ba": "受かれば",
+        "volitional": "受かろう"
+      }
+    },
+    {
+      "term": "通る",
+      "type": "verb",
+      "forms": {
+        "dictionary": "通る",
+        "masu": "通ります",
+        "te": "通って",
+        "nai": "通らない",
+        "ta": "通った",
+        "ba": "通れば",
+        "volitional": "通ろう"
+      }
+    },
+    {
+      "term": "選ぶ",
+      "type": "verb",
+      "forms": {
+        "dictionary": "選ぶ",
+        "masu": "選びます",
+        "te": "選んで",
+        "nai": "選ばない",
+        "ta": "選んだ",
+        "ba": "選べば",
+        "volitional": "選ぼう"
+      }
+    },
+    {
+      "term": "買う",
+      "type": "verb",
+      "forms": {
+        "dictionary": "買う",
+        "masu": "買います",
+        "te": "買って",
+        "nai": "買わない",
+        "ta": "買った",
+        "ba": "買えば",
+        "volitional": "買おう"
+      }
+    },
+    {
+      "term": "祝う",
+      "type": "verb",
+      "forms": {
+        "dictionary": "祝う",
+        "masu": "祝います",
+        "te": "祝って",
+        "nai": "祝わない",
+        "ta": "祝った",
+        "ba": "祝えば",
+        "volitional": "祝おう"
+      }
+    },
+    {
+      "term": "見つける",
+      "type": "verb",
+      "forms": {
+        "dictionary": "見つける",
+        "masu": "見つけます",
+        "te": "見つけて",
+        "nai": "見つけない",
+        "ta": "見つけた",
+        "ba": "見つければ",
+        "volitional": "見つけよう"
+      }
+    },
+    {
+      "term": "続ける",
+      "type": "verb",
+      "forms": {
+        "dictionary": "続ける",
+        "masu": "続けます",
+        "te": "続けて",
+        "nai": "続けない",
+        "ta": "続けた",
+        "ba": "続ければ",
+        "volitional": "続けよう"
+      }
+    },
+    {
+      "term": "覚える",
+      "type": "verb",
+      "forms": {
+        "dictionary": "覚える",
+        "masu": "覚えます",
+        "te": "覚えて",
+        "nai": "覚えない",
+        "ta": "覚えた",
+        "ba": "覚えれば",
+        "volitional": "覚えよう"
+      }
+    },
+    {
+      "term": "洗う",
+      "type": "verb",
+      "forms": {
+        "dictionary": "洗う",
+        "masu": "洗います",
+        "te": "洗って",
+        "nai": "洗わない",
+        "ta": "洗った",
+        "ba": "洗えば",
+        "volitional": "洗おう"
+      }
+    },
+    {
+      "term": "おいしい",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "おいしい",
+        "masu": "おいしいです",
+        "te": "おいしくて",
+        "nai": "おいしくない",
+        "ta": "おいしかった",
+        "ba": "おいしければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "広い",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "広い",
+        "masu": "広いです",
+        "te": "広くて",
+        "nai": "広くない",
+        "ta": "広かった",
+        "ba": "広ければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "新しい",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "新しい",
+        "masu": "新しいです",
+        "te": "新しくて",
+        "nai": "新しくない",
+        "ta": "新しかった",
+        "ba": "新しければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "痛い",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "痛い",
+        "masu": "痛いです",
+        "te": "痛くて",
+        "nai": "痛くない",
+        "ta": "痛かった",
+        "ba": "痛ければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "寒い",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "寒い",
+        "masu": "寒いです",
+        "te": "寒くて",
+        "nai": "寒くない",
+        "ta": "寒かった",
+        "ba": "寒ければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "暑い",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "暑い",
+        "masu": "暑いです",
+        "te": "暑くて",
+        "nai": "暑くない",
+        "ta": "暑かった",
+        "ba": "暑ければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "早い",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "早い",
+        "masu": "早いです",
+        "te": "早くて",
+        "nai": "早くない",
+        "ta": "早かった",
+        "ba": "早ければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "高い",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "高い",
+        "masu": "高いです",
+        "te": "高くて",
+        "nai": "高くない",
+        "ta": "高かった",
+        "ba": "高ければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "安い",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "安い",
+        "masu": "安いです",
+        "te": "安くて",
+        "nai": "安くない",
+        "ta": "安かった",
+        "ba": "安ければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "近い",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "近い",
+        "masu": "近いです",
+        "te": "近くて",
+        "nai": "近くない",
+        "ta": "近かった",
+        "ba": "近ければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "危ない",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "危ない",
+        "masu": "危ないです",
+        "te": "危なくて",
+        "nai": "危なくない",
+        "ta": "危なかった",
+        "ba": "危なければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "厳しい",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "厳しい",
+        "masu": "厳しいです",
+        "te": "厳しくて",
+        "nai": "厳しくない",
+        "ta": "厳しかった",
+        "ba": "厳しければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "優しい",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "優しい",
+        "masu": "優しいです",
+        "te": "優しくて",
+        "nai": "優しくない",
+        "ta": "優しかった",
+        "ba": "優しければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "嬉しい",
+      "type": "i-adj",
+      "forms": {
+        "dictionary": "嬉しい",
+        "masu": "嬉しいです",
+        "te": "嬉しくて",
+        "nai": "嬉しくない",
+        "ta": "嬉しかった",
+        "ba": "嬉しければ",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "便利",
+      "type": "na-adj",
+      "forms": {
+        "dictionary": "便利",
+        "masu": "便利です",
+        "te": "便利で",
+        "nai": "便利じゃない",
+        "ta": "便利だった",
+        "ba": "便利なら",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "好き",
+      "type": "na-adj",
+      "forms": {
+        "dictionary": "好き",
+        "masu": "好きです",
+        "te": "好きで",
+        "nai": "好きじゃない",
+        "ta": "好きだった",
+        "ba": "好きなら",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "大好き",
+      "type": "na-adj",
+      "forms": {
+        "dictionary": "大好き",
+        "masu": "大好きです",
+        "te": "大好きで",
+        "nai": "大好きじゃない",
+        "ta": "大好きだった",
+        "ba": "大好きなら",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "下手",
+      "type": "na-adj",
+      "forms": {
+        "dictionary": "下手",
+        "masu": "下手です",
+        "te": "下手で",
+        "nai": "下手じゃない",
+        "ta": "下手だった",
+        "ba": "下手なら",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "綺麗",
+      "type": "na-adj",
+      "forms": {
+        "dictionary": "綺麗",
+        "masu": "綺麗です",
+        "te": "綺麗で",
+        "nai": "綺麗じゃない",
+        "ta": "綺麗だった",
+        "ba": "綺麗なら",
+        "volitional": ""
+      }
+    },
+    {
+      "term": "大変",
+      "type": "na-adj",
+      "forms": {
+        "dictionary": "大変",
+        "masu": "大変です",
+        "te": "大変で",
+        "nai": "大変じゃない",
+        "ta": "大変だった",
+        "ba": "大変なら",
+        "volitional": ""
+      }
+    }
+  ]
+}

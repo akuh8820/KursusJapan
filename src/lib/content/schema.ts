@@ -48,6 +48,7 @@ export const grammarPointSchema = z.object({
 });
 
 export type GrammarPoint = z.infer<typeof grammarPointSchema>;
+export type GrammarExample = z.infer<typeof grammarExampleSchema>;
 
 export const writingTypeSchema = z.enum(["hiragana", "katakana", "kanji"]);
 
@@ -172,3 +173,27 @@ export const dailyCardSchema = z.object({
 });
 
 export type DailyCard = z.infer<typeof dailyCardSchema>;
+
+/** Konjugasi kata kerja & adjektiva (manual curation). */
+export const conjugationTypeSchema = z.enum(["verb", "i-adj", "na-adj"]);
+
+export const conjugationFormsSchema = z.object({
+  dictionary: z.string(),
+  masu: z.string(),
+  te: z.string(),
+  nai: z.string(),
+  ta: z.string(),
+  ba: z.string(),
+  volitional: z.string(),
+});
+
+export type ConjugationForms = z.infer<typeof conjugationFormsSchema>;
+export type ConjugationType = z.infer<typeof conjugationTypeSchema>;
+
+export const conjugationEntrySchema = z.object({
+  term: z.string().min(1),
+  type: conjugationTypeSchema,
+  forms: conjugationFormsSchema,
+});
+
+export type ConjugationEntry = z.infer<typeof conjugationEntrySchema>;
