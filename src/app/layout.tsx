@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { AnalyticsProvider } from "@/lib/analytics/provider";
-import { registerServiceWorker } from "@/lib/pwa/register";
+import ServiceWorkerRegister from "@/components/service-worker-register";
 
 export const metadata: Metadata = {
   title: {
@@ -30,9 +30,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  if (typeof window !== "undefined") {
-    registerServiceWorker();
-  }
   return (
     <html lang="id" className="h-full antialiased">
       <head>
@@ -40,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#b91c1c" />
       </head>
       <body className="min-h-full flex flex-col">
+        <ServiceWorkerRegister />
         <AnalyticsProvider>{children}</AnalyticsProvider>
       </body>
     </html>
