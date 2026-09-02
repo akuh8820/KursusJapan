@@ -4,7 +4,7 @@ import { listLessonsLocal } from "@/lib/content/store";
 import SessionClient from "../session-client";
 
 export const metadata: Metadata = {
-  title: "Sesi 20+5",
+  title: "Sesi",
 };
 
 export function generateStaticParams() {
