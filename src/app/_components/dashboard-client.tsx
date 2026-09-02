@@ -6,7 +6,7 @@ import DailyCardToday from "@/components/daily-card-today";
 import FeedbackCard from "@/components/feedback-card";
 import ThemeToggle from "@/components/theme-toggle";
 import { listUnitProgress, getSrsDue } from "@/lib/progress/store";
-import type { Lesson } from "@/lib/content/schema";
+import type { Lesson, DailyCard } from "@/lib/content/schema";
 
 function levelOrder(level: string): number {
   const order: Record<string, number> = { N5: 0, N4: 1, N3: 2, N2: 3, N1: 4 };
@@ -17,7 +17,13 @@ function formatUnitNo(unitNo: number): string {
   return `U${String(unitNo).padStart(2, "0")}`;
 }
 
-export default function DashboardClient({ lessons }: { lessons: Lesson[] }) {
+export default function DashboardClient({
+  lessons,
+  dailyCards,
+}: {
+  lessons: Lesson[];
+  dailyCards: DailyCard[];
+}) {
   const [unitProgress, setUnitProgress] = useState<Map<string, { status: string }>>(new Map());
   const [srsDueCount, setSrsDueCount] = useState(0);
   const [hydrated, setHydrated] = useState(false);
@@ -51,7 +57,7 @@ export default function DashboardClient({ lessons }: { lessons: Lesson[] }) {
           </div>
           <ThemeToggle />
         </header>
-        <DailyCardToday cards={[]} />
+        <DailyCardToday cards={dailyCards} />
         <div className="mt-8 space-y-4">
           {sortedLevels.map((level) => (
             <section key={level} className="rounded-2xl border border-border bg-card p-4 shadow-sm animate-pulse">
@@ -89,7 +95,7 @@ export default function DashboardClient({ lessons }: { lessons: Lesson[] }) {
       </aside>
 
       {/* Daily Card */}
-      <DailyCardToday cards={[]} />
+      <DailyCardToday cards={dailyCards} />
 
       {/* Ulasan SRS */}
       {srsDueCount > 0 && (

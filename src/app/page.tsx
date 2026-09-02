@@ -1,7 +1,8 @@
 import DashboardClient from "./_components/dashboard-client";
-import { listLessonsLocal } from "@/lib/content/store";
+import { listLessonsLocal, listDailyCardsLocal } from "@/lib/content/store";
 
 export default function DashboardPage() {
   const lessons = listLessonsLocal();
-  return <DashboardClient lessons={lessons} />;
+  const dailyCards = listDailyCardsLocal();
+  return <DashboardClient lessons={lessons} dailyCards={dailyCards} />;
 }
