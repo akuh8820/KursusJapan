@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
 import type { Lesson } from "@/lib/content/schema";
-import { todayJST } from "@/lib/session/streak";
+import { todayJST } from "@/lib/date";
 import {
   buildExport,
   getKurasiServerSnapshot,

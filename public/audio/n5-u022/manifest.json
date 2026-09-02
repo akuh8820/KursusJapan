@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u022",
+  "generated_at": "2026-09-02T02:24:08.841Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "すみません、ここにおかねをあずけたいです。",
+      "speaker_id": 12,
+      "hash": "289735d14d923638"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "かしこまりました。いくらあずけますか。",
+      "speaker_id": 2,
+      "hash": "7a8a8cdb9073160f"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "いちまんえんあずけます。ざんだかをしりたいです。",
+      "speaker_id": 12,
+      "hash": "291795050db55d02"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "ざんだかはさんまんえんです。カードをおつくりになりますか。",
+      "speaker_id": 2,
+      "hash": "e5a9a9878df51b88"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "はい、つくってもいいですか。",
+      "speaker_id": 12,
+      "hash": "9c40895723f90fdd"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "もちろんです。つぎはゆうびんきょくですか。",
+      "speaker_id": 2,
+      "hash": "4b4669a32a5e8692"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "はい、インドネシアににもつをおくります。",
+      "speaker_id": 12,
+      "hash": "a4cb49b7eb0a9e9c"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "銀行",
+      "speaker_id": 2,
+      "hash": "062293570f061903"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "ぎんこうにいきます。",
+      "speaker_id": 2,
+      "hash": "8388ea9c15cd69ca"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "預ける",
+      "speaker_id": 2,
+      "hash": "0f9c441756ba2755"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "おかねをあずけます。",
+      "speaker_id": 2,
+      "hash": "1d7a8ceacbf3892d"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "残高",
+      "speaker_id": 2,
+      "hash": "c06f67ed6a73d13e"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "ざんだかをかくにんします。",
+      "speaker_id": 2,
+      "hash": "83df89d72cd04b39"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "一万円",
+      "speaker_id": 2,
+      "hash": "e28983e5ef821257"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "いちまんえんあずけました。",
+      "speaker_id": 2,
+      "hash": "da80112f6bbfedc8"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "三万円",
+      "speaker_id": 2,
+      "hash": "270a5b003d606d5c"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "ざんだかはさんまんえんです。",
+      "speaker_id": 2,
+      "hash": "558305702db4f31a"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "カード",
+      "speaker_id": 2,
+      "hash": "1707840a61e4cd32"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "カードをつくります。",
+      "speaker_id": 2,
+      "hash": "b07a3e0e0f0f57f9"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "郵便局",
+      "speaker_id": 2,
+      "hash": "ed24f8f3c272aa4b"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "ゆうびんきょくにいきます。",
+      "speaker_id": 2,
+      "hash": "95652640d921fbb9"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "荷物",
+      "speaker_id": 2,
+      "hash": "8c499ea7cf50b94c"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "にもつをおくります。",
+      "speaker_id": 2,
+      "hash": "f6b389cd7da61e77"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "送る",
+      "speaker_id": 2,
+      "hash": "d484d4dd6440fa49"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "てがみをおくります。",
+      "speaker_id": 2,
+      "hash": "3b1a828afa38a40a"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "作る",
+      "speaker_id": 2,
+      "hash": "ec1f9e8be0a2b527"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "カードをつくります。",
+      "speaker_id": 2,
+      "hash": "b07a3e0e0f0f57f9"
+    }
+  ]
+}

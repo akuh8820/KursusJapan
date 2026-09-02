@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u017",
+  "generated_at": "2026-09-02T02:00:52.813Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "いらっしゃいませ。なんめいさまですか。",
+      "speaker_id": 2,
+      "hash": "a2f6a939dec0d984"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "ふたりです。めにゅーをください。",
+      "speaker_id": 12,
+      "hash": "4195702611f9599a"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "こちらです。おすすめはしょうゆラーメンです。",
+      "speaker_id": 2,
+      "hash": "6a2eed355fabb726"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "しょうゆラーメンがありますか。",
+      "speaker_id": 2,
+      "hash": "15941f6234f9ad55"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "はい、あります。ぎょうざもありますよ。",
+      "speaker_id": 2,
+      "hash": "47480f848a6caa17"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "じゃ、しょうゆラーメンとぎょうざをください。みずがほしいです。",
+      "speaker_id": 12,
+      "hash": "44ca745baff9c282"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "しょうゆラーメンひとつとぎょうざひとつ、みずですね。かしこまりました。",
+      "speaker_id": 2,
+      "hash": "1b8f6b836f9e90d5"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "レストラン",
+      "speaker_id": 2,
+      "hash": "cfc5957fb7c076fb"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "レストランでばんごはんをたべます。",
+      "speaker_id": 2,
+      "hash": "5486dcb9666a4e94"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "メニュー",
+      "speaker_id": 2,
+      "hash": "5eef816a99bae535"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "メニューをみます。",
+      "speaker_id": 2,
+      "hash": "66bcaf5c7a6ef3e4"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "ラーメン",
+      "speaker_id": 2,
+      "hash": "665bd18568f06770"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "ラーメンがすきです。",
+      "speaker_id": 2,
+      "hash": "77b14d307af3060a"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "醤油",
+      "speaker_id": 2,
+      "hash": "c628e4149c170e3c"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "しょうゆラーメンをたべます。",
+      "speaker_id": 2,
+      "hash": "6352b6b4636cf96f"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "餃子",
+      "speaker_id": 2,
+      "hash": "cdc26d4e727c6d41"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "ぎょうざをたべます。",
+      "speaker_id": 2,
+      "hash": "45c5380779f07570"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "おすすめ",
+      "speaker_id": 2,
+      "hash": "34f2d564ef0d9866"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "おすすめはなんですか。",
+      "speaker_id": 2,
+      "hash": "244fc0934ac3cf36"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "水",
+      "speaker_id": 2,
+      "hash": "a8a54248fc6be1c6"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "みずをのみます。",
+      "speaker_id": 2,
+      "hash": "100e05ae839c7971"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "注文",
+      "speaker_id": 2,
+      "hash": "6a7faefd1b8a04c3"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "ちゅうもんをします。",
+      "speaker_id": 2,
+      "hash": "11a56daae2401c65"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "美味しい",
+      "speaker_id": 2,
+      "hash": "993c418537bf9e73"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "このラーメンはおいしいです。",
+      "speaker_id": 2,
+      "hash": "2041e858ad1ee911"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "お会計",
+      "speaker_id": 2,
+      "hash": "5cc99e92bf19b465"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "おかいけいをおねがいします。",
+      "speaker_id": 2,
+      "hash": "fefbf81782656b5d"
+    }
+  ]
+}

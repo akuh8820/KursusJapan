@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u012",
+  "generated_at": "2026-09-02T01:40:28.750Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "みなさん、しぶやにいきますか。",
+      "speaker_id": 12,
+      "hash": "97e3a4060b021bf8"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "はい、しぶやえきまで、でんしゃでいきます。",
+      "speaker_id": 2,
+      "hash": "e6482fd227cec0b9"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "いま、なんじですか。",
+      "speaker_id": 12,
+      "hash": "e9ca1081062fdd3e"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "ろくじはんです。つぎのでんしゃは、ろくじよんじゅうごふんです。",
+      "speaker_id": 2,
+      "hash": "caa885958aab4443"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "いそぎましょう。きっぷはどこでかいますか。",
+      "speaker_id": 12,
+      "hash": "7a487be514dbd0b9"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "あのきっぷうりばで。いちまい、にひゃくえんです。",
+      "speaker_id": 2,
+      "hash": "598ee0046a338bfa"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "わかりました。ふたりでよんひゃくえんですね。",
+      "speaker_id": 12,
+      "hash": "dae12edddffcc9d9"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "電車",
+      "speaker_id": 2,
+      "hash": "c012455fac30c5cb"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "でんしゃでかいしゃにいきます。",
+      "speaker_id": 2,
+      "hash": "e08530974241b832"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "バス",
+      "speaker_id": 2,
+      "hash": "5f9ed9307afd21ba"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "バスていまであるきます。",
+      "speaker_id": 2,
+      "hash": "75a4b90a462eb091"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "駅",
+      "speaker_id": 2,
+      "hash": "6e5f4205ddae30c1"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "とうきょうえきはおおきいです。",
+      "speaker_id": 2,
+      "hash": "65c137b99bf74746"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "切符",
+      "speaker_id": 2,
+      "hash": "5aa108f6318a8438"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "きっぷをかってください。",
+      "speaker_id": 2,
+      "hash": "21e8fd01cec44f75"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "切符売り場",
+      "speaker_id": 2,
+      "hash": "37bfb0d348bc6120"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "きっぷうりばはあそこです。",
+      "speaker_id": 2,
+      "hash": "ed4a72d4b4ac605a"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "時半",
+      "speaker_id": 2,
+      "hash": "8c5dc86414fd9ef2"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "いま、しちじはんです。",
+      "speaker_id": 2,
+      "hash": "9060108fb04a163e"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "分",
+      "speaker_id": 2,
+      "hash": "b5985724f274f8cb"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "ごふんまちます。",
+      "speaker_id": 2,
+      "hash": "280da82be73f528c"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "急ぎましょう",
+      "speaker_id": 2,
+      "hash": "39606590d5689497"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "バスがきますよ、いそぎましょう。",
+      "speaker_id": 2,
+      "hash": "0d2622eb610f3df4"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "二人",
+      "speaker_id": 2,
+      "hash": "346f0524b9981844"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "ふたりでいきます。",
+      "speaker_id": 2,
+      "hash": "2291cc3c1d503a8c"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "乗ります",
+      "speaker_id": 2,
+      "hash": "f05efca5adb390a2"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "でんしゃにのります。",
+      "speaker_id": 2,
+      "hash": "92299029d0c5a94a"
+    }
+  ]
+}

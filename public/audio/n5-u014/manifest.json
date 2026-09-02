@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u014",
+  "generated_at": "2026-09-02T01:45:36.200Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "きょうのてんきはどうですか。",
+      "speaker_id": 2,
+      "hash": "4f9e8a82135f9fe2"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "きょうははれです。でも、あしたはあめでしょう。",
+      "speaker_id": 12,
+      "hash": "87eedc2cf2d77cec"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "きのうはくもりでしたね。",
+      "speaker_id": 2,
+      "hash": "46fee58277ab3d0e"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "そうでした。きのうはさむかったです。",
+      "speaker_id": 12,
+      "hash": "0781dc06ccad7a40"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "あしたはかさをもっていきましょう。",
+      "speaker_id": 2,
+      "hash": "d950c504e517726e"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "はい。ふうがつよそうですから。",
+      "speaker_id": 12,
+      "hash": "5be72e5b603a25e6"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "ゆきもふるかもしれませんよ。",
+      "speaker_id": 2,
+      "hash": "f49c265720a158b5"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "天気",
+      "speaker_id": 2,
+      "hash": "b30dab04dca29123"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "きょうのてんきはいいです。",
+      "speaker_id": 2,
+      "hash": "da669938271bd072"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "晴れ",
+      "speaker_id": 2,
+      "hash": "2ad0cddc932b63f4"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "あしたははれです。",
+      "speaker_id": 2,
+      "hash": "5bb9096fe6709078"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "雨",
+      "speaker_id": 2,
+      "hash": "1e4eff05ae346898"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "あめがふっています。",
+      "speaker_id": 2,
+      "hash": "70f80b81fc4d280d"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "曇り",
+      "speaker_id": 2,
+      "hash": "dce7c00d40cca18e"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "きょうはくもりです。",
+      "speaker_id": 2,
+      "hash": "dab61a03eb8a8aa7"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "雪",
+      "speaker_id": 2,
+      "hash": "886bac291be7a303"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "ゆきがふります。",
+      "speaker_id": 2,
+      "hash": "2ac8f7cb2b9404b0"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "風",
+      "speaker_id": 2,
+      "hash": "7a5d28751208d442"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "かぜがつよいです。",
+      "speaker_id": 2,
+      "hash": "7ebf9d217e2bd7d3"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "傘",
+      "speaker_id": 2,
+      "hash": "08fc9a715086f72c"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "かさをわすれました。",
+      "speaker_id": 2,
+      "hash": "ff36e12fa2bf86d6"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "寒い",
+      "speaker_id": 2,
+      "hash": "8c774cab58526070"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "ふゆはさむいです。",
+      "speaker_id": 2,
+      "hash": "4c0c8b3dc3087632"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "暑い",
+      "speaker_id": 2,
+      "hash": "8b089ab295682e66"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "なつはあついです。",
+      "speaker_id": 2,
+      "hash": "0566382f4c160fbf"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "台風",
+      "speaker_id": 2,
+      "hash": "030b2d8298c19835"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "たいふうがきます。",
+      "speaker_id": 2,
+      "hash": "f26befc37dea7f1b"
+    }
+  ]
+}

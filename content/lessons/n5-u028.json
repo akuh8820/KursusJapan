@@ -1,0 +1,257 @@
+{
+  "id": "n5-u028",
+  "level": "N5",
+  "unit_no": 28,
+  "theme": "Janji & Undangan",
+  "title_id": "Menjanji & Mengundang Teman",
+  "objectives_id": [
+    "Mengundang dengan 〜ましょうか / 〜ませんか",
+    "Menggunakan 〜てあげる/もらう untuk bantu-membantu",
+    "Mengenal kosakata janji, undangan, dan jadwal"
+  ],
+  "dialog": {
+    "title_id": "Rian mengundang Mina ke pesta ulang tahun Yuki",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "らいしゅうのどようび、ゆきさんのたんじょうびパーティーがあります。",
+        "kana": "らいしゅうのどようび、ゆきさんのたんじょうびパーティーがあります。",
+        "romaji": "Raishuu no doyoubi, Yuki-san no tanjoubi paatii ga arimasu.",
+        "id": "Sabtu minggu depan ada pesta ulang tahun Yuki."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "いいですね。なんじからですか。",
+        "kana": "いいですね。なんじからですか。",
+        "romaji": "Ii desu ne. Nanji kara desu ka.",
+        "id": "Bagus. Mulai jam berapa?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "ごごろくじからです。いっしょにいきませんか。",
+        "kana": "ごごろくじからです。いっしょにいきませんか。",
+        "romaji": "Gogo rokuji kara desu. Issho ni ikimasen ka.",
+        "id": "Dari jam 6 sore. Mau ikut tidak?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "いきたいです。でもプレゼントをかっていません。",
+        "kana": "いきたいです。でもプレゼントをかっていません。",
+        "romaji": "Ikitai desu. Demo purezento wo katte imasen.",
+        "id": "Mau pergi. Tapi belum beli hadiah."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "だいじょうぶです。わたしがえらんであげましょうか。",
+        "kana": "だいじょうぶです。わたしがえらんであげましょうか。",
+        "romaji": "Daijoubu desu. Watashi ga erande agemashou ka.",
+        "id": "Tidak apa. Saya pilihkan untukmu?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "ほんとうですか。じゃあ、おねがいします。もらってもいいですか。",
+        "kana": "ほんとうですか。じゃあ、おねがいします。もらってもいいですか。",
+        "romaji": "Hontou desu ka. Jaa, onegaishimasu. Moratte mo ii desu ka.",
+        "id": "Benar? Ya, tolong ya. Boleh saya terima?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "もちろんです。とうきょうえきまえであいましょう。",
+        "kana": "もちろんです。とうきょうえきまえであいましょう。",
+        "romaji": "Mochiron desu. Toukyou eki mae de aimashou.",
+        "id": "Tentu. Ketemu di depan Stasiun Tokyo."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜ましょうか / 〜ませんか / 〜てあげる/もらう",
+    "meaning_id": "Mari kita... / Mau tidak... / Membantu (memberi jasa) / Dibantu (menerima jasa) — Volitional + ka (tawaran), Negative + ka (undangan), te-form + ageru/morau.",
+    "formation": "[Verb volitional] + か / [Verb negative] + か / [Verb te-form] + あげる/もらう",
+    "examples": [
+      {
+        "jp": "かばんをもってあげましょうか。",
+        "romaji": "Kaban wo motte agemashou ka.",
+        "id": "Mari saya bawa tasmu?"
+      },
+      {
+        "jp": "えいごをおしえてもらいました。",
+        "romaji": "Eigo wo oshiete moraimashita.",
+        "id": "Saya dibantu belajar bahasa Inggris."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "土曜日",
+      "kana": "どようび",
+      "romaji": "doyoubi",
+      "meaning_id": "hari Sabtu",
+      "example_jp": "どようびはやすみです。",
+      "example_romaji": "Doyoubi wa yasumi desu.",
+      "example_id": "Sabtu libur."
+    },
+    {
+      "term": "誕生日",
+      "kana": "たんじょうび",
+      "romaji": "tanjoubi",
+      "meaning_id": "ulang tahun",
+      "example_jp": "たんじょうびおめでとう。",
+      "example_romaji": "Tanjoubi omedetou.",
+      "example_id": "Selamat ulang tahun."
+    },
+    {
+      "term": "パーティー",
+      "kana": "パーティー",
+      "romaji": "paatii",
+      "meaning_id": "pesta",
+      "example_jp": "パーティーにいきます。",
+      "example_romaji": "Paatii ni ikimasu.",
+      "example_id": "Saya pergi ke pesta."
+    },
+    {
+      "term": "午後",
+      "kana": "ごご",
+      "romaji": "gogo",
+      "meaning_id": "sore hari, setelah jam 12",
+      "example_jp": "ごごろくじにあいましょう。",
+      "example_romaji": "Gogo rokuji ni aimashou.",
+      "example_id": "Ketemu jam 6 sore."
+    },
+    {
+      "term": "プレゼント",
+      "kana": "プレゼント",
+      "romaji": "purezento",
+      "meaning_id": "hadiah",
+      "example_jp": "プレゼントをあげます。",
+      "example_romaji": "Purezento wo agemasu.",
+      "example_id": "Saya beri hadiah."
+    },
+    {
+      "term": "買う",
+      "kana": "かう",
+      "romaji": "kau",
+      "meaning_id": "membeli",
+      "example_jp": "ほんをかいます。",
+      "example_romaji": "Hon wo kaimasu.",
+      "example_id": "Saya beli buku."
+    },
+    {
+      "term": "選ぶ",
+      "kana": "えらぶ",
+      "romaji": "erabu",
+      "meaning_id": "memilih",
+      "example_jp": "ふくをえらびます。",
+      "example_romaji": "Fuku wo erabimasu.",
+      "example_id": "Saya pilih baju."
+    },
+    {
+      "term": "東京駅",
+      "kana": "とうきょうえき",
+      "romaji": "Toukyou eki",
+      "meaning_id": "Stasiun Tokyo",
+      "example_jp": "とうきょうえきであいます。",
+      "example_romaji": "Toukyou eki de aimasu.",
+      "example_id": "Ketemu di Stasiun Tokyo."
+    },
+    {
+      "term": "前",
+      "kana": "まえ",
+      "romaji": "mae",
+      "meaning_id": "depan, sebelum",
+      "example_jp": "えきのまえでまちます。",
+      "example_romaji": "Eki no mae de machimasu.",
+      "example_id": "Menunggu di depan stasiun."
+    },
+    {
+      "term": "約束",
+      "kana": "やくそく",
+      "romaji": "yakusoku",
+      "meaning_id": "janji",
+      "example_jp": "やくそくをまもります。",
+      "example_romaji": "Yakusoku wo mamorimasu.",
+      "example_id": "Saya tepati janji."
+    }
+  ],
+  "writing": [
+    {
+      "char": "誕",
+      "type": "kanji",
+      "romaji": "tan",
+      "meaning_id": "lahir",
+      "kanjivg_id": "8a95"
+    },
+    {
+      "char": "生",
+      "type": "kanji",
+      "romaji": "sei",
+      "meaning_id": "hidup, lahir",
+      "kanjivg_id": "751f"
+    },
+    {
+      "char": "選",
+      "type": "kanji",
+      "romaji": "sen",
+      "meaning_id": "pilih",
+      "kanjivg_id": "9078"
+    },
+    {
+      "char": "約",
+      "type": "kanji",
+      "romaji": "yaku",
+      "meaning_id": "janji, kira-kira",
+      "kanjivg_id": "7d00"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 2,
+      "prompt_id": "Rian berkata 'いっしょにいきませんか'. Apa yang dimaksud?",
+      "options": [
+        "Saya pergi sendirian",
+        "Mau ikut pergi bersama?",
+        "Kamu pergi sendirian",
+        "Kita tidak pergi"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "d05",
+      "target_kana": "わたしがえらんであげましょうか"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "プレゼント",
+      "front_kana": "プレゼント",
+      "back_id": "hadiah"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'えらんであげましょうか' adalah...",
+      "options": [
+        "Saya minta kamu pilih",
+        "Mari saya pilihkan untukmu",
+        "Kamu pilih untuk saya",
+        "Kita pilih bersama"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "えいご",
+        "を",
+        "おしえて",
+        "もらいました"
+      ],
+      "answer_jp": "えいごをおしえてもらいました。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis kanji untuk 'tan' (lahir)",
+      "target_kana": "たん"
+    }
+  ],
+  "audio_status": "pending"
+}

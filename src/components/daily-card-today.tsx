@@ -2,7 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 import type { DailyCard } from "@/lib/content/schema";
-import { todayJST } from "@/lib/session/streak";
+import { todayJST } from "@/lib/date";
 
 const noopSubscribe = () => () => {};
 

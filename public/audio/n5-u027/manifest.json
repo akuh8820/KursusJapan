@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u027",
+  "generated_at": "2026-09-02T02:45:42.214Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "きのうコンビニのめんせつをうけました。",
+      "speaker_id": 12,
+      "hash": "2278473513eb3fcd"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "どうでしたか。うかりましたか。",
+      "speaker_id": 2,
+      "hash": "e1717c3c5ef8ea27"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "はい、うかりました。じかんぎれはきびしいのに、とおってくれました。",
+      "speaker_id": 12,
+      "hash": "a51c416550110686"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "よかったですね。じきゅうはいくらですか。",
+      "speaker_id": 2,
+      "hash": "5934b21bc001369f"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "せんえんです。ともだちがこのしごとをおしえてくれました。",
+      "speaker_id": 12,
+      "hash": "f402003e66d7f8ee"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "それはやさしいともだちですね。おめでとうございます。",
+      "speaker_id": 2,
+      "hash": "406837ff8d307f6f"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "ありがとう。らいしゅうからはたらきます。がんばります。",
+      "speaker_id": 12,
+      "hash": "3e8e55f9cd31efbe"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "コンビニ",
+      "speaker_id": 2,
+      "hash": "697eff6517695c52"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "コンビニではたらきます。",
+      "speaker_id": 2,
+      "hash": "03f40d5848b0b6ce"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "面接",
+      "speaker_id": 2,
+      "hash": "c3e25d8daf4cd162"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "めんせつをうけます。",
+      "speaker_id": 2,
+      "hash": "de0197b8fbb8521f"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "受かる",
+      "speaker_id": 2,
+      "hash": "c6f99be1f8cd7067"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "しけんにうかりました。",
+      "speaker_id": 2,
+      "hash": "421c77faf02765ce"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "時間切れ",
+      "speaker_id": 2,
+      "hash": "367a4318955f3448"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "じかんぎれでかえります。",
+      "speaker_id": 2,
+      "hash": "b25f27ed953a37be"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "厳しい",
+      "speaker_id": 2,
+      "hash": "666ed75776274047"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "せんせいはきびしいです。",
+      "speaker_id": 2,
+      "hash": "eba8af01075cd06e"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "通る",
+      "speaker_id": 2,
+      "hash": "2bfd7de7a3122cfd"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "しけんにとおった。",
+      "speaker_id": 2,
+      "hash": "c3049c406ff39f03"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "時給",
+      "speaker_id": 2,
+      "hash": "f9d94cd623cf159f"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "じきゅうはせんえんです。",
+      "speaker_id": 2,
+      "hash": "e089cbff78dcd60e"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "教える",
+      "speaker_id": 2,
+      "hash": "187d7d3e1a989d94"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "みちをおしえてください。",
+      "speaker_id": 2,
+      "hash": "3335c1fecc536e10"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "優しい",
+      "speaker_id": 2,
+      "hash": "25d4f03ac41bb7af"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "かれはやさしいひとです。",
+      "speaker_id": 2,
+      "hash": "a146f2c8af07c299"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "来週",
+      "speaker_id": 2,
+      "hash": "05e6d481e9ca53a0"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "らいしゅうからはたらきます。",
+      "speaker_id": 2,
+      "hash": "def3cbc376b6e256"
+    }
+  ]
+}

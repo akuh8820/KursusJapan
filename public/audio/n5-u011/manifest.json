@@ -1,0 +1,175 @@
+{
+  "unit": "n5-u011",
+  "generated_at": "2026-09-02T01:37:47.508Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "いらっしゃいませ。",
+      "speaker_id": 2,
+      "hash": "d06b898ee7360328"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "おにぎりをひとつ、ください。",
+      "speaker_id": 12,
+      "hash": "ba1285ff7b5ff5ca"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "おにぎりですね。ほかには？",
+      "speaker_id": 2,
+      "hash": "58e917adab0ac2df"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "おちゃをひとつ、おねがいします。",
+      "speaker_id": 12,
+      "hash": "8f32927f36e29496"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "おにぎりとおちゃで、ぜんぶでさんびゃくえんです。",
+      "speaker_id": 2,
+      "hash": "268e5356233231e2"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "はい。ごひゃくえんです。",
+      "speaker_id": 12,
+      "hash": "e4b651e2a0d1500f"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "ごひゃくえんおあずかりします。おつりはにひゃくえんです。",
+      "speaker_id": 2,
+      "hash": "c296c5a43067f6e2"
+    },
+    {
+      "file": "d07.mp3",
+      "text": "ありがとうございます。",
+      "speaker_id": 12,
+      "hash": "386a4e9a9a1e8182"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "コンビニ",
+      "speaker_id": 2,
+      "hash": "697eff6517695c52"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "コンビニでおにぎりをかいました。",
+      "speaker_id": 2,
+      "hash": "9bf61a979586c7b3"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "おにぎり",
+      "speaker_id": 2,
+      "hash": "8eb73a43059c799d"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "あさごはんはおにぎりです。",
+      "speaker_id": 2,
+      "hash": "3a5050aa6ef90c64"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "お茶",
+      "speaker_id": 2,
+      "hash": "fb3a6aa15ac500f2"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "おちゃをのみます。",
+      "speaker_id": 2,
+      "hash": "ce65e11d65ed9e82"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "ひとつ",
+      "speaker_id": 2,
+      "hash": "e48e0e290c27093c"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "りんごをひとつください。",
+      "speaker_id": 2,
+      "hash": "3b1f2d3a5a739df8"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "ほか",
+      "speaker_id": 2,
+      "hash": "86ef94512caa2589"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "ほかになにかいりますか。",
+      "speaker_id": 2,
+      "hash": "7e7ab02693e63d6d"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "全部で",
+      "speaker_id": 2,
+      "hash": "4023a3fe908dcd32"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "ぜんぶでせんえんです。",
+      "speaker_id": 2,
+      "hash": "ede23c6892d04521"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "円",
+      "speaker_id": 2,
+      "hash": "8dc451f8dc64bedc"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "ひゃくえんです。",
+      "speaker_id": 2,
+      "hash": "fbb3c874a1400ce0"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "お預かりします",
+      "speaker_id": 2,
+      "hash": "32a09f5b7b41edef"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "せんえんおあずかりします。",
+      "speaker_id": 2,
+      "hash": "65da5e13a43e4a45"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "おつり",
+      "speaker_id": 2,
+      "hash": "f39778247190f3a7"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "おつりはごじゅうえんです。",
+      "speaker_id": 2,
+      "hash": "955972b4ca8ab120"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "レジ",
+      "speaker_id": 2,
+      "hash": "f6321a04eac72f5d"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "レジではらいます。",
+      "speaker_id": 2,
+      "hash": "9717ff6a58fbc1d4"
+    }
+  ]
+}

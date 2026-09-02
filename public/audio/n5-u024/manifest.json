@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u024",
+  "generated_at": "2026-09-02T02:28:56.986Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "きょうはあめがふりそうです。かさをもったほうがいいですよ。",
+      "speaker_id": 12,
+      "hash": "f80fc8053d731028"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "ほんとうですか。てんきよほうをみましたか。",
+      "speaker_id": 2,
+      "hash": "f901e8bd5c108b50"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "はい、みました。きょうはさむくなりそうです。",
+      "speaker_id": 12,
+      "hash": "eb68d3c9af5ac49f"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "ふゆはゆきがふりますね。ゆきはきれいですが、あぶないです。",
+      "speaker_id": 2,
+      "hash": "69c8d040f4da695c"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "じしんもこわいです。ひなんくんれんをしたほうがいいですか。",
+      "speaker_id": 12,
+      "hash": "acb3bbc52caacc5b"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "はい、ひなんじょをしらべておいたほうがいいです。",
+      "speaker_id": 2,
+      "hash": "4aae7864268e5c19"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "わかりました。きょううちにかえってかくにんします。",
+      "speaker_id": 12,
+      "hash": "38f6812a2872fa68"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "天気予報",
+      "speaker_id": 2,
+      "hash": "05b964026459b9cd"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "てんきよほうをみます。",
+      "speaker_id": 2,
+      "hash": "e5ef2020a23f27fc"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "雨",
+      "speaker_id": 2,
+      "hash": "1e4eff05ae346898"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "あめがふっています。",
+      "speaker_id": 2,
+      "hash": "70f80b81fc4d280d"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "雪",
+      "speaker_id": 2,
+      "hash": "886bac291be7a303"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "ゆきがふりました。",
+      "speaker_id": 2,
+      "hash": "336c50ae9ba79ad6"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "地震",
+      "speaker_id": 2,
+      "hash": "ec3cd2a94c309aa0"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "じしんがおきました。",
+      "speaker_id": 2,
+      "hash": "9c564a739679adc1"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "避難訓練",
+      "speaker_id": 2,
+      "hash": "2664894caf1cf519"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "ひなんくんれんをします。",
+      "speaker_id": 2,
+      "hash": "cbae9901cb1ba04c"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "避難所",
+      "speaker_id": 2,
+      "hash": "a89681874877c872"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "ひなんじょににげます。",
+      "speaker_id": 2,
+      "hash": "aa99ae8e04b9b6ad"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "調べる",
+      "speaker_id": 2,
+      "hash": "ff477193ffa12351"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "てんきをしらべます。",
+      "speaker_id": 2,
+      "hash": "dca2aedc6b33efa9"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "寒い",
+      "speaker_id": 2,
+      "hash": "8c774cab58526070"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "きょうはさむいです。",
+      "speaker_id": 2,
+      "hash": "0b7de52c6444defd"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "綺麗",
+      "speaker_id": 2,
+      "hash": "cb6890712fbd55f4"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "ゆきはきれいです。",
+      "speaker_id": 2,
+      "hash": "2842fc9b0d5c130a"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "傘",
+      "speaker_id": 2,
+      "hash": "08fc9a715086f72c"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "かさをわすれました。",
+      "speaker_id": 2,
+      "hash": "ff36e12fa2bf86d6"
+    }
+  ]
+}

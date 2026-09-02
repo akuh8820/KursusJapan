@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u030",
+  "generated_at": "2026-09-02T02:54:03.165Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "みなさん、N5がおわったら、なにをしたいつもりですか。",
+      "speaker_id": 12,
+      "hash": "19a19fa671115506"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "N4をうけるつもりです。いまから単語をおぼえておきます。",
+      "speaker_id": 2,
+      "hash": "96e31af77c0bdfe8"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "わたしはだいがくいんにいきたいです。けんきゅうしながら、はたらきます。",
+      "speaker_id": 2,
+      "hash": "39d1bfb801f551f1"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "すごいですね。わたしはにほんでしごとをみつけるつもりです。",
+      "speaker_id": 12,
+      "hash": "2a34330cc34927e5"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "りあんさんならだいじょうぶです。めんせつのれんしゅうをしておきましょう。",
+      "speaker_id": 2,
+      "hash": "e64d92d13f55f5e9"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "みんなでN4もがんばりましょう。にほんごはつづけることがだいじです。",
+      "speaker_id": 2,
+      "hash": "0347acbb2bf8f60a"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "はい、ぜったいがんばります。ありがとう、みんな。",
+      "speaker_id": 12,
+      "hash": "458151e984d1f439"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "つもり",
+      "speaker_id": 2,
+      "hash": "629519ab9623cf94"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "いしゃになるつもりです。",
+      "speaker_id": 2,
+      "hash": "d6a84bf4d224c35d"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "大学院",
+      "speaker_id": 2,
+      "hash": "0ba0697ca25f344d"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "だいがくいんにいきます。",
+      "speaker_id": 2,
+      "hash": "7258b48917406038"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "研究",
+      "speaker_id": 2,
+      "hash": "6eea329fdb715a6d"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "けんきゅうをします。",
+      "speaker_id": 2,
+      "hash": "3509ccf3a80976f3"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "見つける",
+      "speaker_id": 2,
+      "hash": "a6b1f649ca53e6ed"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "しごとをみつけました。",
+      "speaker_id": 2,
+      "hash": "8aca92de657ae0c6"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "面接練習",
+      "speaker_id": 2,
+      "hash": "3f6a529a23bfd248"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "めんせつれんしゅうをします。",
+      "speaker_id": 2,
+      "hash": "796b011e73ded5d8"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "続ける",
+      "speaker_id": 2,
+      "hash": "648cf82474030ffe"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "にほんごをつづけます。",
+      "speaker_id": 2,
+      "hash": "63538839d98fda2a"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "大事",
+      "speaker_id": 2,
+      "hash": "3aeb1b8efd5d8ad9"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "けんこうがだいじです。",
+      "speaker_id": 2,
+      "hash": "b7de0e989d9e59aa"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "単語",
+      "speaker_id": 2,
+      "hash": "3f4449f4424e20ef"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "たんごをおぼえます。",
+      "speaker_id": 2,
+      "hash": "36c8c3d021d57c22"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "覚える",
+      "speaker_id": 2,
+      "hash": "1b4b98dab08e0a07"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "なまえをおぼえました。",
+      "speaker_id": 2,
+      "hash": "7cbc6eed3775ae37"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "絶対",
+      "speaker_id": 2,
+      "hash": "d60b60252af633e7"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "ぜったいがんばります。",
+      "speaker_id": 2,
+      "hash": "57dc2fc91817cb41"
+    }
+  ]
+}

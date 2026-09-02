@@ -1,0 +1,268 @@
+{
+  "id": "n5-u011",
+  "level": "N5",
+  "unit_no": 11,
+  "theme": "Belanja di konbini",
+  "title_id": "Memesan & Membayar di Konbini",
+  "objectives_id": [
+    "Memesan barang dengan pola 〜をください / 〜をお願いします",
+    "Mengenal huruf hiragana baris さ (さしすせそ)",
+    "Memahami frasa kasir: total, uang, kembalian"
+  ],
+  "dialog": {
+    "title_id": "Rian belanja di konbini dekat kos",
+    "lines": [
+      {
+        "speaker": "Store Staff",
+        "jp": "いらっしゃいませ。",
+        "kana": "いらっしゃいませ。",
+        "romaji": "Irasshaimase.",
+        "id": "Selamat datang."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "おにぎりをひとつ、ください。",
+        "kana": "おにぎりをひとつ、ください。",
+        "romaji": "Onigiri o hitotsu, kudasai.",
+        "id": "Onigiri satu, tolong."
+      },
+      {
+        "speaker": "Store Staff",
+        "jp": "おにぎりですね。ほかには？",
+        "kana": "おにぎりですね。ほかには？",
+        "romaji": "Onigiri desu ne. Hoka ni wa?",
+        "id": "Onigiri ya. Ada lagi?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "おちゃをひとつ、おねがいします。",
+        "kana": "おちゃをひとつ、おねがいします。",
+        "romaji": "Ocha o hitotsu, onegaishimasu.",
+        "id": "Teh satu, tolong."
+      },
+      {
+        "speaker": "Store Staff",
+        "jp": "おにぎりとおちゃで、ぜんぶでさんびゃくえんです。",
+        "kana": "おにぎりとおちゃで、ぜんぶでさんびゃくえんです。",
+        "romaji": "Onigiri to ocha de, zenbu de sanbyaku en desu.",
+        "id": "Onigiri dan teh, total 300 yen."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい。ごひゃくえんです。",
+        "kana": "はい。ごひゃくえんです。",
+        "romaji": "Hai. Gohyaku en desu.",
+        "id": "Ya. Ini 500 yen."
+      },
+      {
+        "speaker": "Store Staff",
+        "jp": "ごひゃくえんおあずかりします。おつりはにひゃくえんです。",
+        "kana": "ごひゃくえんおあずかりします。おつりはにひゃくえんです。",
+        "romaji": "Gohyaku en oazukari shimasu. Otsuri wa nihyaku en desu.",
+        "id": "Terima 500 yen. Kembaliannya 200 yen."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "ありがとうございます。",
+        "kana": "ありがとうございます。",
+        "romaji": "Arigatou gozaimasu.",
+        "id": "Terima kasih."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜をください / 〜をお願いします",
+    "meaning_id": "Tolong berikan saya 〜 / Saya minta 〜 (memesan barang/jasa dengan sopan)",
+    "formation": "[Kata benda] + を + ください / お願いします",
+    "examples": [
+      {
+        "jp": "みずをください。",
+        "romaji": "Mizu o kudasai.",
+        "id": "Tolong beri air putih."
+      },
+      {
+        "jp": "このほんをおねがいします。",
+        "romaji": "Kono hon o onegaishimasu.",
+        "id": "Buku ini, tolong."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "コンビニ",
+      "kana": "コンビニ",
+      "romaji": "konbini",
+      "meaning_id": "minimarket (convenience store)",
+      "example_jp": "コンビニでおにぎりをかいました。",
+      "example_romaji": "Konbini de onigiri o kaimashita.",
+      "example_id": "Saya beli onigiri di konbini."
+    },
+    {
+      "term": "おにぎり",
+      "kana": "おにぎり",
+      "romaji": "onigiri",
+      "meaning_id": "nasi goreng/bentuk segitiga (onigiri)",
+      "example_jp": "あさごはんはおにぎりです。",
+      "example_romaji": "Asagohan wa onigiri desu.",
+      "example_id": "Sarapannya onigiri."
+    },
+    {
+      "term": "お茶",
+      "kana": "おちゃ",
+      "romaji": "ocha",
+      "meaning_id": "teh (biasanya teh hijau)",
+      "example_jp": "おちゃをのみます。",
+      "example_romaji": "Ocha o nomimasu.",
+      "example_id": "Saya minum teh."
+    },
+    {
+      "term": "ひとつ",
+      "kana": "ひとつ",
+      "romaji": "hitotsu",
+      "meaning_id": "satu (penghitung benda umum)",
+      "example_jp": "りんごをひとつください。",
+      "example_romaji": "Ringo o hitotsu kudasai.",
+      "example_id": "Apel satu, tolong."
+    },
+    {
+      "term": "ほか",
+      "kana": "ほか",
+      "romaji": "hoka",
+      "meaning_id": "lainnya, yang lain",
+      "example_jp": "ほかになにかいりますか。",
+      "example_romaji": "Hoka ni nani ka irimasu ka.",
+      "example_id": "Ada yang lain yang dibutuhkan?"
+    },
+    {
+      "term": "全部で",
+      "kana": "ぜんぶで",
+      "romaji": "zenbu de",
+      "meaning_id": "total, semuanya",
+      "example_jp": "ぜんぶでせんえんです。",
+      "example_romaji": "Zenbu de sen en desu.",
+      "example_id": "Totalnya 1000 yen."
+    },
+    {
+      "term": "円",
+      "kana": "えん",
+      "romaji": "en",
+      "meaning_id": "yen (mata uang Jepang)",
+      "example_jp": "ひゃくえんです。",
+      "example_romaji": "Hyaku en desu.",
+      "example_id": "100 yen."
+    },
+    {
+      "term": "お預かりします",
+      "kana": "おあずかりします",
+      "romaji": "oazukari shimasu",
+      "meaning_id": "menerima uang (dari pembeli)",
+      "example_jp": "せんえんおあずかりします。",
+      "example_romaji": "Sen en oazukari shimasu.",
+      "example_id": "Terima 1000 yen."
+    },
+    {
+      "term": "おつり",
+      "kana": "おつり",
+      "romaji": "otsuri",
+      "meaning_id": "kembalian uang",
+      "example_jp": "おつりはごじゅうえんです。",
+      "example_romaji": "Otsuri wa gojuu en desu.",
+      "example_id": "Kembaliannya 50 yen."
+    },
+    {
+      "term": "レジ",
+      "kana": "レジ",
+      "romaji": "reji",
+      "meaning_id": "kasir",
+      "example_jp": "レジではらいます。",
+      "example_romaji": "Reji de haraimasu.",
+      "example_id": "Bayar di kasir."
+    }
+  ],
+  "writing": [
+    {
+      "char": "さ",
+      "type": "hiragana",
+      "romaji": "sa"
+    },
+    {
+      "char": "し",
+      "type": "hiragana",
+      "romaji": "shi"
+    },
+    {
+      "char": "す",
+      "type": "hiragana",
+      "romaji": "su"
+    },
+    {
+      "char": "せ",
+      "type": "hiragana",
+      "romaji": "se"
+    },
+    {
+      "char": "そ",
+      "type": "hiragana",
+      "romaji": "so"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Dengarkan pemesanan Rian. Apa yang dipesan pertama kali?",
+      "options": [
+        "Teh satu.",
+        "Onigiri satu.",
+        "Air putih.",
+        "Roti satu."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 6,
+      "prompt_id": "Dengarkan ucapan kasir. Berapa kembalian yang diterima Rian?",
+      "options": [
+        "100 yen",
+        "200 yen",
+        "300 yen",
+        "500 yen"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "おちゃ",
+        "を",
+        "ひとつ",
+        "ください"
+      ],
+      "answer_jp": "おちゃをひとつください。"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "おにぎり",
+      "front_kana": "おにぎり",
+      "back_id": "nasi goreng/bentuk segitiga (onigiri)"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "おつり",
+      "front_kana": "おつり",
+      "back_id": "kembalian uang"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'shi'",
+      "target_kana": "し"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'so'",
+      "target_kana": "そ"
+    }
+  ],
+  "audio_status": "pending"
+}

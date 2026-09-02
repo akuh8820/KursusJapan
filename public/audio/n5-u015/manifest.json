@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u015",
+  "generated_at": "2026-09-02T01:48:12.016Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "りあんさん、なにがすきですか。",
+      "speaker_id": 2,
+      "hash": "0d1ab54f956de77f"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "えいががすきです。よくみます。",
+      "speaker_id": 12,
+      "hash": "aad17b1cd7ce7985"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "わたしもえいががすきです。でも、ホラーがきらいです。",
+      "speaker_id": 2,
+      "hash": "8291f06ee493d8ae"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "あした、えいがをみにいきたいです。いっしょにいきませんか。",
+      "speaker_id": 12,
+      "hash": "0e3bd3383c9ecda2"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "いいですね。なんのえいががみたいですか。",
+      "speaker_id": 2,
+      "hash": "9e7d6b812fef3094"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "アクションがみたいです。",
+      "speaker_id": 12,
+      "hash": "e293792aa0155ce3"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "じゃ、チケットをかいましょう。",
+      "speaker_id": 2,
+      "hash": "e00abfd0d8637fd6"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "映画",
+      "speaker_id": 2,
+      "hash": "7181681f1cae775e"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "えいがをみます。",
+      "speaker_id": 2,
+      "hash": "27c40e6badede082"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "音楽",
+      "speaker_id": 2,
+      "hash": "5b2199928207ad94"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "おんがくをききます。",
+      "speaker_id": 2,
+      "hash": "ef8a23e342b01f86"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "読書",
+      "speaker_id": 2,
+      "hash": "be393fb9f1caa42f"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "どくしょがすきです。",
+      "speaker_id": 2,
+      "hash": "d02ff501b985d30a"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "ゲーム",
+      "speaker_id": 2,
+      "hash": "0fad424758c123a2"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "ゲームをします。",
+      "speaker_id": 2,
+      "hash": "62e6e1fee4d62af5"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "スポーツ",
+      "speaker_id": 2,
+      "hash": "e6bd7ee88c3c9248"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "スポーツをします。",
+      "speaker_id": 2,
+      "hash": "1b3a3b3a2c52c521"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "ホラー",
+      "speaker_id": 2,
+      "hash": "8522dd46dc7a1257"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "ホラーえいがはこわいです。",
+      "speaker_id": 2,
+      "hash": "72721e6e867a1db7"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "アクション",
+      "speaker_id": 2,
+      "hash": "38183226ec7a2342"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "アクションえいががすきです。",
+      "speaker_id": 2,
+      "hash": "4872b5ca6a1996d4"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "一緒に",
+      "speaker_id": 2,
+      "hash": "69d4602cf8f30d72"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "いっしょにいきましょう。",
+      "speaker_id": 2,
+      "hash": "6ddd42d2a72145fb"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "チケット",
+      "speaker_id": 2,
+      "hash": "169b7a491102790f"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "チケットをかいました。",
+      "speaker_id": 2,
+      "hash": "376173386cf7883e"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "見に行きます",
+      "speaker_id": 2,
+      "hash": "d92d70fd5660a762"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "えいがをみにいきます。",
+      "speaker_id": 2,
+      "hash": "243d7cef669122e4"
+    }
+  ]
+}

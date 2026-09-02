@@ -1,0 +1,258 @@
+{
+  "id": "n5-u026",
+  "level": "N5",
+  "unit_no": 26,
+  "theme": "Budaya: Matsuri & Onsen",
+  "title_id": "Festival Musim Panas & Mata Air Panas",
+  "objectives_id": [
+    "Mengungkapkan pengalaman dengan 〜たことがある (pernah)",
+    "Menggunakan 〜ながら untuk aksi bersamaan (sambil)",
+    "Mengenal budaya matsuri, yukata, dan onsen"
+  ],
+  "dialog": {
+    "title_id": "Rian, Mina, dan Yuki pergi ke matsuri dan onsen",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "ことしのなつまつりにいきましたか。",
+        "kana": "ことしのなつまつりにいきましたか。",
+        "romaji": "Kotoshi no natsu matsuri ni ikimashita ka.",
+        "id": "Apakah pergi ke festival musim panas tahun ini?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "はい、いきました。ゆかたをきて、ぼんおどりをおどりました。",
+        "kana": "はい、いきました。ゆかたをきて、ぼんおどりをおどりました。",
+        "romaji": "Hai, ikimashita. Yukata wo kite, bonodori wo odorimashita.",
+        "id": "Ya, pergi. Pakai yukata, menari bon odori."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "わたしもいきました。たこやきをたべながら、はなびをみました。",
+        "kana": "わたしもいきました。たこやきをたべながら、はなびをみました。",
+        "romaji": "Watashi mo ikimashita. Takoyaki wo tabe nagara, hanabi wo mimashita.",
+        "id": "Saya juga pergi. Sambil makan takoyaki, lihat kembang api."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "いいですね。おんせんにもはいったことがありますか。",
+        "kana": "いいですね。おんせんにもはいったことがありますか。",
+        "romaji": "Ii desu ne. Onsen ni mo haitta koto ga arimasu ka.",
+        "id": "Bagus ya. Pernah masuk onsen tidak?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "あります。ゆっくりはいりながら、ふじさんをみました。",
+        "kana": "あります。ゆっくりはいりながら、ふじさんをみました。",
+        "romaji": "Arimasu. Yukkuri hairi nagara, Fujisan wo mimashita.",
+        "id": "Ada. Sambil pelan-pelan masuk, lihat Gunung Fuji."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "おんせんのまえで、からだをあらわなければなりません。",
+        "kana": "おんせんのまえで、からだをあらわなければなりません。",
+        "romaji": "Onsen no mae de, karada wo arawanakereba narimasen.",
+        "id": "Sebelum onsen, harus mandi (cuci badan)."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "わかりました。らいねんはぜったいいきます。",
+        "kana": "わかりました。らいねんはぜったいいきます。",
+        "romaji": "Wakarimashita. Rainen wa zettai ikimasu.",
+        "id": "Baik. Tahun depan pasti pergi."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜たことがある / 〜ながら",
+    "meaning_id": "Pernah melakukan... / Sambil melakukan... — Verb ta-form + koto ga aru (pengalaman), Verb masu-stem + nagara (aksi bersamaan).",
+    "formation": "[Verb ta-form] + こと が ある / [Verb masu-stem] + ながら",
+    "examples": [
+      {
+        "jp": "ふじさんにのぼったことがあります。",
+        "romaji": "Fujisan ni nobotta koto ga arimasu.",
+        "id": "Saya pernah mendaki Gunung Fuji."
+      },
+      {
+        "jp": "おんがくをききながら、べんきょうします。",
+        "romaji": "Ongaku wo kiki nagara, benkyou shimasu.",
+        "id": "Sambil mendengar musik, belajar."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "夏祭り",
+      "kana": "なつまつり",
+      "romaji": "natsu matsuri",
+      "meaning_id": "festival musim panas",
+      "example_jp": "なつまつりにいきます。",
+      "example_romaji": "Natsu matsuri ni ikimasu.",
+      "example_id": "Saya pergi ke festival musim panas."
+    },
+    {
+      "term": "浴衣",
+      "kana": "ゆかた",
+      "romaji": "yukata",
+      "meaning_id": "yukata (kimono ringan musim panas)",
+      "example_jp": "ゆかたをきます。",
+      "example_romaji": "Yukata wo kimasu.",
+      "example_id": "Saya pakai yukata."
+    },
+    {
+      "term": "盆踊り",
+      "kana": "ぼんおどり",
+      "romaji": "bonodori",
+      "meaning_id": "tarian bon (festival nenek moyang)",
+      "example_jp": "ぼんおどりをおどります。",
+      "example_romaji": "Bonodori wo odorimasu.",
+      "example_id": "Saya menari bon odori."
+    },
+    {
+      "term": "たこ焼き",
+      "kana": "たこやき",
+      "romaji": "takoyaki",
+      "meaning_id": "takoyaki (bola gurita)",
+      "example_jp": "たこやきをたべます。",
+      "example_romaji": "Takoyaki wo tabemasu.",
+      "example_id": "Saya makan takoyaki."
+    },
+    {
+      "term": "花火",
+      "kana": "はなび",
+      "romaji": "hanabi",
+      "meaning_id": "kembang api",
+      "example_jp": "はなびをみます。",
+      "example_romaji": "Hanabi wo mimasu.",
+      "example_id": "Saya lihat kembang api."
+    },
+    {
+      "term": "温泉",
+      "kana": "おんせん",
+      "romaji": "onsen",
+      "meaning_id": "mata air panas",
+      "example_jp": "おんせんにはいります。",
+      "example_romaji": "Onsen ni hairimasu.",
+      "example_id": "Saya masuk onsen."
+    },
+    {
+      "term": "富士山",
+      "kana": "ふじさん",
+      "romaji": "Fujisan",
+      "meaning_id": "Gunung Fuji",
+      "example_jp": "ふじさんがきれいです。",
+      "example_romaji": "Fujisan ga kirei desu.",
+      "example_id": "Gunung Fuji indah."
+    },
+    {
+      "term": "体",
+      "kana": "からだ",
+      "romaji": "karada",
+      "meaning_id": "badan, tubuh",
+      "example_jp": "からだをあらいます。",
+      "example_romaji": "Karada wo araimasu.",
+      "example_id": "Saya cuci badan."
+    },
+    {
+      "term": "洗う",
+      "kana": "あらう",
+      "romaji": "arau",
+      "meaning_id": "mencuci",
+      "example_jp": "てをあらいます。",
+      "example_romaji": "Te wo araimasu.",
+      "example_id": "Saya cuci tangan."
+    },
+    {
+      "term": "来年",
+      "kana": "らいねん",
+      "romaji": "rainen",
+      "meaning_id": "tahun depan",
+      "example_jp": "らいねんにほんにいきます。",
+      "example_romaji": "Rainen nihon ni ikimasu.",
+      "example_id": "Tahun depan pergi ke Jepang."
+    }
+  ],
+  "writing": [
+    {
+      "char": "祭",
+      "type": "kanji",
+      "romaji": "matsuri",
+      "meaning_id": "festival",
+      "kanjivg_id": "796d"
+    },
+    {
+      "char": "温",
+      "type": "kanji",
+      "romaji": "on",
+      "meaning_id": "hangat",
+      "kanjivg_id": "6e29"
+    },
+    {
+      "char": "泉",
+      "type": "kanji",
+      "romaji": "sen",
+      "meaning_id": "mata air, sumur",
+      "kanjivg_id": "6cc9"
+    },
+    {
+      "char": "花",
+      "type": "kanji",
+      "romaji": "hana",
+      "meaning_id": "bunga",
+      "kanjivg_id": "82b1"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 2,
+      "prompt_id": "Yuki berkata 'たこやきをたべながら、はなびをみました'. Artinya?",
+      "options": [
+        "Makan takoyaki setelah lihat kembang api",
+        "Sambil makan takoyaki, lihat kembang api",
+        "Lihat kembang api lalu makan takoyaki",
+        "Tidak makan takoyaki"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "d03",
+      "target_kana": "おんせんにもはいったことがありますか"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "浴衣",
+      "front_kana": "ゆかた",
+      "back_id": "yukata (kimono ringan)"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'ふじさん' adalah...",
+      "options": [
+        "Gunung Fuji",
+        "Mata air panas",
+        "Festival",
+        "Kembang api"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "おんがく",
+        "を",
+        "ききながら",
+        "べんきょう",
+        "します"
+      ],
+      "answer_jp": "おんがくをききながらべんきょうします。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis kanji untuk 'matsuri' (festival)",
+      "target_kana": "まつり"
+    }
+  ],
+  "audio_status": "pending"
+}

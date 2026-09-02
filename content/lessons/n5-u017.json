@@ -1,0 +1,254 @@
+{
+  "id": "n5-u017",
+  "level": "N5",
+  "unit_no": 17,
+  "theme": "Restoran & makanan",
+  "title_id": "Memesan Makanan & Minuman",
+  "objectives_id": [
+    "Menanyakan keberadaan dengan 〜があります / 〜がいます",
+    "Mengenal katakana dasar (アイウエオ カキクケコ)",
+    "Menyatakan keinginan benda dengan 〜がほしいです"
+  ],
+  "dialog": {
+    "title_id": "Rian dan Yuki makan di restoran ramen",
+    "lines": [
+      {
+        "speaker": "Waiter",
+        "jp": "いらっしゃいませ。なんめいさまですか。",
+        "kana": "いらっしゃいませ。なんめいさまですか。",
+        "romaji": "Irasshaimase. Nanmei-sama desu ka.",
+        "id": "Selamat datang. Berapa orang?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "ふたりです。めにゅーをください。",
+        "kana": "ふたりです。めにゅーをください。",
+        "romaji": "Futari desu. Menyuu o kudasai.",
+        "id": "Dua orang. Tolong menunya."
+      },
+      {
+        "speaker": "Waiter",
+        "jp": "こちらです。おすすめはしょうゆラーメンです。",
+        "kana": "こちらです。おすすめはしょうゆラーメンです。",
+        "romaji": "Kochira desu. Osusume wa shouyu raamen desu.",
+        "id": "Ini menunya. Rekomendasinya shoyu ramen."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "しょうゆラーメンがありますか。",
+        "kana": "しょうゆラーメンがありますか。",
+        "romaji": "Shouyu raamen ga arimasu ka.",
+        "id": "Ada shoyu ramen?"
+      },
+      {
+        "speaker": "Waiter",
+        "jp": "はい、あります。ぎょうざもありますよ。",
+        "kana": "はい、あります。ぎょうざもありますよ。",
+        "romaji": "Hai, arimasu. Gyoza mo arimasu yo.",
+        "id": "Ya, ada. Gyoza juga ada."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "じゃ、しょうゆラーメンとぎょうざをください。みずがほしいです。",
+        "kana": "じゃ、しょうゆラーメンとぎょうざをください。みずがほしいです。",
+        "romaji": "Jya, shouyu raamen to gyoza o kudasai. Mizu ga hoshii desu.",
+        "id": "Kalau begitu, shoyu ramen dan gyoza. Saya mau air putih."
+      },
+      {
+        "speaker": "Waiter",
+        "jp": "しょうゆラーメンひとつとぎょうざひとつ、みずですね。かしこまりました。",
+        "kana": "しょうゆラーメンひとつとぎょうざひとつ、みずですね。かしこまりました。",
+        "romaji": "Shouyu raamen hitotsu to gyoza hitotsu, mizu desu ne. Kashikomarimashita.",
+        "id": "Shoyu ramen satu, gyoza satu, air ya. Baik."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜があります / 〜がいます / 〜がほしいです",
+    "meaning_id": "Ada (benda/tidak bernyawa) / Ada (makhluk hidup) / Ingin punya 〜",
+    "formation": "[Benda] + が + あります / [Makhluk hidup] + が + います / [Benda] + が + ほしいです",
+    "examples": [
+      {
+        "jp": "ここにねこがいます。",
+        "romaji": "Koko ni neko ga imasu.",
+        "id": "Di sini ada kucing."
+      },
+      {
+        "jp": "くるまがほしいです。",
+        "romaji": "Kuruma ga hoshii desu.",
+        "id": "Saya ingin punya mobil."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "レストラン",
+      "kana": "レストラン",
+      "romaji": "resutoran",
+      "meaning_id": "restoran",
+      "example_jp": "レストランでばんごはんをたべます。",
+      "example_romaji": "Resutoran de bangohan o tabemasu.",
+      "example_id": "Makan malam di restoran."
+    },
+    {
+      "term": "メニュー",
+      "kana": "メニュー",
+      "romaji": "menyuu",
+      "meaning_id": "menu",
+      "example_jp": "メニューをみます。",
+      "example_romaji": "Menyuu o mimasu.",
+      "example_id": "Melihat menu."
+    },
+    {
+      "term": "ラーメン",
+      "kana": "ラーメン",
+      "romaji": "raamen",
+      "meaning_id": "ramen",
+      "example_jp": "ラーメンがすきです。",
+      "example_romaji": "Raamen ga suki desu.",
+      "example_id": "Saya suka ramen."
+    },
+    {
+      "term": "醤油",
+      "kana": "しょうゆ",
+      "romaji": "shouyu",
+      "meaning_id": "kecap asin (shoyu)",
+      "example_jp": "しょうゆラーメンをたべます。",
+      "example_romaji": "Shouyu raamen o tabemasu.",
+      "example_id": "Makan shoyu ramen."
+    },
+    {
+      "term": "餃子",
+      "kana": "ぎょうざ",
+      "romaji": "gyoza",
+      "meaning_id": "gyoza (pangsit goreng)",
+      "example_jp": "ぎょうざをたべます。",
+      "example_romaji": "Gyoza o tabemasu.",
+      "example_id": "Makan gyoza."
+    },
+    {
+      "term": "おすすめ",
+      "kana": "おすすめ",
+      "romaji": "osusume",
+      "meaning_id": "rekomendasi",
+      "example_jp": "おすすめはなんですか。",
+      "example_romaji": "Osusume wa nan desu ka.",
+      "example_id": "Rekomendasinya apa?"
+    },
+    {
+      "term": "水",
+      "kana": "みず",
+      "romaji": "mizu",
+      "meaning_id": "air putih",
+      "example_jp": "みずをのみます。",
+      "example_romaji": "Mizu o nomimasu.",
+      "example_id": "Minum air putih."
+    },
+    {
+      "term": "注文",
+      "kana": "ちゅうもん",
+      "romaji": "chuumon",
+      "meaning_id": "pesanan",
+      "example_jp": "ちゅうもんをします。",
+      "example_romaji": "Chuumon o shimasu.",
+      "example_id": "Memesan."
+    },
+    {
+      "term": "美味しい",
+      "kana": "おいしい",
+      "romaji": "oishii",
+      "meaning_id": "enak, lezat",
+      "example_jp": "このラーメンはおいしいです。",
+      "example_romaji": "Kono raamen wa oishii desu.",
+      "example_id": "Ramen ini enak."
+    },
+    {
+      "term": "お会計",
+      "kana": "おかいけい",
+      "romaji": "okaikei",
+      "meaning_id": "bill, pembayaran",
+      "example_jp": "おかいけいをおねがいします。",
+      "example_romaji": "Okaikei o onegaishimasu.",
+      "example_id": "Minta bill-nya."
+    }
+  ],
+  "writing": [
+    {
+      "char": "ア",
+      "type": "katakana",
+      "romaji": "a"
+    },
+    {
+      "char": "イ",
+      "type": "katakana",
+      "romaji": "i"
+    },
+    {
+      "char": "ウ",
+      "type": "katakana",
+      "romaji": "u"
+    },
+    {
+      "char": "エ",
+      "type": "katakana",
+      "romaji": "e"
+    },
+    {
+      "char": "オ",
+      "type": "katakana",
+      "romaji": "o"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 3,
+      "prompt_id": "Dengarkan Yuki. Apa yang ditanyakan ke pelayan?",
+      "options": [
+        "Ada shoyu ramen?",
+        "Ada gyoza?",
+        "Ada air putih?",
+        "Ada menu bahasa Inggris?"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "v03t",
+      "target_kana": "ラーメン"
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "みず",
+        "が",
+        "ほしい",
+        "です"
+      ],
+      "answer_jp": "みずがほしいです。"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "餃子",
+      "front_kana": "ぎょうざ",
+      "back_id": "gyoza (pangsit goreng)"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'osusume' adalah...",
+      "options": [
+        "Pesanan",
+        "Rekomendasi",
+        "Pembayaran",
+        "Pelayan"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf katakana untuk bunyi 'i'",
+      "target_kana": "イ"
+    }
+  ],
+  "audio_status": "pending"
+}

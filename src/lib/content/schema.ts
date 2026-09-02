@@ -74,6 +74,9 @@ export const exerciseTypeSchema = z.enum([
   "listen_choose",
   "arrange",
   "write_recall",
+  "flip_card",
+  "listen_type",
+  "mc_vocab",
 ]);
 
 const listenChooseSchema = z.object({
@@ -96,10 +99,41 @@ const writeRecallSchema = z.object({
   target_kana: z.string().min(1),
 });
 
+/** Kartu bolak-balik: depan jp/kana, belakang arti (PRD §6.4 SRS). */
+const flipCardSchema = z.object({
+  type: z.literal("flip_card"),
+  front_jp: z.string().min(1),
+  front_kana: z.string().min(1),
+  back_id: z.string().min(2),
+});
+
+/**
+ * Dengar audio lalu ketik kana yang didengar.
+ * audio_ref menunjuk file audio unit: "d03" (baris dialog) / "v02t" (kata) / "v02x" (contoh).
+ */
+const listenTypeSchema = z.object({
+  type: z.literal("listen_type"),
+  audio_ref: z
+    .string()
+    .regex(/^(d\d{2}|v\d{2}[tx])$/, "format audio_ref: d03 / v02t / v02x"),
+  target_kana: z.string().min(1),
+});
+
+/** Pilih kata yang sesuai arti (pilihan ganda kosakata). */
+const mcVocabSchema = z.object({
+  type: z.literal("mc_vocab"),
+  prompt_id: z.string().min(2),
+  options: z.array(z.string().min(1)).min(3).max(4),
+  answer: z.number().int().min(0),
+});
+
 export const exerciseSchema = z.discriminatedUnion("type", [
   listenChooseSchema,
   arrangeSchema,
   writeRecallSchema,
+  flipCardSchema,
+  listenTypeSchema,
+  mcVocabSchema,
 ]);
 
 export type Exercise = z.infer<typeof exerciseSchema>;

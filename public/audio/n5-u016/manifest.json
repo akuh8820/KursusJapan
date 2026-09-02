@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u016",
+  "generated_at": "2026-09-02T01:58:28.215Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "つぎのやすみ、きょうとにいきましょうか。",
+      "speaker_id": 12,
+      "hash": "8f5c8c6165ffd54c"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "いいですね。きょうとにはおてらがたくさんありますよ。",
+      "speaker_id": 2,
+      "hash": "a0fb2ec0f8df91ef"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "きんかくじにいきたいです。きれいですから。",
+      "speaker_id": 12,
+      "hash": "57059bdc62290d27"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "わたしもいきます。しんかんせんでいきましょう。",
+      "speaker_id": 2,
+      "hash": "566e6c5d7f68ccb2"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "しんかんせんははやいですが、たかいです。",
+      "speaker_id": 12,
+      "hash": "9c85afa3920a243c"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "バスでいきましょうか。やすいですから。",
+      "speaker_id": 2,
+      "hash": "e68d63e4c224171a"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "そうですね。バスでいきましょう。りょこうのつもりです。",
+      "speaker_id": 12,
+      "hash": "ee29cf1ad744dd9f"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "旅行",
+      "speaker_id": 2,
+      "hash": "cf915b26991feac8"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "りょこうのじゅんびをします。",
+      "speaker_id": 2,
+      "hash": "78f41e2f753335eb"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "京都",
+      "speaker_id": 2,
+      "hash": "2ac1f7dfcb111918"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "きょうとにいきました。",
+      "speaker_id": 2,
+      "hash": "694bd9df2efc31e2"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "お寺",
+      "speaker_id": 2,
+      "hash": "ebd45c258791026f"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "おてらをさんぱいします。",
+      "speaker_id": 2,
+      "hash": "76255f2e6664c2c8"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "金閣寺",
+      "speaker_id": 2,
+      "hash": "8032545d73beddca"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "きんかくじはきんいろです。",
+      "speaker_id": 2,
+      "hash": "9d2dcea57ab187da"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "新幹線",
+      "speaker_id": 2,
+      "hash": "570e2d43ad1756d8"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "しんかんせんにのります。",
+      "speaker_id": 2,
+      "hash": "ddd04151a2c75b8a"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "早い",
+      "speaker_id": 2,
+      "hash": "35d7397cdabc984a"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "しんかんせんははやいです。",
+      "speaker_id": 2,
+      "hash": "1e115c3e90846f2e"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "高い",
+      "speaker_id": 2,
+      "hash": "1b977cb4ccf3139f"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "このほんはたかいです。",
+      "speaker_id": 2,
+      "hash": "97c477cb2f85db23"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "安い",
+      "speaker_id": 2,
+      "hash": "58f56107e9453b80"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "バスはやすいです。",
+      "speaker_id": 2,
+      "hash": "9b5fcaab6f7e5e26"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "予定",
+      "speaker_id": 2,
+      "hash": "81761f6cf0678cfd"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "あしたのよていはなんですか。",
+      "speaker_id": 2,
+      "hash": "dd0757a5f6a33f85"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "宿題",
+      "speaker_id": 2,
+      "hash": "f6f7f4e3f4fb6aa6"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "しゅくだいをします。",
+      "speaker_id": 2,
+      "hash": "e229493a6ebe6589"
+    }
+  ]
+}

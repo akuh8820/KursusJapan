@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u023",
+  "generated_at": "2026-09-02T02:26:32.361Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "ミナさん、ちょっとこまりました。",
+      "speaker_id": 12,
+      "hash": "8a7526b3feb1f4a8"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "どうしたんですか。",
+      "speaker_id": 2,
+      "hash": "b2b2842f18403367"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "エアコンがもれています。みずがおちてきます。",
+      "speaker_id": 12,
+      "hash": "92e38ad25a74602d"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "それはたいへんですね。やねやさんにれんらくしなければなりません。",
+      "speaker_id": 2,
+      "hash": "6603923c51d0c8e6"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "あしたれんらくします。きょうはなおしてはいけませんか。",
+      "speaker_id": 12,
+      "hash": "a303396304b11a48"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "じぶんでなおしてはいけません。あぶないです。",
+      "speaker_id": 2,
+      "hash": "18648b6b9faf59eb"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "わかりました。やねやさんをまちます。",
+      "speaker_id": 12,
+      "hash": "210102d5f049c964"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "困る",
+      "speaker_id": 2,
+      "hash": "4cbaae8048ef7cbb"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "わすれものをしてこまりました。",
+      "speaker_id": 2,
+      "hash": "5c899012de2a72b4"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "エアコン",
+      "speaker_id": 2,
+      "hash": "fe8d3585c7482f26"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "エアコンをつけます。",
+      "speaker_id": 2,
+      "hash": "4e18a3fd9d3fd11a"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "漏れる",
+      "speaker_id": 2,
+      "hash": "aad20146c633b931"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "みずがもれています。",
+      "speaker_id": 2,
+      "hash": "a09d6a5166f2dbef"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "落ちる",
+      "speaker_id": 2,
+      "hash": "33327feef6017541"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "みずがおちてきます。",
+      "speaker_id": 2,
+      "hash": "a18b29c6f8404b5e"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "屋根屋",
+      "speaker_id": 2,
+      "hash": "5f9a5fcc894f09be"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "やねやさんをよびます。",
+      "speaker_id": 2,
+      "hash": "f9b357f0d00d1d91"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "連絡する",
+      "speaker_id": 2,
+      "hash": "5053bbb204f78eb4"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "でんわでれんらくします。",
+      "speaker_id": 2,
+      "hash": "a4e965f2488c1124"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "直す",
+      "speaker_id": 2,
+      "hash": "cab06844019eb420"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "じてんしゃをなおします。",
+      "speaker_id": 2,
+      "hash": "be0235448d465aac"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "危ない",
+      "speaker_id": 2,
+      "hash": "8aea5b74d4fd4536"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "そこはあぶないです。",
+      "speaker_id": 2,
+      "hash": "eb06e37a776c2c25"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "待つ",
+      "speaker_id": 2,
+      "hash": "ad0ccb3a840141ec"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "バスをまちます。",
+      "speaker_id": 2,
+      "hash": "92fd1fb86f26d9d8"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "大変",
+      "speaker_id": 2,
+      "hash": "cc60c6b4031eb920"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "しごとはたいへんです。",
+      "speaker_id": 2,
+      "hash": "19340b56618ce3a6"
+    }
+  ]
+}

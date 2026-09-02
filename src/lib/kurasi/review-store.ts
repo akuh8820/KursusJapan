@@ -1,7 +1,7 @@
 /**
  * Status kurasi manusia (PRD §9.2) — disimpan di localStorage sampai
  * Supabase aktif; bisa diekspor JSON untuk lampiran/arsip keputusan.
- * Key: fasih.kurasi.v1
+ * Key: gojapan.kurasi.v1
  */
 
 export const SECTION_KEYS = [
@@ -27,7 +27,7 @@ export type LessonReview = {
 
 export type KurasiState = Record<string, LessonReview>;
 
-const KEY = "fasih.kurasi.v1";
+const KEY = "gojapan.kurasi.v1";
 const EXPORT_VERSION = 1;
 
 export const SECTION_LABELS: Record<SectionKey, string> = {
@@ -138,7 +138,7 @@ export function lessonProgress(review: LessonReview | undefined): {
 export function buildExport(state: KurasiState): string {
   return JSON.stringify(
     {
-      tool: "fasih-kurasi",
+      tool: "gojapan-kurasi",
       version: EXPORT_VERSION,
       exported_at: new Date().toISOString(),
       reviews: state,

@@ -1,0 +1,259 @@
+{
+  "id": "n5-u024",
+  "level": "N5",
+  "unit_no": 24,
+  "theme": "Alam & Lingkungan",
+  "title_id": "Cuaca & Musim di Jepang",
+  "objectives_id": [
+    "Mengucapkan cuaca dan musim dengan 〜そうです (tampak/sepertinya)",
+    "Menggunakan 〜ほうがいい untuk nasihat (lebih baik)",
+    "Mengenal kosakata alam dan bencana alam dasar"
+  ],
+  "dialog": {
+    "title_id": "Rian dan Yuki berbicara tentang cuaca dan gempa",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "きょうはあめがふりそうです。かさをもったほうがいいですよ。",
+        "kana": "きょうはあめがふりそうです。かさをもったほうがいいですよ。",
+        "romaji": "Kyou wa ame ga furisou desu. Kasa wo motta hou ga ii desu yo.",
+        "id": "Hari ini kelihatannya akan hujan. Lebih baik bawa payung."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "ほんとうですか。てんきよほうをみましたか。",
+        "kana": "ほんとうですか。てんきよほうをみましたか。",
+        "romaji": "Hontou desu ka. Tenki yohou wo mimashita ka.",
+        "id": "Benarkah? Kamu cek prakiraan cuaca?"
+      },
+      {
+        "speaker": "Rian",
+      "jp": "はい、みました。きょうはさむくなりそうです。",
+      "kana": "はい、みました。きょうはさむくなりそうです。",
+      "romaji": "Hai, mimashita. Kyou wa samuku narisou desu.",
+      "id": "Ya, sudah. Hari ini kelihatannya jadi dingin."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "ふゆはゆきがふりますね。ゆきはきれいですが、あぶないです。",
+        "kana": "ふゆはゆきがふりますね。ゆきはきれいですが、あぶないです。",
+        "romaji": "Fuyu wa yuki ga furimasu ne. Yuki wa kirei desu ga, abunai desu.",
+        "id": "Musim dingin salju turun ya. Salju indah tapi berbahaya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "じしんもこわいです。ひなんくんれんをしたほうがいいですか。",
+        "kana": "じしんもこわいです。ひなんくんれんをしたほうがいいですか。",
+        "romaji": "Jishin mo kowai desu. Hinan kunren wo shita hou ga ii desu ka.",
+        "id": "Gempa juga takut. Lebah baik ikut latihan evakuasi?"
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "はい、ひなんじょをしらべておいたほうがいいです。",
+        "kana": "はい、ひなんじょをしらべておいたほうがいいです。",
+        "romaji": "Hai, hinanjo wo shirabete oita hou ga ii desu.",
+        "id": "Ya, lebih baik cek tempat evakuasi sebelumnya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "わかりました。きょううちにかえってかくにんします。",
+        "kana": "わかりました。きょううちにかえってかくにんします。",
+        "romaji": "Wakarimashita. Kyou uchi ni kaette kakunin shimasu.",
+        "id": "Baik. Hari ini pulang rumah saya cek."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜そうです (tampak/sepertinya) / 〜ほうがいい",
+    "meaning_id": "Kelihatannya akan... / Lebih baik... — Verb stem + sou desu (prediksi visual), Verb ta-form + hou ga ii (nasihat).",
+    "formation": "[Verb masu-stem] + そうです / [Verb ta-form] + ほうが いい です",
+    "examples": [
+      {
+        "jp": "あのケーキはおいしそうです。",
+        "romaji": "Ano keeki wa oishisou desu.",
+        "id": "Kue itu kelihatannya enak."
+      },
+      {
+        "jp": "はやくとったほうがいいですよ。",
+        "romaji": "Hayaku totta hou ga ii desu yo.",
+        "id": "Lebih baik ambil cepat."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "天気予報",
+      "kana": "てんきよほう",
+      "romaji": "tenki yohou",
+      "meaning_id": "prakiraan cuaca",
+      "example_jp": "てんきよほうをみます。",
+      "example_romaji": "Tenki yohou wo mimasu.",
+      "example_id": "Saya lihat prakiraan cuaca."
+    },
+    {
+      "term": "雨",
+      "kana": "あめ",
+      "romaji": "ame",
+      "meaning_id": "hujan",
+      "example_jp": "あめがふっています。",
+      "example_romaji": "Ame ga futte imasu.",
+      "example_id": "Hujan turun."
+    },
+    {
+      "term": "雪",
+      "kana": "ゆき",
+      "romaji": "yuki",
+      "meaning_id": "salju",
+      "example_jp": "ゆきがふりました。",
+      "example_romaji": "Yuki ga furimashita.",
+      "example_id": "Salju turun."
+    },
+    {
+      "term": "地震",
+      "kana": "じしん",
+      "romaji": "jishin",
+      "meaning_id": "gempa bumi",
+      "example_jp": "じしんがおきました。",
+      "example_romaji": "Jishin ga okimashita.",
+      "example_id": "Gempa terjadi."
+    },
+    {
+      "term": "避難訓練",
+      "kana": "ひなんくんれん",
+      "romaji": "hinan kunren",
+      "meaning_id": "latihan evakuasi",
+      "example_jp": "ひなんくんれんをします。",
+      "example_romaji": "Hinan kunren wo shimasu.",
+      "example_id": "Saya ikut latihan evakuasi."
+    },
+    {
+      "term": "避難所",
+      "kana": "ひなんじょ",
+      "romaji": "hinanjo",
+      "meaning_id": "tempat evakuasi",
+      "example_jp": "ひなんじょににげます。",
+      "example_romaji": "Hinanjo ni nigemasu.",
+      "example_id": "Lari ke tempat evakuasi."
+    },
+    {
+      "term": "調べる",
+      "kana": "しらべる",
+      "romaji": "shiraberu",
+      "meaning_id": "menyelidiki, memeriksa",
+      "example_jp": "てんきをしらべます。",
+      "example_romaji": "Tenki wo shirabemasu.",
+      "example_id": "Saya cek cuaca."
+    },
+    {
+      "term": "寒い",
+      "kana": "さむい",
+      "romaji": "samui",
+      "meaning_id": "dingin (cuaca)",
+      "example_jp": "きょうはさむいです。",
+      "example_romaji": "Kyou wa samui desu.",
+      "example_id": "Hari ini dingin."
+    },
+    {
+      "term": "綺麗",
+      "kana": "きれい",
+      "romaji": "kirei",
+      "meaning_id": "indah, bersih",
+      "example_jp": "ゆきはきれいです。",
+      "example_romaji": "Yuki wa kirei desu.",
+      "example_id": "Salju indah."
+    },
+    {
+      "term": "傘",
+      "kana": "かさ",
+      "romaji": "kasa",
+      "meaning_id": "payung",
+      "example_jp": "かさをわすれました。",
+      "example_romaji": "Kasa wo wasuremashita.",
+      "example_id": "Saya lupa bawa payung."
+    }
+  ],
+  "writing": [
+    {
+      "char": "天",
+      "type": "kanji",
+      "romaji": "ten",
+      "meaning_id": "langit, surga",
+      "kanjivg_id": "5929"
+    },
+    {
+      "char": "気",
+      "type": "kanji",
+      "romaji": "ki",
+      "meaning_id": "udara, semangat",
+      "kanjivg_id": "6c14"
+    },
+    {
+      "char": "雨",
+      "type": "kanji",
+      "romaji": "ame",
+      "meaning_id": "hujan",
+      "kanjivg_id": "96e8"
+    },
+    {
+      "char": "雪",
+      "type": "kanji",
+      "romaji": "yuki",
+      "meaning_id": "salju",
+      "kanjivg_id": "96ea"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 0,
+      "prompt_id": "Rian berkata 'あめがふりそうです'. Apa artinya?",
+      "options": [
+        "Hujan sudah turun",
+        "Kelihatannya akan hujan",
+        "Hujan tidak akan turun",
+        "Hujan tadi malam"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "d05",
+      "target_kana": "ひなんくんれんをしたほうがいいですか"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "地震",
+      "front_kana": "じしん",
+      "back_id": "gempa bumi"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'ひなんじょ' adalah...",
+      "options": [
+        "tempat makan",
+        "tempat evakuasi",
+        "tempat tidur",
+        "tempat belajar"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "かさ",
+        "を",
+        "もった",
+        "ほうが",
+        "いい",
+        "です"
+      ],
+      "answer_jp": "かさをもったほうがいいです。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis kanji untuk 'ame' (hujan)",
+      "target_kana": "あめ"
+    }
+  ],
+  "audio_status": "pending"
+}

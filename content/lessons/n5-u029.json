@@ -1,0 +1,257 @@
+{
+  "id": "n5-u029",
+  "level": "N5",
+  "unit_no": 29,
+  "theme": "Perasaan & Emosi",
+  "title_id": "Mengungkapkan Perasaan & Kesesalan",
+  "objectives_id": [
+    "Mengungkapkan perasaan dengan 〜がる (kelihatannya... untuk orang lain)",
+    "Menggunakan 〜のに untuk kesesalan/kontras emosional",
+    "Mengenal kosakata emosi dan sifat hati"
+  ],
+  "dialog": {
+    "title_id": "Rian dan Mina bercerita tentang perasaan setelah ujian JLPT",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "しけんがおわって、ほっとしました。",
+        "kana": "しけんがおわって、ほっとしました。",
+        "romaji": "Shiken ga owatte, hottoshimashita.",
+        "id": "Ujian selesai, saya lega."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "よかったですね。わたしはまだしんぱいがっています。",
+        "kana": "よかったですね。わたしはまだしんぱいがっています。",
+        "romaji": "Yokatta desu ne. Watashi wa mada shinpai gatte imasu.",
+        "id": "Bagus ya. Saya masih kelihatannya cemas."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "だいじょうぶですよ。よくべんきょうしたのに、なぜしんぱいですか。",
+        "kana": "だいじょうぶですよ。よくべんきょうしたのに、なぜしんぱいですか。",
+        "romaji": "Daijoubu desu yo. Yoku benkyou shita noni, naze shinpai desu ka.",
+        "id": "Tidak apa. Kamu belajar keras kan, kenapa cemas?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "リスニングがむずかしかったのに、よみはできました。",
+        "kana": "リスニングがむずかしかったのに、よみはできました。",
+        "romaji": "Risuningu ga muzukashikatta noni, yomi wa dekimashita.",
+        "id": "Listening sulit tapi reading bisa."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "それはすごいです。じしんをもってください。",
+        "kana": "それはすごいです。じしんをもってください。",
+        "romaji": "Sore wa sugoi desu. Jishin wo motte kudasai.",
+        "id": "Itu hebat. Miliki kepercayaan diri."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "ありがとう。けっかがたのしみです。うれしいきもちです。",
+        "kana": "ありがとう。けっかがたのしみです。うれしいきもちです。",
+        "romaji": "Arigatou. Kekka ga tanoshimi desu. Ureshii kimochi desu.",
+        "id": "Terima kasih. Hasilnya ditunggu. Perasaan senang."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "いっしょにおいわいしましょう。ごちそうしますよ。",
+        "kana": "いっしょにおいわいしましょう。ごちそうしますよ。",
+        "romaji": "Issho ni oiwai shimashou. Gochisou shimasu yo.",
+        "id": "Yuk rayakan bersama. Saya treat."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜がる / 〜のに (kesesalan)",
+    "meaning_id": "Kelihatannya... (perasaan orang lain) / Meskipun... (kontras/kesesalan) — Adj i-stem/na-stem + garu (orang ke-3), Plain form + noni.",
+    "formation": "[Adj i ない→がる] / [Adj na] + がる / [Plain form] + のに",
+    "examples": [
+      {
+        "jp": "かれはさみしがっています。",
+        "romaji": "Kare wa samishigatte imasu.",
+        "id": "Dia kelihatannya kesepian."
+      },
+      {
+        "jp": "たかいのに、かいました。",
+        "romaji": "Takai noni, kaimashita.",
+        "id": "Meskipun mahal, saya beli."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "ほっとする",
+      "kana": "ほっとする",
+      "romaji": "hotto suru",
+      "meaning_id": "lega, tenang",
+      "example_jp": "しけんがおわってほっとしました。",
+      "example_romaji": "Shiken ga owatte hottoshimashita.",
+      "example_id": "Ujian selesai, saya lega."
+    },
+    {
+      "term": "心配",
+      "kana": "しんぱい",
+      "romaji": "shinpai",
+      "meaning_id": "khawatir, cemas",
+      "example_jp": "しんぱいしないでください。",
+      "example_romaji": "Shinpai shinaide kudasai.",
+      "example_id": "Jangan khawatir."
+    },
+    {
+      "term": "なぜ",
+      "kana": "なぜ",
+      "romaji": "naze",
+      "meaning_id": "kenapa, mengapa",
+      "example_jp": "なぜこまりましたか。",
+      "example_romaji": "Naze komarimashita ka.",
+      "example_id": "Kenapa kamu kesulitan?"
+    },
+    {
+      "term": "リスニング",
+      "kana": "リスニング",
+      "romaji": "risuningu",
+      "meaning_id": "listening (mendengar)",
+      "example_jp": "リスニングはむずかしいです。",
+      "example_romaji": "Risuningu wa muzukashii desu.",
+      "example_id": "Listening sulit."
+    },
+    {
+      "term": "読み",
+      "kana": "よみ",
+      "romaji": "yomi",
+      "meaning_id": "membaca, reading",
+      "example_jp": "よみはじょうずです。",
+      "example_romaji": "Yomi wa jouzu desu.",
+      "example_id": "Reading-nya jago."
+    },
+    {
+      "term": "自信",
+      "kana": "じしん",
+      "romaji": "jishin",
+      "meaning_id": "kepercayaan diri",
+      "example_jp": "じしんをもってください。",
+      "example_romaji": "Jishin wo motte kudasai.",
+      "example_id": "Miliki kepercayaan diri."
+    },
+    {
+      "term": "結果",
+      "kana": "けっか",
+      "romaji": "kekka",
+      "meaning_id": "hasil",
+      "example_jp": "けっかをまちます。",
+      "example_romaji": "Kekka wo machimasu.",
+      "example_id": "Menunggu hasil."
+    },
+    {
+      "term": "楽しみ",
+      "kana": "たのしみ",
+      "romaji": "tanoshimi",
+      "meaning_id": "kenikmatan, yang ditunggu-tunggu",
+      "example_jp": "りょこうがたのしみです。",
+      "example_romaji": "Ryokou ga tanoshimi desu.",
+      "example_id": "Liburan ditunggu-tunggu."
+    },
+    {
+      "term": "嬉しい",
+      "kana": "うれしい",
+      "romaji": "ureshii",
+      "meaning_id": "senang, gembira",
+      "example_jp": "うれしいです。",
+      "example_romaji": "Ureshii desu.",
+      "example_id": "Saya senang."
+    },
+    {
+      "term": "祝う",
+      "kana": "いわう",
+      "romaji": "iwau",
+      "meaning_id": "merayakan",
+      "example_jp": "たんじょうびをいわいます。",
+      "example_romaji": "Tanjoubi wo iwaimasu.",
+      "example_id": "Merayakan ulang tahun."
+    }
+  ],
+  "writing": [
+    {
+      "char": "心",
+      "type": "kanji",
+      "romaji": "kokoro",
+      "meaning_id": "hati, pikiran",
+      "kanjivg_id": "5fc3"
+    },
+    {
+      "char": "配",
+      "type": "kanji",
+      "romaji": "hai",
+      "meaning_id": "bagi, sebarkan",
+      "kanjivg_id": "914d"
+    },
+    {
+      "char": "自",
+      "type": "kanji",
+      "romaji": "ji",
+      "meaning_id": "diri sendiri",
+      "kanjivg_id": "81ea"
+    },
+    {
+      "char": "信",
+      "type": "kanji",
+      "romaji": "shin",
+      "meaning_id": "percaya",
+      "kanjivg_id": "4fe1"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Mina berkata 'しんぱいがっています'. Siapa yang cemas?",
+      "options": [
+        "Rian",
+        "Mina sendiri",
+        "Yuki",
+        "Guru"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "d03",
+      "target_kana": "よくべんきょうしたのに"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "嬉しい",
+      "front_kana": "うれしい",
+      "back_id": "senang, gembira"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'ほっとしました' adalah...",
+      "options": [
+        "saya sedih",
+        "saya lega",
+        "saya marah",
+        "saya takut"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "かれ",
+        "は",
+        "さみしがって",
+        "います"
+      ],
+      "answer_jp": "かれはさみしがっています。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis kanji untuk 'kokoro' (hati)",
+      "target_kana": "こころ"
+    }
+  ],
+  "audio_status": "pending"
+}

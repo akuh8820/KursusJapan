@@ -1,31 +1,31 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import type { Exercise, Lesson } from "@/lib/content/schema";
 import { EVENTS, track } from "@/lib/analytics/events";
-import { recordCycleComplete } from "@/lib/session/streak";
+import { markUnitStarted, markQuizPassed, seedSrsFromVocab } from "@/lib/progress/store";
 import JpAudioButton from "@/components/jp-audio-button";
 import {
   dialogFile,
   unitAudioUrl,
   vocabFile,
 } from "@/lib/content/audio-paths";
+import FlipCardExercise from "@/components/exercises/FlipCardExercise";
+import ListenTypeExercise from "@/components/exercises/ListenTypeExercise";
+import McVocabExercise from "@/components/exercises/McVocabExercise";
 
-const FOCUS_MS = 20 * 60_000;
-const BREAK_MS = 5 * 60_000;
+const STEPS = [
+  { id: "dialog", label: "Dialog" },
+  { id: "grammar", label: "Grammar" },
+  { id: "vocab", label: "Kosakata" },
+  { id: "writing", label: "Huruf" },
+  { id: "exercises", label: "Latihan" },
+  { id: "quiz", label: "Kuis" },
+] as const;
 
-type Phase = "idle" | "focus" | "break" | "complete";
-
-export type UnitOption = { id: string; unit_no: number; title_id: string };
-
-const STEPS = ["Tujuan", "Dialog", "Kosakata", "Huruf", "Latihan", "Rangkum"];
-
-function fmt(ms: number): string {
-  const s = Math.max(0, Math.ceil(ms / 1000));
-  return `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
-}
+type StepId = (typeof STEPS)[number]["id"];
+type Phase = StepId | "complete";
 
 function normalizeJa(s: string): string {
   return s.replace(/[。、．，！？\s]/g, "");
@@ -40,6 +40,54 @@ function shuffle<T>(arr: readonly T[]): T[] {
   return a;
 }
 
+function generateQuizQuestions(lesson: Lesson): Array<{
+  prompt: string;
+  options: string[];
+  answer: number;
+}> {
+  const questions: Array<{ prompt: string; options: string[]; answer: number }> = [];
+
+  // From vocab: meaning_id as prompt, term as options
+  const vocabQuestions = lesson.vocab
+    .filter((v) => v.meaning_id && v.term)
+    .map((v) => ({
+      prompt: v.meaning_id,
+      correct: v.term,
+    }));
+
+  // From dialog: line.id as prompt, line.jp as options
+  const dialogQuestions = lesson.dialog.lines
+    .filter((l) => l.id && l.jp)
+    .map((l) => ({
+      prompt: l.id,
+      correct: l.jp,
+    }));
+
+  const allSources = [...vocabQuestions, ...dialogQuestions];
+  const shuffled = shuffle(allSources);
+
+  for (const source of shuffled) {
+    if (questions.length >= 5) break;
+
+    const otherOptions = shuffle(
+      allSources.filter((s) => s.correct !== source.correct).map((s) => s.correct)
+    ).slice(0, 3);
+
+    const options = shuffle([source.correct, ...otherOptions]);
+    const answer = options.indexOf(source.correct);
+
+    questions.push({
+      prompt: source.prompt,
+      options,
+      answer,
+    });
+  }
+
+  return questions.slice(0, 5);
+}
+
+export type UnitOption = { id: string; unit_no: number; title_id: string };
+
 export default function SessionClient({
   lesson,
   units,
@@ -47,162 +95,69 @@ export default function SessionClient({
   lesson: Lesson;
   units: UnitOption[];
 }) {
-  const router = useRouter();
-  const [phase, setPhase] = useState<Phase>("idle");
-  const [endsAt, setEndsAt] = useState<number | null>(null);
-  const [pausedAt, setPausedAt] = useState<number | null>(null);
-  const [pausesUsed, setPausesUsed] = useState(false);
-  const [now, setNow] = useState(() => Date.now());
-  const [streakCount, setStreakCount] = useState(0);
-  const [confirmCancel, setConfirmCancel] = useState(false);
+  const [phase, setPhase] = useState<Phase>("dialog");
   const [stepIdx, setStepIdx] = useState(0);
-  const startedAtRef = useRef(0);
+  const [exerciseResults, setExerciseResults] = useState<Record<number, boolean>>({});
+  const [quizQuestions, setQuizQuestions] = useState<ReturnType<typeof generateQuizQuestions>>([]);
+  const [quizAnswers, setQuizAnswers] = useState<Record<number, number | null>>({});
+  const [quizSubmitted, setQuizSubmitted] = useState(false);
+  const [quizPassed, setQuizPassed] = useState(false);
   const audioReady = lesson.audio_status === "ready";
 
-  const running = phase === "focus" || phase === "break";
-
-  const finishCycle = useCallback(() => {
-    setPhase("complete");
-    setEndsAt(null);
-    setStreakCount(recordCycleComplete().count);
-    track(EVENTS.cycleComplete, {
-      unit: lesson.id,
-      level: lesson.level,
-      focus_min: FOCUS_MS / 60_000,
-      break_min: BREAK_MS / 60_000,
-    });
-  }, [lesson.id, lesson.level]);
-
+  // Initialize session: mark unit started, seed SRS, track event
   useEffect(() => {
-    if (!running || pausedAt !== null) return;
-    const iv = setInterval(() => {
-      const t = Date.now();
-      if (endsAt !== null && t >= endsAt) {
-        if (phase === "focus") {
-          setPhase("break");
-          setStepIdx(0);
-          setEndsAt(t + BREAK_MS);
-          setNow(t + BREAK_MS);
-        } else {
-          finishCycle();
-        }
-      } else {
-        setNow(t);
+    let mounted = true;
+    async function init() {
+      await markUnitStarted(lesson.id);
+      await seedSrsFromVocab(lesson.id, lesson.vocab.map((v) => ({ term: v.term, kana: v.kana, meaning_id: v.meaning_id })));
+      track(EVENTS.unitStart, { unit: lesson.id, level: lesson.level });
+      if (mounted) {
+        setQuizQuestions(generateQuizQuestions(lesson));
       }
-    }, 250);
-    return () => clearInterval(iv);
-  }, [running, pausedAt, endsAt, phase, finishCycle]);
+    }
+    init();
+    return () => { mounted = false; };
+  }, [lesson]);
 
-  function startFocus() {
-    startedAtRef.current = Date.now();
-    setNow(Date.now());
-    track(EVENTS.sessionStart, { unit: lesson.id, level: lesson.level });
-    setStepIdx(0);
-    setPausesUsed(false);
-    setPhase("focus");
-    setEndsAt(Date.now() + FOCUS_MS);
-  }
+  const handleExerciseResult = useCallback((exIndex: number, correct: boolean) => {
+    setExerciseResults((prev) => ({ ...prev, [exIndex]: correct }));
+    const ex = lesson.exercises[exIndex];
+    track(EVENTS.exerciseResult, { unit: lesson.id, type: ex.type, correct });
+  }, [lesson.id, lesson.exercises]);
 
-  function pause() {
-    if (pausesUsed) return;
-    setPausedAt(Date.now());
-    setPausesUsed(true);
-  }
+  const handleQuizAnswer = useCallback((qIndex: number, optionIndex: number) => {
+    setQuizAnswers((prev) => ({ ...prev, [qIndex]: optionIndex }));
+  }, []);
 
-  function resume() {
-    if (pausedAt === null) return;
-    const shift = Date.now() - pausedAt;
-    setEndsAt((e) => (e === null ? e : e + shift));
-    setPausedAt(null);
-    setNow(Date.now());
-  }
+  const handleQuizSubmit = useCallback(async () => {
+    const allAnswered = quizQuestions.every((_, i) => quizAnswers[i] !== null);
+    if (!allAnswered) return;
 
-  function abandon() {
-    track(EVENTS.cycleAbandoned, {
+    const results = quizQuestions.map((q, i) => quizAnswers[i] === q.answer);
+    const allCorrect = results.every((r) => r);
+
+    track(EVENTS.quizResult, {
       unit: lesson.id,
-      phase,
-      elapsed_s: Math.round((Date.now() - startedAtRef.current) / 1000),
+      correct: results.filter((r) => r).length,
+      total: quizQuestions.length,
+      passed: allCorrect,
     });
-    router.push("/");
-  }
 
-  const totalMs = phase === "focus" ? FOCUS_MS : BREAK_MS;
-  const referenceNow = pausedAt ?? now;
-  const remainingMs =
-    endsAt === null ? totalMs : Math.max(0, endsAt - referenceNow);
-  const progress =
-    endsAt === null ? 0 : Math.min(1, Math.max(0, 1 - remainingMs / totalMs));
+    setQuizSubmitted(true);
 
-  if (phase === "idle") {
-    return (
-      <main className="mx-auto w-full max-w-md flex-1 px-4 pb-16 pt-8">
-        <header className="mb-6">
-          <Link href="/" className="text-sm text-muted hover:underline">
-            ← Dashboard
-          </Link>
-          <h1 className="mt-3 text-2xl font-bold tracking-tight">
-            Sesi hari ini · {lesson.theme}
-          </h1>
-          <p className="mt-1 text-sm text-muted">
-            Siklus 20 menit fokus + 5 menit rehat (PRD §6).
-          </p>
-        </header>
+    if (allCorrect) {
+      await markQuizPassed(lesson.id);
+      track(EVENTS.unitComplete, { unit: lesson.id });
+      setQuizPassed(true);
+    }
+  }, [lesson.id, quizQuestions, quizAnswers]);
 
-        <label className="block text-xs font-semibold text-muted">
-          Pilih unit
-          <select
-            value={lesson.id}
-            onChange={(e) => router.push(`/sesi/${e.target.value}`)}
-            className="mt-1 w-full rounded-xl border border-border bg-card px-3 py-2 text-sm font-normal text-foreground"
-          >
-            {units.map((u) => (
-              <option key={u.id} value={u.id}>
-                {String(u.unit_no).padStart(2, "0")} · {u.title_id}
-              </option>
-            ))}
-          </select>
-        </label>
+  const handleQuizRetry = useCallback(() => {
+    setQuizAnswers({});
+    setQuizSubmitted(false);
+  }, []);
 
-        <section className="mt-4 rounded-2xl border border-border bg-card p-5 shadow-sm">
-          <h2 className="font-semibold">{lesson.title_id}</h2>
-          <ul className="mt-3 space-y-2 text-sm leading-relaxed">
-            {lesson.objectives_id.map((o) => (
-              <li key={o} className="flex gap-2">
-                <span aria-hidden className="text-primary">
-                  ◆
-                </span>
-                <span>{o}</span>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-4 rounded-xl bg-background p-3 text-xs text-muted">
-            Pola inti:{" "}
-            <span lang="ja" className="font-semibold text-foreground">
-              {lesson.grammar.pattern}
-            </span>{" "}
-            — {lesson.grammar.meaning_id}
-          </div>
-        </section>
-
-        <section className="mt-4 rounded-2xl border border-dashed border-border p-4 text-xs leading-relaxed text-muted">
-          Aturan siklus:
-          <ol className="mt-1 list-decimal space-y-1 pl-4">
-            <li>Fokus tanpa iklan &amp; notifikasi selama 20 menit.</li>
-            <li>Jeda maksimal 1× — lebih dari itu siklus batal.</li>
-            <li>Rehat 5 menit harus penuh agar streak menyala 🔥</li>
-          </ol>
-        </section>
-
-        <button
-          type="button"
-          onClick={startFocus}
-          className="mt-6 w-full rounded-2xl bg-primary px-4 py-4 text-base font-bold text-primary-foreground shadow-sm transition active:scale-[0.99]"
-        >
-          Mulai fokus 20 menit ▶
-        </button>
-      </main>
-    );
-  }
+  const nextUnit = units.find((u) => u.unit_no === lesson.unit_no + 1);
 
   if (phase === "complete") {
     return (
@@ -210,472 +165,453 @@ export default function SessionClient({
         <p className="text-5xl" aria-hidden>
           🎉
         </p>
-        <h1 className="mt-4 text-2xl font-bold">Siklus 20+5 selesai!</h1>
+        <h1 className="mt-4 text-2xl font-bold">Unit selesai!</h1>
         <p className="mt-2 text-sm text-muted">
-          Streak kamu sekarang{" "}
-          <strong className="text-foreground">{streakCount} hari</strong> —
-          sampai jumpa besok di unit berikutnya.
+          Kuis akhiran lolos. Kamu siap ke unit berikutnya.
         </p>
         <div className="mt-8 grid w-full gap-3">
+          {nextUnit ? (
+            <Link
+              href={`/sesi/${nextUnit.id}`}
+              className="rounded-2xl bg-primary px-4 py-3 text-sm font-bold text-primary-foreground"
+            >
+              Unit berikutnya → U{String(nextUnit.unit_no).padStart(2, "0")}
+            </Link>
+          ) : (
+            <span className="rounded-2xl border border-border bg-card px-4 py-3 text-sm font-semibold text-muted">
+              Tidak ada unit berikutnya
+            </span>
+          )}
           <Link
             href="/"
-            className="rounded-2xl bg-primary px-4 py-3 text-sm font-bold text-primary-foreground"
-          >
-            Kembali ke dashboard
-          </Link>
-          <Link
-            href={`/sesi/${lesson.id}`}
             className="rounded-2xl border border-border bg-card px-4 py-3 text-sm font-semibold"
           >
-            Ulangi unit ini
+            Kembali ke beranda
           </Link>
         </div>
       </main>
     );
   }
 
-  const isFocus = phase === "focus";
-
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col px-4 pb-10 pt-6">
-      <div className="flex items-center justify-between gap-3">
+      <header className="flex items-center justify-between gap-3 mb-4">
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide text-primary">
-            {isFocus ? "Fokus" : "Rehat"}
+            {lesson.theme} · U{String(lesson.unit_no).padStart(2, "0")}
           </p>
-          <p
-            role="timer"
-            aria-label={
-              isFocus ? "Sisa waktu fokus" : "Sisa waktu rehat"
-            }
-            className="font-mono text-4xl font-bold tabular-nums"
-          >
-            {fmt(remainingMs)}
-          </p>
+          <h1 className="font-bold">{lesson.title_id}</h1>
         </div>
-        <div className="flex items-center gap-2">
-          {isFocus && (
-            <button
-              type="button"
-              onClick={pausedAt === null ? pause : resume}
-              disabled={!pausedAt && pausesUsed}
-              title={
-                pausesUsed && pausedAt === null
-                  ? "Jeda sudah dipakai — siklus batal jika dijeda lagi"
-                  : undefined
-              }
-              className="rounded-xl border border-border bg-card px-3 py-2 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              {pausedAt !== null ? "Lanjut ▶" : "Jeda ⏸"}
-            </button>
-          )}
-          <button
-            type="button"
-            onClick={() => setConfirmCancel(true)}
-            aria-label="Batalkan sesi"
-            className="rounded-xl border border-border bg-card px-3 py-2 text-sm font-semibold"
-          >
-            ✕
-          </button>
-        </div>
-      </div>
+        <Link
+          href="/"
+          className="rounded-xl border border-border bg-card px-3 py-2 text-sm font-semibold"
+        >
+          ← Beranda
+        </Link>
+      </header>
 
-      <div
-        role="progressbar"
-        aria-valuenow={Math.round(progress * 100)}
-        aria-valuemin={0}
-        aria-valuemax={100}
-        className="mt-3 h-1.5 overflow-hidden rounded-full bg-muted/20"
+      <nav
+        aria-label="Tahap sesi"
+        className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1"
       >
-        <div
-          className="h-full rounded-full bg-primary transition-[width] duration-500"
-          style={{ width: `${progress * 100}%` }}
-        />
-      </div>
-
-      {isFocus ? (
-        <>
-          <nav
-            aria-label="Tahap fokus"
-            className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1"
+        {STEPS.map((s, i) => (
+          <button
+            key={s.id}
+            type="button"
+            onClick={() => {
+              if (i <= stepIdx || (i === STEPS.length - 1 && phase === "quiz")) {
+                setStepIdx(i);
+                setPhase(s.id);
+              }
+            }}
+            disabled={i > stepIdx && !(i === STEPS.length - 1 && phase === "quiz")}
+            aria-current={i === stepIdx}
+            className={`text-xs font-semibold ${
+              i === stepIdx
+                ? "text-primary underline underline-offset-4"
+                : i < stepIdx || (i === STEPS.length - 1 && phase === "quiz")
+                  ? "text-foreground"
+                  : "text-muted opacity-50"
+            }`}
           >
-            {STEPS.map((s, i) => (
-              <button
-                key={s}
-                type="button"
-                onClick={() => setStepIdx(i)}
-                aria-current={i === stepIdx}
-                className={`text-xs font-semibold ${
-                  i === stepIdx
-                    ? "text-primary underline underline-offset-4"
-                    : "text-muted"
-                }`}
-              >
-                {s}
-              </button>
-            ))}
-          </nav>
+            {s.label}
+          </button>
+        ))}
+      </nav>
 
-          <section className="mt-3 flex-1" aria-live="polite">
-            {stepIdx === 0 && (
-              <div className="space-y-3">
-                <h2 className="font-semibold">Tujuan unit ini</h2>
-                <ul className="space-y-2 text-sm leading-relaxed">
-                  {lesson.objectives_id.map((o) => (
-                    <li key={o} className="flex gap-2">
-                      <span aria-hidden className="text-primary">
-                        ◆
-                      </span>
-                      <span>{o}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="rounded-xl border border-border bg-card p-4 text-sm">
-                  <p className="text-xs font-semibold text-muted">
-                    Pola tata bahasa
+      <section className="flex-1" aria-live="polite">
+        {phase === "dialog" && (
+          <div className="space-y-3">
+            <h2 className="font-semibold">{lesson.dialog.title_id}</h2>
+            <p className="text-xs text-muted">
+              {audioReady
+                ? "Ketuk 🔊 di setiap baris untuk mendengarkan pengucapan."
+                : "Audio menyusul setelah kurasi TTS — baca dulu dengan romaji."}
+            </p>
+            <ol className="space-y-3">
+              {lesson.dialog.lines.map((line, i) => (
+                <li
+                  key={i}
+                  className="rounded-xl border border-border bg-card p-4"
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="text-[11px] font-bold uppercase tracking-wide text-muted">
+                      {line.speaker}
+                    </p>
+                    {audioReady && (
+                      <JpAudioButton
+                        small
+                        src={unitAudioUrl(lesson.id, dialogFile(i))}
+                        label={line.jp}
+                      />
+                    )}
+                  </div>
+                  <p lang="ja" className="mt-1 text-lg font-semibold">
+                    {line.jp}
                   </p>
-                  <p lang="ja" className="mt-1 text-lg font-bold">
-                    {lesson.grammar.pattern}
+                  <p lang="ja" className="text-xs text-muted">
+                    {line.kana}
                   </p>
-                  <p className="mt-1 text-muted">
-                    {lesson.grammar.meaning_id}
+                  <p className="mt-1 text-xs italic text-muted">
+                    {line.romaji}
                   </p>
-                  <p className="mt-2 font-mono text-xs">
-                    {lesson.grammar.formation}
-                  </p>
-                </div>
-              </div>
-            )}
+                  <p className="mt-2 text-sm">{line.id}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        )}
 
-            {stepIdx === 1 && (
-              <div className="space-y-3">
-                <h2 className="font-semibold">{lesson.dialog.title_id}</h2>
-                <p className="text-xs text-muted">
-                  {audioReady
-                    ? "Ketuk 🔊 di setiap baris untuk mendengarkan pengucapan."
-                    : "Audio menyusul setelah kurasi TTS — baca dulu dengan romaji."}
-                </p>
-                <ol className="space-y-3">
-                  {lesson.dialog.lines.map((line, i) => (
-                    <li
-                      key={i}
-                      className="rounded-xl border border-border bg-card p-4"
-                    >
-                      <div className="flex items-center justify-between gap-2">
-                        <p className="text-[11px] font-bold uppercase tracking-wide text-muted">
-                          {line.speaker}
-                        </p>
-                        {audioReady && (
-                          <JpAudioButton
-                            small
-                            src={unitAudioUrl(lesson.id, dialogFile(i))}
-                            label={line.jp}
-                          />
-                        )}
-                      </div>
-                      <p lang="ja" className="mt-1 text-lg font-semibold">
-                        {line.jp}
-                      </p>
-                      <p lang="ja" className="text-xs text-muted">
-                        {line.kana}
-                      </p>
-                      <p className="mt-1 text-xs italic text-muted">
-                        {line.romaji}
-                      </p>
-                      <p className="mt-2 text-sm">{line.id}</p>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            )}
+        {phase === "grammar" && (
+          <div className="space-y-3">
+            <h2 className="font-semibold">Tata bahasa</h2>
+            <p lang="ja" className="mt-1 text-xl font-bold text-primary">
+              {lesson.grammar.pattern}
+            </p>
+            <p className="mt-1 text-sm">{lesson.grammar.meaning_id}</p>
+            <p className="mt-2 font-mono text-xs">{lesson.grammar.formation}</p>
+            <ol className="mt-3 space-y-2">
+              {lesson.grammar.examples.map((ex, i) => (
+                <li key={i} className="rounded-xl border border-border bg-card p-3">
+                  <p lang="ja" className="font-semibold">{ex.jp}</p>
+                  <p className="text-xs italic text-muted">{ex.romaji}</p>
+                  <p className="mt-1 text-sm">{ex.id}</p>
+                  {audioReady && (
+                    <div className="mt-2 flex justify-end">
+                      <JpAudioButton
+                        small
+                        src={unitAudioUrl(lesson.id, `g${String(i).padStart(2, "0")}.mp3`)}
+                        label={ex.jp}
+                      />
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </div>
+        )}
 
-            {stepIdx === 2 && (
-              <div className="space-y-3">
-                <h2 className="font-semibold">
-                  Kosakata ({lesson.vocab.length})
-                </h2>
-                <ul className="space-y-3">
-                  {lesson.vocab.map((v, i) => (
-                    <li
-                      key={v.term}
-                      className="rounded-xl border border-border bg-card p-4"
-                    >
-                      <div className="flex items-baseline justify-between gap-2">
-                        <p lang="ja" className="text-xl font-bold">
-                          {v.term}
-                        </p>
-                        <div className="flex items-center gap-2">
-                          <p className="text-xs italic text-muted">
-                            {v.romaji}
-                          </p>
-                          {audioReady && (
-                            <JpAudioButton
-                              small
-                              src={unitAudioUrl(lesson.id, vocabFile(i, "t"))}
-                              label={v.term}
-                            />
-                          )}
-                        </div>
-                      </div>
-                      <p lang="ja" className="text-xs text-muted">
-                        {v.kana}
+        {phase === "vocab" && (
+          <div className="space-y-3">
+            <h2 className="font-semibold">Kosakata ({lesson.vocab.length})</h2>
+            <ul className="space-y-3">
+              {lesson.vocab.map((v, i) => (
+                <li key={v.term} className="rounded-xl border border-border bg-card p-4">
+                  <div className="flex items-baseline justify-between gap-2">
+                    <p lang="ja" className="text-xl font-bold">
+                      {v.term}
+                    </p>
+                    <div className="flex items-center gap-2">
+                      <p className="text-xs italic text-muted">
+                        {v.romaji}
                       </p>
-                      <p className="mt-1 text-sm font-semibold">
-                        {v.meaning_id}
-                      </p>
-                      <div className="mt-2 rounded-lg bg-background p-2 text-xs">
-                        <div className="flex items-start justify-between gap-2">
-                          <p lang="ja">{v.example_jp}</p>
-                          {audioReady && (
-                            <JpAudioButton
-                              small
-                              src={unitAudioUrl(lesson.id, vocabFile(i, "x"))}
-                              label={v.example_jp}
-                            />
-                          )}
-                        </div>
-                        <p className="italic text-muted">{v.example_romaji}</p>
-                        <p className="mt-1">{v.example_id}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {stepIdx === 3 && (
-              <div className="space-y-3">
-                <h2 className="font-semibold">
-                  Huruf ({lesson.writing.length})
-                </h2>
-                <p className="text-xs text-muted">
-                  Trace goresan interaktif (dataset KanjiVG) hadir di fase
-                  berikutnya — kenali bentuknya dulu.
-                </p>
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-                  {lesson.writing.map((w) => (
-                    <div
-                      key={`${w.type}-${w.char}`}
-                      className="rounded-xl border border-border bg-card p-4 text-center"
-                    >
-                      <p lang="ja" className="text-4xl font-bold">
-                        {w.char}
-                      </p>
-                      <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-muted">
-                        {w.romaji} · {w.type}
-                      </p>
-                      {w.meaning_id && (
-                        <p className="mt-1 text-xs text-muted">
-                          {w.meaning_id}
-                        </p>
+                      {audioReady && (
+                        <JpAudioButton
+                          small
+                          src={unitAudioUrl(lesson.id, vocabFile(i, "t"))}
+                          label={v.term}
+                        />
                       )}
                     </div>
-                  ))}
+                  </div>
+                  <p lang="ja" className="text-xs text-muted">
+                    {v.kana}
+                  </p>
+                  <p className="mt-1 text-sm font-semibold">
+                    {v.meaning_id}
+                  </p>
+                  <div className="mt-2 rounded-lg bg-background p-2 text-xs">
+                    <div className="flex items-start justify-between gap-2">
+                      <p lang="ja">{v.example_jp}</p>
+                      {audioReady && (
+                        <JpAudioButton
+                          small
+                          src={unitAudioUrl(lesson.id, vocabFile(i, "x"))}
+                          label={v.example_jp}
+                        />
+                      )}
+                    </div>
+                    <p className="italic text-muted">{v.example_romaji}</p>
+                    <p className="mt-1">{v.example_id}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {phase === "writing" && (
+          <div className="space-y-3">
+            <h2 className="font-semibold">Huruf ({lesson.writing.length})</h2>
+            <p className="text-xs text-muted">
+              Kenali bentuk dan bunyi setiap karakter.
+            </p>
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+              {lesson.writing.map((w) => (
+                <div
+                  key={`${w.type}-${w.char}`}
+                  className="rounded-xl border border-border bg-card p-4 text-center"
+                >
+                  <p lang="ja" className="text-4xl font-bold">
+                    {w.char}
+                  </p>
+                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-muted">
+                    {w.romaji} · {w.type}
+                  </p>
+                  {w.meaning_id && (
+                    <p className="mt-1 text-xs text-muted">
+                      {w.meaning_id}
+                    </p>
+                  )}
                 </div>
-              </div>
-            )}
-
-            {stepIdx === 4 && (
-              <div className="space-y-3">
-                <h2 className="font-semibold">Latihan singkat</h2>
-                {lesson.exercises.map((ex, i) => (
-                  <ExerciseCard
-                    key={i}
-                    ex={ex}
-                    writingChars={lesson.writing.map((w) => w.char)}
-                    audioReady={audioReady}
-                    unit={lesson.id}
-                    onResult={(correct) =>
-                      track(EVENTS.exerciseResult, {
-                        exercise: ex.type,
-                        correct,
-                        unit: lesson.id,
-                      })
-                    }
-                  />
-                ))}
-              </div>
-            )}
-
-            {stepIdx === 5 && (
-              <div className="space-y-3 text-sm leading-relaxed">
-                <h2 className="font-semibold">Rangkuman</h2>
-                <p>
-                  Kamu sudah mengenal{" "}
-                  <strong>{lesson.vocab.length} kosakata</strong>,{" "}
-                  <strong>{lesson.writing.length} huruf</strong>, dan pola{" "}
-                  <span lang="ja" className="font-semibold">
-                    {lesson.grammar.pattern}
-                  </span>
-                  .
-                </p>
-                <p className="text-muted">
-                  Tetap di layar ini sampai timer habis — fase rehat 5 menit
-                  mulai otomatis dan wajib penuh agar streak bertambah.
-                </p>
-              </div>
-            )}
-          </section>
-
-          <div className="mt-6 flex items-center justify-between">
-            <button
-              type="button"
-              onClick={() => setStepIdx((i) => Math.max(0, i - 1))}
-              disabled={stepIdx === 0}
-              className="rounded-xl border border-border bg-card px-4 py-2 text-sm font-semibold disabled:invisible"
-            >
-              ← Kembali
-            </button>
-            <button
-              type="button"
-              onClick={() =>
-                setStepIdx((i) => Math.min(STEPS.length - 1, i + 1))
-              }
-              disabled={stepIdx === STEPS.length - 1}
-              className="rounded-xl bg-primary px-5 py-2 text-sm font-bold text-primary-foreground disabled:invisible"
-            >
-              Lanjut →
-            </button>
-          </div>
-        </>
-      ) : (
-        <section className="mt-6 flex-1 space-y-4">
-          <div className="rounded-2xl border border-border bg-card p-5">
-            <h2 className="font-semibold">Rehat — kamu sudah pantas 🍵</h2>
-            <p className="mt-1 text-sm text-muted">
-              Berdiri, minum air, alihkan pandangan. Rehat penuh 5 menit
-              menyalakan streak hari ini.
-            </p>
-          </div>
-
-          <BreakReview vocab={lesson.vocab} />
-
-          {/* Slot iklan hanya boleh tampil di fase rehat (PRD §10) */}
-          <aside className="rounded-xl border border-dashed border-border p-4 text-center text-[11px] text-muted">
-            Slot iklan non-intrusif — hanya di fase rehat.
-          </aside>
-        </section>
-      )}
-
-      {confirmCancel && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          aria-label="Batalkan sesi?"
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-6"
-        >
-          <div className="w-full max-w-xs rounded-2xl bg-card p-5 text-center shadow-lg">
-            <p className="font-semibold">Batalkan sesi?</p>
-            <p className="mt-1 text-sm text-muted">
-              Siklus belum selesai — streak tidak bertambah.
-            </p>
-            <div className="mt-4 grid gap-2">
-              <button
-                type="button"
-                onClick={() => setConfirmCancel(false)}
-                className="rounded-xl bg-primary px-4 py-2 text-sm font-bold text-primary-foreground"
-              >
-                Lanjutkan belajar
-              </button>
-              <button
-                type="button"
-                onClick={abandon}
-                className="rounded-xl border border-border px-4 py-2 text-sm font-semibold text-muted"
-              >
-                Ya, batalkan
-              </button>
+              ))}
             </div>
           </div>
-        </div>
-      )}
-    </main>
-  );
-}
+        )}
 
-function BreakReview({
-  vocab,
-}: {
-  vocab: Lesson["vocab"];
-}) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="rounded-2xl border border-border bg-card p-5">
-      <button
-        type="button"
-        onClick={() => setOpen((o) => !o)}
-        aria-expanded={open}
-        className="flex w-full items-center justify-between text-left"
-      >
-        <span className="text-sm font-semibold">
-          Review ringan: kosakata barusan ({vocab.length})
-        </span>
-        <span aria-hidden className="text-muted">
-          {open ? "▲" : "▼"}
-        </span>
-      </button>
-      {open && (
-        <ul className="mt-3 divide-y divide-border">
-          {vocab.map((v) => (
-            <li key={v.term} className="flex items-baseline justify-between py-2">
-              <span lang="ja" className="font-semibold">
-                {v.term}
-              </span>
-              <span className="text-sm text-muted">{v.meaning_id}</span>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+        {phase === "exercises" && (
+          <div className="space-y-3">
+            <h2 className="font-semibold">Latihan ({lesson.exercises.length})</h2>
+            <p className="text-xs text-muted">
+              Kerjakan semua soal. Jawaban dikoreksi langsung.
+            </p>
+            {lesson.exercises.map((ex, i) => (
+              <ExerciseCard
+                key={i}
+                ex={ex}
+                audioReady={audioReady}
+                unit={lesson.id}
+                vocab={lesson.vocab}
+                writingChars={lesson.writing.map((w) => w.char)}
+                result={exerciseResults[i]}
+                onResult={(correct) => handleExerciseResult(i, correct)}
+              />
+            ))}
+            {lesson.exercises.length > 0 && (
+              <button
+                type="button"
+                onClick={() => {
+                  setStepIdx(STEPS.length - 1);
+                  setPhase("quiz");
+                }}
+                className="mt-4 w-full rounded-2xl bg-primary px-4 py-3 text-sm font-bold text-primary-foreground"
+              >
+                Lanjut ke kuis akhiran →
+              </button>
+            )}
+          </div>
+        )}
+
+        {phase === "quiz" && (
+          <div className="space-y-3">
+            <h2 className="font-semibold">Kuis akhiran ({quizQuestions.length} soal)</h2>
+            <p className="text-xs text-muted">
+              Jawab semua soal dengan benar untuk lolos. Bisa coba ulang tanpa batas.
+            </p>
+            {quizQuestions.map((q, i) => (
+              <QuizQuestionCard
+                key={i}
+                index={i}
+                question={q}
+                answer={quizAnswers[i]}
+                submitted={quizSubmitted}
+                onAnswer={(opt) => handleQuizAnswer(i, opt)}
+              />
+            ))}
+            <div className="mt-4 flex items-center justify-between gap-3">
+              {quizSubmitted ? (
+                quizPassed ? (
+                  <button
+                    type="button"
+                    onClick={() => setPhase("complete")}
+                    className="w-full rounded-2xl bg-primary px-4 py-3 text-sm font-bold text-primary-foreground"
+                  >
+                    Lihat hasil →
+                  </button>
+                ) : (
+                  <>
+                    <p className="text-sm font-semibold text-primary">
+                      Belum lolos — coba lagi
+                    </p>
+                    <button
+                      type="button"
+                      onClick={handleQuizRetry}
+                      className="flex-1 rounded-xl border border-border bg-card px-4 py-2 text-sm font-semibold"
+                    >
+                      Ulangi kuis
+                    </button>
+                  </>
+                )
+              ) : (
+                <button
+                  type="button"
+                  onClick={handleQuizSubmit}
+                  disabled={quizQuestions.some((_, i) => quizAnswers[i] === null)}
+                  className="w-full rounded-2xl bg-primary px-4 py-3 text-sm font-bold text-primary-foreground disabled:opacity-40"
+                >
+                  Kirim jawaban
+                </button>
+              )}
+            </div>
+          </div>
+        )}
+      </section>
+
+      <footer className="mt-6 flex items-center justify-between">
+        <button
+          type="button"
+          onClick={() => {
+            const prev = stepIdx - 1;
+            if (prev >= 0) {
+              setStepIdx(prev);
+              setPhase(STEPS[prev].id);
+            }
+          }}
+          disabled={stepIdx === 0}
+          className="rounded-xl border border-border bg-card px-4 py-2 text-sm font-semibold disabled:invisible"
+        >
+          ← Kembali
+        </button>
+        {phase !== "quiz" && (
+          <button
+            type="button"
+            onClick={() => {
+              const next = stepIdx + 1;
+              if (next < STEPS.length) {
+                setStepIdx(next);
+                setPhase(STEPS[next].id);
+              }
+            }}
+            disabled={stepIdx === STEPS.length - 1}
+            className="rounded-xl bg-primary px-5 py-2 text-sm font-bold text-primary-foreground disabled:invisible"
+          >
+            Lanjut →
+          </button>
+        )}
+      </footer>
+    </main>
   );
 }
 
 function ExerciseCard({
   ex,
-  writingChars,
   audioReady,
   unit,
+  vocab,
+  writingChars,
+  result,
   onResult,
 }: {
   ex: Exercise;
-  writingChars: string[];
   audioReady: boolean;
   unit: string;
+  vocab: Lesson["vocab"];
+  writingChars: string[];
+  result: boolean | undefined;
   onResult: (correct: boolean) => void;
 }) {
+  const showResult = result !== undefined;
+
   if (ex.type === "listen_choose") {
     if (!audioReady) {
       return (
         <div className="rounded-xl border border-border bg-card p-4 opacity-80">
           <p className="text-sm font-semibold">{ex.prompt_id}</p>
           <p className="mt-1 text-xs text-muted">
-            ⏳ Menunggu audio TTS — bagian ini dilewati dulu.
+            ⏳ Menunggu audio TTS — soal ini tidak bisa dikerjakan.
           </p>
-          <div className="mt-3 grid gap-2">
-            {ex.options.map((opt) => (
-              <div
-                key={opt}
-                className="rounded-lg border border-border px-3 py-2 text-sm text-muted"
-              >
-                {opt}
-              </div>
-            ))}
-          </div>
         </div>
       );
     }
-    return <ListenChooseExercise ex={ex} unit={unit} onResult={onResult} />;
+    return (
+      <ListenChooseExercise
+        ex={ex}
+        unit={unit}
+        onResult={onResult}
+      />
+    );
   }
+
   if (ex.type === "arrange") {
-    return <ArrangeExercise tokens={ex.tokens} answerJp={ex.answer_jp} onResult={onResult} />;
+    return (
+      <ArrangeExercise
+        tokens={ex.tokens}
+        answerJp={ex.answer_jp}
+        result={result}
+        onResult={onResult}
+      />
+    );
   }
-  return (
-    <WriteRecallExercise
-      prompt={ex.prompt_id}
-      targetKana={ex.target_kana}
-      choices={writingChars}
-      onResult={onResult}
-    />
-  );
+
+  if (ex.type === "write_recall") {
+    return (
+      <WriteRecallExercise
+        prompt={ex.prompt_id}
+        targetKana={ex.target_kana}
+        choices={writingChars}
+        showResult={showResult}
+        result={result}
+        onResult={onResult}
+      />
+    );
+  }
+
+  if (ex.type === "flip_card") {
+    const vocabIdx = vocab.findIndex((v) => v.term === ex.front_jp);
+    return (
+      <FlipCardExercise
+        frontJp={ex.front_jp}
+        frontKana={ex.front_kana}
+        backId={ex.back_id}
+        unit={unit}
+        vocabIndex={vocabIdx >= 0 ? vocabIdx : undefined}
+      />
+    );
+  }
+
+  if (ex.type === "listen_type") {
+    return (
+      <ListenTypeExercise
+        audioRef={ex.audio_ref}
+        targetKana={ex.target_kana}
+        unit={unit}
+        onResult={onResult}
+      />
+    );
+  }
+
+  if (ex.type === "mc_vocab") {
+    return (
+      <McVocabExercise
+        promptId={ex.prompt_id}
+        options={ex.options}
+        answer={ex.answer}
+        onResult={onResult}
+      />
+    );
+  }
+
+  return null;
 }
 
 function ListenChooseExercise({
@@ -710,14 +646,12 @@ function ListenChooseExercise({
       </p>
       <div className="mt-3 grid gap-2" role="group" aria-label="Pilihan jawaban">
         {ex.options.map((opt, j) => {
-          const state =
-            picked === null
-              ? "idle"
-              : j === ex.answer
-                ? "right"
-                : j === picked
-                  ? "wrong"
-                  : "dim";
+          let state: "idle" | "right" | "wrong" | "dim" = "idle";
+          if (picked !== null) {
+            if (j === ex.answer) state = "right";
+            else if (j === picked) state = "wrong";
+            else state = "dim";
+          }
           return (
             <button
               key={opt}
@@ -758,27 +692,30 @@ function ListenChooseExercise({
 function ArrangeExercise({
   tokens,
   answerJp,
+  result,
   onResult,
 }: {
   tokens: string[];
   answerJp: string;
+  result: boolean | undefined;
   onResult: (correct: boolean) => void;
 }) {
   const [pool] = useState(() => shuffle(tokens));
   const [picked, setPicked] = useState<number[]>([]);
-  const [result, setResult] = useState<boolean | null>(null);
+  const [checked, setChecked] = useState(false);
+  const checkedResult = result ?? (checked ? normalizeJa(picked.map((i) => pool[i]).join("")) === normalizeJa(answerJp) : null);
 
   const pickedTokens = picked.map((i) => pool[i]);
 
   function check() {
     const ok = normalizeJa(pickedTokens.join("")) === normalizeJa(answerJp);
-    setResult(ok);
+    setChecked(true);
     onResult(ok);
   }
 
   function reset() {
     setPicked([]);
-    setResult(null);
+    setChecked(false);
   }
 
   return (
@@ -789,12 +726,12 @@ function ArrangeExercise({
         className="mt-3 flex min-h-12 flex-wrap content-start gap-1.5 rounded-lg border border-dashed border-border p-2"
         lang="ja"
       >
-        {pickedTokens.length === 0 && (
+        {pickedTokens.length === 0 && !checkedResult && (
           <span className="self-center px-1 text-xs text-muted">
             Ketuk kata di bawah…
           </span>
         )}
-        {!result &&
+        {!checkedResult &&
           pickedTokens.map((t, idx) => (
             <button
               key={`${t}-${idx}`}
@@ -805,13 +742,13 @@ function ArrangeExercise({
               {t}
             </button>
           ))}
-        {result !== null && (
+        {checkedResult && (
           <span className="self-center px-1 text-sm font-semibold" lang="ja">
             {answerJp}
           </span>
         )}
       </div>
-      {result === null && (
+      {!checkedResult && (
         <div className="mt-2 flex flex-wrap gap-1.5" lang="ja">
           {pool.map((t, idx) =>
             picked.includes(idx) ? null : (
@@ -828,7 +765,7 @@ function ArrangeExercise({
         </div>
       )}
       <div className="mt-3 flex items-center gap-2">
-        {result === null ? (
+        {!checkedResult ? (
           <>
             <button
               type="button"
@@ -850,10 +787,10 @@ function ArrangeExercise({
         ) : (
           <p
             className={`text-sm font-bold ${
-              result ? "text-green-600 dark:text-green-400" : "text-primary"
+              checkedResult ? "text-green-600 dark:text-green-400" : "text-primary"
             }`}
           >
-            {result
+            {checkedResult
               ? "✓ Benar!"
               : "✗ Belum tepat — perhatikan susunan di atas."}
           </p>
@@ -867,42 +804,49 @@ function WriteRecallExercise({
   prompt,
   targetKana,
   choices,
+  showResult,
+  result,
   onResult,
 }: {
   prompt: string;
   targetKana: string;
   choices: string[];
+  showResult: boolean;
+  result: boolean | undefined;
   onResult: (correct: boolean) => void;
 }) {
   const [value, setValue] = useState("");
-  const [result, setResult] = useState<boolean | null>(null);
+  const [checked, setChecked] = useState(false);
+  const checkedResult = result ?? (checked ? value.trim().toLowerCase() === targetKana.trim().toLowerCase() : null);
 
   function check() {
-    const ok = value.trim() === targetKana;
-    setResult(ok);
+    const ok = value.trim().toLowerCase() === targetKana.trim().toLowerCase();
+    setChecked(true);
     onResult(ok);
   }
 
   return (
     <div className="rounded-xl border border-border bg-card p-4">
       <p className="text-sm font-semibold">{prompt}</p>
-      {result === null ? (
+      {!checkedResult ? (
         <>
           <input
             value={value}
             onChange={(e) => setValue(e.target.value)}
             lang="ja"
             aria-label="Jawaban huruf Jepang"
-            className="mt-3 w-full rounded-lg border border-border bg-background px-3 py-2 text-lg"
+            className="mt-3 w-full rounded-lg border border-border bg-background px-3 py-2 text-lg text-center"
             placeholder="あ"
+            disabled={showResult}
           />
-          <div className="mt-2 flex flex-wrap gap-1.5" lang="ja">
+          <div className="mt-2 flex flex-wrap gap-1.5 justify-center" lang="ja">
             {choices.map((c) => (
               <button
                 key={c}
                 type="button"
                 onClick={() => setValue((v) => v + c)}
-                className="rounded-lg border border-border px-2.5 py-1 text-base font-semibold"
+                disabled={showResult}
+                className="rounded-lg border border-border px-2.5 py-1 text-base font-semibold disabled:opacity-50"
               >
                 {c}
               </button>
@@ -911,15 +855,15 @@ function WriteRecallExercise({
           <button
             type="button"
             onClick={check}
-            disabled={value.trim().length === 0}
-            className="mt-3 rounded-lg bg-primary px-3 py-1.5 text-xs font-bold text-primary-foreground disabled:opacity-40"
+            disabled={value.trim().length === 0 || showResult}
+            className="mt-3 w-full rounded-lg bg-primary px-3 py-1.5 text-xs font-bold text-primary-foreground disabled:opacity-40"
           >
             Periksa
           </button>
         </>
       ) : (
-        <p className="mt-3 text-sm font-bold">
-          {result ? (
+        <p className="mt-3 text-sm font-bold text-center">
+          {checkedResult ? (
             <span className="text-green-600 dark:text-green-400">
               ✓ Benar — {targetKana}
             </span>
@@ -930,6 +874,58 @@ function WriteRecallExercise({
           )}
         </p>
       )}
+    </div>
+  );
+}
+
+function QuizQuestionCard({
+  index,
+  question,
+  answer,
+  submitted,
+  onAnswer,
+}: {
+  index: number;
+  question: { prompt: string; options: string[]; answer: number };
+  answer: number | null;
+  submitted: boolean;
+  onAnswer: (opt: number) => void;
+}) {
+  return (
+    <div className="rounded-xl border border-border bg-card p-4">
+      <p className="text-[11px] font-semibold uppercase text-muted">
+        Soal {index + 1}
+      </p>
+      <p className="mt-1 text-sm font-semibold">{question.prompt}</p>
+      <div className="mt-2 grid gap-2" role="group" aria-label={`Pilihan soal ${index + 1}`}>
+        {question.options.map((opt, j) => {
+          let state: "idle" | "right" | "wrong" | "dim" = "idle";
+          if (submitted) {
+            if (j === question.answer) state = "right";
+            else if (j === answer) state = "wrong";
+            else state = "dim";
+          }
+          return (
+            <button
+              key={opt}
+              type="button"
+              onClick={() => !submitted && onAnswer(j)}
+              disabled={submitted}
+              className={`rounded-lg border px-3 py-2 text-left text-sm transition ${
+                state === "right"
+                  ? "border-emerald-500/60 bg-emerald-500/10 font-semibold text-emerald-700 dark:text-emerald-400"
+                  : state === "wrong"
+                    ? "border-red-500/60 bg-red-500/10 text-red-600 dark:text-red-400"
+                    : state === "dim"
+                      ? "border-border text-muted opacity-50"
+                      : "border-border bg-background active:scale-[0.99]"
+              }`}
+            >
+              {String.fromCharCode(65 + j)}. {opt}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }

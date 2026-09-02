@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u021",
+  "generated_at": "2026-09-02T02:21:43.606Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "ミナさん、でんわばんごうをおしえてください。",
+      "speaker_id": 12,
+      "hash": "af1395923cfb8906"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "いいですよ。ゼロ・ハチ・ゼロ・イチ・ニ・サン・ヨン・ゴ・ロク・ナナです。",
+      "speaker_id": 2,
+      "hash": "76304b5ef697b40d"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "ありがとう。あとでかけてみます。",
+      "speaker_id": 12,
+      "hash": "b786d95bade40a84"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "このアプリをつかってみてください。べんりですよ。",
+      "speaker_id": 2,
+      "hash": "99d8816842cb0d97"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "ほんとうですか。ダウンロードしてみます。",
+      "speaker_id": 12,
+      "hash": "ca0f3f764cd88e88"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "ラインもいれておいてください。れんらくとりやすいです。",
+      "speaker_id": 2,
+      "hash": "18c137254ce82893"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "わかりました。きょううちにかえってやってみます。",
+      "speaker_id": 12,
+      "hash": "84563d4b62f6b141"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "電話番号",
+      "speaker_id": 2,
+      "hash": "cbe8199c08e834ac"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "でんわばんごうをおしえてください。",
+      "speaker_id": 2,
+      "hash": "02c5a19291ffdde9"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "教える",
+      "speaker_id": 2,
+      "hash": "187d7d3e1a989d94"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "にほんごをおしえてください。",
+      "speaker_id": 2,
+      "hash": "f5f3c131e4cd152e"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "かける",
+      "speaker_id": 2,
+      "hash": "102d6b692bdb8126"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "ともだちにでんわをかけます。",
+      "speaker_id": 2,
+      "hash": "9e84cc78b5aa3bdd"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "アプリ",
+      "speaker_id": 2,
+      "hash": "48c0575f95cce2b9"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "このアプリはべんりです。",
+      "speaker_id": 2,
+      "hash": "abde2281fe4619f5"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "使う",
+      "speaker_id": 2,
+      "hash": "52bc51c0a5db4736"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "スマホをつかってください。",
+      "speaker_id": 2,
+      "hash": "3629e59b19b33498"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "便利",
+      "speaker_id": 2,
+      "hash": "8213723d43e07b22"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "このじしょはべんりです。",
+      "speaker_id": 2,
+      "hash": "a19e55a859f09263"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "ダウンロード",
+      "speaker_id": 2,
+      "hash": "d24c7791fe99e2a3"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "アプリをダウンロードしました。",
+      "speaker_id": 2,
+      "hash": "7c86b0665d1e2723"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "入れる",
+      "speaker_id": 2,
+      "hash": "f25c929b2cbc5ec8"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "ラインをいれました。",
+      "speaker_id": 2,
+      "hash": "40ee9ccc7d0e01a0"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "連絡",
+      "speaker_id": 2,
+      "hash": "0d645dce3dc6eee6"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "れんらくをとります。",
+      "speaker_id": 2,
+      "hash": "a954a543f44fb373"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "スマホ",
+      "speaker_id": 2,
+      "hash": "655fa4bea04013e3"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "スマホでしゃしんをとります。",
+      "speaker_id": 2,
+      "hash": "8d2a5cf0855032cf"
+    }
+  ]
+}

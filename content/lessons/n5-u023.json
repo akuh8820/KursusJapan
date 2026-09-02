@@ -1,0 +1,257 @@
+{
+  "id": "n5-u023",
+  "level": "N5",
+  "unit_no": 23,
+  "theme": "Rumah & Tetangga",
+  "title_id": "Keluhan Rumah & Tetangga Bisu",
+  "objectives_id": [
+    "Mengeluhkan kondisi rumah dengan 〜てはいけない (larangan)",
+    "Menggunakan 〜なければならない untuk kewajiban (harus)",
+    "Mengenal kosakata bagian rumah dan perabotan"
+  ],
+  "dialog": {
+    "title_id": "Rian mengeluhkan AC bocor ke tetangga Mina",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "ミナさん、ちょっとこまりました。",
+        "kana": "みなさん、ちょっとこまりました。",
+        "romaji": "Mina-san, chotto komarimashita.",
+        "id": "Mina, saya sedikit kesulitan."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "どうしたんですか。",
+        "kana": "どうしたんですか。",
+        "romaji": "Dou shita n desu ka.",
+        "id": "Ada apa?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "エアコンがもれています。みずがおちてきます。",
+        "kana": "エアコンがもれています。みずがおちてきます。",
+        "romaji": "Eakon ga morete imasu. Mizu ga ochite kimasu.",
+        "id": "AC bocor. Air menetes."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "それはたいへんですね。やねやさんにれんらくしなければなりません。",
+        "kana": "それはたいへんですね。やねやさんにれんらくしなければなりません。",
+        "romaji": "Sore wa taihen desu ne. Yaneya-san ni renraku shinakereba narimasen.",
+        "id": "Itu merepotkan. Harus hubungi tukang atap."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "あしたれんらくします。きょうはなおしてはいけませんか。",
+        "kana": "あしたれんらくします。きょうはなおしてはいけませんか。",
+        "romaji": "Ashita renraku shimasu. Kyou wa naoshite wa ikemasen ka.",
+        "id": "Besok saya hubungi. Hari ini jangan diperbaiki?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "じぶんでなおしてはいけません。あぶないです。",
+        "kana": "じぶんでなおしてはいけません。あぶないです。",
+        "romaji": "Jibun de naoshite wa ikemasen. Abunai desu.",
+        "id": "Jangan diperbaiki sendiri. Berbahaya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "わかりました。やねやさんをまちます。",
+        "kana": "わかりました。やねやさんをまちます。",
+        "romaji": "Wakarimashita. Yaneya-san wo machimasu.",
+        "id": "Baik. Saya tunggu tukang atap."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜てはいけない / 〜なければならない",
+    "meaning_id": "Tidak boleh / Harus — te-form + wa ikemasen (larangan), nai-form + nakereba narimasen (kewajiban).",
+    "formation": "[Verb te-form] + は いけません / [Verb nai-form ない→なければ] + なりません",
+    "examples": [
+      {
+        "jp": "ここでたばこをすってはいけません。",
+        "romaji": "Koko de tabako wo sutte wa ikemasen.",
+        "id": "Dilarang merokok di sini."
+      },
+      {
+        "jp": "まいにちべんきょうしなければなりません。",
+        "romaji": "Mainichi benkyou shinakereba narimasen.",
+        "id": "Harus belajar setiap hari."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "困る",
+      "kana": "こまる",
+      "romaji": "komaru",
+      "meaning_id": "kesulitan, bingung",
+      "example_jp": "わすれものをしてこまりました。",
+      "example_romaji": "Wasuremono wo shite komarimashita.",
+      "example_id": "Saya lupa bawa barang jadi kesulitan."
+    },
+    {
+      "term": "エアコン",
+      "kana": "エアコン",
+      "romaji": "eakon",
+      "meaning_id": "AC, pendingin udara",
+      "example_jp": "エアコンをつけます。",
+      "example_romaji": "Eakon wo tsukemasu.",
+      "example_id": "Saya nyalakan AC."
+    },
+    {
+      "term": "漏れる",
+      "kana": "もれる",
+      "romaji": "moreru",
+      "meaning_id": "bocor",
+      "example_jp": "みずがもれています。",
+      "example_romaji": "Mizu ga morete imasu.",
+      "example_id": "Air bocor."
+    },
+    {
+      "term": "落ちる",
+      "kana": "おちる",
+      "romaji": "ochiru",
+      "meaning_id": "jatuh, menetes",
+      "example_jp": "みずがおちてきます。",
+      "example_romaji": "Mizu ga ochite kimasu.",
+      "example_id": "Air menetes turun."
+    },
+    {
+      "term": "屋根屋",
+      "kana": "やねや",
+      "romaji": "yaneya",
+      "meaning_id": "tukang atap",
+      "example_jp": "やねやさんをよびます。",
+      "example_romaji": "Yaneya-san wo yobimasu.",
+      "example_id": "Saya panggil tukang atap."
+    },
+    {
+      "term": "連絡する",
+      "kana": "れんらくする",
+      "romaji": "renraku suru",
+      "meaning_id": "menghubungi, berkomunikasi",
+      "example_jp": "でんわでれんらくします。",
+      "example_romaji": "Denwa de renraku shimasu.",
+      "example_id": "Saya hubungi lewat telepon."
+    },
+    {
+      "term": "直す",
+      "kana": "なおす",
+      "romaji": "naosu",
+      "meaning_id": "memperbaiki",
+      "example_jp": "じてんしゃをなおします。",
+      "example_romaji": "Jitensha wo naoshimasu.",
+      "example_id": "Saya perbaiki sepeda."
+    },
+    {
+      "term": "危ない",
+      "kana": "あぶない",
+      "romaji": "abunai",
+      "meaning_id": "berbahaya",
+      "example_jp": "そこはあぶないです。",
+      "example_romaji": "Soko wa abunai desu.",
+      "example_id": "Situ berbahaya."
+    },
+    {
+      "term": "待つ",
+      "kana": "まつ",
+      "romaji": "matsu",
+      "meaning_id": "menunggu",
+      "example_jp": "バスをまちます。",
+      "example_romaji": "Basu wo machimasu.",
+      "example_id": "Saya menunggu bus."
+    },
+    {
+      "term": "大変",
+      "kana": "たいへん",
+      "romaji": "taihen",
+      "meaning_id": "merepotkan, sulit, serius",
+      "example_jp": "しごとはたいへんです。",
+      "example_romaji": "Shigoto wa taihen desu.",
+      "example_id": "Pekerjaan merepotkan."
+    }
+  ],
+  "writing": [
+    {
+      "char": "屋",
+      "type": "kanji",
+      "romaji": "ya",
+      "meaning_id": "rumah, toko",
+      "kanjivg_id": "5c4b"
+    },
+    {
+      "char": "根",
+      "type": "kanji",
+      "romaji": "ne",
+      "meaning_id": "akar",
+      "kanjivg_id": "6839"
+    },
+    {
+      "char": "直",
+      "type": "kanji",
+      "romaji": "nao",
+      "meaning_id": "betul, perbaiki",
+      "kanjivg_id": "76f4"
+    },
+    {
+      "char": "危",
+      "type": "kanji",
+      "romaji": "ki",
+      "meaning_id": "bahaya",
+      "kanjivg_id": "5371"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 5,
+      "prompt_id": "Mina berkata 'じぶんでなおしてはいけません'. Artinya?",
+      "options": [
+        "Harus perbaiki sendiri",
+        "Jangan perbaiki sendiri",
+        "Boleh perbaiki nanti",
+        "Tukang atap akan perbaiki"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "d03",
+      "target_kana": "やねやさんにれんらくしなければなりません"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "危ない",
+      "front_kana": "あぶない",
+      "back_id": "berbahaya"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'こまる' adalah...",
+      "options": [
+        "senang",
+        "kesulitan",
+        "marah",
+        "lelah"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "まいにち",
+        "べんきょう",
+        "しなければ",
+        "なりません"
+      ],
+      "answer_jp": "まいにちべんきょうしなければなりません。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis kanji untuk 'ya' (rumah/toko)",
+      "target_kana": "や"
+    }
+  ],
+  "audio_status": "pending"
+}

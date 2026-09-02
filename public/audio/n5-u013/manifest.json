@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u013",
+  "generated_at": "2026-09-02T01:43:12.633Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "こんにちは。どこがいたいですか。",
+      "speaker_id": 2,
+      "hash": "ddd145f7d79f9335"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "おなかがいたいです。けさからです。",
+      "speaker_id": 12,
+      "hash": "e4283e735e4747b7"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "ねつはありますか。",
+      "speaker_id": 2,
+      "hash": "9cd69f95e8fe8aab"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "いいえ、ねつはありません。",
+      "speaker_id": 12,
+      "hash": "42bb06dab773f4d7"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "じゃあ、このくすりをのんでください。しょくごさんかいです。",
+      "speaker_id": 2,
+      "hash": "3e61aa8b6a7766e2"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "わかりました。みずでのみます。",
+      "speaker_id": 12,
+      "hash": "c8c4b3e219320dd2"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "だいじょうぶですよ。やすみてくださいね。",
+      "speaker_id": 2,
+      "hash": "d74af0794528e4fb"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "病院",
+      "speaker_id": 2,
+      "hash": "6854bcd175878f5b"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "びょういんにいきます。",
+      "speaker_id": 2,
+      "hash": "9415364eb0f3590a"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "お医者さん",
+      "speaker_id": 2,
+      "hash": "febede110f0530b3"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "おいしゃさんにみてもらいます。",
+      "speaker_id": 2,
+      "hash": "b3f45c4b3d47b344"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "お腹",
+      "speaker_id": 2,
+      "hash": "f7b39a4b915f6bd0"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "おなかがすきました。",
+      "speaker_id": 2,
+      "hash": "54b3532ad71b07db"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "痛い",
+      "speaker_id": 2,
+      "hash": "da644fdd433ba3a7"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "あしがいたいです。",
+      "speaker_id": 2,
+      "hash": "af22ec46bc1b09b0"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "熱",
+      "speaker_id": 2,
+      "hash": "da4860a55e87788b"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "ねつがたかいです。",
+      "speaker_id": 2,
+      "hash": "7505c07af7d9a4a9"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "薬",
+      "speaker_id": 2,
+      "hash": "67065ce8ed491918"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "くすりをのみます。",
+      "speaker_id": 2,
+      "hash": "e9936ecd4ffc4138"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "飲んでください",
+      "speaker_id": 2,
+      "hash": "b521cb5e90d0cb90"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "このくすりをのんでください。",
+      "speaker_id": 2,
+      "hash": "52bebb791acbad16"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "食後",
+      "speaker_id": 2,
+      "hash": "38b36f5fef670b78"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "しょくごにくすりをのみます。",
+      "speaker_id": 2,
+      "hash": "38e0347e54910a2f"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "三回",
+      "speaker_id": 2,
+      "hash": "121130e4497206c4"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "いちにちさんかいです。",
+      "speaker_id": 2,
+      "hash": "70a771dce035327a"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "休んでください",
+      "speaker_id": 2,
+      "hash": "4841d8b62139043a"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "きょうはやすみてください。",
+      "speaker_id": 2,
+      "hash": "19d04470a3e123c3"
+    }
+  ]
+}

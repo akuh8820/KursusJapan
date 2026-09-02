@@ -1,0 +1,259 @@
+{
+  "id": "n5-u021",
+  "level": "N5",
+  "unit_no": 21,
+  "theme": "Teknologi & Telepon",
+  "title_id": "Menelepon & Menggunakan Smartphone",
+  "objectives_id": [
+    "Mengucapkan nomor telepon dan meminta nomor kontak",
+    "Menggunakan 〜てみる untuk mencoba melakukan sesuatu",
+    "Mengenal kosakata dasar smartphone dan aplikasi"
+  ],
+  "dialog": {
+    "title_id": "Rian meminta nomor telepon Mina dan mencoba aplikasi baru",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "ミナさん、でんわばんごうをおしえてください。",
+        "kana": "みなさん、でんわばんごうをおしえてください。",
+        "romaji": "Mina-san, denwa bangou wo oshiete kudasai.",
+        "id": "Mina, tolong berikan nomor teleponmu."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "いいですよ。ゼロ・ハチ・ゼロ・イチ・ニ・サン・ヨン・ゴ・ロク・ナナです。",
+        "kana": "いいですよ。ゼロ・ハチ・ゼロ・イチ・ニ・サン・ヨン・ゴ・ロク・ナナです。",
+        "romaji": "Ii desu yo. Zero hachi zero ichi ni san yon go roku nana desu.",
+        "id": "Tentu saja. 080-1234-567."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "ありがとう。あとでかけてみます。",
+        "kana": "ありがとう。あとでかけてみます。",
+        "romaji": "Arigatou. Ato de kakete mimasu.",
+        "id": "Terima kasih. Nanti saya coba telpon."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "このアプリをつかってみてください。べんりですよ。",
+        "kana": "このアプリをつかってみてください。べんりですよ。",
+        "romaji": "Kono apuri wo tsukatte mite kudasai. Benri desu yo.",
+        "id": "Coba pakai aplikasi ini. Berguna kok."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "ほんとうですか。ダウンロードしてみます。",
+        "kana": "ほんとうですか。ダウンロードしてみます。",
+        "romaji": "Hontou desu ka. Daunroodo shite mimasu.",
+        "id": "Benarkah? Saya coba unduh."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "ラインもいれておいてください。れんらくとりやすいです。",
+        "kana": "ラインもいれておいてください。れんらくとりやすいです。",
+        "romaji": "Rain mo irete oite kudasai. Renraku toriyasui desu.",
+        "id": "Pasang Line juga ya. Mudah untuk kontak."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "わかりました。きょううちにかえってやってみます。",
+        "kana": "わかりました。きょううちにかえってやってみます。",
+        "romaji": "Wakarimashita. Kyou uchi ni kaette yatte mimasu.",
+        "id": "Baik. Hari ini pulang rumah saya coba lakukan."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜てみる",
+    "meaning_id": "Mencoba melakukan sesuatu — bentuk te-verb + miru (coba lakukan).",
+    "formation": "[Verb te-form] + みる",
+    "examples": [
+      {
+        "jp": "このケーキをたべてみてください。",
+        "romaji": "Kono keeki wo tabete mite kudasai.",
+        "id": "Silakan coba makan kue ini."
+      },
+      {
+        "jp": "あたらしいゲームをやってみたいです。",
+        "romaji": "Atarashii geemu wo yatte mitai desu.",
+        "id": "Saya ingin coba main game baru."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "電話番号",
+      "kana": "でんわばんごう",
+      "romaji": "denwa bangou",
+      "meaning_id": "nomor telepon",
+      "example_jp": "でんわばんごうをおしえてください。",
+      "example_romaji": "Denwa bangou wo oshiete kudasai.",
+      "example_id": "Tolong berikan nomor teleponnya."
+    },
+    {
+      "term": "教える",
+      "kana": "おしえる",
+      "romaji": "oshieru",
+      "meaning_id": "mengajar, memberitahu",
+      "example_jp": "にほんごをおしえてください。",
+      "example_romaji": "Nihongo wo oshiete kudasai.",
+      "example_id": "Tolong ajarkan bahasa Jepang."
+    },
+    {
+      "term": "かける",
+      "kana": "かける",
+      "romaji": "kakeru",
+      "meaning_id": "menelfon, menelepon",
+      "example_jp": "ともだちにでんわをかけます。",
+      "example_romaji": "Tomodachi ni denwa wo kakemasu.",
+      "example_id": "Saya menelepon teman."
+    },
+    {
+      "term": "アプリ",
+      "kana": "アプリ",
+      "romaji": "apuri",
+      "meaning_id": "aplikasi (singkatan application)",
+      "example_jp": "このアプリはべんりです。",
+      "example_romaji": "Kono apuri wa benri desu.",
+      "example_id": "Aplikasi ini berguna."
+    },
+    {
+      "term": "使う",
+      "kana": "つかう",
+      "romaji": "tsukau",
+      "meaning_id": "menggunakan, memakai",
+      "example_jp": "スマホをつかってください。",
+      "example_romaji": "Sumaho wo tsukatte kudasai.",
+      "example_id": "Silakan gunakan smartphone."
+    },
+    {
+      "term": "便利",
+      "kana": "べんり",
+      "romaji": "benri",
+      "meaning_id": "berguna, praktis",
+      "example_jp": "このじしょはべんりです。",
+      "example_romaji": "Kono jisho wa benri desu.",
+      "example_id": "Kamus ini berguna."
+    },
+    {
+      "term": "ダウンロード",
+      "kana": "ダウンロード",
+      "romaji": "daunroodo",
+      "meaning_id": "unduh, download",
+      "example_jp": "アプリをダウンロードしました。",
+      "example_romaji": "Apuri wo daunroodo shimashita.",
+      "example_id": "Saya sudah mengunduh aplikasinya."
+    },
+    {
+      "term": "入れる",
+      "kana": "いれる",
+      "romaji": "ireru",
+      "meaning_id": "memasukkan, memasang (aplikasi)",
+      "example_jp": "ラインをいれました。",
+      "example_romaji": "Rain wo iremashita.",
+      "example_id": "Saya sudah memasang Line."
+    },
+    {
+      "term": "連絡",
+      "kana": "れんらく",
+      "romaji": "renraku",
+      "meaning_id": "kontak, komunikasi",
+      "example_jp": "れんらくをとります。",
+      "example_romaji": "Renraku wo torimasu.",
+      "example_id": "Saya menghubungi (mengambil kontak)."
+    },
+    {
+      "term": "スマホ",
+      "kana": "スマホ",
+      "romaji": "sumaho",
+      "meaning_id": "smartphone (singkatan smart phone)",
+      "example_jp": "スマホでしゃしんをとります。",
+      "example_romaji": "Sumaho de shashin wo torimasu.",
+      "example_id": "Ambil foto dengan smartphone."
+    }
+  ],
+  "writing": [
+    {
+      "char": "電",
+      "type": "kanji",
+      "romaji": "den",
+      "meaning_id": "listrik, telepon",
+      "kanjivg_id": "096fb"
+    },
+    {
+      "char": "話",
+      "type": "kanji",
+      "romaji": "wa",
+      "meaning_id": "bicara, cerita",
+      "kanjivg_id": "8a71"
+    },
+    {
+      "char": "番",
+      "type": "kanji",
+      "romaji": "ban",
+      "meaning_id": "nomor, urutan",
+      "kanjivg_id": "756a"
+    },
+    {
+      "char": "号",
+      "type": "kanji",
+      "romaji": "gou",
+      "meaning_id": "nomor, edisi",
+      "kanjivg_id": "53f7"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 2,
+      "prompt_id": "Rian berkata 'あとでかけてみます'. Apa artinya?",
+      "options": [
+        "Nanti saya coba telpon.",
+        "Sekarang saya telpon.",
+        "Saya tidak mau telpon.",
+        "Nomor teleponnya salah."
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "d03",
+      "target_kana": "あとでかけてみます"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "アプリ",
+      "front_kana": "アプリ",
+      "back_id": "aplikasi"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti dari 'べんり' adalah...",
+      "options": [
+        "mahal",
+        "berguna",
+        "sulit",
+        "cepat"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "この",
+        "アプリ",
+        "を",
+        "つかって",
+        "みて",
+        "ください"
+      ],
+      "answer_jp": "このアプリをつかってみてください。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis kanji untuk 'den' (listrik/telepon)",
+      "target_kana": "でん"
+    }
+  ],
+  "audio_status": "pending"
+}

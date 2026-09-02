@@ -1,0 +1,255 @@
+{
+  "id": "n5-u019",
+  "level": "N5",
+  "unit_no": 19,
+  "theme": "Kerja & part-time",
+  "title_id": "Alasan & Alasan (から / ので)",
+  "objectives_id": [
+    "Menyebutkan alasan dengan 〜から / 〜ので",
+    "Mengenal katakana (ナニヌネノ ハヒフヘホ)",
+    "Memahami frasa wawancara kerja sederhana"
+  ],
+  "dialog": {
+    "title_id": "Rian wawancara kerja part-time di kafe",
+    "lines": [
+      {
+        "speaker": "Manager",
+        "jp": "こんにちは。りあんさんですね。なぜこのバイトをしたいですか。",
+        "kana": "こんにちは。りあんさんですね。なぜこのバイトをしたいですか。",
+        "romaji": "Konnichiwa. Rian-san desu ne. Naze kono baito o shitai desu ka.",
+        "id": "Halo. Rian ya. Kenapa mau kerja part-time di sini?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "いえちかいからです。それに、コーヒーがすきなので。",
+        "kana": "いえちかいからです。それに、コーヒーがすきなので。",
+        "romaji": "Ie chikai kara desu. Sore ni, koohii ga suki na node.",
+        "id": "Karena dekat rumah. Dan karena saya suka kopi."
+      },
+      {
+        "speaker": "Manager",
+        "jp": "にほんごはだいじょうぶですか。",
+        "kana": "にほんごはだいじょうぶですか。",
+        "romaji": "Nihongo wa daijoubu desu ka.",
+        "id": "Bahasa Jepangnya OK?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "すこしわかります。いま、がっこうでべんきょうしているので。",
+        "kana": "すこしわかります。いま、がっこうでべんきょうしているので。",
+        "romaji": "Sukoshi wakarimasu. Ima, gakkou de benkyou shite iru node.",
+        "id": "Sedikit paham. Karena sekarang belajar di sekolah."
+      },
+      {
+        "speaker": "Manager",
+        "jp": "じゃ、きんようびからこれますか。",
+        "kana": "じゃ、きんようびからこれますか。",
+        "romaji": "Jya, kinyoubi kara koremasu ka.",
+        "id": "Kalau begitu, bisa mulai Jumat?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい、だいじょうぶです。ありがとうございます。",
+        "kana": "はい、だいじょうぶです。ありがとうございます。",
+        "romaji": "Hai, daijoubu desu. Arigatou gozaimasu.",
+        "id": "Ya, bisa. Terima kasih."
+      },
+      {
+        "speaker": "Manager",
+        "jp": "では、またきんようび。よろしくおねがいします。",
+        "kana": "では、またきんようび。よろしくおねがいします。",
+        "romaji": "Dewa, mata kinyoubi. Yoroshiku onegaishimasu.",
+        "id": "Baik, Jumat lagi ya. Mohon bantuannya."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜から / 〜ので",
+    "meaning_id": "Karena 〜 (alasan subyektif/kasual: から / alasan objektif/formal: ので)",
+    "formation": "[Kalimat biasa] + から / [Kalimat biasa] + ので (na-adj/N + な + ので)",
+    "examples": [
+      {
+        "jp": "あめがふったから、いきませんでした。",
+        "romaji": "Ame ga futta kara, ikimasen deshita.",
+        "id": "Karena hujan, saya tidak pergi."
+      },
+      {
+        "jp": "びょうきなので、やすみます。",
+        "romaji": "Byouki na node, yasumimasu.",
+        "id": "Karena sakit, saya istirahat."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "アルバイト",
+      "kana": "アルバイト",
+      "romaji": "arubaito",
+      "meaning_id": "kerja part-time",
+      "example_jp": "アルバイトをさがしています。",
+      "example_romaji": "Arubaito o sagashite imasu.",
+      "example_id": "Mencari kerja part-time."
+    },
+    {
+      "term": "面接",
+      "kana": "めんせつ",
+      "romaji": "mensetsu",
+      "meaning_id": "wawancara",
+      "example_jp": "めんせつがあります。",
+      "example_romaji": "Mensetsu ga arimasu.",
+      "example_id": "Ada wawancara."
+    },
+    {
+      "term": "店長",
+      "kana": "てんちょう",
+      "romaji": "tenchou",
+      "meaning_id": "manager toko/kafe",
+      "example_jp": "てんちょうにあいました。",
+      "example_romaji": "Tenchou ni aimashita.",
+      "example_id": "Bertemu manager."
+    },
+    {
+      "term": "コーヒー",
+      "kana": "コーヒー",
+      "romaji": "koohii",
+      "meaning_id": "kopi",
+      "example_jp": "コーヒーをのみます。",
+      "example_romaji": "Koohii o nomimasu.",
+      "example_id": "Minum kopi."
+    },
+    {
+      "term": "近い",
+      "kana": "ちかい",
+      "romaji": "chikai",
+      "meaning_id": "dekat",
+      "example_jp": "えきがちかいです。",
+      "example_romaji": "Eki ga chikai desu.",
+      "example_id": "Stasiunnya dekat."
+    },
+    {
+      "term": "金曜日",
+      "kana": "きんようび",
+      "romaji": "kinyoubi",
+      "meaning_id": "hari Jumat",
+      "example_jp": "きんようびはひまです。",
+      "example_romaji": "Kinyoubi wa hima desu.",
+      "example_id": "Jumat libur."
+    },
+    {
+      "term": "始めます",
+      "kana": "はじめます",
+      "romaji": "hajimemasu",
+      "meaning_id": "memulai",
+      "example_jp": "らいしゅうからはじめます。",
+      "example_romaji": "Raishuu kara hajimemasu.",
+      "example_id": "Mulai minggu depan."
+    },
+    {
+      "term": "シフト",
+      "kana": "シフト",
+      "romaji": "shifuto",
+      "meaning_id": "shift, jadwal kerja",
+      "example_jp": "しふとをかくにんします。",
+      "example_romaji": "Shifuto o kakunin shimasu.",
+      "example_id": "Cek jadwal kerja."
+    },
+    {
+      "term": "時給",
+      "kana": "じきゅう",
+      "romaji": "jikyuu",
+      "meaning_id": "upah per jam",
+      "example_jp": "じきゅうはせんえんです。",
+      "example_romaji": "Jikyuu wa sen en desu.",
+      "example_id": "Upah per jam 1000 yen."
+    },
+    {
+      "term": "経験",
+      "kana": "けいけん",
+      "romaji": "keiken",
+      "meaning_id": "pengalaman",
+      "example_jp": "けいけんがあります。",
+      "example_romaji": "Keiken ga arimasu.",
+      "example_id": "Ada pengalaman."
+    }
+  ],
+  "writing": [
+    {
+      "char": "ナ",
+      "type": "katakana",
+      "romaji": "na"
+    },
+    {
+      "char": "ニ",
+      "type": "katakana",
+      "romaji": "ni"
+    },
+    {
+      "char": "ヌ",
+      "type": "katakana",
+      "romaji": "nu"
+    },
+    {
+      "char": "ネ",
+      "type": "katakana",
+      "romaji": "ne"
+    },
+    {
+      "char": "ノ",
+      "type": "katakana",
+      "romaji": "no"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Dengarkan alasan Rian. Alasan pertama apa?",
+      "options": [
+        "Suka kopi",
+        "Dekat rumah",
+        "Upah tinggi",
+        "Teman kerja di sini"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "v04t",
+      "target_kana": "アルバイト"
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "いえ",
+        "が",
+        "ちかい",
+        "から",
+        "です"
+      ],
+      "answer_jp": "いえがちかいからです。"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "面接",
+      "front_kana": "めんせつ",
+      "back_id": "wawancara"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'jikyuu' adalah...",
+      "options": [
+        "Gaji bulanan",
+        "Upah per jam",
+        "Bonus",
+        "Tunjangan"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf katakana untuk bunyi 'nu'",
+      "target_kana": "ヌ"
+    }
+  ],
+  "audio_status": "pending"
+}

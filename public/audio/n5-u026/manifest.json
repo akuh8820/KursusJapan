@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u026",
+  "generated_at": "2026-09-02T02:42:18.485Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "ことしのなつまつりにいきましたか。",
+      "speaker_id": 12,
+      "hash": "c19bf82f56a3ad68"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "はい、いきました。ゆかたをきて、ぼんおどりをおどりました。",
+      "speaker_id": 2,
+      "hash": "5001e1d26730284e"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "わたしもいきました。たこやきをたべながら、はなびをみました。",
+      "speaker_id": 2,
+      "hash": "de6c30b46cf8fd43"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "いいですね。おんせんにもはいったことがありますか。",
+      "speaker_id": 12,
+      "hash": "5398f62ba4865dba"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "あります。ゆっくりはいりながら、ふじさんをみました。",
+      "speaker_id": 2,
+      "hash": "29ec3060dcf78e14"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "おんせんのまえで、からだをあらわなければなりません。",
+      "speaker_id": 2,
+      "hash": "9ac2055924cc7867"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "わかりました。らいねんはぜったいいきます。",
+      "speaker_id": 12,
+      "hash": "839e1f630da13db0"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "夏祭り",
+      "speaker_id": 2,
+      "hash": "2de14de82f53d215"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "なつまつりにいきます。",
+      "speaker_id": 2,
+      "hash": "402a093dfef291d7"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "浴衣",
+      "speaker_id": 2,
+      "hash": "d8599a6e1141bf04"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "ゆかたをきます。",
+      "speaker_id": 2,
+      "hash": "59c8ddd639509959"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "盆踊り",
+      "speaker_id": 2,
+      "hash": "e5d1c0cc9a316a69"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "ぼんおどりをおどります。",
+      "speaker_id": 2,
+      "hash": "4d1616317a86351a"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "たこ焼き",
+      "speaker_id": 2,
+      "hash": "079670430db3c9e1"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "たこやきをたべます。",
+      "speaker_id": 2,
+      "hash": "e36ecb6e56f8dbf0"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "花火",
+      "speaker_id": 2,
+      "hash": "aae982df14f016cd"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "はなびをみます。",
+      "speaker_id": 2,
+      "hash": "6955f6f3b9ca7305"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "温泉",
+      "speaker_id": 2,
+      "hash": "a70e7e65eae33000"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "おんせんにはいります。",
+      "speaker_id": 2,
+      "hash": "bc8f2f2b7027f615"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "富士山",
+      "speaker_id": 2,
+      "hash": "a45e81bb70b86327"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "ふじさんがきれいです。",
+      "speaker_id": 2,
+      "hash": "e80af6645ff92351"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "体",
+      "speaker_id": 2,
+      "hash": "7ee22cf7c03734db"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "からだをあらいます。",
+      "speaker_id": 2,
+      "hash": "033ad0d0b7c222cc"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "洗う",
+      "speaker_id": 2,
+      "hash": "0c720e6e4d13e5a7"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "てをあらいます。",
+      "speaker_id": 2,
+      "hash": "c2191fcce66930f8"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "来年",
+      "speaker_id": 2,
+      "hash": "43763d8df77fc40f"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "らいねんにほんにいきます。",
+      "speaker_id": 2,
+      "hash": "86ab8062bee4e13c"
+    }
+  ]
+}

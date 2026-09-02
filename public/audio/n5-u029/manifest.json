@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u029",
+  "generated_at": "2026-09-02T02:51:17.499Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "しけんがおわって、ほっとしました。",
+      "speaker_id": 12,
+      "hash": "ee537a06c5e557a0"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "よかったですね。わたしはまだしんぱいがっています。",
+      "speaker_id": 2,
+      "hash": "7ca330fba433d5ee"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "だいじょうぶですよ。よくべんきょうしたのに、なぜしんぱいですか。",
+      "speaker_id": 12,
+      "hash": "76c9f6678f42112f"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "リスニングがむずかしかったのに、よみはできました。",
+      "speaker_id": 2,
+      "hash": "079930265d7c33fb"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "それはすごいです。じしんをもってください。",
+      "speaker_id": 12,
+      "hash": "71f088586e264246"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "ありがとう。けっかがたのしみです。うれしいきもちです。",
+      "speaker_id": 2,
+      "hash": "2f10adbce294abfc"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "いっしょにおいわいしましょう。ごちそうしますよ。",
+      "speaker_id": 12,
+      "hash": "e1b5e34280de1838"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "ほっとする",
+      "speaker_id": 2,
+      "hash": "8c66b2c25e8f9ac7"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "しけんがおわってほっとしました。",
+      "speaker_id": 2,
+      "hash": "76809cd607bb68f2"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "心配",
+      "speaker_id": 2,
+      "hash": "9640a6bcf03faa5e"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "しんぱいしないでください。",
+      "speaker_id": 2,
+      "hash": "156ef9127fe2d044"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "なぜ",
+      "speaker_id": 2,
+      "hash": "1ab8210af0204dd6"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "なぜこまりましたか。",
+      "speaker_id": 2,
+      "hash": "5fedfc02d7800b2a"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "リスニング",
+      "speaker_id": 2,
+      "hash": "2a356b21683420cd"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "リスニングはむずかしいです。",
+      "speaker_id": 2,
+      "hash": "dd6557fbbc205c0b"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "読み",
+      "speaker_id": 2,
+      "hash": "8789cb68b2c604fd"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "よみはじょうずです。",
+      "speaker_id": 2,
+      "hash": "d338de1502379dce"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "自信",
+      "speaker_id": 2,
+      "hash": "359b3fc21274ca7c"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "じしんをもってください。",
+      "speaker_id": 2,
+      "hash": "f42e2cc889107fa7"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "結果",
+      "speaker_id": 2,
+      "hash": "9e08c8a846d37451"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "けっかをまちます。",
+      "speaker_id": 2,
+      "hash": "db65c0dc47980dad"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "楽しみ",
+      "speaker_id": 2,
+      "hash": "879ce54fadf76137"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "りょこうがたのしみです。",
+      "speaker_id": 2,
+      "hash": "e5150f6a61f46662"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "嬉しい",
+      "speaker_id": 2,
+      "hash": "c810e02b64606b23"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "うれしいです。",
+      "speaker_id": 2,
+      "hash": "76253ad53f800752"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "祝う",
+      "speaker_id": 2,
+      "hash": "1de0d2daec5dbfd1"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "たんじょうびをいわいます。",
+      "speaker_id": 2,
+      "hash": "1bf2a599765ca5fb"
+    }
+  ]
+}

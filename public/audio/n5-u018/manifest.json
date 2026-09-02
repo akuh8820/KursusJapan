@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u018",
+  "generated_at": "2026-09-02T02:03:28.757Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "りあんさん、いまなにをしていますか。",
+      "speaker_id": 2,
+      "hash": "094202e2f7114e25"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "にほんごをべんきょうしています。",
+      "speaker_id": 12,
+      "hash": "76de837aacfecfce"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "いつもとしょかんでべんきょうしていますね。",
+      "speaker_id": 2,
+      "hash": "51aefc46957b148e"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "はい。おんがくをききながら、べんきょうします。",
+      "speaker_id": 12,
+      "hash": "a6b018dddf5b92ad"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "わたしはあした、しけんがあります。いま、しょくじをしています。",
+      "speaker_id": 2,
+      "hash": "c892848a7b8b32ed"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "がんばってください。しょくじのあと、いっしょにべんきょうしましょうか。",
+      "speaker_id": 12,
+      "hash": "7f0b7dc02a7a61b7"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "いいですね。じゃ、あとで。",
+      "speaker_id": 2,
+      "hash": "103441a83221a1a8"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "図書館",
+      "speaker_id": 2,
+      "hash": "b4c8ffbdc2869f32"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "としょかんでほんをよみます。",
+      "speaker_id": 2,
+      "hash": "8b331dcbfe733e95"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "勉強します",
+      "speaker_id": 2,
+      "hash": "ed90a31619a038ac"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "まいにちべんきょうします。",
+      "speaker_id": 2,
+      "hash": "333c707eac480e93"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "試験",
+      "speaker_id": 2,
+      "hash": "b3f36deb89f87345"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "しけんがあります。",
+      "speaker_id": 2,
+      "hash": "2411b67f298fb6c3"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "食事",
+      "speaker_id": 2,
+      "hash": "2bc081dffa891a9c"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "しょくじをします。",
+      "speaker_id": 2,
+      "hash": "73d858ece0e5a559"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "後で",
+      "speaker_id": 2,
+      "hash": "e1c67616a022e73e"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "あとであいましょう。",
+      "speaker_id": 2,
+      "hash": "9eb15fab85769d3e"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "音楽を聞きながら",
+      "speaker_id": 2,
+      "hash": "8f696521c7768a1e"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "おんがくをききながら、あるきます。",
+      "speaker_id": 2,
+      "hash": "660802172a433b12"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "いつも",
+      "speaker_id": 2,
+      "hash": "754c7b277826e996"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "いつもここでべんきょうします。",
+      "speaker_id": 2,
+      "hash": "820d448752663f34"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "頑張ってください",
+      "speaker_id": 2,
+      "hash": "737215f61f7201f9"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "しけん、がんばってください。",
+      "speaker_id": 2,
+      "hash": "b627c1897c22ec10"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "授業",
+      "speaker_id": 2,
+      "hash": "a61dcc06d423f0f8"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "じゅぎょうがはじまります。",
+      "speaker_id": 2,
+      "hash": "9916a258fb4469af"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "ノート",
+      "speaker_id": 2,
+      "hash": "3f2bc6e2fd271335"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "ノートをかきます。",
+      "speaker_id": 2,
+      "hash": "d909d149164b0a41"
+    }
+  ]
+}

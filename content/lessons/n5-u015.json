@@ -1,0 +1,256 @@
+{
+  "id": "n5-u015",
+  "level": "N5",
+  "unit_no": 15,
+  "theme": "Hobi & hiburan",
+  "title_id": "Suka, Tidak Suka & Ingin",
+  "objectives_id": [
+    "Menyatakan suka/tidak suka dengan 〜が好きです / 〜がきらいです",
+    "Mengenal huruf hiragana baris ま (まみむめも)",
+    "Mengungkapkan keinginan dengan 〜たいです"
+  ],
+  "dialog": {
+    "title_id": "Rian, Mina, dan Yuki ngobrol di ruang tamu kos",
+    "lines": [
+      {
+        "speaker": "Mina",
+        "jp": "りあんさん、なにがすきですか。",
+        "kana": "りあんさん、なにがすきですか。",
+        "romaji": "Rian-san, nani ga suki desu ka.",
+        "id": "Rian, suka apa?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "えいががすきです。よくみます。",
+        "kana": "えいががすきです。よくみます。",
+        "romaji": "Eiga ga suki desu. Yoku mimasu.",
+        "id": "Saya suka film. Sering nonton."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "わたしもえいががすきです。でも、ホラーがきらいです。",
+        "kana": "わたしもえいががすきです。でも、ホラーがきらいです。",
+        "romaji": "Watashi mo eiga ga suki desu. Demo, horaa ga kirai desu.",
+        "id": "Saya juga suka film. Tapi tidak suka horror."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "あした、えいがをみにいきたいです。いっしょにいきませんか。",
+        "kana": "あした、えいがをみにいきたいです。いっしょにいきませんか。",
+        "romaji": "Ashita, eiga o mi ni ikitai desu. Issho ni ikimasen ka.",
+        "id": "Besok mau nonton film. Mau ikut?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "いいですね。なんのえいががみたいですか。",
+        "kana": "いいですね。なんのえいががみたいですか。",
+        "romaji": "Ii desu ne. Nan no eiga ga mitai desu ka.",
+        "id": "Bagus. Mau nonton film apa?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "アクションがみたいです。",
+        "kana": "アクションがみたいです。",
+        "romaji": "Akushon ga mitai desu.",
+        "id": "Mau nonton action."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "じゃ、チケットをかいましょう。",
+        "kana": "じゃ、チケットをかいましょう。",
+        "romaji": "Jya, chiketto o kaimashou.",
+        "id": "Kalau begitu, beli tiketnya."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜が好きです / 〜が嫌いです / 〜たいです",
+    "meaning_id": "Suka 〜 / Tidak suka 〜 / Ingin 〜 (verb stem + tai)",
+    "formation": "[Kata benda] + が + 好きです/嫌いです / [Verb stem] + たいです",
+    "examples": [
+      {
+        "jp": "おんがくがきらいです。",
+        "romaji": "Ongaku ga kirai desu.",
+        "id": "Saya tidak suka musik."
+      },
+      {
+        "jp": "にほんごをべんきょうしたいです。",
+        "romaji": "Nihongo o benkyou shitai desu.",
+        "id": "Saya ingin belajar bahasa Jepang."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "映画",
+      "kana": "えいが",
+      "romaji": "eiga",
+      "meaning_id": "film",
+      "example_jp": "えいがをみます。",
+      "example_romaji": "Eiga o mimasu.",
+      "example_id": "Nonton film."
+    },
+    {
+      "term": "音楽",
+      "kana": "おんがく",
+      "romaji": "ongaku",
+      "meaning_id": "musik",
+      "example_jp": "おんがくをききます。",
+      "example_romaji": "Ongaku o kikimasu.",
+      "example_id": "Mendengarkan musik."
+    },
+    {
+      "term": "読書",
+      "kana": "どくしょ",
+      "romaji": "dokusho",
+      "meaning_id": "membaca (hobi)",
+      "example_jp": "どくしょがすきです。",
+      "example_romaji": "Dokusho ga suki desu.",
+      "example_id": "Saya suka membaca."
+    },
+    {
+      "term": "ゲーム",
+      "kana": "ゲーム",
+      "romaji": "geemu",
+      "meaning_id": "game",
+      "example_jp": "ゲームをします。",
+      "example_romaji": "Geemu o shimasu.",
+      "example_id": "Main game."
+    },
+    {
+      "term": "スポーツ",
+      "kana": "スポーツ",
+      "romaji": "supootsu",
+      "meaning_id": "olahraga",
+      "example_jp": "スポーツをします。",
+      "example_romaji": "Supootsu o shimasu.",
+      "example_id": "Berolahraga."
+    },
+    {
+      "term": "ホラー",
+      "kana": "ホラー",
+      "romaji": "horaa",
+      "meaning_id": "horror (genre film)",
+      "example_jp": "ホラーえいがはこわいです。",
+      "example_romaji": "Horaa eiga wa kowai desu.",
+      "example_id": "Film horror menakutkan."
+    },
+    {
+      "term": "アクション",
+      "kana": "アクション",
+      "romaji": "akushon",
+      "meaning_id": "action (genre film)",
+      "example_jp": "アクションえいががすきです。",
+      "example_romaji": "Akushon eiga ga suki desu.",
+      "example_id": "Saya suka film action."
+    },
+    {
+      "term": "一緒に",
+      "kana": "いっしょに",
+      "romaji": "issho ni",
+      "meaning_id": "bersama-sama",
+      "example_jp": "いっしょにいきましょう。",
+      "example_romaji": "Issho ni ikimashou.",
+      "example_id": "Ayo pergi bersama."
+    },
+    {
+      "term": "チケット",
+      "kana": "チケット",
+      "romaji": "chiketto",
+      "meaning_id": "tiket",
+      "example_jp": "チケットをかいました。",
+      "example_romaji": "Chiketto o kaimashita.",
+      "example_id": "Saya beli tiket."
+    },
+    {
+      "term": "見に行きます",
+      "kana": "みにいきます",
+      "romaji": "mi ni ikimasu",
+      "meaning_id": "pergi menonton/melihat",
+      "example_jp": "えいがをみにいきます。",
+      "example_romaji": "Eiga o mi ni ikimasu.",
+      "example_id": "Pergi nonton film."
+    }
+  ],
+  "writing": [
+    {
+      "char": "ま",
+      "type": "hiragana",
+      "romaji": "ma"
+    },
+    {
+      "char": "み",
+      "type": "hiragana",
+      "romaji": "mi"
+    },
+    {
+      "char": "む",
+      "type": "hiragana",
+      "romaji": "mu"
+    },
+    {
+      "char": "め",
+      "type": "hiragana",
+      "romaji": "me"
+    },
+    {
+      "char": "も",
+      "type": "hiragana",
+      "romaji": "mo"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 2,
+      "prompt_id": "Genre film apa yang tidak disukai Yuki?",
+      "options": [
+        "Action",
+        "Komedi",
+        "Horror",
+        "Drama"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "v03t",
+      "target_kana": "えいが"
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "あした",
+        "えいが",
+        "を",
+        "みに",
+        "いきたい",
+        "です"
+      ],
+      "answer_jp": "あしたえいがをみにいきたいです。"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "音楽",
+      "front_kana": "おんがく",
+      "back_id": "musik"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'issho ni' adalah...",
+      "options": [
+        "Sendirian",
+        "Bersama-sama",
+        "Terpisah",
+        "Berurutan"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'me'",
+      "target_kana": "め"
+    }
+  ],
+  "audio_status": "pending"
+}

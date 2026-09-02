@@ -1,0 +1,260 @@
+{
+  "id": "n5-u016",
+  "level": "N5",
+  "unit_no": 16,
+  "theme": "Perjalanan & liburan",
+  "title_id": "Rencana Perjalanan & Ajakan",
+  "objectives_id": [
+    "Mengajak berbuat sesuatu dengan 〜ましょう / 〜ましょうか",
+    "Mengenal huruf hiragana baris や (やゆよ) & わをん",
+    "Menyatakan rencana dengan 〜つもりです"
+  ],
+  "dialog": {
+    "title_id": "Rian dan Mina rencanakan liburan ke Kyoto",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "つぎのやすみ、きょうとにいきましょうか。",
+        "kana": "つぎのやすみ、きょうとにいきましょうか。",
+        "romaji": "Tsugi no yasumi, Kyouto ni ikimashou ka.",
+        "id": "Liburan depan, mau ke Kyoto?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "いいですね。きょうとにはおてらがたくさんありますよ。",
+        "kana": "いいですね。きょうとにはおてらがたくさんありますよ。",
+        "romaji": "Ii desu ne. Kyouto ni wa otera ga takusan arimasu yo.",
+        "id": "Bagus. Di Kyoto banyak kuil."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "きんかくじにいきたいです。きれいですから。",
+        "kana": "きんかくじにいきたいです。きれいですから。",
+        "romaji": "Kinkaku-ji ni ikitai desu. Kirei desu kara.",
+        "id": "Mau ke Kinkaku-ji. Karena indah."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "わたしもいきます。しんかんせんでいきましょう。",
+        "kana": "わたしもいきます。しんかんせんでいきましょう。",
+        "romaji": "Watashi mo ikimasu. Shinkansen de ikimashou.",
+        "id": "Saya juga ikut. Naik Shinkansen ya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "しんかんせんははやいですが、たかいです。",
+        "kana": "しんかんせんははやいですが、たかいです。",
+        "romaji": "Shinkansen wa hayai desu ga, takai desu.",
+        "id": "Shinkansen cepat tapi mahal."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "バスでいきましょうか。やすいですから。",
+        "kana": "バスでいきましょうか。やすいですから。",
+        "romaji": "Basu de ikimashou ka. Yasui desu kara.",
+        "id": "Mau naik bus aja? Karena murah."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "そうですね。バスでいきましょう。りょこうのつもりです。",
+        "kana": "そうですね。バスでいきましょう。りょこうのつもりです。",
+        "romaji": "Sou desu ne. Basu de ikimashou. Ryokou no tsumori desu.",
+        "id": "Setuju. Naik bus ya. Rencananya liburan."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜ましょう / 〜ましょうか / 〜つもりです",
+    "meaning_id": "Ayo kita 〜 / Mau saya 〜? / Berniat/berrencana 〜",
+    "formation": "[Verb stem] + ましょう/ましょうか / [Verb dictionary] + つもりです",
+    "examples": [
+      {
+        "jp": "いっしょにごはんをたべましょう。",
+        "romaji": "Issho ni gohan o tabemashou.",
+        "id": "Ayo makan bersama."
+      },
+      {
+        "jp": "らいねん、にほんにいくつもりです。",
+        "romaji": "Rainen, Nihon ni iku tsumori desu.",
+        "id": "Tahun depan rencananya ke Jepang."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "旅行",
+      "kana": "りょこう",
+      "romaji": "ryokou",
+      "meaning_id": "perjalanan, liburan",
+      "example_jp": "りょこうのじゅんびをします。",
+      "example_romaji": "Ryokou no junbi o shimasu.",
+      "example_id": "Menyiapkan perjalanan."
+    },
+    {
+      "term": "京都",
+      "kana": "きょうと",
+      "romaji": "Kyouto",
+      "meaning_id": "Kyoto (kota)",
+      "example_jp": "きょうとにいきました。",
+      "example_romaji": "Kyouto ni ikimashita.",
+      "example_id": "Saya ke Kyoto."
+    },
+    {
+      "term": "お寺",
+      "kana": "おてら",
+      "romaji": "otera",
+      "meaning_id": "kuil (Buddha)",
+      "example_jp": "おてらをさんぱいします。",
+      "example_romaji": "Otera o sanpai shimasu.",
+      "example_id": "Ziarah ke kuil."
+    },
+    {
+      "term": "金閣寺",
+      "kana": "きんかくじ",
+      "romaji": "Kinkaku-ji",
+      "meaning_id": "Kinkaku-ji (Kuil Emas)",
+      "example_jp": "きんかくじはきんいろです。",
+      "example_romaji": "Kinkaku-ji wa kin-iro desu.",
+      "example_id": "Kinkaku-ji berwarna emas."
+    },
+    {
+      "term": "新幹線",
+      "kana": "しんかんせん",
+      "romaji": "shinkansen",
+      "meaning_id": "kereta cepat (Shinkansen)",
+      "example_jp": "しんかんせんにのります。",
+      "example_romaji": "Shinkansen ni norimasu.",
+      "example_id": "Naik Shinkansen."
+    },
+    {
+      "term": "早い",
+      "kana": "はやい",
+      "romaji": "hayai",
+      "meaning_id": "cepat / pagi",
+      "example_jp": "しんかんせんははやいです。",
+      "example_romaji": "Shinkansen wa hayai desu.",
+      "example_id": "Shinkansen cepat."
+    },
+    {
+      "term": "高い",
+      "kana": "たかい",
+      "romaji": "takai",
+      "meaning_id": "mahal / tinggi",
+      "example_jp": "このほんはたかいです。",
+      "example_romaji": "Kono hon wa takai desu.",
+      "example_id": "Buku ini mahal."
+    },
+    {
+      "term": "安い",
+      "kana": "やすい",
+      "romaji": "yasui",
+      "meaning_id": "murah",
+      "example_jp": "バスはやすいです。",
+      "example_romaji": "Basu wa yasui desu.",
+      "example_id": "Bus murah."
+    },
+    {
+      "term": "予定",
+      "kana": "よてい",
+      "romaji": "yotei",
+      "meaning_id": "rencana, jadwal",
+      "example_jp": "あしたのよていはなんですか。",
+      "example_romaji": "Ashita no yotei wa nan desu ka.",
+      "example_id": "Rencana besok apa?"
+    },
+    {
+      "term": "宿題",
+      "kana": "しゅくだい",
+      "romaji": "shukudai",
+      "meaning_id": "PR, tugas rumah",
+      "example_jp": "しゅくだいをします。",
+      "example_romaji": "Shukudai o shimasu.",
+      "example_id": "Mengerjakan PR."
+    }
+  ],
+  "writing": [
+    {
+      "char": "や",
+      "type": "hiragana",
+      "romaji": "ya"
+    },
+    {
+      "char": "ゆ",
+      "type": "hiragana",
+      "romaji": "yu"
+    },
+    {
+      "char": "よ",
+      "type": "hiragana",
+      "romaji": "yo"
+    },
+    {
+      "char": "わ",
+      "type": "hiragana",
+      "romaji": "wa"
+    },
+    {
+      "char": "を",
+      "type": "hiragana",
+      "romaji": "wo"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 0,
+      "prompt_id": "Dengarkan Rian. Mau ke mana liburan depan?",
+      "options": [
+        "Tokyo",
+        "Kyoto",
+        "Osaka",
+        "Hokkaido"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 3,
+      "prompt_id": "Transportasi apa yang disarankan Mina awalnya?",
+      "options": [
+        "Bus",
+        "Shinkansen",
+        "Pesawat",
+        "Kereta biasa"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "バス",
+        "で",
+        "いきましょう"
+      ],
+      "answer_jp": "バスでいきましょう。"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "旅行",
+      "front_kana": "りょこう",
+      "back_id": "perjalanan, liburan"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'tsumori desu' adalah...",
+      "options": [
+        "Sudah selesai",
+        "Sedang berlangsung",
+        "Berniat/berrencana",
+        "Tidak jadi"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'yo'",
+      "target_kana": "よ"
+    }
+  ],
+  "audio_status": "pending"
+}

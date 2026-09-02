@@ -1,0 +1,248 @@
+{
+  "id": "n5-u013",
+  "level": "N5",
+  "unit_no": 13,
+  "theme": "Kesehatan & sakit",
+  "title_id": "Bertemu Dokter & Beli Obat",
+  "objectives_id": [
+    "Mengeluhkan keluhan dengan 〜が痛い / 〜がいたいです",
+    "Mengenal huruf hiragana baris な (なにぬねの)",
+    "Meminta tolong dengan 〜てください"
+  ],
+  "dialog": {
+    "title_id": "Rian sakit perut, ke klinik dekat kos",
+    "lines": [
+      {
+        "speaker": "Doctor",
+        "jp": "こんにちは。どこがいたいですか。",
+        "kana": "こんにちは。どこがいたいですか。",
+        "romaji": "Konnichiwa. Doko ga itai desu ka.",
+        "id": "Selamat siang. Mana yang sakit?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "おなかがいたいです。けさからです。",
+        "kana": "おなかがいたいです。けさからです。",
+        "romaji": "Onaka ga itai desu. Kesa kara desu.",
+        "id": "Perut sakit. Sejak tadi pagi."
+      },
+      {
+        "speaker": "Doctor",
+        "jp": "ねつはありますか。",
+        "kana": "ねつはありますか。",
+        "romaji": "Netsu wa arimasu ka.",
+        "id": "Ada demam?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "いいえ、ねつはありません。",
+        "kana": "いいえ、ねつはありません。",
+        "romaji": "Iie, netsu wa arimasen.",
+        "id": "Tidak, tidak demam."
+      },
+      {
+        "speaker": "Doctor",
+        "jp": "じゃあ、このくすりをのんでください。しょくごさんかいです。",
+        "kana": "じゃあ、このくすりをのんでください。しょくごさんかいです。",
+        "romaji": "Jaa, kono kusuri o nonde kudasai. Shokugo sankai desu.",
+        "id": "Kalau begitu, minum obat ini. 3 kali sehari setelah makan."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "わかりました。みずでのみます。",
+        "kana": "わかりました。みずでのみます。",
+        "romaji": "Wakarimashita. Mizu de nomimasu.",
+        "id": "Paham. Saya minum dengan air."
+      },
+      {
+        "speaker": "Doctor",
+        "jp": "だいじょうぶですよ。やすみてくださいね。",
+        "kana": "だいじょうぶですよ。やすみてくださいね。",
+        "romaji": "Daijoubu desu yo. Yasumite kudasai ne.",
+        "id": "Tidak apa-apa. Istirahat yang cukup ya."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜が痛い / 〜てください",
+    "meaning_id": "〜 sakit / Tolong lakukan 〜 (permintaan sopan dengan bentuk te)",
+    "formation": "[Bagian tubuh] + が + 痛い / [Verb bentuk-te] + ください",
+    "examples": [
+      {
+        "jp": "あたまがいたいです。",
+        "romaji": "Atama ga itai desu.",
+        "id": "Kepala sakit."
+      },
+      {
+        "jp": "ゆっくりねてください。",
+        "romaji": "Yukkuri nete kudasai.",
+        "id": "Tolong tidur dengan tenang."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "病院",
+      "kana": "びょういん",
+      "romaji": "byouin",
+      "meaning_id": "rumah sakit / klinik",
+      "example_jp": "びょういんにいきます。",
+      "example_romaji": "Byouin ni ikimasu.",
+      "example_id": "Saya ke rumah sakit."
+    },
+    {
+      "term": "お医者さん",
+      "kana": "おいしゃさん",
+      "romaji": "oisha-san",
+      "meaning_id": "dokter",
+      "example_jp": "おいしゃさんにみてもらいます。",
+      "example_romaji": "Oisha-san ni mite moraimasu.",
+      "example_id": "Saya diperiksa dokter."
+    },
+    {
+      "term": "お腹",
+      "kana": "おなか",
+      "romaji": "onaka",
+      "meaning_id": "perut",
+      "example_jp": "おなかがすきました。",
+      "example_romaji": "Onaka ga sukimashita.",
+      "example_id": "Saya lapar."
+    },
+    {
+      "term": "痛い",
+      "kana": "いたい",
+      "romaji": "itai",
+      "meaning_id": "sakit",
+      "example_jp": "あしがいたいです。",
+      "example_romaji": "Ashi ga itai desu.",
+      "example_id": "Kaki sakit."
+    },
+    {
+      "term": "熱",
+      "kana": "ねつ",
+      "romaji": "netsu",
+      "meaning_id": "demam",
+      "example_jp": "ねつがたかいです。",
+      "example_romaji": "Netsu ga takai desu.",
+      "example_id": "Demam tinggi."
+    },
+    {
+      "term": "薬",
+      "kana": "くすり",
+      "romaji": "kusuri",
+      "meaning_id": "obat",
+      "example_jp": "くすりをのみます。",
+      "example_romaji": "Kusuri o nomimasu.",
+      "example_id": "Minum obat."
+    },
+    {
+      "term": "飲んでください",
+      "kana": "のんでください",
+      "romaji": "nonde kudasai",
+      "meaning_id": "tolong diminum",
+      "example_jp": "このくすりをのんでください。",
+      "example_romaji": "Kono kusuri o nonde kudasai.",
+      "example_id": "Tolong diminum obat ini."
+    },
+    {
+      "term": "食後",
+      "kana": "しょくご",
+      "romaji": "shokugo",
+      "meaning_id": "setelah makan",
+      "example_jp": "しょくごにくすりをのみます。",
+      "example_romaji": "Shokugo ni kusuri o nomimasu.",
+      "example_id": "Minum obat setelah makan."
+    },
+    {
+      "term": "三回",
+      "kana": "さんかい",
+      "romaji": "sankai",
+      "meaning_id": "tiga kali",
+      "example_jp": "いちにちさんかいです。",
+      "example_romaji": "Ichinichi sankai desu.",
+      "example_id": "Tiga kali sehari."
+    },
+    {
+      "term": "休んでください",
+      "kana": "やすみてください",
+      "romaji": "yasumite kudasai",
+      "meaning_id": "tolong istirahat",
+      "example_jp": "きょうはやすみてください。",
+      "example_romaji": "Kyou wa yasumite kudasai.",
+      "example_id": "Hari ini tolong istirahat."
+    }
+  ],
+  "writing": [
+    {
+      "char": "な",
+      "type": "hiragana",
+      "romaji": "na"
+    },
+    {
+      "char": "に",
+      "type": "hiragana",
+      "romaji": "ni"
+    },
+    {
+      "char": "ぬ",
+      "type": "hiragana",
+      "romaji": "nu"
+    },
+    {
+      "char": "ね",
+      "type": "hiragana",
+      "romaji": "ne"
+    },
+    {
+      "char": "の",
+      "type": "hiragana",
+      "romaji": "no"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Dengarkan keluhan Rian. Bagian mana yang sakit?",
+      "options": [
+        "Kepala",
+        "Perut",
+        "Gigi",
+        "Tenggorokan"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "d04",
+      "target_kana": "ねつはありますか"
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "くすり",
+        "を",
+        "のんで",
+        "ください"
+      ],
+      "answer_jp": "くすりをのんでください。"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "病院",
+      "front_kana": "びょういん",
+      "back_id": "rumah sakit / klinik"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'nu'",
+      "target_kana": "ぬ"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'no'",
+      "target_kana": "の"
+    }
+  ],
+  "audio_status": "pending"
+}

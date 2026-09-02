@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u025",
+  "generated_at": "2026-09-02T02:31:21.007Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "まいにちこうえんではしります。けんこうによいとおもいます。",
+      "speaker_id": 12,
+      "hash": "ee2472205098c5f7"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "すごいですね。わたしもうんどうしたほうがいいでしょう。",
+      "speaker_id": 2,
+      "hash": "a7b055cceb182d1e"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "あしたいっしょにはしりませんか。あさろくじにあいましょう。",
+      "speaker_id": 12,
+      "hash": "c6db2d2c8cb940ed"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "いいですね。でもあしたはあめがふるでしょう。",
+      "speaker_id": 2,
+      "hash": "127c3b03ad9e3a6b"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "じゃあ、テレビでサッカーをみましょう。にほんのチームがかちそうです。",
+      "speaker_id": 12,
+      "hash": "969357773a24d253"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "たのしみですね。ビールものみましょうか。",
+      "speaker_id": 2,
+      "hash": "44eec28b44bbae34"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "すみません、おさけはのみません。おちゃにします。",
+      "speaker_id": 12,
+      "hash": "0b280a27a23c0d15"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "公園",
+      "speaker_id": 2,
+      "hash": "9d8308075426420c"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "こうえんではしります。",
+      "speaker_id": 2,
+      "hash": "241fee0b082a0d01"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "走る",
+      "speaker_id": 2,
+      "hash": "7fcb0621a12635b4"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "はやくはしります。",
+      "speaker_id": 2,
+      "hash": "e17d61ac033b0f7d"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "健康",
+      "speaker_id": 2,
+      "hash": "512fc9a274c5ed83"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "けんこうがだいじです。",
+      "speaker_id": 2,
+      "hash": "b7de0e989d9e59aa"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "運動",
+      "speaker_id": 2,
+      "hash": "660362d77b4994f9"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "うんどうをします。",
+      "speaker_id": 2,
+      "hash": "4b5fca0a6299865e"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "サッカー",
+      "speaker_id": 2,
+      "hash": "4836ee8298b4dd13"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "サッカーをみます。",
+      "speaker_id": 2,
+      "hash": "eeef3100ac9a269a"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "チーム",
+      "speaker_id": 2,
+      "hash": "be41e4586c171578"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "にほんのチームがつよいです。",
+      "speaker_id": 2,
+      "hash": "6691a91e39aba67d"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "勝つ",
+      "speaker_id": 2,
+      "hash": "4562a8e8041c374e"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "しあいにかちます。",
+      "speaker_id": 2,
+      "hash": "1972be065138a125"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "ビール",
+      "speaker_id": 2,
+      "hash": "791ef8bc726c65e1"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "ビールをのみます。",
+      "speaker_id": 2,
+      "hash": "14f200f25094460c"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "お酒",
+      "speaker_id": 2,
+      "hash": "ccb3b19f852d28c1"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "おさけはのみません。",
+      "speaker_id": 2,
+      "hash": "c720d6b622d22e2c"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "一緒に",
+      "speaker_id": 2,
+      "hash": "69d4602cf8f30d72"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "いっしょにいきましょう。",
+      "speaker_id": 2,
+      "hash": "6ddd42d2a72145fb"
+    }
+  ]
+}

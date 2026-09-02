@@ -542,5 +542,245 @@
     "romaji": "mata ne",
     "meaning_id": "sampai jumpa",
     "note_id": "Salam perpisahan santai — versi sopannya \"mata ashita\" yang berarti \"sampai besok\"."
+  },
+  {
+    "card_date": "2026-11-01",
+    "kind": "fakta",
+    "jp": "文化の日",
+    "romaji": "bunka no hi",
+    "meaning_id": "Hari Budaya (3 November)",
+    "note_id": "Hari libur nasional merayakan kebebasan, perdamaian, dan budaya — banyak museum gratis masuknya."
+  },
+  {
+    "card_date": "2026-11-02",
+    "kind": "kata",
+    "jp": "寒い",
+    "romaji": "samui",
+    "meaning_id": "dingin",
+    "note_id": "Lawan dari atsui (panas) — November di Tokyo mulai terasa samui di pagi dan malam hari."
+  },
+  {
+    "card_date": "2026-11-03",
+    "kind": "fakta",
+    "jp": "七五三",
+    "romaji": "shichi-go-san",
+    "meaning_id": "perayaan anak usia 7, 5, 3 tahun",
+    "note_id": "Setiap 15 November, anak-anak berpakaian kimono ke jinja minta doa tumbuh sehat — tradisi dari era Heian."
+  },
+  {
+    "card_date": "2026-11-04",
+    "kind": "kata",
+    "jp": "温かい",
+    "romaji": "atatakai",
+    "meaning_id": "hangat",
+    "note_id": "Bisa untuk cuaca, makanan, atau perasaan: \"Kokoro ga atatakai\" = hati hangat/baik."
+  },
+  {
+    "card_date": "2026-11-05",
+    "kind": "fakta",
+    "jp": "みかん",
+    "romaji": "mikan",
+    "meaning_id": "jeruk mikan",
+    "note_id": "Buah musim dingin khas Jepang — kulitnya mudah dikupas tangan, manis dan segar, dijual di kotak kardus."
+  },
+  {
+    "card_date": "2026-11-06",
+    "kind": "kata",
+    "jp": "着る",
+    "romaji": "kiru",
+    "meaning_id": "memakai (baju)",
+    "note_id": "Hanya untuk pakaian bagian atas/badan — celana pakai \"haku\", sepatu pakai \"haku\" atau \"kutsushita o haku\"."
+  },
+  {
+    "card_date": "2026-11-07",
+    "kind": "fakta",
+    "jp": "鍋",
+    "romaji": "nabe",
+    "meaning_id": "panci / masakan panci hangat",
+    "note_id": "Nabe adalah masakan komunal: panci di tengah meja, semua masak dan makan bersama — hangat di musim dingin."
+  },
+  {
+    "card_date": "2026-11-08",
+    "kind": "kata",
+    "jp": "美味しい",
+    "romaji": "oishii",
+    "meaning_id": "enak / lezat",
+    "note_id": "Sering dipakai bersamaan: \"Oishii ne!\" saat makan nabe bersama teman — suasana jadi lebih asik."
+  },
+  {
+    "card_date": "2026-11-09",
+    "kind": "fakta",
+    "jp": "紅葉狩り",
+    "romaji": "momijigari",
+    "meaning_id": "memburu daun merah musim gugur",
+    "note_id": "Versi gugur dari hanami: naik gunung atau ke taman lihat daun momiji memerah — peak biasanya awal November."
+  },
+  {
+    "card_date": "2026-11-10",
+    "kind": "kata",
+    "jp": "散歩",
+    "romaji": "sanpo",
+    "meaning_id": "berjalan-jalan santai",
+    "note_id": "Asa atau sore hari orang Jepang sanpo di taman — baik untuk kesehatan dan refresh pikiran."
+  },
+  {
+    "card_date": "2026-11-11",
+    "kind": "fakta",
+    "jp": "ポッキーの日",
+    "romaji": "pokkii no hi",
+    "meaning_id": "Hari Pocky (11 November)",
+    "note_id": "Tanggal 11/11 mirip bentuk Pocky — hari ini orang saling hadiahkan Pocky, ada edisi khusus tiap tahun."
+  },
+  {
+    "card_date": "2026-11-12",
+    "kind": "kata",
+    "jp": "準備",
+    "romaji": "junbi",
+    "meaning_id": "persiapan",
+    "note_id": "\"Junbi wa ii desu ka?\" = \"sudah siap?\" — sering dipakai guru/atasan sebelum mulai kegiatan."
+  },
+  {
+    "card_date": "2026-11-13",
+    "kind": "fakta",
+    "jp": "勤労感謝の日",
+    "romaji": "kinrou kansha no hi",
+    "meaning_id": "Hari Thanksgiving Buruh (23 November)",
+    "note_id": "Hari libur nasional menghargai kerja keras — asalnya festival panen Niinamesai zaman dahulu."
+  },
+  {
+    "card_date": "2026-11-14",
+    "kind": "kata",
+    "jp": "働く",
+    "romaji": "hataraku",
+    "meaning_id": "bekerja",
+    "note_id": "Kanji 働 = 人 (manusia) + 動 (bergerak) — harfiah \"manusia bergerak\", ciptaan Jepang (kokuji)."
+  },
+  {
+    "card_date": "2026-11-15",
+    "kind": "fakta",
+    "jp": "イルミネーション",
+    "romaji": "irumineeshon",
+    "meaning_id": "dekorasi lampu musim dingin",
+    "note_id": "November akhir hingga Februari: kota penuh lampu LED indah — Shibuya, Roppongi, Kobe terkenal sekali."
+  },
+  {
+    "card_date": "2026-11-16",
+    "kind": "kata",
+    "jp": "綺麗",
+    "romaji": "kirei",
+    "meaning_id": "cantik / bersih",
+    "note_id": "Dua arti sekaligus: \"Hana ga kirei\" (bunga cantik) dan \"Heya ga kirei\" (kamar bersih/rapikan)."
+  },
+  {
+    "card_date": "2026-11-17",
+    "kind": "fakta",
+    "jp": "柚子",
+    "romaji": "yuzu",
+    "meaning_id": "jeruk yuzu",
+    "note_id": "Aroma khas, dipakai masak, minum, sampai mandi yuzu (yuzu-yu) di winter solstice — badan jadi hangat."
+  },
+  {
+    "card_date": "2026-11-18",
+    "kind": "kata",
+    "jp": "風邪",
+    "romaji": "kaze",
+    "meaning_id": "flu / pilek",
+    "note_id": "\"Kaze o hiita\" = kena flu. Musim gugur-dingin transisi cuaca bikin orang Jepang gampang kena kaze."
+  },
+  {
+    "card_date": "2026-11-19",
+    "kind": "fakta",
+    "jp": "マスク",
+    "romaji": "masuku",
+    "meaning_id": "masker",
+    "note_id": "Di Jepang pakai masker saat sakit, alergi, atau cuma jaga etiket — bukan cuma pandemi, sudah budaya lama."
+  },
+  {
+    "card_date": "2026-11-20",
+    "kind": "kata",
+    "jp": "薬",
+    "romaji": "kusuri",
+    "meaning_id": "obat",
+    "note_id": "Drugstore di Jepang (Matsukiyo, Welcia) buka lama, jual obat bebas sampai kosmetik — sangat benri."
+  },
+  {
+    "card_date": "2026-11-21",
+    "kind": "fakta",
+    "jp": "酉の市",
+    "romaji": "tori no ichi",
+    "meaning_id": "festival kumade (garpu rakit) November",
+    "note_id": "Di hari Tori (kalender zodiac), jinja gelar pasar kumade — hiasan bambu membawa keberuntungan bisnis."
+  },
+  {
+    "card_date": "2026-11-22",
+    "kind": "kata",
+    "jp": "忘年会",
+    "romaji": "bounenkai",
+    "meaning_id": "pesta akhir tahun",
+    "note_id": "Tradisi kantor/kelompok: minum makan lupakan kesusahan setahun — November-Desember penuh jadwal bounenkai."
+  },
+  {
+    "card_date": "2026-11-23",
+    "kind": "fakta",
+    "jp": "師走",
+    "romaji": "shiwasu",
+    "meaning_id": "Desember (bulan guru pun lari)",
+    "note_id": "Nama kuno Desember: 師 (guru) + 走 (lari) — sibuk sekali sampai guru pun terburu-buru, metafora akhir tahun."
+  },
+  {
+    "card_date": "2026-11-24",
+    "kind": "kata",
+    "jp": "忙しい",
+    "romaji": "isogashii",
+    "meaning_id": "sibuk",
+    "note_id": "Ulangi kata September — November-Desember memang isogashii: bounenkai, deadline, persiapan tahun baru."
+  },
+  {
+    "card_date": "2026-11-25",
+    "kind": "fakta",
+    "jp": "年賀状",
+    "romaji": "nengajou",
+    "meaning_id": "kartu ucapan tahun baru",
+    "note_id": "Kirim nengajou sebelum 25 Des agar sampai 1 Jan — pos Jepang jaminan tepat waktu, ada undian hadiahnya."
+  },
+  {
+    "card_date": "2026-11-26",
+    "kind": "kata",
+    "jp": "書く",
+    "romaji": "kaku",
+    "meaning_id": "menulis",
+    "note_id": "Nengajou ditulis tangan lebih dihargai — ada frasa baku: \"Akemashite omedetou gozaimasu, kotoshi mo yoroshiku\"."
+  },
+  {
+    "card_date": "2026-11-27",
+    "kind": "fakta",
+    "jp": "大掃除",
+    "romaji": "oosouji",
+    "meaning_id": "bersih-bersih besar akhir tahun",
+    "note_id": "Tradisi Des awal: bersihkan rumah sampai sudut-sudut —迎え tahun baru dengan hati dan ruangan bersih."
+  },
+  {
+    "card_date": "2026-11-28",
+    "kind": "kata",
+    "jp": "掃除",
+    "romaji": "souji",
+    "meaning_id": "membersihkan",
+    "note_id": "Siswa Jepang souji kelas tiap hari — budaya ini jadi oosouji rumah tangga di akhir tahun."
+  },
+  {
+    "card_date": "2026-11-29",
+    "kind": "fakta",
+    "jp": "除夜の鐘",
+    "romaji": "joya no kane",
+    "meaning_id": "genta malam Tahun Baru",
+    "note_id": "Malam 31 Des, tera bunyikan genta 108x — melambangkan 108 keserakahan manusia (bonnou) dilucuti."
+  },
+  {
+    "card_date": "2026-11-30",
+    "kind": "kata",
+    "jp": "良いお年を",
+    "romaji": "yoi otoshi o",
+    "meaning_id": "semoga tahun baru baik",
+    "note_id": "Ucapan perpisahan akhir tahun: \"Yoi otoshi o mukae kudasai\" — balasannya: \"Kotoshi mo arigatou gozaimashita\"."
   }
 ]

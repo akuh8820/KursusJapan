@@ -1,0 +1,258 @@
+{
+  "id": "n5-u025",
+  "level": "N5",
+  "unit_no": 25,
+  "theme": "Olahraga",
+  "title_id": "Berolahraga & Menonton Pertandingan",
+  "objectives_id": [
+    "Mengungkapkan niat dengan 〜と思います (saya pikir)",
+    "Menggunakan 〜でしょう untuk perkiraan (mungkin/kan)",
+    "Mengenal kosakata olahraga dan bagian tubuh"
+  ],
+  "dialog": {
+    "title_id": "Rian dan Mina berlari di taman dan menonton bola",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "まいにちこうえんではしります。けんこうによいとおもいます。",
+        "kana": "まいにちこうえんではしります。けんこうによいとおもいます。",
+        "romaji": "Mainichi kouen de hashirimasu. Kenkou ni yoi to omoimasu.",
+        "id": "Saya lari di taman setiap hari. Saya pikir baik untuk kesehatan."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "すごいですね。わたしもうんどうしたほうがいいでしょう。",
+        "kana": "すごいですね。わたしもうんどうしたほうがいいでしょう。",
+        "romaji": "Sugoi desu ne. Watashi mo undou shita hou ga ii deshou.",
+        "id": "Hebat ya. Saya juga sebaiknya olahraga kan."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "あしたいっしょにはしりませんか。あさろくじにあいましょう。",
+        "kana": "あしたいっしょにはしりませんか。あさろくじにあいましょう。",
+        "romaji": "Ashita issho ni hashirimasen ka. Asa rokuji ni aimashou.",
+        "id": "Besok lari bersama tidak? Jam 6 pagi ketemu ya."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "いいですね。でもあしたはあめがふるでしょう。",
+        "kana": "いいですね。でもあしたはあめがふるでしょう。",
+        "romaji": "Ii desu ne. Demo ashita wa ame ga furu deshou.",
+        "id": "Bagus. Tapi besok mungkin hujan."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "じゃあ、テレビでサッカーをみましょう。にほんのチームがかちそうです。",
+        "kana": "じゃあ、テレビでサッカーをみましょう。にほんのチームがかちそうです。",
+        "romaji": "Jaa, terebi de sakkaa wo mimashou. Nihon no chiimu ga kachisou desu.",
+        "id": "Kalau begitu nonton bola di TV. Tim Jepang kelihatannya menang."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "たのしみですね。ビールものみましょうか。",
+        "kana": "たのしみですね。ビールものみましょうか。",
+        "romaji": "Tanoshimi desu ne. Biiru mo nomimashou ka.",
+        "id": "Menarik ya. Minum bir juga yuk."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "すみません、おさけはのみません。おちゃにします。",
+        "kana": "すみません、おさけはのみません。おちゃにします。",
+        "romaji": "Sumimasen, osake wa nomimasen. Ocha ni shimasu.",
+        "id": "Maaf, saya tidak minum alkohol. Saya pilih teh."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜と思います / 〜でしょう",
+    "meaning_id": "Saya pikir... / Mungkin..., kan... — Plain form + to omoimasu (pendapat), Plain form + deshou (perkiraan/konfirmasi).",
+    "formation": "[Plain form] + と おもいます / [Plain form] + でしょう",
+    "examples": [
+      {
+        "jp": "あしたはあめだとおもいます。",
+        "romaji": "Ashita wa ame da to omoimasu.",
+        "id": "Saya pikir besok hujan."
+      },
+      {
+        "jp": "かれはくるでしょう。",
+        "romaji": "Kare wa kuru deshou.",
+        "id": "Dia pasti datang kan."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "公園",
+      "kana": "こうえん",
+      "romaji": "kouen",
+      "meaning_id": "taman",
+      "example_jp": "こうえんではしります。",
+      "example_romaji": "Kouen de hashirimasu.",
+      "example_id": "Saya lari di taman."
+    },
+    {
+      "term": "走る",
+      "kana": "はしる",
+      "romaji": "hashiru",
+      "meaning_id": "berlari",
+      "example_jp": "はやくはしります。",
+      "example_romaji": "Hayaku hashirimasu.",
+      "example_id": "Saya lari cepat."
+    },
+    {
+      "term": "健康",
+      "kana": "けんこう",
+      "romaji": "kenkou",
+      "meaning_id": "kesehatan",
+      "example_jp": "けんこうがだいじです。",
+      "example_romaji": "Kenkou ga daiji desu.",
+      "example_id": "Kesehatan penting."
+    },
+    {
+      "term": "運動",
+      "kana": "うんどう",
+      "romaji": "undou",
+      "meaning_id": "olahraga",
+      "example_jp": "うんどうをします。",
+      "example_romaji": "Undou wo shimasu.",
+      "example_id": "Saya olahraga."
+    },
+    {
+      "term": "サッカー",
+      "kana": "サッカー",
+      "romaji": "sakkaa",
+      "meaning_id": "sepak bola",
+      "example_jp": "サッカーをみます。",
+      "example_romaji": "Sakkaa wo mimasu.",
+      "example_id": "Saya nonton bola."
+    },
+    {
+      "term": "チーム",
+      "kana": "チーム",
+      "romaji": "chiimu",
+      "meaning_id": "tim",
+      "example_jp": "にほんのチームがつよいです。",
+      "example_romaji": "Nihon no chiimu ga tsuyoi desu.",
+      "example_id": "Tim Jepang kuat."
+    },
+    {
+      "term": "勝つ",
+      "kana": "かつ",
+      "romaji": "katsu",
+      "meaning_id": "menang",
+      "example_jp": "しあいにかちます。",
+      "example_romaji": "Shiai ni kachimasu.",
+      "example_id": "Saya menang pertandingan."
+    },
+    {
+      "term": "ビール",
+      "kana": "ビール",
+      "romaji": "biiru",
+      "meaning_id": "bir",
+      "example_jp": "ビールをのみます。",
+      "example_romaji": "Biiru wo nomimasu.",
+      "example_id": "Saya minum bir."
+    },
+    {
+      "term": "お酒",
+      "kana": "おさけ",
+      "romaji": "osake",
+      "meaning_id": "alkohol, sake",
+      "example_jp": "おさけはのみません。",
+      "example_romaji": "Osake wa nomimasen.",
+      "example_id": "Saya tidak minum alkohol."
+    },
+    {
+      "term": "一緒に",
+      "kana": "いっしょに",
+      "romaji": "issho ni",
+      "meaning_id": "bersama-sama",
+      "example_jp": "いっしょにいきましょう。",
+      "example_romaji": "Issho ni ikimashou.",
+      "example_id": "Ayo pergi bersama."
+    }
+  ],
+  "writing": [
+    {
+      "char": "走",
+      "type": "kanji",
+      "romaji": "hashiru",
+      "meaning_id": "lari",
+      "kanjivg_id": "8d70"
+    },
+    {
+      "char": "健",
+      "type": "kanji",
+      "romaji": "ken",
+      "meaning_id": "sehat, kuat",
+      "kanjivg_id": "5065"
+    },
+    {
+      "char": "康",
+      "type": "kanji",
+      "romaji": "kou",
+      "meaning_id": "sejahtera",
+      "kanjivg_id": "5eb7"
+    },
+    {
+      "char": "勝",
+      "type": "kanji",
+      "romaji": "kachi",
+      "meaning_id": "menang",
+      "kanjivg_id": "52dd"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Mina berkata 'うんどうしたほうがいいでしょう'. Apa maksudnya?",
+      "options": [
+        "Saya sudah olahraga",
+        "Sebaiknya olahraga kan",
+        "Olahraga itu membosankan",
+        "Besok tidak olahraga"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "d02",
+      "target_kana": "わたしもうんどうしたほうがいいでしょう"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "健康",
+      "front_kana": "けんこう",
+      "back_id": "kesehatan"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'かちそうです' adalah...",
+      "options": [
+        "sudah menang",
+        "kelihatannya akan menang",
+        "tidak bisa menang",
+        "ingin menang"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "けんこう",
+        "に",
+        "よい",
+        "と",
+        "おもいます"
+      ],
+      "answer_jp": "けんこうによいとおもいます。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis kanji untuk 'ken' (sehat/kuat)",
+      "target_kana": "けん"
+    }
+  ],
+  "audio_status": "pending"
+}

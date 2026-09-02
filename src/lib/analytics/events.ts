@@ -1,6 +1,6 @@
 /**
  * Taksonomi event analytics (PRD §12).
- * Metrik retensi/streak/progres tidak bisa diukur tanpa event ini,
+ * Metrik retensi/progres tidak bisa diukur tanpa event ini,
  * jadi instrumentasi dipasang sejak F0.
  *
  * PostHog aktif otomatis bila NEXT_PUBLIC_POSTHOG_KEY diisi;
@@ -8,15 +8,15 @@
  */
 
 export const EVENTS = {
-  sessionStart: "session_start",
-  cycleComplete: "cycle_complete",
-  cycleAbandoned: "cycle_abandoned",
-  lessonComplete: "lesson_complete",
+  unitStart: "unit_start",
+  unitComplete: "unit_complete",
+  quizResult: "quiz_result",
   exerciseResult: "exercise_result",
   srsReview: "srs_review",
   dailyCardView: "daily_card_view",
   feedbackOpen: "feedback_open",
   feedbackSubmit: "feedback_submit",
+  themeToggle: "theme_toggle",
 } as const;
 
 export type EventName = (typeof EVENTS)[keyof typeof EVENTS];

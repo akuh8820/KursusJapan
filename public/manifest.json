@@ -1,0 +1,21 @@
+{
+  "name": "Go Japan — Belajar Bahasa Jepang",
+  "short_name": "Go Japan",
+  "description": "Belajar bahasa Jepang JLPT N5–N1: dialog, grammar, kosakata, dan latihan — offline penuh.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf9f7",
+  "theme_color": "#b91c1c",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

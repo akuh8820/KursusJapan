@@ -1,6 +1,6 @@
 /**
  * Konvensi nama & URL audio pelajaran (dihasilkan scripts/generate-audio.ts).
- * Static export GitHub Pages memakai basePath (mis. "/fasih") — tag
+ * Static export GitHub Pages memakai basePath (mis. "/go-japan") — tag
  * <audio> manual tidak di-prefix otomatis oleh Next, jadi selalu lewat
  * unitAudioUrl().
  */

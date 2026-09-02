@@ -1,0 +1,263 @@
+{
+  "id": "n5-u020",
+  "level": "N5",
+  "unit_no": 20,
+  "theme": "Festival & budaya",
+  "title_id": "Waktu & Kemungkinan (とき / かもしれません)",
+  "objectives_id": [
+    "Menyatakan 'saat...' dengan 〜とき",
+    "Mengenal katakana (マミムメモ ヤユヨ ラリルレロ ワヲン)",
+    "Mengungkapkan kemungkinan dengan 〜かもしれません"
+  ],
+  "dialog": {
+    "title_id": "Rian, Mina, Yuki ikut festival musim panas (natsu matsuri)",
+    "lines": [
+      {
+        "speaker": "Yuki",
+        "jp": "なつまつり、たのしみですね。",
+        "kana": "なつまつり、たのしみですね。",
+        "romaji": "Natsu matsuri, tanoshimi desu ne.",
+        "id": "Festival musim panas, seru ya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "うん。よるはなつまつりにいきます。",
+        "kana": "うん。よるはなつまつりにいきます。",
+        "romaji": "Un. Yoru wa natsu matsuri ni ikimasu.",
+        "id": "Ya. Malam ke festival musim panas."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "なつまつりのとき、ゆかたをきますか。",
+        "kana": "なつまつりのとき、ゆかたをきますか。",
+        "romaji": "Natsu matsuri no toki, yukata o kimasu ka.",
+        "id": "Saat festival, pakai yukata?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい、きます。ゆかたはかっこいいですから。",
+        "kana": "はい、きます。ゆかたはかっこいいですから。",
+        "romaji": "Hai, kimasu. Yukata wa kakkoii desu kara.",
+        "id": "Ya, pakai. Yukata keren kan."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "ひとがおおいかもしれません。はやくいきましょう。",
+        "kana": "ひとがおおいかもしれません。はやくいきましょう。",
+        "romaji": "Hito ga ooi kamoshiremasen. Hayaku ikimashou.",
+        "id": "Mungkin orang banyak. Ayo cepat pergi."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "はなびもあるかもしれませんね。",
+        "kana": "はなびもあるかもしれませんね。",
+        "romaji": "Hanabi mo aru kamoshiremasen ne.",
+        "id": "Mungkin ada kembang api juga."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "わくわくします。いっしょにたのしみましょう。",
+        "kana": "わくわくします。いっしょにたのしみましょう。",
+        "romaji": "Wakuwaku shimasu. Issho ni tanoshimimashou.",
+        "id": "Saya excited. Ayo nikmati bersama."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜とき / 〜かもしれません",
+    "meaning_id": "Saat/ketika 〜 / Mungkin 〜 (kemungkinan tidak pasti)",
+    "formation": "[Verb dictionary/ta-form] + とき / [Verb dictionary/i-adj/na-adjな/Nの] + かもしれません",
+    "examples": [
+      {
+        "jp": "にほんにきたとき、さむかったです。",
+        "romaji": "Nihon ni kita toki, samukatta desu.",
+        "id": "Saat tiba di Jepang, dingin."
+      },
+      {
+        "jp": "あしたあめがふるかもしれません。",
+        "romaji": "Ashita ame ga furu kamoshiremasen.",
+        "id": "Besok mungkin hujan."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "夏祭り",
+      "kana": "なつまつり",
+      "romaji": "natsu matsuri",
+      "meaning_id": "festival musim panas",
+      "example_jp": "なつまつりにいきます。",
+      "example_romaji": "Natsu matsuri ni ikimasu.",
+      "example_id": "Pergi ke festival musim panas."
+    },
+    {
+      "term": "浴衣",
+      "kana": "ゆかた",
+      "romaji": "yukata",
+      "meaning_id": "yukata (kimono ringan musim panas)",
+      "example_jp": "ゆかたをきます。",
+      "example_romaji": "Yukata o kimasu.",
+      "example_id": "Memakai yukata."
+    },
+    {
+      "term": "花火",
+      "kana": "はなび",
+      "romaji": "hanabi",
+      "meaning_id": "kembang api",
+      "example_jp": "はなびをみます。",
+      "example_romaji": "Hanabi o mimasu.",
+      "example_id": "Melihat kembang api."
+    },
+    {
+      "term": "夜",
+      "kana": "よる",
+      "romaji": "yoru",
+      "meaning_id": "malam",
+      "example_jp": "よるはさむいです。",
+      "example_romaji": "Yoru wa samui desu.",
+      "example_id": "Malam hari dingin."
+    },
+    {
+      "term": "人が多い",
+      "kana": "ひとがおおい",
+      "romaji": "hito ga ooi",
+      "meaning_id": "orang banyak / ramai",
+      "example_jp": "まつりはひとがおおいです。",
+      "example_romaji": "Matsuri wa hito ga ooi desu.",
+      "example_id": "Festivalnya ramai."
+    },
+    {
+      "term": "早い",
+      "kana": "はやい",
+      "romaji": "hayai",
+      "meaning_id": "cepat / awal",
+      "example_jp": "はやくいきましょう。",
+      "example_romaji": "Hayaku ikimashou.",
+      "example_id": "Ayo pergi cepat."
+    },
+    {
+      "term": "楽しみ",
+      "kana": "たのしみ",
+      "romaji": "tanoshimi",
+      "meaning_id": "penantian, kegembiraan",
+      "example_jp": "りょこうがたのしみです。",
+      "example_romaji": "Ryokou ga tanoshimi desu.",
+      "example_id": "Liburannya ditunggu-tunggu."
+    },
+    {
+      "term": "わくわくします",
+      "kana": "わくわくします",
+      "romaji": "wakuwaku shimasu",
+      "meaning_id": "bersemangat, excited",
+      "example_jp": "りょこうでわくわくします。",
+      "example_romaji": "Ryokou de wakuwaku shimasu.",
+      "example_id": "Excited karena liburan."
+    },
+    {
+      "term": "屋台",
+      "kana": "やたい",
+      "romaji": "yatai",
+      "meaning_id": "gerobak makanan (di festival)",
+      "example_jp": "やたいでたこやきをたべます。",
+      "example_romaji": "Yatai de takoyaki o tabemasu.",
+      "example_id": "Makan takoyaki di gerobak."
+    },
+    {
+      "term": "盆踊り",
+      "kana": "ぼんおどり",
+      "romaji": "bon odori",
+      "meaning_id": "bon odori (tarian tradisional festival)",
+      "example_jp": "ぼんおどりをします。",
+      "example_romaji": "Bon odori o shimasu.",
+      "example_id": "Menari bon odori."
+    }
+  ],
+  "writing": [
+    {
+      "char": "マ",
+      "type": "katakana",
+      "romaji": "ma"
+    },
+    {
+      "char": "ミ",
+      "type": "katakana",
+      "romaji": "mi"
+    },
+    {
+      "char": "ム",
+      "type": "katakana",
+      "romaji": "mu"
+    },
+    {
+      "char": "メ",
+      "type": "katakana",
+      "romaji": "me"
+    },
+    {
+      "char": "モ",
+      "type": "katakana",
+      "romaji": "mo"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 2,
+      "prompt_id": "Dengarkan Mina. Apa yang ditanyakan ke Rian?",
+      "options": [
+        "Mau makan apa?",
+        "Pakai yukata saat festival?",
+        "Jam berapa mulai?",
+        "Ikuti bon odori?"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 4,
+      "prompt_id": "Menurut Yuki, kemungkinan apa yang bisa terjadi?",
+      "options": [
+        "Hujan turun",
+        "Orang banyak",
+        "Festival dibatalkan",
+        "Tidak ada kembang api"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "なつまつり",
+        "の",
+        "とき",
+        "ゆかた",
+        "を",
+        "きます"
+      ],
+      "answer_jp": "なつまつりのときゆかたをきます。"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "花火",
+      "front_kana": "はなび",
+      "back_id": "kembang api"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'kamoshiremasen' adalah...",
+      "options": [
+        "Pasti",
+        "Tidak mungkin",
+        "Mungkin",
+        "Sudah terjadi"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf katakana untuk bunyi 'me'",
+      "target_kana": "メ"
+    }
+  ],
+  "audio_status": "pending"
+}

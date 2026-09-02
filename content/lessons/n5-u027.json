@@ -1,0 +1,259 @@
+{
+  "id": "n5-u027",
+  "level": "N5",
+  "unit_no": 27,
+  "theme": "Pekerjaan Paruh Waktu",
+  "title_id": "Wawancara & Kerja di Konbini",
+  "objectives_id": [
+    "Mengungkapkan pemberian/terima dengan 〜くれる/あげる/もらう",
+    "Menggunakan 〜のに untuk kontras (meskipun/tetapi)",
+    "Mengenal kosakata kerja part-time dan gaji"
+  ],
+  "dialog": {
+    "title_id": "Rian wawancara kerja di konbini dan cerita ke Mina",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "きのうコンビニのめんせつをうけました。",
+        "kana": "きのうコンビニのめんせつをうけました。",
+        "romaji": "Kinou konbini no mensetsu wo ukemashita.",
+        "id": "Kemarin saya ikut wawancara di konbini."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "どうでしたか。うかりましたか。",
+        "kana": "どうでしたか。うかりましたか。",
+        "romaji": "Dou deshita ka. Ukarimashita ka.",
+        "id": "Gimana? Lolos?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい、うかりました。じかんぎれはきびしいのに、とおってくれました。",
+        "kana": "はい、うかりました。じかんぎれはきびしいのに、とおってくれました。",
+        "romaji": "Hai, ukarimashita. Jikangire wa kibishii noni, tootte kuremashita.",
+        "id": "Ya, lolos. Waktu kerja ketat tapi mereka terima saya."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "よかったですね。じきゅうはいくらですか。",
+        "kana": "よかったですね。じきゅうはいくらですか。",
+        "romaji": "Yokatta desu ne. Jikyuu wa ikura desu ka.",
+        "id": "Bagus. Upah per jam berapa?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "せんえんです。ともだちがこのしごとをおしえてくれました。",
+        "kana": "せんえんです。ともだちがこのしごとをおしえてくれました。",
+        "romaji": "Sen en desu. Tomodachi ga kono shigoto wo oshiete kuremashita.",
+        "id": "1000 yen. Teman kasih tau kerja ini."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "それはやさしいともだちですね。おめでとうございます。",
+        "kana": "それはやさしいともだちですね。おめでとうございます。",
+        "romaji": "Sore wa yasashii tomodachi desu ne. Omedetou gozaimasu.",
+        "id": "Teman baik ya. Selamat."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "ありがとう。らいしゅうからはたらきます。がんばります。",
+        "kana": "ありがとう。らいしゅうからはたらきます。がんばります。",
+        "romaji": "Arigatou. Raishuu kara hatarakimasu. Ganbarimasu.",
+        "id": "Terima kasih. Minggu depan mulai kerja. Saya akan berusaha."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜くれる/あげる/もらう / 〜のに",
+    "meaning_id": "Memberi (ke saya/kelompok saya) / Memberi (ke orang lain) / Menerima / Meskipun... — kureru (ke dalam), ageru (ke luar), morau (terima), noni (kontras).",
+    "formation": "[Giver] が [Receiver] に [Verb te-form] + くれる/あげる/もらう / [Plain form] + のに",
+    "examples": [
+      {
+        "jp": "せんせいがほんをくださいました。",
+        "romaji": "Sensei ga hon wo kudasaimashita.",
+        "id": "Guru memberiku buku (sopan)."
+      },
+      {
+        "jp": "あめがふっているのに、さんぽしました。",
+        "romaji": "Ame ga futte iru noni, sanpo shimashita.",
+        "id": "Meskipun hujan, saya jalan-jalan."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "コンビニ",
+      "kana": "コンビニ",
+      "romaji": "konbini",
+      "meaning_id": "konvenien store (minimarket 24 jam)",
+      "example_jp": "コンビニではたらきます。",
+      "example_romaji": "Konbini de hatarakimasu.",
+      "example_id": "Saya kerja di konbini."
+    },
+    {
+      "term": "面接",
+      "kana": "めんせつ",
+      "romaji": "mensetsu",
+      "meaning_id": "wawancara kerja",
+      "example_jp": "めんせつをうけます。",
+      "example_romaji": "Mensetsu wo ukemasu.",
+      "example_id": "Saya ikut wawancara."
+    },
+    {
+      "term": "受かる",
+      "kana": "うかる",
+      "romaji": "ukaru",
+      "meaning_id": "lolos (ujian, wawancara)",
+      "example_jp": "しけんにうかりました。",
+      "example_romaji": "Shiken ni ukarimashita.",
+      "example_id": "Saya lolos ujian."
+    },
+    {
+      "term": "時間切れ",
+      "kana": "じかんぎれ",
+      "romaji": "jikangire",
+      "meaning_id": "waktu habis, shift selesai",
+      "example_jp": "じかんぎれでかえります。",
+      "example_romaji": "Jikangire de kaerimasu.",
+      "example_id": "Pulang karena shift selesai."
+    },
+    {
+      "term": "厳しい",
+      "kana": "きびしい",
+      "romaji": "kibishii",
+      "meaning_id": "ketat, keras, sulit",
+      "example_jp": "せんせいはきびしいです。",
+      "example_romaji": "Sensei wa kibishii desu.",
+      "example_id": "Guru ketat."
+    },
+    {
+      "term": "通る",
+      "kana": "とおる",
+      "romaji": "tooru",
+      "meaning_id": "lolos, melewati, diterima",
+      "example_jp": "しけんにとおった。",
+      "example_romaji": "Shiken ni tootta.",
+      "example_id": "Lolos ujian."
+    },
+    {
+      "term": "時給",
+      "kana": "じきゅう",
+      "romaji": "jikyuu",
+      "meaning_id": "upah per jam",
+      "example_jp": "じきゅうはせんえんです。",
+      "example_romaji": "Jikyuu wa sen en desu.",
+      "example_id": "Upah per jam 1000 yen."
+    },
+    {
+      "term": "教える",
+      "kana": "おしえる",
+      "romaji": "oshieru",
+      "meaning_id": "mengajar, memberitahu",
+      "example_jp": "みちをおしえてください。",
+      "example_romaji": "Michi wo oshiete kudasai.",
+      "example_id": "Tolong tunjukkan jalan."
+    },
+    {
+      "term": "優しい",
+      "kana": "やさしい",
+      "romaji": "yasashii",
+      "meaning_id": "baik hati, lembut",
+      "example_jp": "かれはやさしいひとです。",
+      "example_romaji": "Kare wa yasashii hito desu.",
+      "example_id": "Dia orang baik."
+    },
+    {
+      "term": "来週",
+      "kana": "らいしゅう",
+      "romaji": "raishuu",
+      "meaning_id": "minggu depan",
+      "example_jp": "らいしゅうからはたらきます。",
+      "example_romaji": "Raishuu kara hatarakimasu.",
+      "example_id": "Minggu depan mulai kerja."
+    }
+  ],
+  "writing": [
+    {
+      "char": "面",
+      "type": "kanji",
+      "romaji": "men",
+      "meaning_id": "muka, permukaan",
+      "kanjivg_id": "9762"
+    },
+    {
+      "char": "接",
+      "type": "kanji",
+      "romaji": "setsu",
+      "meaning_id": "menyentuh, hubungkan",
+      "kanjivg_id": "63a5"
+    },
+    {
+      "char": "時",
+      "type": "kanji",
+      "romaji": "ji",
+      "meaning_id": "waktu, jam",
+      "kanjivg_id": "6642"
+    },
+    {
+      "char": "給",
+      "type": "kanji",
+      "romaji": "kyuu",
+      "meaning_id": "beri, gaji",
+      "kanjivg_id": "7d04"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 2,
+      "prompt_id": "Rian berkata 'じかんぎれはきびしいのに、とおってくれました'. Artinya?",
+      "options": [
+        "Waktu ketat tapi mereka terima saya",
+        "Waktu longgar dan mereka tolak",
+        "Saya lolos karena waktu habis",
+        "Wawancara dibatalkan"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "d04",
+      "target_kana": "じきゅうはいくらですか"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "時給",
+      "front_kana": "じきゅう",
+      "back_id": "upah per jam"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'おしえてくれました' adalah...",
+      "options": [
+        "Saya mengajarinya",
+        "Dia memberitahu saya",
+        "Kami belajar bersama",
+        "Dia bertanya ke saya"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "あめ",
+        "が",
+        "ふっている",
+        "のに",
+        "さんぽ",
+        "しました"
+      ],
+      "answer_jp": "あめがふっているのにさんぽしました。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis kanji untuk 'men' (muka/permukaan)",
+      "target_kana": "めん"
+    }
+  ],
+  "audio_status": "pending"
+}

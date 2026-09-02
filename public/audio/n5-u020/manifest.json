@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u020",
+  "generated_at": "2026-09-02T02:08:31.041Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "なつまつり、たのしみですね。",
+      "speaker_id": 2,
+      "hash": "6a3c7aff08054d9a"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "うん。よるはなつまつりにいきます。",
+      "speaker_id": 12,
+      "hash": "41714efa0fe9d0cf"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "なつまつりのとき、ゆかたをきますか。",
+      "speaker_id": 2,
+      "hash": "3853bc9da86fdd16"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "はい、きます。ゆかたはかっこいいですから。",
+      "speaker_id": 12,
+      "hash": "52d7ab157b70aaa3"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "ひとがおおいかもしれません。はやくいきましょう。",
+      "speaker_id": 2,
+      "hash": "c78f893e23b49416"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "はなびもあるかもしれませんね。",
+      "speaker_id": 2,
+      "hash": "61c53b052201bbaf"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "わくわくします。いっしょにたのしみましょう。",
+      "speaker_id": 12,
+      "hash": "884ffb7c8251090a"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "夏祭り",
+      "speaker_id": 2,
+      "hash": "2de14de82f53d215"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "なつまつりにいきます。",
+      "speaker_id": 2,
+      "hash": "402a093dfef291d7"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "浴衣",
+      "speaker_id": 2,
+      "hash": "d8599a6e1141bf04"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "ゆかたをきます。",
+      "speaker_id": 2,
+      "hash": "59c8ddd639509959"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "花火",
+      "speaker_id": 2,
+      "hash": "aae982df14f016cd"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "はなびをみます。",
+      "speaker_id": 2,
+      "hash": "6955f6f3b9ca7305"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "夜",
+      "speaker_id": 2,
+      "hash": "837db1e59cb0eb35"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "よるはさむいです。",
+      "speaker_id": 2,
+      "hash": "b2b99a45a2bafb04"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "人が多い",
+      "speaker_id": 2,
+      "hash": "46f25a8d3fbdfa6d"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "まつりはひとがおおいです。",
+      "speaker_id": 2,
+      "hash": "5694244c73621282"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "早い",
+      "speaker_id": 2,
+      "hash": "35d7397cdabc984a"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "はやくいきましょう。",
+      "speaker_id": 2,
+      "hash": "1543c507afa5f790"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "楽しみ",
+      "speaker_id": 2,
+      "hash": "879ce54fadf76137"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "りょこうがたのしみです。",
+      "speaker_id": 2,
+      "hash": "e5150f6a61f46662"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "わくわくします",
+      "speaker_id": 2,
+      "hash": "36cd675912f1b120"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "りょこうでわくわくします。",
+      "speaker_id": 2,
+      "hash": "b8b95b7418831af3"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "屋台",
+      "speaker_id": 2,
+      "hash": "33fe8113d1322d2a"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "やたいでたこやきをたべます。",
+      "speaker_id": 2,
+      "hash": "835ab5997b4bf1d2"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "盆踊り",
+      "speaker_id": 2,
+      "hash": "e5d1c0cc9a316a69"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "ぼんおどりをします。",
+      "speaker_id": 2,
+      "hash": "d73aadb1cbcd61eb"
+    }
+  ]
+}

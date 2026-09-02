@@ -1,0 +1,259 @@
+{
+  "id": "n5-u030",
+  "level": "N5",
+  "unit_no": 30,
+  "theme": "Rencana Masa Depan",
+  "title_id": "Mimpi & Rencana Setelah Lulus N5",
+  "objectives_id": [
+    "Mengungkapkan rencana dengan 〜つもりだ (berniat)",
+    "Menggunakan 〜ておく (persiapan) dan 〜ながら (sambil)",
+    "Mengenal kosakata karir, lanjut kuliah, dan mimpi"
+  ],
+  "dialog": {
+    "title_id": "Rian, Mina, dan Yuki bicara rencana masa depan di kafe",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "みなさん、N5がおわったら、なにをしたいつもりですか。",
+        "kana": "みなさん、エヌゴがおわったら、なにをしたいつもりですか。",
+        "romaji": "Minasan, enu go ga owattara, nani wo shitai tsumori desu ka.",
+        "id": "Kalau N5 selesai, apa yang kalian rencanakan?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "N4をうけるつもりです。いまから単語をおぼえておきます。",
+        "kana": "エヌヨンをうけるつもりです。いまからたんごをおぼえておきます。",
+        "romaji": "Enu yon wo ukeru tsumori desu. Ima kara tango wo oboete okimasu.",
+        "id": "Berniat ambil N4. Dari sekarang hafal kosakata dulu."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "わたしはだいがくいんにいきたいです。けんきゅうしながら、はたらきます。",
+        "kana": "わたしはだいがくいんにいきたいです。けんきゅうしながら、はたらきます。",
+        "romaji": "Watashi wa daigakuin ni ikitai desu. Kenkyuu shi nagara, hatarakimasu.",
+        "id": "Saya mau kuliah S2. Sambil riset, kerja."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "すごいですね。わたしはにほんでしごとをみつけるつもりです。",
+        "kana": "すごいですね。わたしはにほんでしごとをみつけるつもりです。",
+        "romaji": "Sugoi desu ne. Watashi wa nihon de shigoto wo mitsukeru tsumori desu.",
+        "id": "Hebat. Saya berniat cari kerja di Jepang."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "りあんさんならだいじょうぶです。めんせつのれんしゅうをしておきましょう。",
+        "kana": "りあんさんならだいじょうぶです。めんせつれんしゅうをしておきましょう。",
+        "romaji": "Rian-san nara daijoubu desu. Mensetsu no renshuu wo shite okimashou.",
+        "id": "Rian pasti bisa. Yuk latihan wawancara dulu."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "みんなでN4もがんばりましょう。にほんごはつづけることがだいじです。",
+        "kana": "みんなでエヌヨンもがんばりましょう。にほんごはつづけることがだいじです。",
+        "romaji": "Minna de enu yon mo ganbarimashou. Nihongo wa tsuzukeru koto ga daiji desu.",
+        "id": "Semua yuk N4 juga. Terus belajar Jepang itu penting."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい、ぜったいがんばります。ありがとう、みんな。",
+        "kana": "はい、ぜったいがんばります。ありがとう、みんな。",
+        "romaji": "Hai, zettai ganbarimasu. Arigatou, minna.",
+        "id": "Ya, pasti berusaha. Terima kasih semuanya."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜つもりだ / 〜ておく / 〜ながら",
+    "meaning_id": "Berniat... / Melakukan persiapan... / Sambil... — Verb dictionary/nai + tsumori da, Verb te-form + oku (persiapan), Verb masu-stem + nagara.",
+    "formation": "[Verb dictionary/nai] + つもり だ / [Verb te-form] + おく / [Verb masu-stem] + ながら",
+    "examples": [
+      {
+        "jp": "らいねんにほんにいくつもりです。",
+        "romaji": "Rainen nihon ni iku tsumori desu.",
+        "id": "Saya berniat pergi Jepang tahun depan."
+      },
+      {
+        "jp": "きっぷをかっておきました。",
+        "romaji": "Kippu wo katte okimashita.",
+        "id": "Saya sudah beli tiket (persiapan)."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "つもり",
+      "kana": "つもり",
+      "romaji": "tsumori",
+      "meaning_id": "niat, rencana",
+      "example_jp": "いしゃになるつもりです。",
+      "example_romaji": "Isha ni naru tsumori desu.",
+      "example_id": "Saya berniat jadi dokter."
+    },
+    {
+      "term": "大学院",
+      "kana": "だいがくいん",
+      "romaji": "daigakuin",
+      "meaning_id": "sekolah pasca sarjana (S2/S3)",
+      "example_jp": "だいがくいんにいきます。",
+      "example_romaji": "Daigakuin ni ikimasu.",
+      "example_id": "Saya kuliah S2."
+    },
+    {
+      "term": "研究",
+      "kana": "けんきゅう",
+      "romaji": "kenkyuu",
+      "meaning_id": "penelitian, riset",
+      "example_jp": "けんきゅうをします。",
+      "example_romaji": "Kenkyuu wo shimasu.",
+      "example_id": "Saya melakukan riset."
+    },
+    {
+      "term": "見つける",
+      "kana": "みつける",
+      "romaji": "mitsukeru",
+      "meaning_id": "menemukan",
+      "example_jp": "しごとをみつけました。",
+      "example_romaji": "Shigoto wo mitsukemashita.",
+      "example_id": "Saya nemu kerja."
+    },
+    {
+      "term": "面接練習",
+      "kana": "めんせつれんしゅう",
+      "romaji": "mensetsu renshuu",
+      "meaning_id": "latihan wawancara",
+      "example_jp": "めんせつれんしゅうをします。",
+      "example_romaji": "Mensetsu renshuu wo shimasu.",
+      "example_id": "Saya latihan wawancara."
+    },
+    {
+      "term": "続ける",
+      "kana": "つづける",
+      "romaji": "tsuzukeru",
+      "meaning_id": "melanjutkan, meneruskan",
+      "example_jp": "にほんごをつづけます。",
+      "example_romaji": "Nihongo wo tsuzukemasu.",
+      "example_id": "Saya lanjutkan belajar Jepang."
+    },
+    {
+      "term": "大事",
+      "kana": "だいじ",
+      "romaji": "daiji",
+      "meaning_id": "penting",
+      "example_jp": "けんこうがだいじです。",
+      "example_romaji": "Kenkou ga daiji desu.",
+      "example_id": "Kesehatan penting."
+    },
+    {
+      "term": "単語",
+      "kana": "たんご",
+      "romaji": "tango",
+      "meaning_id": "kosakata, kata",
+      "example_jp": "たんごをおぼえます。",
+      "example_romaji": "Tango wo oboemasu.",
+      "example_id": "Saya hafal kosakata."
+    },
+    {
+      "term": "覚える",
+      "kana": "おぼえる",
+      "romaji": "oboeru",
+      "meaning_id": "menghafal, mengingat",
+      "example_jp": "なまえをおぼえました。",
+      "example_romaji": "Namae wo oboemashita.",
+      "example_id": "Saya hafal nama."
+    },
+    {
+      "term": "絶対",
+      "kana": "ぜったい",
+      "romaji": "zettai",
+      "meaning_id": "pasti, mutlak",
+      "example_jp": "ぜったいがんばります。",
+      "example_romaji": "Zettai ganbarimasu.",
+      "example_id": "Saya pasti berusaha."
+    }
+  ],
+  "writing": [
+    {
+      "char": "大",
+      "type": "kanji",
+      "romaji": "dai",
+      "meaning_id": "besar",
+      "kanjivg_id": "5927"
+    },
+    {
+      "char": "学",
+      "type": "kanji",
+      "romaji": "gaku",
+      "meaning_id": "belajar, sekolah",
+      "kanjivg_id": "5b66"
+    },
+    {
+      "char": "院",
+      "type": "kanji",
+      "romaji": "in",
+      "meaning_id": "institusi, istana",
+      "kanjivg_id": "9662"
+    },
+    {
+      "char": "続",
+      "type": "kanji",
+      "romaji": "zoku",
+      "meaning_id": "lanjut, terus",
+      "kanjivg_id": "7d9a"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Mina berkata 'N4をうけるつもりです'. Apa rencananya?",
+      "options": [
+        "Sudah lulus N4",
+        "Berniat ambil ujian N4",
+        "Tidak mau ambil N4",
+        "Lupa jadwal N4"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "d02",
+      "target_kana": "いまからたんごをおぼえておきます"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "大学院",
+      "front_kana": "だいがくいん",
+      "back_id": "sekolah pasca sarjana (S2/S3)"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'つづけることがだいじです' adalah...",
+      "options": [
+        "Berhenti itu penting",
+        "Melanjutkan itu penting",
+        "Mulai itu penting",
+        "Selesai itu penting"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "らいねん",
+        "にほん",
+        "に",
+        "いく",
+        "つもり",
+        "です"
+      ],
+      "answer_jp": "らいねんにほんにいくつもりです。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis kanji untuk 'dai' (besar)",
+      "target_kana": "だい"
+    }
+  ],
+  "audio_status": "pending"
+}

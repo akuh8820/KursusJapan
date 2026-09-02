@@ -1,27 +1,44 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { AnalyticsProvider } from "@/lib/analytics/provider";
+import { registerServiceWorker } from "@/lib/pwa/register";
 
 export const metadata: Metadata = {
   title: {
-    default: "Fasih — Belajar Bahasa Jepang 20 Menit Sehari",
-    template: "%s · Fasih",
+    default: "Go Japan — Belajar Bahasa Jepang",
+    template: "%s · Go Japan",
   },
   description:
-    "Kursus bahasa Jepang standar JLPT gratis: dengar, lihat, tulis — cukup 20 menit sehari. Mulai dari nol sampai siap hidup di Jepang.",
+    "Belajar bahasa Jepang JLPT N5–N1: dialog, grammar, kosakata, dan latihan — offline penuh.",
   openGraph: {
-    title: "Fasih — Belajar Bahasa Jepang 20 Menit Sehari",
+    title: "Go Japan — Belajar Bahasa Jepang",
     description:
-      "Dengar, lihat, tulis. Kursus JLPT N5 gratis dengan sesi fokus 20 menit + kartu harian.",
+      "Dengar, lihat, tulis. Kursus JLPT gratis dengan sesi fokus 20 menit + kartu harian.",
     type: "website",
     locale: "id_ID",
-    siteName: "Fasih",
+    siteName: "Go Japan",
   },
+  other: {
+    "theme-color": "#b91c1c",
+  },
+  icons: {
+    icon: "/icon-192.png",
+    shortcut: "/icon-192.png",
+    apple: "/icon-192.png",
+  },
+  manifest: "/manifest.json",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  if (typeof window !== "undefined") {
+    registerServiceWorker();
+  }
   return (
     <html lang="id" className="h-full antialiased">
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#b91c1c" />
+      </head>
       <body className="min-h-full flex flex-col">
         <AnalyticsProvider>{children}</AnalyticsProvider>
       </body>

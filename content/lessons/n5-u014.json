@@ -1,0 +1,260 @@
+{
+  "id": "n5-u014",
+  "level": "N5",
+  "unit_no": 14,
+  "theme": "Cuaca & musim",
+  "title_id": "Bicara Tentang Cuaca",
+  "objectives_id": [
+    "Menyatakan cuaca hari ini & kemarin dengan 〜です / 〜でした",
+    "Mengenal huruf hiragana baris は (はひふへほ)",
+    "Menggunakan 〜でしょう untuk prakiraan cuaca"
+  ],
+  "dialog": {
+    "title_id": "Rian dan Yuki lihat prakiraan cuaca di TV",
+    "lines": [
+      {
+        "speaker": "Yuki",
+        "jp": "きょうのてんきはどうですか。",
+        "kana": "きょうのてんきはどうですか。",
+        "romaji": "Kyou no tenki wa dou desu ka.",
+        "id": "Cuaca hari ini gimana?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "きょうははれです。でも、あしたはあめでしょう。",
+        "kana": "きょうははれです。でも、あしたはあめでしょう。",
+        "romaji": "Kyou wa hare desu. Demo, ashita wa ame deshou.",
+        "id": "Hari ini cerah. Tapi besok mungkin hujan."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "きのうはくもりでしたね。",
+        "kana": "きのうはくもりでしたね。",
+        "romaji": "Kinou wa kumori deshita ne.",
+        "id": "Kemarin berawan ya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "そうでした。きのうはさむかったです。",
+        "kana": "そうでした。きのうはさむかったです。",
+        "romaji": "Sou deshita. Kinou wa samukatta desu.",
+        "id": "Betul. Kemarin dingin."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "あしたはかさをもっていきましょう。",
+        "kana": "あしたはかさをもっていきましょう。",
+        "romaji": "Ashita wa kasa o motte ikimashou.",
+        "id": "Besok bawa payung ya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい。ふうがつよそうですから。",
+        "kana": "はい。ふうがつよそうですから。",
+        "romaji": "Hai. Fuu ga tsuyou sou desu kara.",
+        "id": "Ya. Sepertinya anginnya kencang."
+      },
+      {
+        "speaker": "Yuki",
+        "jp": "ゆきもふるかもしれませんよ。",
+        "kana": "ゆきもふるかもしれませんよ。",
+        "romaji": "Yuki mo furu kamoshiremasen yo.",
+        "id": "Mungkin salju juga turun."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜です / 〜でした / 〜でしょう",
+    "meaning_id": "Adalah / Dulu adalah / Mungkin/perkiraan (cuaca, situasi)",
+    "formation": "[Nama/Na-adj] + です/でした/でしょう / [I-adj] + です/でした/でしょう",
+    "examples": [
+      {
+        "jp": "きょうはさむいです。",
+        "romaji": "Kyou wa samui desu.",
+        "id": "Hari ini dingin."
+      },
+      {
+        "jp": "あしたはあつくなるでしょう。",
+        "romaji": "Ashita wa atsuku naru deshou.",
+        "id": "Besok mungkin jadi panas."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "天気",
+      "kana": "てんき",
+      "romaji": "tenki",
+      "meaning_id": "cuaca",
+      "example_jp": "きょうのてんきはいいです。",
+      "example_romaji": "Kyou no tenki wa ii desu.",
+      "example_id": "Cuaca hari ini bagus."
+    },
+    {
+      "term": "晴れ",
+      "kana": "はれ",
+      "romaji": "hare",
+      "meaning_id": "cerah",
+      "example_jp": "あしたははれです。",
+      "example_romaji": "Ashita wa hare desu.",
+      "example_id": "Besok cerah."
+    },
+    {
+      "term": "雨",
+      "kana": "あめ",
+      "romaji": "ame",
+      "meaning_id": "hujan",
+      "example_jp": "あめがふっています。",
+      "example_romaji": "Ame ga futte imasu.",
+      "example_id": "Hujan sedang turun."
+    },
+    {
+      "term": "曇り",
+      "kana": "くもり",
+      "romaji": "kumori",
+      "meaning_id": "berawan",
+      "example_jp": "きょうはくもりです。",
+      "example_romaji": "Kyou wa kumori desu.",
+      "example_id": "Hari ini berawan."
+    },
+    {
+      "term": "雪",
+      "kana": "ゆき",
+      "romaji": "yuki",
+      "meaning_id": "salju",
+      "example_jp": "ゆきがふります。",
+      "example_romaji": "Yuki ga furimasu.",
+      "example_id": "Salju turun."
+    },
+    {
+      "term": "風",
+      "kana": "かぜ",
+      "romaji": "kaze",
+      "meaning_id": "angin",
+      "example_jp": "かぜがつよいです。",
+      "example_romaji": "Kaze ga tsuyoi desu.",
+      "example_id": "Angin kencang."
+    },
+    {
+      "term": "傘",
+      "kana": "かさ",
+      "romaji": "kasa",
+      "meaning_id": "payung",
+      "example_jp": "かさをわすれました。",
+      "example_romaji": "Kasa o wasuremashita.",
+      "example_id": "Saya lupa bawa payung."
+    },
+    {
+      "term": "寒い",
+      "kana": "さむい",
+      "romaji": "samui",
+      "meaning_id": "dingin (cuaca)",
+      "example_jp": "ふゆはさむいです。",
+      "example_romaji": "Fuyu wa samui desu.",
+      "example_id": "Musim dingin dingin."
+    },
+    {
+      "term": "暑い",
+      "kana": "あつい",
+      "romaji": "atsui",
+      "meaning_id": "panas (cuaca)",
+      "example_jp": "なつはあついです。",
+      "example_romaji": "Natsu wa atsui desu.",
+      "example_id": "Musim panas panas."
+    },
+    {
+      "term": "台風",
+      "kana": "たいふう",
+      "romaji": "taifuu",
+      "meaning_id": "badai/typhoon",
+      "example_jp": "たいふうがきます。",
+      "example_romaji": "Taifuu ga kimasu.",
+      "example_id": "Badai datang."
+    }
+  ],
+  "writing": [
+    {
+      "char": "は",
+      "type": "hiragana",
+      "romaji": "ha"
+    },
+    {
+      "char": "ひ",
+      "type": "hiragana",
+      "romaji": "hi"
+    },
+    {
+      "char": "ふ",
+      "type": "hiragana",
+      "romaji": "fu"
+    },
+    {
+      "char": "へ",
+      "type": "hiragana",
+      "romaji": "he"
+    },
+    {
+      "char": "ほ",
+      "type": "hiragana",
+      "romaji": "ho"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Dengarkan Rian. Cuaca besok diperkirakan seperti apa?",
+      "options": [
+        "Cerah",
+        "Hujan",
+        "Berawan",
+        "Salju"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 2,
+      "prompt_id": "Cuaca kemarin seperti apa menurut Yuki?",
+      "options": [
+        "Cerah",
+        "Hujan",
+        "Berawan",
+        "Badai"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "あした",
+        "は",
+        "あめ",
+        "でしょう"
+      ],
+      "answer_jp": "あしたはあめでしょう。"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'taifuu' adalah...",
+      "options": [
+        "Angin",
+        "Badai/typhoon",
+        "Hujan deras",
+        "Salju"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'fu'",
+      "target_kana": "ふ"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'ho'",
+      "target_kana": "ほ"
+    }
+  ],
+  "audio_status": "pending"
+}

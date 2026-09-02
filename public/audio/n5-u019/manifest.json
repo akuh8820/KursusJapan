@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u019",
+  "generated_at": "2026-09-02T02:06:09.245Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "こんにちは。りあんさんですね。なぜこのバイトをしたいですか。",
+      "speaker_id": 2,
+      "hash": "01fb279d02d94698"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "いえちかいからです。それに、コーヒーがすきなので。",
+      "speaker_id": 12,
+      "hash": "ffa2cd6ce424922f"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "にほんごはだいじょうぶですか。",
+      "speaker_id": 2,
+      "hash": "756c6f717d5a1b03"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "すこしわかります。いま、がっこうでべんきょうしているので。",
+      "speaker_id": 12,
+      "hash": "ed1be4162231ba82"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "じゃ、きんようびからこれますか。",
+      "speaker_id": 2,
+      "hash": "12f9c577693f76e6"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "はい、だいじょうぶです。ありがとうございます。",
+      "speaker_id": 12,
+      "hash": "1f98b41dbd526a41"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "では、またきんようび。よろしくおねがいします。",
+      "speaker_id": 2,
+      "hash": "21c978bb4fb905e6"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "アルバイト",
+      "speaker_id": 2,
+      "hash": "783e2c580302d5cb"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "アルバイトをさがしています。",
+      "speaker_id": 2,
+      "hash": "40d1e62babbd7b35"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "面接",
+      "speaker_id": 2,
+      "hash": "c3e25d8daf4cd162"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "めんせつがあります。",
+      "speaker_id": 2,
+      "hash": "5787b8b1d8c9d5d7"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "店長",
+      "speaker_id": 2,
+      "hash": "0dbe7641ce33775f"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "てんちょうにあいました。",
+      "speaker_id": 2,
+      "hash": "c0d3708705b5155c"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "コーヒー",
+      "speaker_id": 2,
+      "hash": "7553404f16df910d"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "コーヒーをのみます。",
+      "speaker_id": 2,
+      "hash": "8d1bc76e57bd3bab"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "近い",
+      "speaker_id": 2,
+      "hash": "f0dcef4185d2bfc8"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "えきがちかいです。",
+      "speaker_id": 2,
+      "hash": "0f9ad0d493603d21"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "金曜日",
+      "speaker_id": 2,
+      "hash": "90c9b7011e425a82"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "きんようびはひまです。",
+      "speaker_id": 2,
+      "hash": "391c91611a749d9a"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "始めます",
+      "speaker_id": 2,
+      "hash": "6dd098b3ef179c71"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "らいしゅうからはじめます。",
+      "speaker_id": 2,
+      "hash": "5094dc6c7e8c642f"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "シフト",
+      "speaker_id": 2,
+      "hash": "c0ccc0ef05336268"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "しふとをかくにんします。",
+      "speaker_id": 2,
+      "hash": "750217e7ade4d967"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "時給",
+      "speaker_id": 2,
+      "hash": "f9d94cd623cf159f"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "じきゅうはせんえんです。",
+      "speaker_id": 2,
+      "hash": "e089cbff78dcd60e"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "経験",
+      "speaker_id": 2,
+      "hash": "edab3757a05d8959"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "けいけんがあります。",
+      "speaker_id": 2,
+      "hash": "f7e8e8da9334c398"
+    }
+  ]
+}

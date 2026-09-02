@@ -1,0 +1,256 @@
+{
+  "id": "n5-u018",
+  "level": "N5",
+  "unit_no": 18,
+  "theme": "Sekolah & belajar",
+  "title_id": "Kegiatan Sedang Berlangsung & Sambil",
+  "objectives_id": [
+    "Menyatakan aksi sedang berlangsung dengan 〜ています",
+    "Mengenal katakana (サシスセソ タチツテト)",
+    "Mengungkapkan dua aksi bersamaan dengan 〜ながら"
+  ],
+  "dialog": {
+    "title_id": "Rian belajar di perpustakaan kampus, ketemu Mina",
+    "lines": [
+      {
+        "speaker": "Mina",
+        "jp": "りあんさん、いまなにをしていますか。",
+        "kana": "りあんさん、いまなにをしていますか。",
+        "romaji": "Rian-san, ima nani o shite imasu ka.",
+        "id": "Rian, lagi apa?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "にほんごをべんきょうしています。",
+        "kana": "にほんごをべんきょうしています。",
+        "romaji": "Nihongo o benkyou shite imasu.",
+        "id": "Saya lagi belajar bahasa Jepang."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "いつもとしょかんでべんきょうしていますね。",
+        "kana": "いつもとしょかんでべんきょうしていますね。",
+        "romaji": "Itsumo toshokan de benkyou shite imasu ne.",
+        "id": "Selalu belajar di perpustakaan ya."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい。おんがくをききながら、べんきょうします。",
+        "kana": "はい。おんがくをききながら、べんきょうします。",
+        "romaji": "Hai. Ongaku o kikinagara, benkyou shimasu.",
+        "id": "Ya. Sambil dengerin musik, belajar."
+      },
+      {
+        "speaker": "Mina",
+        "jp": "わたしはあした、しけんがあります。いま、しょくじをしています。",
+        "kana": "わたしはあした、しけんがあります。いま、しょくじをしています。",
+        "romaji": "Watashi wa ashita, shiken ga arimasu. Ima, shokuji o shite imasu.",
+        "id": "Saya besok ujian. Sekarang lagi makan."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "がんばってください。しょくじのあと、いっしょにべんきょうしましょうか。",
+        "kana": "がんばってください。しょくじのあと、いっしょにべんきょうしましょうか。",
+        "romaji": "Ganbatte kudasai. Shokuji no ato, issho ni benkyou shimashou ka.",
+        "id": "Semangat ya. Setelah makan, belajar bareng yuk?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "いいですね。じゃ、あとで。",
+        "kana": "いいですね。じゃ、あとで。",
+        "romaji": "Ii desu ne. Jya, ato de.",
+        "id": "Bagus. Ya nanti aja."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜ています / 〜ながら",
+    "meaning_id": "Sedang 〜 (progresif) / Sambil 〜 (dua aksi bersamaan, utama di akhir)",
+    "formation": "[Verb bentuk-te] + います / [Verb stem] + ながら + [Verb utama]",
+    "examples": [
+      {
+        "jp": "ともだちとでんわしています。",
+        "romaji": "Tomodachi to denwa shite imasu.",
+        "id": "Saya sedang telepon teman."
+      },
+      {
+        "jp": "あるきながら、スマホをみます。",
+        "romaji": "Arukinagara, sumaho o mimasu.",
+        "id": "Sambil jalan, lihat HP."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "図書館",
+      "kana": "としょかん",
+      "romaji": "toshokan",
+      "meaning_id": "perpustakaan",
+      "example_jp": "としょかんでほんをよみます。",
+      "example_romaji": "Toshokan de hon o yomimasu.",
+      "example_id": "Membaca buku di perpustakaan."
+    },
+    {
+      "term": "勉強します",
+      "kana": "べんきょうします",
+      "romaji": "benkyou shimasu",
+      "meaning_id": "belajar",
+      "example_jp": "まいにちべんきょうします。",
+      "example_romaji": "Mainichi benkyou shimasu.",
+      "example_id": "Belajar setiap hari."
+    },
+    {
+      "term": "試験",
+      "kana": "しけん",
+      "romaji": "shiken",
+      "meaning_id": "ujian",
+      "example_jp": "しけんがあります。",
+      "example_romaji": "Shiken ga arimasu.",
+      "example_id": "Ada ujian."
+    },
+    {
+      "term": "食事",
+      "kana": "しょくじ",
+      "romaji": "shokuji",
+      "meaning_id": "makan (formal)",
+      "example_jp": "しょくじをします。",
+      "example_romaji": "Shokuji o shimasu.",
+      "example_id": "Makan."
+    },
+    {
+      "term": "後で",
+      "kana": "あとで",
+      "romaji": "ato de",
+      "meaning_id": "nanti, kemudian",
+      "example_jp": "あとであいましょう。",
+      "example_romaji": "Ato de aimashou.",
+      "example_id": "Nanti ketemu."
+    },
+    {
+      "term": "音楽を聞きながら",
+      "kana": "おんがくをききながら",
+      "romaji": "ongaku o kikinagara",
+      "meaning_id": "sambil mendengarkan musik",
+      "example_jp": "おんがくをききながら、あるきます。",
+      "example_romaji": "Ongaku o kikinagara, arukimasu.",
+      "example_id": "Sambil dengerin musik, jalan."
+    },
+    {
+      "term": "いつも",
+      "kana": "いつも",
+      "romaji": "itsumo",
+      "meaning_id": "selalu, biasanya",
+      "example_jp": "いつもここでべんきょうします。",
+      "example_romaji": "Itsumo koko de benkyou shimasu.",
+      "example_id": "Selalu belajar di sini."
+    },
+    {
+      "term": "頑張ってください",
+      "kana": "がんばってください",
+      "romaji": "ganbatte kudasai",
+      "meaning_id": "semangat ya / tolong berusaha",
+      "example_jp": "しけん、がんばってください。",
+      "example_romaji": "Shiken, ganbatte kudasai.",
+      "example_id": "Ujiannya, semangat ya."
+    },
+    {
+      "term": "授業",
+      "kana": "じゅぎょう",
+      "romaji": "jugyou",
+      "meaning_id": "kelas, pelajaran",
+      "example_jp": "じゅぎょうがはじまります。",
+      "example_romaji": "Jugyou ga hajimarimasu.",
+      "example_id": "Kelas dimulai."
+    },
+    {
+      "term": "ノート",
+      "kana": "ノート",
+      "romaji": "nooto",
+      "meaning_id": "catatan, buku catatan",
+      "example_jp": "ノートをかきます。",
+      "example_romaji": "Nooto o kakimasu.",
+      "example_id": "Menulis catatan."
+    }
+  ],
+  "writing": [
+    {
+      "char": "サ",
+      "type": "katakana",
+      "romaji": "sa"
+    },
+    {
+      "char": "シ",
+      "type": "katakana",
+      "romaji": "shi"
+    },
+    {
+      "char": "ス",
+      "type": "katakana",
+      "romaji": "su"
+    },
+    {
+      "char": "セ",
+      "type": "katakana",
+      "romaji": "se"
+    },
+    {
+      "char": "ソ",
+      "type": "katakana",
+      "romaji": "so"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 1,
+      "prompt_id": "Dengarkan Rian. Dia sedang apa?",
+      "options": [
+        "Makan",
+        "Belajar bahasa Jepang",
+        "Tidur",
+        "Main game"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 4,
+      "prompt_id": "Mina sedang apa menurut dialog?",
+      "options": [
+        "Belajar",
+        "Makan",
+        "Tidur",
+        "Olahraga"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "おんがく",
+        "を",
+        "ききながら",
+        "べんきょう",
+        "します"
+      ],
+      "answer_jp": "おんがくをききながらべんきょうします。"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "図書館",
+      "front_kana": "としょかん",
+      "back_id": "perpustakaan"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf katakana untuk bunyi 'shi'",
+      "target_kana": "シ"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf katakana untuk bunyi 'so'",
+      "target_kana": "ソ"
+    }
+  ],
+  "audio_status": "pending"
+}

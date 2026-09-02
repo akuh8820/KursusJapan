@@ -1,0 +1,259 @@
+{
+  "id": "n5-u022",
+  "level": "N5",
+  "unit_no": 22,
+  "theme": "Bank & Pos",
+  "title_id": "Menabung & Mengirim Paket",
+  "objectives_id": [
+    "Mengucapkan jumlah uang dan menanyakan saldo",
+    "Menggunakan 〜てもいい untuk menyatakan izin (boleh)",
+    "Mengenal prosedur bank dan pos dasar"
+  ],
+  "dialog": {
+    "title_id": "Rian di bank menabung dan di pos mengirim paket ke Indonesia",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "すみません、ここにおかねをあずけたいです。",
+        "kana": "すみません、ここにおかねをあずけたいです。",
+        "romaji": "Sumimasen, koko ni okane wo azuketai desu.",
+        "id": "Permisi, saya ingin menabung di sini."
+      },
+      {
+        "speaker": "Ginkou",
+        "jp": "かしこまりました。いくらあずけますか。",
+        "kana": "かしこまりました。いくらあずけますか。",
+        "romaji": "Kashikomarimashita. Ikura azukemasu ka.",
+        "id": "Baik. Berapa jumlah yang ingin ditabung?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "いちまんえんあずけます。ざんだかをしりたいです。",
+        "kana": "いちまんえんあずけます。ざんだかをしりたいです。",
+        "romaji": "Ichiman en azukemasu. Zandaka wo shiritai desu.",
+        "id": "Saya menabung 10.000 yen. Saya ingin tahu saldo."
+      },
+      {
+        "speaker": "Ginkou",
+        "jp": "ざんだかはさんまんえんです。カードをおつくりになりますか。",
+        "kana": "ざんだかはさんまんえんです。カードをおつくりになりますか。",
+        "romaji": "Zandaka wa sanman en desu. Kaado wo otsukuri ni narimasu ka.",
+        "id": "Saldo 30.000 yen. Apakah ingin buat kartu?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい、つくってもいいですか。",
+        "kana": "はい、つくってもいいですか。",
+        "romaji": "Hai, tsukutte mo ii desu ka.",
+        "id": "Ya, boleh buatkan?"
+      },
+      {
+        "speaker": "Ginkou",
+        "jp": "もちろんです。つぎはゆうびんきょくですか。",
+        "kana": "もちろんです。つぎはゆうびんきょくですか。",
+        "romaji": "Mochiron desu. Tsugi wa yuubinkyoku desu ka.",
+        "id": "Tentu. Berikutnya ke pos?"
+      },
+      {
+        "speaker": "Rian",
+        "jp": "はい、インドネシアににもつをおくります。",
+        "kana": "はい、インドネシアににもつをおくります。",
+        "romaji": "Hai, Indoneshia ni nimotsu wo okurimasu.",
+        "id": "Ya, saya kirim paket ke Indonesia."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜てもいい",
+    "meaning_id": "Boleh melakukan sesuatu — te-form + mo ii desu ka (meminta izin) / mo ii desu (memberi izin).",
+    "formation": "[Verb te-form] + も いい です (か)",
+    "examples": [
+      {
+        "jp": "ここにすわってもいいですか。",
+        "romaji": "Koko ni suwatte mo ii desu ka.",
+        "id": "Boleh duduk di sini?"
+      },
+      {
+        "jp": "このほんをよんでもいいですよ。",
+        "romaji": "Kono hon wo yonde mo ii desu yo.",
+        "id": "Boleh baca buku ini kok."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "銀行",
+      "kana": "ぎんこう",
+      "romaji": "ginkou",
+      "meaning_id": "bank",
+      "example_jp": "ぎんこうにいきます。",
+      "example_romaji": "Ginkou ni ikimasu.",
+      "example_id": "Saya pergi ke bank."
+    },
+    {
+      "term": "預ける",
+      "kana": "あずける",
+      "romaji": "azukeru",
+      "meaning_id": "menabung, menitipkan",
+      "example_jp": "おかねをあずけます。",
+      "example_romaji": "Okane wo azukemasu.",
+      "example_id": "Saya menabung uang."
+    },
+    {
+      "term": "残高",
+      "kana": "ざんだか",
+      "romaji": "zandaka",
+      "meaning_id": "saldo, sisa uang",
+      "example_jp": "ざんだかをかくにんします。",
+      "example_romaji": "Zandaka wo kakunin shimasu.",
+      "example_id": "Saya cek saldo."
+    },
+    {
+      "term": "一万円",
+      "kana": "いちまんえん",
+      "romaji": "ichiman en",
+      "meaning_id": "10.000 yen",
+      "example_jp": "いちまんえんあずけました。",
+      "example_romaji": "Ichiman en azukemashita.",
+      "example_id": "Saya menabung 10.000 yen."
+    },
+    {
+      "term": "三万円",
+      "kana": "さんまんえん",
+      "romaji": "sanman en",
+      "meaning_id": "30.000 yen",
+      "example_jp": "ざんだかはさんまんえんです。",
+      "example_romaji": "Zandaka wa sanman en desu.",
+      "example_id": "Saldo 30.000 yen."
+    },
+    {
+      "term": "カード",
+      "kana": "カード",
+      "romaji": "kaado",
+      "meaning_id": "kartu (ATM, kredit)",
+      "example_jp": "カードをつくります。",
+      "example_romaji": "Kaado wo tsukurimasu.",
+      "example_id": "Saya buat kartu."
+    },
+    {
+      "term": "郵便局",
+      "kana": "ゆうびんきょく",
+      "romaji": "yuubinkyoku",
+      "meaning_id": "kantor pos",
+      "example_jp": "ゆうびんきょくにいきます。",
+      "example_romaji": "Yuubinkyoku ni ikimasu.",
+      "example_id": "Saya pergi ke kantor pos."
+    },
+    {
+      "term": "荷物",
+      "kana": "にもつ",
+      "romaji": "nimotsu",
+      "meaning_id": "paket, barang bawaan",
+      "example_jp": "にもつをおくります。",
+      "example_romaji": "Nimotsu wo okurimasu.",
+      "example_id": "Saya kirim paket."
+    },
+    {
+      "term": "送る",
+      "kana": "おくる",
+      "romaji": "okuru",
+      "meaning_id": "mengirim",
+      "example_jp": "てがみをおくります。",
+      "example_romaji": "Tegami wo okurimasu.",
+      "example_id": "Saya kirim surat."
+    },
+    {
+      "term": "作る",
+      "kana": "つくる",
+      "romaji": "tsukuru",
+      "meaning_id": "membuat",
+      "example_jp": "カードをつくります。",
+      "example_romaji": "Kaado wo tsukurimasu.",
+      "example_id": "Saya buat kartu."
+    }
+  ],
+  "writing": [
+    {
+      "char": "銀",
+      "type": "kanji",
+      "romaji": "gin",
+      "meaning_id": "perak, bank",
+      "kanjivg_id": "9280"
+    },
+    {
+      "char": "行",
+      "type": "kanji",
+      "romaji": "kou",
+      "meaning_id": "pergi, baris",
+      "kanjivg_id": "884c"
+    },
+    {
+      "char": "残",
+      "type": "kanji",
+      "romaji": "zan",
+      "meaning_id": "sisa",
+      "kanjivg_id": "6b8b"
+    },
+    {
+      "char": "高",
+      "type": "kanji",
+      "romaji": "taka",
+      "meaning_id": "tinggi, mahal",
+      "kanjivg_id": "9ad8"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 4,
+      "prompt_id": "Rian bertanya 'つくってもいいですか'. Apa yang diminta?",
+      "options": [
+        "Izin untuk membuat kartu",
+        "Izin untuk menabung",
+        "Izin untuk pergi",
+        "Izin untuk kirim paket"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen_type",
+      "audio_ref": "d01",
+      "target_kana": "おかねをあずけたいです"
+    },
+    {
+      "type": "flip_card",
+      "front_jp": "郵便局",
+      "front_kana": "ゆうびんきょく",
+      "back_id": "kantor pos"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'ざんだか' adalah...",
+      "options": [
+        "tabungan",
+        "saldo",
+        "bunga",
+        "biaya admin"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "ここに",
+        "すわって",
+        "も",
+        "いい",
+        "です",
+        "か"
+      ],
+      "answer_jp": "ここにすわってもいいですか。"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis kanji untuk 'gin' (bank/perak)",
+      "target_kana": "ぎん"
+    }
+  ],
+  "audio_status": "pending"
+}

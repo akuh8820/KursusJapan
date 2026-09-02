@@ -119,8 +119,13 @@ export function checkLesson(lesson: Lesson): GateReport {
 
   // ---------- EFEKTIF ----------
   const types = new Set(lesson.exercises.map((e) => e.type));
-  const allSenses = ["listen_choose", "arrange", "write_recall"].every((t) =>
-    types.has(t as never),
+  const senses = {
+    dengar: ["listen_choose", "listen_type"],
+    lihat: ["arrange", "flip_card", "mc_vocab"],
+    tulis: ["write_recall", "listen_type"],
+  } as const;
+  const allSenses = Object.values(senses).every((list) =>
+    list.some((t) => types.has(t as never)),
   );
   checks.push({
     name: "Efektif · latihan gabungan 3 indra",
@@ -136,6 +141,29 @@ export function checkLesson(lesson: Lesson): GateReport {
     name: "Efektif · indeks audio valid",
     kriteria: "listen_choose merujuk baris dialog yang ada",
     pass: listenValid,
+  });
+
+  const listenTypeValid = lesson.exercises
+    .filter((e) => e.type === "listen_type")
+    .every((e) => {
+      const m = /^d(\d{2})$/.exec(e.audio_ref);
+      if (m) return Number(m[1]) < lesson.dialog.lines.length;
+      const v = /^v(\d{2})[tx]$/.exec(e.audio_ref);
+      return v ? Number(v[1]) < lesson.vocab.length : false;
+    });
+  checks.push({
+    name: "Efektif · audio_ref valid",
+    kriteria: "listen_type merujuk baris dialog / kosakata yang ada",
+    pass: listenTypeValid,
+  });
+
+  const mcValid = lesson.exercises
+    .filter((e) => e.type === "mc_vocab")
+    .every((e) => e.answer < e.options.length);
+  checks.push({
+    name: "Efektif · jawaban mc_vocab dalam range",
+    kriteria: "answer menunjuk opsi yang ada",
+    pass: mcValid,
   });
 
   const arrangeValid = lesson.exercises

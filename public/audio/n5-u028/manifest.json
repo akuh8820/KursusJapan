@@ -1,0 +1,169 @@
+{
+  "unit": "n5-u028",
+  "generated_at": "2026-09-02T02:48:18.578Z",
+  "engine": "ttsquest-voicevox",
+  "items": [
+    {
+      "file": "d00.mp3",
+      "text": "らいしゅうのどようび、ゆきさんのたんじょうびパーティーがあります。",
+      "speaker_id": 12,
+      "hash": "07a519e4e8691d54"
+    },
+    {
+      "file": "d01.mp3",
+      "text": "いいですね。なんじからですか。",
+      "speaker_id": 2,
+      "hash": "405c9527a87fbe71"
+    },
+    {
+      "file": "d02.mp3",
+      "text": "ごごろくじからです。いっしょにいきませんか。",
+      "speaker_id": 12,
+      "hash": "94f2d4226cf6d264"
+    },
+    {
+      "file": "d03.mp3",
+      "text": "いきたいです。でもプレゼントをかっていません。",
+      "speaker_id": 2,
+      "hash": "8ee4ed2edf9e0863"
+    },
+    {
+      "file": "d04.mp3",
+      "text": "だいじょうぶです。わたしがえらんであげましょうか。",
+      "speaker_id": 12,
+      "hash": "cd93f099d5a3259b"
+    },
+    {
+      "file": "d05.mp3",
+      "text": "ほんとうですか。じゃあ、おねがいします。もらってもいいですか。",
+      "speaker_id": 2,
+      "hash": "b8fa254bc6f6bb5a"
+    },
+    {
+      "file": "d06.mp3",
+      "text": "もちろんです。とうきょうえきまえであいましょう。",
+      "speaker_id": 12,
+      "hash": "6a3392de06855b86"
+    },
+    {
+      "file": "v00t.mp3",
+      "text": "土曜日",
+      "speaker_id": 2,
+      "hash": "02c3494d2640cbe5"
+    },
+    {
+      "file": "v00x.mp3",
+      "text": "どようびはやすみです。",
+      "speaker_id": 2,
+      "hash": "9de25e70bbd836ca"
+    },
+    {
+      "file": "v01t.mp3",
+      "text": "誕生日",
+      "speaker_id": 2,
+      "hash": "59da033c407e5dd1"
+    },
+    {
+      "file": "v01x.mp3",
+      "text": "たんじょうびおめでとう。",
+      "speaker_id": 2,
+      "hash": "277a428cfb2cad79"
+    },
+    {
+      "file": "v02t.mp3",
+      "text": "パーティー",
+      "speaker_id": 2,
+      "hash": "aae0b9ef8ce6359d"
+    },
+    {
+      "file": "v02x.mp3",
+      "text": "パーティーにいきます。",
+      "speaker_id": 2,
+      "hash": "661bba084dee28a5"
+    },
+    {
+      "file": "v03t.mp3",
+      "text": "午後",
+      "speaker_id": 2,
+      "hash": "29f147026d10e961"
+    },
+    {
+      "file": "v03x.mp3",
+      "text": "ごごろくじにあいましょう。",
+      "speaker_id": 2,
+      "hash": "0212d2e68dbcbd33"
+    },
+    {
+      "file": "v04t.mp3",
+      "text": "プレゼント",
+      "speaker_id": 2,
+      "hash": "42eeb95f381bf174"
+    },
+    {
+      "file": "v04x.mp3",
+      "text": "プレゼントをあげます。",
+      "speaker_id": 2,
+      "hash": "309cf0e080c60f9e"
+    },
+    {
+      "file": "v05t.mp3",
+      "text": "買う",
+      "speaker_id": 2,
+      "hash": "a8dada9fa99bd146"
+    },
+    {
+      "file": "v05x.mp3",
+      "text": "ほんをかいます。",
+      "speaker_id": 2,
+      "hash": "7cc49c72946bf9ca"
+    },
+    {
+      "file": "v06t.mp3",
+      "text": "選ぶ",
+      "speaker_id": 2,
+      "hash": "761baec3abe89f53"
+    },
+    {
+      "file": "v06x.mp3",
+      "text": "ふくをえらびます。",
+      "speaker_id": 2,
+      "hash": "1a9e54dd4ebd7314"
+    },
+    {
+      "file": "v07t.mp3",
+      "text": "東京駅",
+      "speaker_id": 2,
+      "hash": "ce5e24068e1eb289"
+    },
+    {
+      "file": "v07x.mp3",
+      "text": "とうきょうえきであいます。",
+      "speaker_id": 2,
+      "hash": "e666746649c9d35f"
+    },
+    {
+      "file": "v08t.mp3",
+      "text": "前",
+      "speaker_id": 2,
+      "hash": "61dfed3584eefac6"
+    },
+    {
+      "file": "v08x.mp3",
+      "text": "えきのまえでまちます。",
+      "speaker_id": 2,
+      "hash": "4545e72b36cc6d84"
+    },
+    {
+      "file": "v09t.mp3",
+      "text": "約束",
+      "speaker_id": 2,
+      "hash": "7fc8614f17b0abb3"
+    },
+    {
+      "file": "v09x.mp3",
+      "text": "やくそくをまもります。",
+      "speaker_id": 2,
+      "hash": "9b573ebb83f3ad8c"
+    }
+  ]
+}

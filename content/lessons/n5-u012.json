@@ -1,0 +1,261 @@
+{
+  "id": "n5-u012",
+  "level": "N5",
+  "unit_no": 12,
+  "theme": "Transportasi umum",
+  "title_id": "Naik Kereta & Bas",
+  "objectives_id": [
+    "Menyebutkan tujuan perjalanan dengan 〜に行きます",
+    "Mengenal huruf hiragana baris た (たちつてと)",
+    "Memahami cara membaca peta rute & jam keberangkatan"
+  ],
+  "dialog": {
+    "title_id": "Rian dan Mina naik kereta ke Shibuya",
+    "lines": [
+      {
+        "speaker": "Rian",
+        "jp": "みなさん、しぶやにいきますか。",
+        "kana": "みなさん、しぶやにいきますか。",
+        "romaji": "Minasan, Shibuya ni ikimasu ka.",
+        "id": "Semua, ke Shibuya ya?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "はい、しぶやえきまで、でんしゃでいきます。",
+        "kana": "はい、しぶやえきまで、でんしゃでいきます。",
+        "romaji": "Hai, Shibuya-eki made, densha de ikimasu.",
+        "id": "Ya, ke stasiun Shibuya naik kereta."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "いま、なんじですか。",
+        "kana": "いま、なんじですか。",
+        "romaji": "Ima, nanji desu ka.",
+        "id": "Sekarang jam berapa?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "ろくじはんです。つぎのでんしゃは、ろくじよんじゅうごふんです。",
+        "kana": "ろくじはんです。つぎのでんしゃは、ろくじよんじゅうごふんです。",
+        "romaji": "Rokuji-han desu. Tsugi no densha wa, rokuji yonjuugo-fun desu.",
+        "id": "Jam 6:30. Kereta berikutnya jam 6:45."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "いそぎましょう。きっぷはどこでかいますか。",
+        "kana": "いそぎましょう。きっぷはどこでかいますか。",
+        "romaji": "Isogimashou. Kippu wa doko de kaimasu ka.",
+        "id": "Ayo cepat. Tiket beli di mana?"
+      },
+      {
+        "speaker": "Mina",
+        "jp": "あのきっぷうりばで。いちまい、にひゃくえんです。",
+        "kana": "あのきっぷうりばで。いちまい、にひゃくえんです。",
+        "romaji": "Ano kippu-uriba de. Ichimai, nihyaku en desu.",
+        "id": "Di penjual tiket sana. Satu lembar 200 yen."
+      },
+      {
+        "speaker": "Rian",
+        "jp": "わかりました。ふたりでよんひゃくえんですね。",
+        "kana": "わかりました。ふたりでよんひゃくえんですね。",
+        "romaji": "Wakarimashita. Futari de yonhyaku en desu ne.",
+        "id": "Paham. Berdua 400 yen ya."
+      }
+    ]
+  },
+  "grammar": {
+    "pattern": "〜に行きます / 〜で行きます",
+    "meaning_id": "Pergi ke 〜 (tujuan) / Pergi dengan 〜 (transportasi)",
+    "formation": "[Tempat tujuan] + に + 行きます / [Transportasi] + で + 行きます",
+    "examples": [
+      {
+        "jp": "がっこうにバスでいきます。",
+        "romaji": "Gakkou ni basu de ikimasu.",
+        "id": "Saya pergi ke sekolah naik bas."
+      },
+      {
+        "jp": "えきにあるいていきます。",
+        "romaji": "Eki ni aruite ikimasu.",
+        "id": "Saya pergi ke stasiun jalan kaki."
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "term": "電車",
+      "kana": "でんしゃ",
+      "romaji": "densha",
+      "meaning_id": "kereta api (commuter)",
+      "example_jp": "でんしゃでかいしゃにいきます。",
+      "example_romaji": "Densha de kaisha ni ikimasu.",
+      "example_id": "Saya ke kantor naik kereta."
+    },
+    {
+      "term": "バス",
+      "kana": "バス",
+      "romaji": "basu",
+      "meaning_id": "bus",
+      "example_jp": "バスていまであるきます。",
+      "example_romaji": "Basu-tei made arukimasu.",
+      "example_id": "Saya jalan kaki ke halte bus."
+    },
+    {
+      "term": "駅",
+      "kana": "えき",
+      "romaji": "eki",
+      "meaning_id": "stasiun",
+      "example_jp": "とうきょうえきはおおきいです。",
+      "example_romaji": "Toukyou-eki wa ookii desu.",
+      "example_id": "Stasiun Tokyo besar."
+    },
+    {
+      "term": "切符",
+      "kana": "きっぷ",
+      "romaji": "kippu",
+      "meaning_id": "tiket",
+      "example_jp": "きっぷをかってください。",
+      "example_romaji": "Kippu o katte kudasai.",
+      "example_id": "Tolong beli tiket."
+    },
+    {
+      "term": "切符売り場",
+      "kana": "きっぷうりば",
+      "romaji": "kippu-uriba",
+      "meaning_id": "tempat jual tiket / mesin tiket",
+      "example_jp": "きっぷうりばはあそこです。",
+      "example_romaji": "Kippu-uriba wa asoko desu.",
+      "example_id": "Tempat jual tiket di sana."
+    },
+    {
+      "term": "時半",
+      "kana": "じはん",
+      "romaji": "ji-han",
+      "meaning_id": "setengah jam (contoh: 6:30 = rokuji-han)",
+      "example_jp": "いま、しちじはんです。",
+      "example_romaji": "Ima, shichiji-han desu.",
+      "example_id": "Sekarang jam 7:30."
+    },
+    {
+      "term": "分",
+      "kana": "ふん",
+      "romaji": "fun",
+      "meaning_id": "menit (penghitung waktu)",
+      "example_jp": "ごふんまちます。",
+      "example_romaji": "Gofun machimasu.",
+      "example_id": "Tunggu 5 menit."
+    },
+    {
+      "term": "急ぎましょう",
+      "kana": "いそぎましょう",
+      "romaji": "isogimashou",
+      "meaning_id": "ayo cepat / buru-buru",
+      "example_jp": "バスがきますよ、いそぎましょう。",
+      "example_romaji": "Basu ga kimasu yo, isogimashou.",
+      "example_id": "Bus datang, ayo cepat."
+    },
+    {
+      "term": "二人",
+      "kana": "ふたり",
+      "romaji": "futari",
+      "meaning_id": "dua orang",
+      "example_jp": "ふたりでいきます。",
+      "example_romaji": "Futari de ikimasu.",
+      "example_id": "Kita berdua pergi."
+    },
+    {
+      "term": "乗ります",
+      "kana": "のります",
+      "romaji": "norimasu",
+      "meaning_id": "naik (kendaraan)",
+      "example_jp": "でんしゃにのります。",
+      "example_romaji": "Densha ni norimasu.",
+      "example_id": "Naik kereta."
+    }
+  ],
+  "writing": [
+    {
+      "char": "た",
+      "type": "hiragana",
+      "romaji": "ta"
+    },
+    {
+      "char": "ち",
+      "type": "hiragana",
+      "romaji": "chi"
+    },
+    {
+      "char": "つ",
+      "type": "hiragana",
+      "romaji": "tsu"
+    },
+    {
+      "char": "て",
+      "type": "hiragana",
+      "romaji": "te"
+    },
+    {
+      "char": "と",
+      "type": "hiragana",
+      "romaji": "to"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "line_index": 3,
+      "prompt_id": "Dengarkan Mina. Jam berapa kereta berikutnya?",
+      "options": [
+        "6:30",
+        "6:45",
+        "7:00",
+        "7:15"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen_choose",
+      "line_index": 5,
+      "prompt_id": "Di mana membeli tiket menurut Mina?",
+      "options": [
+        "Di konbini",
+        "Di penjual tiket (kippu-uriba)",
+        "Di dalam kereta",
+        "Di aplikasi HP"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "arrange",
+      "tokens": [
+        "しぶや",
+        "に",
+        "でんしゃ",
+        "で",
+        "いきます"
+      ],
+      "answer_jp": "しぶやにでんしゃでいきます。"
+    },
+    {
+      "type": "mc_vocab",
+      "prompt_id": "Arti 'kippu-uriba' adalah...",
+      "options": [
+        "Stasiun",
+        "Tempat jual tiket",
+        "Halte bus",
+        "Peron"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'chi'",
+      "target_kana": "ち"
+    },
+    {
+      "type": "write_recall",
+      "prompt_id": "Tulis huruf hiragana untuk bunyi 'tsu'",
+      "target_kana": "つ"
+    }
+  ],
+  "audio_status": "pending"
+}

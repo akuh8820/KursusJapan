@@ -248,6 +248,47 @@ export default async function KurasiUnitPage({
                   </span>
                 </p>
               )}
+              {ex.type === "flip_card" && (
+                <>
+                  <p className="mt-1 text-sm">
+                    Depan:{" "}
+                    <span lang="ja" className="font-semibold">{ex.front_jp}</span>{" "}
+                    (<span lang="ja" className="text-muted">{ex.front_kana}</span>)
+                  </p>
+                  <p className="mt-1 text-sm">
+                    Belakang:{" "}
+                    <span className="font-bold text-emerald-600 dark:text-emerald-400">
+                      {ex.back_id}
+                    </span>
+                  </p>
+                </>
+              )}
+              {ex.type === "listen_type" && (
+                <>
+                  <p className="mt-1 text-sm">
+                    Audio ref: <code className="text-xs bg-background px-1 rounded">{ex.audio_ref}</code>
+                  </p>
+                  <p className="mt-1 text-sm">
+                    Target kana:{" "}
+                    <span lang="ja" className="font-bold text-emerald-600 dark:text-emerald-400">
+                      {ex.target_kana}
+                    </span>
+                  </p>
+                </>
+              )}
+              {ex.type === "mc_vocab" && (
+                <>
+                  <p className="mt-1 text-sm">{ex.prompt_id}</p>
+                  <ul className="mt-1 space-y-0.5 text-sm">
+                    {ex.options.map((opt, j) => (
+                      <li key={j} className={j === ex.answer ? "font-bold text-emerald-600 dark:text-emerald-400" : ""}>
+                        {String.fromCharCode(65 + j)}. {opt}
+                        {j === ex.answer ? " ✓" : ""}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
             </li>
           ))}
         </ol>
