@@ -3,19 +3,21 @@
 import Link from "next/link";
 import type { Lesson } from "@/lib/content/schema";
 
+type LockState = "locked" | "practice_open" | "exam_open" | "exam_passed";
+
 interface MateriClientProps {
   lessons: Lesson[];
-  progressMap: Map<string, string>;
+  lockMap: Map<string, LockState>;
 }
 
-function statusBadge(status: string | undefined) {
+function statusBadge(status: LockState) {
   const config = {
-    completed: { label: "Selesai", color: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400" },
-    in_progress: { label: "Dipelajari", color: "bg-primary/10 text-primary dark:bg-primary/20" },
-    unlocked: { label: "Terbuka", color: "bg-muted/10 text-muted" },
+    exam_passed: { label: "Lulus", color: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400" },
+    exam_open: { label: "Ujian terbuka", color: "bg-primary/10 text-primary dark:bg-primary/20" },
+    practice_open: { label: "Latihan", color: "bg-muted/10 text-muted" },
     locked: { label: "Terkunci", color: "bg-muted/10 text-muted/50" },
   } as const;
-  const c = config[status as keyof typeof config] ?? config.unlocked;
+  const c = config[status];
   return (
     <span className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase ${c.color}`}>
       {c.label}
@@ -23,7 +25,7 @@ function statusBadge(status: string | undefined) {
   );
 }
 
-export default function MateriClient({ lessons, progressMap }: MateriClientProps) {
+export default function MateriClient({ lessons, lockMap }: MateriClientProps) {
   const lessonsByLevel = lessons.reduce((acc, lesson) => {
     if (!acc[lesson.level]) acc[lesson.level] = [];
     acc[lesson.level].push(lesson);
@@ -37,7 +39,9 @@ export default function MateriClient({ lessons, progressMap }: MateriClientProps
     <div className="mx-auto w-full max-w-md px-4 pb-16 pt-8">
       <header className="mb-6">
         <h1 className="text-2xl font-bold tracking-tight">Materi (Unit JLPT)</h1>
-        <p className="mt-1 text-sm text-muted">Semua unit terbuka — pilih unit mana pun untuk belajar</p>
+        <p className="mt-1 text-sm text-muted">
+          Selesaikan latihan ringan lalu ujian pilihan ganda per unit — lulus 100% untuk membuka unit berikutnya
+        </p>
       </header>
 
       <section aria-label="Daftar unit per level" className="space-y-6">
@@ -51,7 +55,7 @@ export default function MateriClient({ lessons, progressMap }: MateriClientProps
               </header>
               <ol className="mt-3 space-y-2">
                 {levelLessons.map((lesson) => {
-                  const status = progressMap.get(lesson.id) ?? "unlocked";
+                  const status = lockMap.get(lesson.id) ?? "locked";
                   return (
                     <li key={lesson.id} className="rounded-xl border border-border bg-card p-3 transition">
                       <Link
@@ -64,7 +68,7 @@ export default function MateriClient({ lessons, progressMap }: MateriClientProps
                         <div className="flex-1 min-w-0">
                           <p className="block truncate text-sm font-semibold">{lesson.title_id}</p>
                           <p className="block truncate text-xs text-muted">
-                            {lesson.theme} · {lesson.vocab.length} vocab
+                            {lesson.theme}
                           </p>
                         </div>
                         {statusBadge(status)}

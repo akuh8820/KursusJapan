@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { listLessonsLocal } from "@/lib/content/store";
+import { readingForUnit } from "@/lib/content/reading";
+import { particlesForUnit } from "@/lib/content/particles";
 import SessionClient from "../session-client";
 
 export const metadata: Metadata = {
@@ -21,6 +23,9 @@ export default async function SesiUnitPage({
   const lesson = lessons.find((l) => l.id === unit);
   if (!lesson) notFound();
 
+  const readingQuestions = readingForUnit(unit);
+  const particles = particlesForUnit(unit);
+
   return (
     <SessionClient
       lesson={lesson}
@@ -29,6 +34,8 @@ export default async function SesiUnitPage({
         unit_no: l.unit_no,
         title_id: l.title_id,
       }))}
+      readingQuestions={readingQuestions}
+      particles={particles}
     />
   );
 }

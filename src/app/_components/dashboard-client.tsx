@@ -16,8 +16,8 @@ const AREAS = [
   {
     href: "/bunpo",
     icon: "文",
-    title: "Bunpō (Tata Bahasa)",
-    desc: "Pola grammar JLPT N5–N1 dengan contoh & audio",
+    title: "Bunpō & Partikel",
+    desc: "Pola grammar & partikel JLPT N5–N1 + latihan per unit",
   },
   {
     href: "/kaiwa",
@@ -29,7 +29,7 @@ const AREAS = [
     href: "/materi",
     icon: "教",
     title: "Materi (Unit JLPT)",
-    desc: "30 unit lengkap — vocab, grammar, dialog, latihan",
+    desc: "30 unit — latihan ringan lalu ujian pilihan ganda campuran",
   },
   {
     href: "/kamus",
