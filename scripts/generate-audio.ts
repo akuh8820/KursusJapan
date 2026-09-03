@@ -84,6 +84,9 @@ function planUnit(lesson: Lesson): Item[] {
     items.push({ file: `v${String(i).padStart(2, "0")}t.mp3`, text: v.term, speaker_id: voices.default, hash: "" });
     items.push({ file: `v${String(i).padStart(2, "0")}x.mp3`, text: v.example_jp, speaker_id: voices.default, hash: "" });
   });
+  lesson.grammar.examples.forEach((ex, i) => {
+    items.push({ file: `g${String(i).padStart(2, "0")}.mp3`, text: ex.jp, speaker_id: voices.default, hash: "" });
+  });
   for (const it of items) it.hash = sha(`${it.speaker_id}\u0000${it.text}`);
   return items;
 }

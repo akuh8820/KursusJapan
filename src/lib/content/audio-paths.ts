@@ -13,6 +13,10 @@ export function vocabFile(i: number, kind: "t" | "x"): string {
   return `v${String(i).padStart(2, "0")}${kind}.mp3`;
 }
 
+export function grammarFile(i: number): string {
+  return `g${String(i).padStart(2, "0")}.mp3`;
+}
+
 export function unitAudioUrl(unit: string, file: string): string {
   const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   return `${base}/audio/${unit}/${file}`;
