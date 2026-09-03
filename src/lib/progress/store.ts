@@ -224,3 +224,47 @@ export async function getSetting<T>(key: string): Promise<T | null> {
 export async function setSetting<T>(key: string, value: T): Promise<void> {
   await put(STORE_SETTINGS, { key, value });
 }
+
+// ---------- GATING LOCKSTEP PER-UNIT ----------
+// Flag disimpan sebagai objek serializable via setSetting/getSetting.
+// practice_done: { [unitId]: { kanji: bool, bunpo: bool, partikel: bool } }
+// exam_pass:     { [unitId]: bool }
+
+export type PracticeFlags = { kanji: boolean; bunpo: boolean; partikel: boolean };
+
+export async function getPracticeDone(): Promise<Record<string, PracticeFlags>> {
+  return (await getSetting<Record<string, PracticeFlags>>("practice_done")) ?? {};
+}
+
+export async function setPracticeDone(unitId: string, area: keyof PracticeFlags): Promise<void> {
+  const cur = await getPracticeDone();
+  const next = { ...cur, [unitId]: { ...(cur[unitId] ?? { kanji: false, bunpo: false, partikel: false }), [area]: true } };
+  await setSetting("practice_done", next);
+}
+
+export async function getExamPass(): Promise<Record<string, boolean>> {
+  return (await getSetting<Record<string, boolean>>("exam_pass")) ?? {};
+}
+
+export async function setExamPass(unitId: string): Promise<void> {
+  const cur = await getExamPass();
+  await setSetting("exam_pass", { ...cur, [unitId]: true });
+}
+
+/** Apakah latihan ringan unit n sudah selesai (kanji+bunpo+partikel). */
+export async function isPracticeDone(unitId: string): Promise<boolean> {
+  const flags = (await getPracticeDone())[unitId];
+  return Boolean(flags && flags.kanji && flags.bunpo && flags.partikel);
+}
+
+/** Apakah ujian unit n sudah lolos 100%. */
+export async function isExamPassed(unitId: string): Promise<boolean> {
+  return Boolean((await getExamPass())[unitId]);
+}
+
+/** Status gating unit n: 'locked' | 'practice_open' | 'exam_open' | 'exam_passed'. */
+export async function getUnitLockState(unitId: string): Promise<"locked" | "practice_open" | "exam_open" | "exam_passed"> {
+  if (await isExamPassed(unitId)) return "exam_passed";
+  if (await isPracticeDone(unitId)) return "exam_open";
+  return "practice_open";
+}

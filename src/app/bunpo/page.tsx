@@ -1,8 +1,10 @@
 import BunpoClient from "./bunpo-client";
 import { listLessonsLocal } from "@/lib/content/store";
+import { loadParticles } from "@/lib/content/particles";
 
 export default function BunpoPage() {
   const lessons = listLessonsLocal();
+  const particles = loadParticles();
 
   // Collect all grammar points from all lessons
   const grammarPoints = lessons.map((lesson) => ({
@@ -13,5 +15,5 @@ export default function BunpoPage() {
     ...lesson.grammar,
   }));
 
-  return <BunpoClient grammarPoints={grammarPoints} />;
+  return <BunpoClient grammarPoints={grammarPoints} particles={particles} />;
 }

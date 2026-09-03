@@ -37,6 +37,12 @@ const AREAS = [
     title: "Kamus Jepang",
     desc: "Cari kosakata semua unit + konjugasi kata kerja & adjektiva",
   },
+  {
+    href: "/reading",
+    icon: "読",
+    title: "Latihan Baca",
+    desc: "Soal cerita & percakapan campuran — latihan bebas",
+  },
 ] as const;
 
 export default function DashboardClient({
