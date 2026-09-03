@@ -10,6 +10,7 @@ interface DialogWithUnit {
   unitNo: number;
   level: string;
   theme: string;
+  audioReady: boolean;
   title_id: string;
   lines: DialogLine[];
 }
@@ -88,11 +89,13 @@ export default function KaiwaClient({ dialogs }: KaiwaClientProps) {
                     <p className="text-sm text-muted">{line.romaji}</p>
                     <p className="text-sm">{line.id}</p>
                   </div>
-                  <JpAudioButton
-                    src={unitAudioUrl(selected.unitId, dialogFile(idx))}
-                    label={`${line.speaker}: ${line.jp}`}
-                    small
-                  />
+                  {selected.audioReady && (
+                    <JpAudioButton
+                      src={unitAudioUrl(selected.unitId, dialogFile(idx))}
+                      label={`${line.speaker}: ${line.jp}`}
+                      small
+                    />
+                  )}
                 </div>
               ))}
             </div>

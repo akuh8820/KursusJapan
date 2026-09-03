@@ -297,15 +297,6 @@ export default function SessionClient({
                   <p lang="ja" className="font-semibold">{ex.jp}</p>
                   <p className="text-xs italic text-muted">{ex.romaji}</p>
                   <p className="mt-1 text-sm">{ex.id}</p>
-                  {audioReady && (
-                    <div className="mt-2 flex justify-end">
-                      <JpAudioButton
-                        small
-                        src={unitAudioUrl(lesson.id, `g${String(i).padStart(2, "0")}.mp3`)}
-                        label={ex.jp}
-                      />
-                    </div>
-                  )}
                 </li>
               ))}
             </ol>

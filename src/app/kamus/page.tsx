@@ -8,12 +8,14 @@ export default function KamusPage() {
 
   // Collect all vocab from all lessons
   const allVocab = lessons.flatMap((lesson) =>
-    lesson.vocab.map((v) => ({
+    lesson.vocab.map((v, vocabIdx) => ({
       ...v,
       unitId: lesson.id,
       unitNo: lesson.unit_no,
       level: lesson.level,
       theme: lesson.theme,
+      vocabIdx,
+      audioReady: lesson.audio_status === "ready",
     }))
   );
 

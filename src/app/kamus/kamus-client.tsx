@@ -10,6 +10,8 @@ interface VocabWithUnit extends VocabItem {
   unitNo: number;
   level: string;
   theme: string;
+  vocabIdx: number;
+  audioReady: boolean;
 }
 
 interface KamusClientProps {
@@ -135,10 +137,12 @@ export default function KamusClient({ vocab, conjugations }: KamusClientProps) {
                 <p className="mt-1 text-sm italic text-muted">{selectedVocab.romaji}</p>
                 <p className="mt-2 text-lg font-semibold">{selectedVocab.meaning_id}</p>
               </div>
-              <JpAudioButton
-                src={unitAudioUrl(selectedVocab.unitId, vocabFile(1, "t"))}
-                label={selectedVocab.term}
-              />
+              {selectedVocab.audioReady && (
+                <JpAudioButton
+                  src={unitAudioUrl(selectedVocab.unitId, vocabFile(selectedVocab.vocabIdx, "t"))}
+                  label={selectedVocab.term}
+                />
+              )}
             </div>
 
             <div className="mt-4 pt-4 border-t border-border">
@@ -147,11 +151,13 @@ export default function KamusClient({ vocab, conjugations }: KamusClientProps) {
               <p className="text-sm italic text-muted">{selectedVocab.example_romaji}</p>
               <p className="text-sm">{selectedVocab.example_id}</p>
               <div className="mt-2">
-                <JpAudioButton
-                  src={unitAudioUrl(selectedVocab.unitId, vocabFile(1, "x"))}
-                  label={`Contoh: ${selectedVocab.example_jp}`}
-                  small
-                />
+                {selectedVocab.audioReady && (
+                  <JpAudioButton
+                    src={unitAudioUrl(selectedVocab.unitId, vocabFile(selectedVocab.vocabIdx, "x"))}
+                    label={`Contoh: ${selectedVocab.example_jp}`}
+                    small
+                  />
+                )}
               </div>
             </div>
 

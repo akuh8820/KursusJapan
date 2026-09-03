@@ -95,11 +95,15 @@ export default function KanjiCanvas({
 
     const { scale, offsetX, offsetY } = getTransform();
 
+    // Warna tema-aware: baca CSS variable foreground (berubah di dark mode).
+    const fg = getComputedStyle(document.documentElement).getPropertyValue("--foreground").trim() || "#1c1917";
+
     if (showShadow && strokeData) {
       ctx.save();
       ctx.translate(offsetX, offsetY);
       ctx.scale(scale, scale);
-      ctx.strokeStyle = "rgba(100, 100, 100, 0.35)";
+      ctx.strokeStyle = fg;
+      ctx.globalAlpha = 0.18;
       ctx.lineWidth = 2;
       ctx.lineCap = "round";
       ctx.lineJoin = "round";
@@ -113,7 +117,7 @@ export default function KanjiCanvas({
 
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
-    ctx.strokeStyle = "#1c1917";
+    ctx.strokeStyle = fg;
     ctx.lineWidth = 9;
 
     for (const stroke of userStrokes) {
@@ -159,6 +163,14 @@ export default function KanjiCanvas({
 
   useEffect(() => {
     draw();
+  }, [draw]);
+
+  // Redraw saat tema berubah (class .dark ditoggle) agar ink/shadow ikut.
+  useEffect(() => {
+    const el = document.documentElement;
+    const mo = new MutationObserver(() => draw());
+    mo.observe(el, { attributes: true, attributeFilter: ["class"] });
+    return () => mo.disconnect();
   }, [draw]);
 
   const getCanvasPoint = useCallback(

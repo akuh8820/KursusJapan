@@ -10,6 +10,7 @@ export default function KaiwaPage() {
     unitNo: lesson.unit_no,
     level: lesson.level,
     theme: lesson.theme,
+    audioReady: lesson.audio_status === "ready",
     ...lesson.dialog,
   }));
 

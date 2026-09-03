@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import JpAudioButton from "@/components/jp-audio-button";
-import { unitAudioUrl, vocabFile } from "@/lib/content/audio-paths";
 import type { GrammarPoint } from "@/lib/content/schema";
 
 interface GrammarPointWithUnit extends GrammarPoint {
@@ -86,11 +84,6 @@ export default function BunpoClient({ grammarPoints }: BunpoClientProps) {
                     <p className="text-sm italic text-muted">{ex.romaji}</p>
                     <p className="text-sm">{ex.id}</p>
                   </div>
-                  <JpAudioButton
-                    src={unitAudioUrl(selected.unitId, vocabFile(idx + 1, "x"))}
-                    label={`Contoh ${idx + 1}: ${ex.jp}`}
-                    small
-                  />
                 </div>
               ))}
             </div>
