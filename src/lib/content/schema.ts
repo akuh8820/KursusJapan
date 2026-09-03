@@ -197,3 +197,55 @@ export const conjugationEntrySchema = z.object({
 });
 
 export type ConjugationEntry = z.infer<typeof conjugationEntrySchema>;
+
+/** Partikel JLPT N5 (konten baru `content/particles.json`). */
+export const particleSchema = z.object({
+  id: z.string().min(1),
+  char: z.string().min(1),
+  romaji: z.string().min(1),
+  function_id: z.string().min(2),
+  example_jp: z.string().min(2),
+  example_romaji: z.string().min(2),
+  example_id: z.string().min(4),
+  unit_ids: z.array(z.string()).min(1),
+});
+
+export type Particle = z.infer<typeof particleSchema>;
+
+export const particlesFileSchema = z.object({
+  version: z.number().int().positive(),
+  particles: z.array(particleSchema).min(1),
+});
+
+/** Soal asesmen campuran (konten baru `content/reading.json`). */
+const readingItemBase = {
+  id: z.string().min(1),
+  unit_id: z.string().regex(/^n[1-5]-u\d{3}$/, "format unit_id: n5-u001"),
+  question_id: z.string().min(4),
+  choices: z.array(z.string().min(1)).min(2).max(4),
+  answer_index: z.number().int().nonnegative(),
+};
+
+export const readingItemSchema = z.discriminatedUnion("kind", [
+  z.object({
+    kind: z.literal("story"),
+    ...readingItemBase,
+    prompt_jp: z.string().min(2),
+    prompt_romaji: z.string().min(2),
+    prompt_id: z.string().min(4),
+  }),
+  z.object({
+    kind: z.literal("gapped_dialog"),
+    ...readingItemBase,
+    prompt_jp: z.string().min(2),
+    prefix_kana: z.string().min(1),
+    prefix_romaji: z.string().min(1),
+  }),
+]);
+
+export type ReadingItem = z.infer<typeof readingItemSchema>;
+
+export const readingFileSchema = z.object({
+  version: z.number().int().positive(),
+  items: z.array(readingItemSchema).min(1),
+});

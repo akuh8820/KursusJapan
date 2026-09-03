@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "particles": [
+    {
+      "id": "wa",
+      "char": "は",
+      "romaji": "wa",
+      "function_id": "penanda topik",
+      "example_jp": "わたしはがくせいです。",
+      "example_romaji": "Watashi wa gakusei desu.",
+      "example_id": "Saya seorang pelajar.",
+      "unit_ids": ["n5-u001", "n5-u002", "n5-u003", "n5-u004", "n5-u005", "n5-u006", "n5-u007", "n5-u008", "n5-u009", "n5-u010"]
+    },
+    {
+      "id": "ga",
+      "char": "が",
+      "romaji": "ga",
+      "function_id": "penanda subjek",
+      "example_jp": "へやにエアコンがあります。",
+      "example_romaji": "Heya ni eakon ga arimasu.",
+      "example_id": "Di kamar ada AC.",
+      "unit_ids": ["n5-u006", "n5-u008", "n5-u010", "n5-u013", "n5-u017"]
+    },
+    {
+      "id": "o",
+      "char": "を",
+      "romaji": "o",
+      "function_id": "penanda objek",
+      "example_jp": "おにぎりをください。",
+      "example_romaji": "Onigiri o kudasai.",
+      "example_id": "Tolong beri saya onigiri.",
+      "unit_ids": ["n5-u003", "n5-u011", "n5-u013", "n5-u015", "n5-u022"]
+    },
+    {
+      "id": "ni",
+      "char": "に",
+      "romaji": "ni",
+      "function_id": "penanda lokasi / waktu / tujuan",
+      "example_jp": "へやにエアコンがあります。",
+      "example_romaji": "Heya ni eakon ga arimasu.",
+      "example_id": "Di kamar ada AC.",
+      "unit_ids": ["n5-u006", "n5-u007", "n5-u009", "n5-u012", "n5-u013"]
+    },
+    {
+      "id": "de",
+      "char": "で",
+      "romaji": "de",
+      "function_id": "penanda alat / tempat aksi",
+      "example_jp": "がっこうにバスでいきます。",
+      "example_romaji": "Gakkou ni basu de ikimasu.",
+      "example_id": "Saya pergi ke sekolah naik bus.",
+      "unit_ids": ["n5-u007", "n5-u009", "n5-u012", "n5-u016"]
+    },
+    {
+      "id": "e",
+      "char": "へ",
+      "romaji": "e",
+      "function_id": "penanda arah tujuan",
+      "example_jp": "わたしは毎日、学校へ行きます。",
+      "example_romaji": "Watashi wa mainichi, gakkou e ikimasu.",
+      "example_id": "Saya pergi ke sekolah setiap hari.",
+      "unit_ids": ["n5-u009", "n5-u012"]
+    },
+    {
+      "id": "to",
+      "char": "と",
+      "romaji": "to",
+      "function_id": "penanda 'dengan' / 'dan'",
+      "example_jp": "ともだちとでんわしています。",
+      "example_romaji": "Tomodachi to denwa shite imasu.",
+      "example_id": "Saya sedang menelepon dengan teman.",
+      "unit_ids": ["n5-u018", "n5-u019", "n5-u025"]
+    },
+    {
+      "id": "mo",
+      "char": "も",
+      "romaji": "mo",
+      "function_id": "penanda 'juga'",
+      "example_jp": "わたしもがくせいです。",
+      "example_romaji": "Watashi mo gakusei desu.",
+      "example_id": "Saya juga seorang pelajar.",
+      "unit_ids": ["n5-u008", "n5-u015", "n5-u025"]
+    },
+    {
+      "id": "kara",
+      "char": "から",
+      "romaji": "kara",
+      "function_id": "penanda asal / sebab",
+      "example_jp": "インドネシアからきました。",
+      "example_romaji": "Indoneshia kara kimashita.",
+      "example_id": "Saya datang dari Indonesia.",
+      "unit_ids": ["n5-u001", "n5-u007", "n5-u019"]
+    },
+    {
+      "id": "made",
+      "char": "まで",
+      "romaji": "made",
+      "function_id": "penanda batas (sampai)",
+      "example_jp": "がっこうは九時から三時までです。",
+      "example_romaji": "Gakkou wa kuji kara sanji made desu.",
+      "example_id": "Sekolah dari jam sembilan sampai jam tiga.",
+      "unit_ids": ["n5-u007"]
+    },
+    {
+      "id": "no",
+      "char": "の",
+      "romaji": "no",
+      "function_id": "penanda kepemilikan",
+      "example_jp": "これはわたしのかばんです。",
+      "example_romaji": "Kore wa watashi no kaban desu.",
+      "example_id": "Ini tas saya.",
+      "unit_ids": ["n5-u002", "n5-u005"]
+    },
+    {
+      "id": "ne",
+      "char": "ね",
+      "romaji": "ne",
+      "function_id": "partikel konfirmasi",
+      "example_jp": "きょうはさむいですね。",
+      "example_romaji": "Kyou wa samui desu ne.",
+      "example_id": "Hari ini dingin ya.",
+      "unit_ids": ["n5-u004", "n5-u011", "n5-u014"]
+    },
+    {
+      "id": "yo",
+      "char": "よ",
+      "romaji": "yo",
+      "function_id": "partikel penegasan",
+      "example_jp": "あの水をくださいよ。",
+      "example_romaji": "Ano mizu o kudasai yo.",
+      "example_id": "Tolong air itu ya.",
+      "unit_ids": ["n5-u003", "n5-u011"]
+    },
+    {
+      "id": "ka",
+      "char": "か",
+      "romaji": "ka",
+      "function_id": "penanda pertanyaan",
+      "example_jp": "トイレはどこですか。",
+      "example_romaji": "Toire wa doko desu ka.",
+      "example_id": "Di mana toilet?",
+      "unit_ids": ["n5-u001", "n5-u004", "n5-u005"]
+    },
+    {
+      "id": "tai",
+      "char": "たい",
+      "romaji": "tai",
+      "function_id": "menyatakan keinginan",
+      "example_jp": "にほんごをべんきょうしたいです。",
+      "example_romaji": "Nihongo o benkyou shitai desu.",
+      "example_id": "Saya ingin belajar bahasa Jepang.",
+      "unit_ids": ["n5-u015", "n5-u021"]
+    },
+    {
+      "id": "mashou",
+      "char": "ましょう",
+      "romaji": "mashou",
+      "function_id": "ajakan 'mari'",
+      "example_jp": "いっしょにごはんをたべましょう。",
+      "example_romaji": "Issho ni gohan o tabemashou.",
+      "example_id": "Mari makan bersama.",
+      "unit_ids": ["n5-u016", "n5-u028"]
+    },
+    {
+      "id": "te_kudasai",
+      "char": "てください",
+      "romaji": "te kudasai",
+      "function_id": "permintaan 'tolong'",
+      "example_jp": "ゆっくりねてください。",
+      "example_romaji": "Yukkuri nete kudasai.",
+      "example_id": "Tolong istirahat pelan-pelan.",
+      "unit_ids": ["n5-u013"]
+    },
+    {
+      "id": "yori",
+      "char": "より",
+      "romaji": "yori",
+      "function_id": "penanda perbandingan",
+      "example_jp": "しんかんせんはバスよりはやいです。",
+      "example_romaji": "Shinkansen wa basu yori hayai desu.",
+      "example_id": "Shinkansen lebih cepat daripada bus.",
+      "unit_ids": ["n5-u016"]
+    },
+    {
+      "id": "toki",
+      "char": "とき",
+      "romaji": "toki",
+      "function_id": "penanda waktu 'ketika'",
+      "example_jp": "にほんにきたとき、さむかったです。",
+      "example_romaji": "Nihon ni kita toki, samukatta desu.",
+      "example_id": "Ketika saya datang ke Jepang, cuacanya dingin.",
+      "unit_ids": ["n5-u020"]
+    },
+    {
+      "id": "kamoshirenai",
+      "char": "かもしれません",
+      "romaji": "kamoshirenai",
+      "function_id": "menyatakan kemungkinan",
+      "example_jp": "あしたあめがふるかもしれません。",
+      "example_romaji": "Ashita ame ga furu kamoshirenai.",
+      "example_id": "Besok mungkin akan hujan.",
+      "unit_ids": ["n5-u020"]
+    },
+    {
+      "id": "teha_ikenai",
+      "char": "てはいけない",
+      "romaji": "te wa ikenai",
+      "function_id": "larangan 'tidak boleh'",
+      "example_jp": "ここでたばこをすってはいけません。",
+      "example_romaji": "Koko de tabako o sutte wa ikemasen.",
+      "example_id": "Tidak boleh merokok di sini.",
+      "unit_ids": ["n5-u023"]
+    },
+    {
+      "id": "nakereba_naranai",
+      "char": "なければならない",
+      "romaji": "nakereba naranai",
+      "function_id": "kewajiban 'harus'",
+      "example_jp": "まいにちべんきょうしなければなりません。",
+      "example_romaji": "Mainichi benkyou shinakereba narimasen.",
+      "example_id": "Saya harus belajar setiap hari.",
+      "unit_ids": ["n5-u023"]
+    },
+    {
+      "id": "hou_ga_ii",
+      "char": "ほうがいい",
+      "romaji": "hou ga ii",
+      "function_id": "saran 'sebaiknya'",
+      "example_jp": "はやくとったほうがいいですよ。",
+      "example_romaji": "Hayaku totta hou ga ii desu yo.",
+      "example_id": "Sebaiknya kamu mengambilnya cepat-cepat.",
+      "unit_ids": ["n5-u024"]
+    },
+    {
+      "id": "ta_koto_ga_aru",
+      "char": "たことがある",
+      "romaji": "ta koto ga aru",
+      "function_id": "pengalaman 'pernah'",
+      "example_jp": "ふじさんにのぼったことがあります。",
+      "example_romaji": "Fujisan ni nobotta koto ga arimasu.",
+      "example_id": "Saya pernah mendaki Gunung Fuji.",
+      "unit_ids": ["n5-u026"]
+    },
+    {
+      "id": "nagara",
+      "char": "ながら",
+      "romaji": "nagara",
+      "function_id": "sambil (aksi bersamaan)",
+      "example_jp": "おんがくをききながら、べんきょうします。",
+      "example_romaji": "Ongaku o kikinagara, benkyou shimasu.",
+      "example_id": "Saya belajar sambil mendengarkan musik.",
+      "unit_ids": ["n5-u018", "n5-u026", "n5-u030"]
+    },
+    {
+      "id": "noni",
+      "char": "のに",
+      "romaji": "noni",
+      "function_id": "penanda kontras 'padahal'",
+      "example_jp": "たかいのに、かいました。",
+      "example_romaji": "Takai noni, kaimashita.",
+      "example_id": "Padahal mahal, tapi saya membelinya.",
+      "unit_ids": ["n5-u027", "n5-u029"]
+    },
+    {
+      "id": "tsumori",
+      "char": "つもり",
+      "romaji": "tsumori",
+      "function_id": "rencana 'bermaksud'",
+      "example_jp": "らいねんにほんにいくつもりです。",
+      "example_romaji": "Rainen nihon ni iku tsumori desu.",
+      "example_id": "Saya berencana pergi ke Jepang tahun depan.",
+      "unit_ids": ["n5-u030"]
+    },
+    {
+      "id": "te_oku",
+      "char": "ておく",
+      "romaji": "te oku",
+      "function_id": "tindakan persiapan",
+      "example_jp": "きっぷをかっておきました。",
+      "example_romaji": "Kippu o katte okimashita.",
+      "example_id": "Saya sudah membeli tiket (sebagai persiapan).",
+      "unit_ids": ["n5-u030"]
+    }
+  ]
+}
