@@ -1,6 +1,6 @@
 {
   "unit": "n5-u023",
-  "generated_at": "2026-09-02T02:26:32.361Z",
+  "generated_at": "2026-09-03T03:16:03.988Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "しごとはたいへんです。",
       "speaker_id": 2,
       "hash": "19340b56618ce3a6"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "ここでたばこをすってはいけません。",
+      "speaker_id": 2,
+      "hash": "8c38dc5ec29c716e"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "まいにちべんきょうしなければなりません。",
+      "speaker_id": 2,
+      "hash": "54a522e33791710c"
     }
   ]
 }

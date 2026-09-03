@@ -1,6 +1,6 @@
 {
   "unit": "n5-u024",
-  "generated_at": "2026-09-02T02:28:56.986Z",
+  "generated_at": "2026-09-03T03:16:17.272Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "かさをわすれました。",
       "speaker_id": 2,
       "hash": "ff36e12fa2bf86d6"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "あのケーキはおいしそうです。",
+      "speaker_id": 2,
+      "hash": "ad7e14c80f1e7f09"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "はやくとったほうがいいですよ。",
+      "speaker_id": 2,
+      "hash": "ab78063c07a0d393"
     }
   ]
 }

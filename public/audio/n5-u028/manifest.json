@@ -1,6 +1,6 @@
 {
   "unit": "n5-u028",
-  "generated_at": "2026-09-02T02:48:18.578Z",
+  "generated_at": "2026-09-03T03:17:09.277Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "やくそくをまもります。",
       "speaker_id": 2,
       "hash": "9b573ebb83f3ad8c"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "かばんをもってあげましょうか。",
+      "speaker_id": 2,
+      "hash": "31b37b91feb10beb"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "えいごをおしえてもらいました。",
+      "speaker_id": 2,
+      "hash": "ade8a99bb27a11a3"
     }
   ]
 }

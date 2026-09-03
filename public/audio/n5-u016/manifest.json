@@ -1,6 +1,6 @@
 {
   "unit": "n5-u016",
-  "generated_at": "2026-09-02T01:58:28.215Z",
+  "generated_at": "2026-09-03T03:14:34.653Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "しゅくだいをします。",
       "speaker_id": 2,
       "hash": "e229493a6ebe6589"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "いっしょにごはんをたべましょう。",
+      "speaker_id": 2,
+      "hash": "3afae47c6798707f"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "らいねん、にほんにいくつもりです。",
+      "speaker_id": 2,
+      "hash": "bda5399d4f27deff"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "unit": "n5-u021",
-  "generated_at": "2026-09-02T02:21:43.606Z",
+  "generated_at": "2026-09-03T03:15:35.304Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "スマホでしゃしんをとります。",
       "speaker_id": 2,
       "hash": "8d2a5cf0855032cf"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "このケーキをたべてみてください。",
+      "speaker_id": 2,
+      "hash": "7af0b78d2ed19e1d"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "あたらしいゲームをやってみたいです。",
+      "speaker_id": 2,
+      "hash": "b1733700dba9453a"
     }
   ]
 }

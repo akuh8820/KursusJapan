@@ -1,6 +1,6 @@
 {
   "unit": "n5-u020",
-  "generated_at": "2026-09-02T02:08:31.041Z",
+  "generated_at": "2026-09-03T03:15:25.069Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "ぼんおどりをします。",
       "speaker_id": 2,
       "hash": "d73aadb1cbcd61eb"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "にほんにきたとき、さむかったです。",
+      "speaker_id": 2,
+      "hash": "36496ac99f6eaeb2"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "あしたあめがふるかもしれません。",
+      "speaker_id": 2,
+      "hash": "1fee0af97dbf6679"
     }
   ]
 }

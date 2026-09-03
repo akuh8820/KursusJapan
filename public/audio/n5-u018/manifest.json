@@ -1,6 +1,6 @@
 {
   "unit": "n5-u018",
-  "generated_at": "2026-09-02T02:03:28.757Z",
+  "generated_at": "2026-09-03T03:14:57.856Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "ノートをかきます。",
       "speaker_id": 2,
       "hash": "d909d149164b0a41"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "ともだちとでんわしています。",
+      "speaker_id": 2,
+      "hash": "a73ae48cb0a10ff9"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "あるきながら、スマホをみます。",
+      "speaker_id": 2,
+      "hash": "d403f37799a6ccf8"
     }
   ]
 }

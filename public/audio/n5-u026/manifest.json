@@ -1,6 +1,6 @@
 {
   "unit": "n5-u026",
-  "generated_at": "2026-09-02T02:42:18.485Z",
+  "generated_at": "2026-09-03T03:16:43.795Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "らいねんにほんにいきます。",
       "speaker_id": 2,
       "hash": "86ab8062bee4e13c"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "ふじさんにのぼったことがあります。",
+      "speaker_id": 2,
+      "hash": "8e74ca0555caade1"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "おんがくをききながら、べんきょうします。",
+      "speaker_id": 2,
+      "hash": "0177c4ef4b6418d5"
     }
   ]
 }

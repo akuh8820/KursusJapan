@@ -1,6 +1,6 @@
 {
   "unit": "n5-u019",
-  "generated_at": "2026-09-02T02:06:09.245Z",
+  "generated_at": "2026-09-03T03:15:10.716Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "けいけんがあります。",
       "speaker_id": 2,
       "hash": "f7e8e8da9334c398"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "あめがふったから、いきませんでした。",
+      "speaker_id": 2,
+      "hash": "76b1d7267c424a13"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "びょうきなので、やすみます。",
+      "speaker_id": 2,
+      "hash": "52d8fdc56643959f"
     }
   ]
 }

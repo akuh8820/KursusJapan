@@ -1,6 +1,6 @@
 {
   "unit": "n5-u027",
-  "generated_at": "2026-09-02T02:45:42.214Z",
+  "generated_at": "2026-09-03T03:16:56.155Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "らいしゅうからはたらきます。",
       "speaker_id": 2,
       "hash": "def3cbc376b6e256"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "せんせいがほんをくださいました。",
+      "speaker_id": 2,
+      "hash": "46a32cba373065a9"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "あめがふっているのに、さんぽしました。",
+      "speaker_id": 2,
+      "hash": "0633f1c5b8df8d55"
     }
   ]
 }

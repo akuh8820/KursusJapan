@@ -1,6 +1,6 @@
 {
   "unit": "n5-u013",
-  "generated_at": "2026-09-02T01:43:12.633Z",
+  "generated_at": "2026-09-03T03:13:41.213Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "きょうはやすみてください。",
       "speaker_id": 2,
       "hash": "19d04470a3e123c3"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "あたまがいたいです。",
+      "speaker_id": 2,
+      "hash": "ff9b7f22b1b55f80"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "ゆっくりねてください。",
+      "speaker_id": 2,
+      "hash": "ee9ee7b014ccb2c7"
     }
   ]
 }

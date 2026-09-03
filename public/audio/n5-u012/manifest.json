@@ -1,6 +1,6 @@
 {
   "unit": "n5-u012",
-  "generated_at": "2026-09-02T01:40:28.750Z",
+  "generated_at": "2026-09-03T03:13:28.118Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "でんしゃにのります。",
       "speaker_id": 2,
       "hash": "92299029d0c5a94a"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "がっこうにバスでいきます。",
+      "speaker_id": 2,
+      "hash": "d1ab416669114cc4"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "えきにあるいていきます。",
+      "speaker_id": 2,
+      "hash": "4c12f32197e0feae"
     }
   ]
 }

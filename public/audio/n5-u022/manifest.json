@@ -1,6 +1,6 @@
 {
   "unit": "n5-u022",
-  "generated_at": "2026-09-02T02:24:08.841Z",
+  "generated_at": "2026-09-03T03:15:50.757Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "カードをつくります。",
       "speaker_id": 2,
       "hash": "b07a3e0e0f0f57f9"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "ここにすわってもいいですか。",
+      "speaker_id": 2,
+      "hash": "370958d7495bf0d6"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "このほんをよんでもいいですよ。",
+      "speaker_id": 2,
+      "hash": "4059e8c7e3082e3f"
     }
   ]
 }

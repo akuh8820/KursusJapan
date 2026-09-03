@@ -1,6 +1,6 @@
 {
   "unit": "n5-u030",
-  "generated_at": "2026-09-02T02:54:03.165Z",
+  "generated_at": "2026-09-03T03:17:35.173Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "ぜったいがんばります。",
       "speaker_id": 2,
       "hash": "57dc2fc91817cb41"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "らいねんにほんにいくつもりです。",
+      "speaker_id": 2,
+      "hash": "cb2cbd24f924fc69"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "きっぷをかっておきました。",
+      "speaker_id": 2,
+      "hash": "8e38011b9b086380"
     }
   ]
 }

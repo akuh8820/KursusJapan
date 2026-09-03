@@ -1,6 +1,6 @@
 {
   "unit": "n5-u014",
-  "generated_at": "2026-09-02T01:45:36.200Z",
+  "generated_at": "2026-09-03T03:14:09.005Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "たいふうがきます。",
       "speaker_id": 2,
       "hash": "f26befc37dea7f1b"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "きょうはさむいです。",
+      "speaker_id": 2,
+      "hash": "0b7de52c6444defd"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "あしたはあつくなるでしょう。",
+      "speaker_id": 2,
+      "hash": "7a46abac543d8963"
     }
   ]
 }

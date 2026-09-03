@@ -1,6 +1,6 @@
 {
   "unit": "n5-u029",
-  "generated_at": "2026-09-02T02:51:17.499Z",
+  "generated_at": "2026-09-03T03:17:21.467Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "たんじょうびをいわいます。",
       "speaker_id": 2,
       "hash": "1bf2a599765ca5fb"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "かれはさみしがっています。",
+      "speaker_id": 2,
+      "hash": "8be84065ad665f65"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "たかいのに、かいました。",
+      "speaker_id": 2,
+      "hash": "eec741438e953753"
     }
   ]
 }

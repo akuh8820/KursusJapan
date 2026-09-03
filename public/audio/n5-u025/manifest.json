@@ -1,6 +1,6 @@
 {
   "unit": "n5-u025",
-  "generated_at": "2026-09-02T02:31:21.007Z",
+  "generated_at": "2026-09-03T03:16:30.505Z",
   "engine": "ttsquest-voicevox",
   "items": [
     {
@@ -164,6 +164,18 @@
       "text": "いっしょにいきましょう。",
       "speaker_id": 2,
       "hash": "6ddd42d2a72145fb"
+    },
+    {
+      "file": "g00.mp3",
+      "text": "あしたはあめだとおもいます。",
+      "speaker_id": 2,
+      "hash": "917246e1f4e4e447"
+    },
+    {
+      "file": "g01.mp3",
+      "text": "かれはくるでしょう。",
+      "speaker_id": 2,
+      "hash": "a85a3006a0048810"
     }
   ]
 }
