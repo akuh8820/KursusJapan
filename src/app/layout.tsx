@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s · Go Japan",
   },
   description:
-    "Belajar bahasa Jepang JLPT N5–N1: dialog, grammar, kosakata, dan latihan — offline penuh.",
+    "Belajar bahasa Jepang JLPT N5–N1: dialog, bunpō, kosakata, dan latihan — offline penuh.",
   openGraph: {
     title: "Go Japan — Belajar Bahasa Jepang",
     description:

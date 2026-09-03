@@ -262,9 +262,18 @@ export async function isExamPassed(unitId: string): Promise<boolean> {
   return Boolean((await getExamPass())[unitId]);
 }
 
-/** Status gating unit n: 'locked' | 'practice_open' | 'exam_open' | 'exam_passed'. */
-export async function getUnitLockState(unitId: string): Promise<"locked" | "practice_open" | "exam_open" | "exam_passed"> {
+/**
+ * Status gating unit n: 'locked' | 'practice_open' | 'exam_open' | 'exam_passed'.
+ * Lockstep: latihan #n terbuka bila ujian #(n-1) sudah lolos (atau n adalah unit
+ * pertama). Ujian #n terbuka setelah latihan #n selesai. Lolos 100% → #n+1 terbuka.
+ * `prevUnitId` = unit sebelum n (urut lockstep); null utk unit pertama.
+ */
+export async function getUnitLockState(
+  unitId: string,
+  prevUnitId: string | null,
+): Promise<"locked" | "practice_open" | "exam_open" | "exam_passed"> {
   if (await isExamPassed(unitId)) return "exam_passed";
+  if (prevUnitId && !(await isExamPassed(prevUnitId))) return "locked";
   if (await isPracticeDone(unitId)) return "exam_open";
   return "practice_open";
 }

@@ -48,12 +48,14 @@ export default function SessionClient({
   const [phase, setPhase] = useState<Phase>("practice");
   const [practiceDone, setPracticeDoneState] = useState<Record<string, { kanji: boolean; bunpo: boolean; partikel: boolean }>>({});
   const [examPassed, setExamPassedState] = useState(false);
+  const [prevExamPassed, setPrevExamPassed] = useState(true);
   const [examAnswers, setExamAnswers] = useState<ExamAnswer>({});
   const [examSubmitted, setExamSubmitted] = useState(false);
   const [examResult, setExamResult] = useState<"pass" | "fail" | null>(null);
   const [loading, setLoading] = useState(true);
 
   const nextUnit = units.find((u) => u.unit_no === lesson.unit_no + 1);
+  const prevUnit = units.find((u) => u.unit_no === lesson.unit_no - 1) ?? null;
 
   // Load progress from IndexedDB on mount
   useEffect(() => {
@@ -63,12 +65,13 @@ export default function SessionClient({
       if (mounted) {
         setPracticeDoneState(practice);
         setExamPassedState(Boolean(exam[lesson.id]));
+        setPrevExamPassed(!prevUnit || Boolean(exam[prevUnit.id]));
         setLoading(false);
       }
     }
     loadProgress();
     return () => { mounted = false; };
-  }, [lesson.id]);
+  }, [lesson.id, prevUnit]);
 
   // Initialize session: mark unit started, seed SRS, track event
   useEffect(() => {
@@ -131,6 +134,37 @@ export default function SessionClient({
       <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col items-center justify-center px-4">
         <div className="flex h-8 w-8 animate-spin rounded-full border-2 border-primary border-t-transparent" />
         <p className="mt-4 text-sm text-muted">Memuat progres…</p>
+      </main>
+    );
+  }
+
+  // Lockstep: latihan #n terkunci sampai ujian #(n-1) lolos 100%
+  if (!prevExamPassed) {
+    return (
+      <main className="mx-auto flex w-full max-w-md flex-1 flex-col items-center justify-center px-4 pb-16 pt-8 text-center">
+        <p className="text-5xl" aria-hidden>
+          🔒
+        </p>
+        <h1 className="mt-4 text-2xl font-bold">Unit terkunci</h1>
+        <p className="mt-2 text-sm text-muted">
+          Selesaikan Ujian #U{String(prevUnit!.unit_no).padStart(2, "0")} dengan 100% benar untuk membuka unit ini.
+        </p>
+        <div className="mt-8 grid w-full gap-3">
+          {prevUnit && (
+            <Link
+              href={`/sesi/${prevUnit.id}`}
+              className="rounded-2xl bg-primary px-4 py-3 text-sm font-bold text-primary-foreground"
+            >
+              Kerjakan Ujian #U{String(prevUnit.unit_no).padStart(2, "0")} →
+            </Link>
+          )}
+          <Link
+            href="/"
+            className="rounded-2xl border border-border bg-card px-4 py-3 text-sm font-semibold"
+          >
+            Kembali ke beranda
+          </Link>
+        </div>
       </main>
     );
   }

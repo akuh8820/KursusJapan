@@ -17,7 +17,7 @@ const AREAS = [
     href: "/bunpo",
     icon: "文",
     title: "Bunpō & Partikel",
-    desc: "Pola grammar & partikel JLPT N5–N1 + latihan per unit",
+    desc: "Pola bunpō & partikel JLPT N5–N1 + latihan per unit",
   },
   {
     href: "/kaiwa",

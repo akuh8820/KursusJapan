@@ -64,7 +64,7 @@ export default function BunpoClient({ grammarPoints, particles }: BunpoClientPro
     <div className="mx-auto w-full max-w-md px-4 pb-16 pt-8">
       <header className="mb-6">
         <h1 className="text-2xl font-bold tracking-tight">Bunpō & Partikel</h1>
-        <p className="mt-1 text-sm text-muted">Pola grammar & partikel JLPT N5 dari semua unit</p>
+        <p className="mt-1 text-sm text-muted">Pola bunpō & partikel JLPT N5 dari semua unit</p>
       </header>
 
       {/* Tabs */}
@@ -108,7 +108,7 @@ export default function BunpoClient({ grammarPoints, particles }: BunpoClientPro
       {tab === "bunpo" && (
         <>
           {!selectedGp && !bunpoPracticeUnit && (
-            <section aria-label="Daftar pola grammar" className="space-y-2">
+            <section aria-label="Daftar pola bunpō" className="space-y-2">
               {grammarPoints.map((gp) => {
                 const done = practiceDone[gp.unitId]?.bunpo;
                 return (
@@ -326,7 +326,7 @@ function BunpoPractice({
           </span>
         </div>
         <p className="text-sm font-semibold">
-          Pola grammar unit {gp.unitNo} adalah: <span lang="ja">{gp.pattern}</span>
+          Pola bunpō unit {gp.unitNo} adalah: <span lang="ja">{gp.pattern}</span>
         </p>
         <p className="mt-1 text-sm text-muted">{gp.meaning_id}</p>
         <div className="mt-3 grid gap-2" role="group" aria-label="Pilih pola yang benar">
