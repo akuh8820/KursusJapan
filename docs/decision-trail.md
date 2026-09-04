@@ -69,3 +69,43 @@ A1 (audio-fix + canvas-contrast) → B1 (partikel-data, reading-data) →
 B2 (bunpo-partikel-area, reading-area) → B3 (audio-gen) →
 B4 (materi-prune, dashboard-restructure) → B5 (grammar-rename, gating-prereq).
 File `session-client.tsx`/`bunpo-client.tsx` dijaminkan berurutan (bukan paralel).
+---
+
+## [2026-09-04] Issue #4 "Canvas, jejak, dan validasi" — ANALISIS (plan mode, belum edit)
+
+### Laporan issue #4 (bug + enhancement)
+1. Jejak canvas berbeda dengan bentuk asli huruf
+2. Jejak hampir hilang tertutup dark mode
+3. Saran: tebalin jejak, re-color gray, samakan bentuk, validasi goresan benar/salah
+
+### Analisis @observer (7 screenshot, hp Android Chrome Beta)
+- `あ` (hiragana): outline/shadow hampir tidak terlihat; hanya 2 goresan hairline tipis; bentuk TIDAK menyerupai `あ` (gagal total). Konsisten di 5 gambar.
+- Kanji `雨` & katakana `ア`: bentuk relatif cocok (bug TIDAK universal, spesifik kana tertentu).
+- Kontras: semua jejak abu hairline 1px, hampir hilang di KEDUA mode (paling parah dark). Gambar 4 coretan tebal putih kontras tinggi → canvas mampu tebal, tapi default outline tipis/transparan.
+
+### Akar masalah (dikonfirmasi dari kode)
+1. **Bentuk kana rusak**: `public/data/stroke/{hex}.json` — 6 kana punya path terduplikasi (blok path sama diulang 2x dalam 1 stroke) akibat bug `parseKana` di `scripts/vendor-stroke.ts` (menggabungkan semua `d` dalam grup, termasuk duplikat). Kana rusak: `03042`=あ, `0304a`=え, `0306c`=ぬ, `0306e`=ね, `03080`=の, `03081`=は. 60 kana lain bersih.
+2. **Kontras shadow rendah**: `kanji-canvas.tsx:106-109` → `globalAlpha 0.18` + `lineWidth 2` terlalu tipis/transparan; warna `--foreground` kurang kontras di `bg-card` (parah dark mode).
+3. **Validasi goresan belum ada**: hanya tombol manual "Mirip ✓"/"Ulangi" (`kanji-canvas.tsx:298-325`).
+
+### Keputusan user (via question tool)
+1. **Sumber data stroke**: CARI SUMBER strokesvg ONLINE (zhengkyl/strokesvg) → unduh ulang + regenerasi `vendor-stroke.ts` (perbaiki `parseKana`).
+2. **Kontras shadow**: SEDANG → lineWidth 4-5, alpha ~0.4, warna fg tema-aware.
+3. **Validasi goresan**: YA, buat validasi otomatis benar/salah.
+
+### Status riset sumber strokesvg (belum selesai)
+- Repo `zhengkyl/strokesvg`, default branch `main`.
+- Raw `dist/hiragana/あ.svg` = HTTP 200, 2500 bytes, viewBox `0 0 1024 1024`.
+- Struktur file: `<svg data-strokesvg="あ">` → `<defs>` (clipPath) → `<g data-strokesvg="shadows">` (path id 3042a-d, stroke shadow) → `<g data-strokesvg="strokes" style="stroke:var(--stroke,#000);fill:none;stroke-width:128">` berisi `<path style="--i:0" d="m114 328...">` (stroke urut).
+- **Temuan kunci**: file `あ.svg` punya 4 path di grup shadows (3042a-d) DAN grup strokes. `parseKana` lama mengambil SEMUA `d` dari `<g data-strokesvg="strokes">` — perlu verifikasi apakah grup strokes berisi duplikat atau parse salah ambil dari grup shadows.
+- File contoh tersimpan: `/data/data/com.termux/files/usr/tmp/opencode/a_test.svg` (belum selesai diinspeksi — terpotong di path stroke pertama).
+- @librarian GAGAL (model tidak tersedia) → riset strokesvg + validasi dilakukan manual via curl/websearch.
+
+### TODO selanjutnya (saat kembali)
+1. Selesai inspeksi `a_test.svg` (struktur grup strokes vs shadows; kenapa 6 kana duplikat).
+2. Unduh sumber strokesvg (hiragana + katakana) ke `/data/data/com.termux/files/usr/tmp/opencode/stroke/strokesvg/dist/` (path yang dipakai `vendor-stroke.ts`).
+3. Perbaiki `parseKana` di `scripts/vendor-stroke.ts` (hindari duplikasi), regenerasi `public/data/stroke/*.json` utk 6 kana rusak.
+4. Perbaiki kontras shadow di `kanji-canvas.tsx` (lineWidth 4-5, alpha ~0.4).
+5. Implement validasi goresan otomatis (jumlah stroke + coverage vs shadow path).
+6. Verifikasi tsc + lint + content:validate, commit, push, CI.
+7. Update issue #4 (komentar progres) setelah fix.
